@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { NavLink, useLocation, Outlet } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import Logo from '../components/Logo'
@@ -32,22 +33,65 @@ const ICONS = {
   ),
 }
 
+const MenuIcon = (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+)
+
+const CloseIcon = (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+)
+
 export default function AdminLayout() {
   const { user } = useAuth()
   const location = useLocation()
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+
+  // Auto-close drawer on every route change (mobile)
+  useEffect(() => {
+    setSidebarOpen(false)
+  }, [location.pathname])
+
+  // Prevent background scroll while drawer is open on mobile
+  useEffect(() => {
+    document.body.style.overflow = sidebarOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [sidebarOpen])
 
   return (
     <div className="min-h-screen bg-neutral-50 flex">
+      {/* Overlay backdrop (mobile only) */}
+      {sidebarOpen && (
+        <div
+          className="fixed inset-0 z-20 bg-black/40 lg:hidden"
+          onClick={() => setSidebarOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Admin Sidebar */}
-      <aside className="w-60 shrink-0 bg-neutral-0 border-r border-neutral-200 flex flex-col h-screen sticky top-0">
-        <div className="px-5 py-5 border-b border-neutral-200">
-          <div className="flex items-center gap-2">
-            <Logo size={28} />
-            <span className="text-[10px] px-2 py-0.5 rounded-full bg-gold-100 text-gold-800 font-medium">
-              Admin
-            </span>
+      <aside
+        className={`w-64 shrink-0 bg-neutral-0 border-r border-neutral-200 flex flex-col h-screen fixed inset-y-0 left-0 z-30 transition-transform duration-200 ease-in-out
+        lg:sticky lg:top-0 lg:z-auto lg:w-60 lg:translate-x-0
+        ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
+      >
+        <div className="px-5 py-5 border-b border-neutral-200 flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2">
+              <Logo size={28} />
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-gold-100 text-gold-800 font-medium">
+                Admin
+              </span>
+            </div>
+            <p className="text-[11px] text-neutral-400 mt-0.5">Panel Administrasi</p>
           </div>
-          <p className="text-[11px] text-neutral-400 mt-0.5">Panel Administrasi</p>
+          <button
+            type="button"
+            className="lg:hidden text-neutral-400 hover:text-neutral-700 p-1"
+            onClick={() => setSidebarOpen(false)}
+            aria-label="Tutup menu"
+          >
+            {CloseIcon}
+          </button>
         </div>
         <nav className="flex-1 overflow-y-auto py-3 px-2 space-y-0.5">
           {ADMIN_NAV.map((item) => {
@@ -85,17 +129,27 @@ export default function AdminLayout() {
 
       {/* Content area */}
       <div className="flex-1 flex flex-col min-w-0">
-        <header className="h-16 bg-neutral-0 border-b border-neutral-200 px-6 flex items-center justify-between sticky top-0 z-20">
-          <h1 className="text-lg font-bold text-neutral-800">Admin Panel</h1>
-          <div className="flex items-center gap-3">
-            
-              <a href="/dashboard"
-              className="text-xs px-3 py-1.5 rounded-lg bg-gold-50 text-gold-700 border border-gold-200 hover:bg-gold-100 transition-colors">
-              Lihat Tampilan User
+        <header className="h-16 bg-neutral-0 border-b border-neutral-200 px-4 lg:px-6 flex items-center justify-between sticky top-0 z-10">
+          <div className="flex items-center gap-3 min-w-0">
+            <button
+              type="button"
+              className="lg:hidden text-neutral-500 hover:text-neutral-800 p-1 -ml-1 shrink-0"
+              onClick={() => setSidebarOpen(true)}
+              aria-label="Buka menu"
+            >
+              {MenuIcon}
+            </button>
+            <h1 className="text-base lg:text-lg font-bold text-neutral-800 truncate">Admin Panel</h1>
+          </div>
+          <div className="flex items-center gap-3 shrink-0">
+            <a href="/dashboard"
+              className="text-xs px-2.5 py-1.5 lg:px-3 rounded-lg bg-gold-50 text-gold-700 border border-gold-200 hover:bg-gold-100 transition-colors whitespace-nowrap">
+              <span className="hidden sm:inline">Lihat Tampilan User</span>
+              <span className="sm:hidden">Tampilan User</span>
             </a>
           </div>
         </header>
-        <main className="flex-1 overflow-y-auto p-6">
+        <main className="flex-1 overflow-y-auto p-4 lg:p-6">
           <div className="max-w-[1400px] mx-auto">
             <Outlet />
           </div>
