@@ -6,7 +6,7 @@ import { generateTxHash } from '../utils/blockchain'
 
 const PortfolioContext = createContext(null)
 
-const STORAGE_KEY = 'propin_portfolio'
+const STORAGE_KEY = 'asetara_portfolio'
 
 function loadFromStorage() {
   try {

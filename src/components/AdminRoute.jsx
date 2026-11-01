@@ -9,7 +9,7 @@ export function AdminRoute({ children }) {
   useEffect(() => {
     if (isAuthenticated && user && user.role !== 'admin') {
       window.dispatchEvent(
-        new CustomEvent('propin-toast', {
+        new CustomEvent('asetara-toast', {
           detail: { message: 'Halaman ini khusus Admin', type: 'warning' },
         })
       )
@@ -20,7 +20,7 @@ export function AdminRoute({ children }) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-neutral-50">
         <div className="animate-pulse flex flex-col items-center gap-3">
-          <div className="w-10 h-10 rounded-full border-2 border-gold-300 border-t-gold-600 animate-spin" />
+          <div className="w-10 h-10 rounded-full border-2 border-navy-300 border-t-navy-600 animate-spin" />
           <p className="text-sm text-neutral-500">Memuat...</p>
         </div>
       </div>

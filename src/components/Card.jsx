@@ -12,8 +12,8 @@ export default function Card({
 
   const variantStyles = {
     default: 'bg-neutral-0 border border-neutral-200 shadow-card',
-    gold: 'bg-gold-gradient text-white shadow-goldGlow border-0',
-    green: 'bg-green-gradient text-white border-0',
+    brand: 'bg-navy-gradient text-white shadow-navyGlow border-0',
+    teal: 'bg-teal-gradient text-white border-0',
     flat: 'bg-neutral-50 border border-neutral-200',
   }
 

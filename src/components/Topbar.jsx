@@ -17,7 +17,7 @@ export default function Topbar() {
     <>
       {/* Admin viewing user banner */}
       {isAdmin && (
-        <div className="bg-gold-600 text-white text-xs px-4 py-1.5 flex items-center justify-center gap-2">
+        <div className="bg-navy-600 text-white text-xs px-4 py-1.5 flex items-center justify-center gap-2">
           <Shield size={14} />
           <span>Anda login sebagai Admin, sedang melihat tampilan User</span>
         </div>
@@ -25,10 +25,10 @@ export default function Topbar() {
       <header className="h-16 border-b border-neutral-200 bg-neutral-0 flex items-center justify-between px-8 sticky top-0 z-40">
         <div className="flex items-center gap-2 text-neutral-400 bg-neutral-50 border border-neutral-200 rounded-xl px-3 py-2 w-72">
           <Search size={16} />
-          <span className="text-sm">Cari properti atau lokasi</span>
+          <span className="text-sm">Cari materi, artikel, atau topik</span>
         </div>
         <div className="flex items-center gap-4">
-          <button className="text-neutral-500 hover:text-gold-600 relative">
+          <button className="text-neutral-500 hover:text-navy-600 relative">
             <Bell size={20} />
             <span className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-red-500 rounded-full" />
           </button>
@@ -37,7 +37,7 @@ export default function Topbar() {
               <p className="text-sm font-medium text-neutral-800">{user?.name || 'Guest'}</p>
               <p className="text-[11px] text-neutral-400">{isAdmin ? 'Administrator' : 'Investor'}</p>
             </div>
-            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-white text-sm font-semibold">
+            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-navy-500 to-navy-700 flex items-center justify-center text-white text-sm font-semibold">
               {(user?.name || 'G').charAt(0).toUpperCase()}
             </div>
             <button

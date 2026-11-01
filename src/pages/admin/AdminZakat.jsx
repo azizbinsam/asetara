@@ -69,16 +69,16 @@ export default function AdminZakat() {
           <p className="text-xl font-bold text-neutral-800">{wajibCount}</p>
           <p className="text-xs text-neutral-500">Wajib Zakat</p>
         </Card>
-        <Card variant="gold" className="text-center py-4">
+        <Card variant="brand" className="text-center py-4">
           <p className="text-xl font-bold text-white">{formatRupiah(totalZakat)}</p>
           <p className="text-xs text-white">Total Zakat</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-green-600">{formatRupiah(totalDistributed)}</p>
+          <p className="text-xl font-bold text-teal-600">{formatRupiah(totalDistributed)}</p>
           <p className="text-xs text-neutral-500">Sudah Disalurkan</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-gold-600">{formatRupiah(totalPending)}</p>
+          <p className="text-xl font-bold text-navy-600">{formatRupiah(totalPending)}</p>
           <p className="text-xs text-neutral-500">Menunggu</p>
         </Card>
       </div>
@@ -101,7 +101,7 @@ export default function AdminZakat() {
               key={f}
               onClick={() => setStatusFilter(f)}
               className={`px-3 py-2 rounded-lg text-xs font-medium transition-colors whitespace-nowrap ${
-                statusFilter === f ? 'bg-gold-600 text-white' : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
+                statusFilter === f ? 'bg-navy-600 text-white' : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
               }`}
             >
               {f}
@@ -147,12 +147,12 @@ export default function AdminZakat() {
                   </td>
                   <td className="py-3 px-3 text-center">
                     {z.distributed ? (
-                      <div className="flex items-center justify-center gap-1 text-green-600">
+                      <div className="flex items-center justify-center gap-1 text-teal-600">
                         <CheckCircle2 size={14} />
                         <span className="text-xs">{new Date(z.distributionDate).toLocaleDateString('id-ID')}</span>
                       </div>
                     ) : z.nisabStatus === 'Wajib Zakat' ? (
-                      <div className="flex items-center justify-center gap-1 text-gold-600">
+                      <div className="flex items-center justify-center gap-1 text-navy-600">
                         <AlertTriangle size={14} />
                         <span className="text-xs">Menunggu</span>
                       </div>

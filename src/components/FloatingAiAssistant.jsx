@@ -6,7 +6,7 @@ import { getMockResponse, SUGGESTIONS } from '../utils/aiResponses'
 const INITIAL_MESSAGE = {
   id: 1,
   role: 'assistant',
-  text: 'Halo! Saya AI Assistant PROPIN. Ada yang bisa saya bantu tentang investasi properti syariah?',
+  text: 'Halo! Saya AI Assistant ASETARA. Ada yang bisa saya bantu tentang investasi properti syariah?',
 }
 
 export default function FloatingAiAssistant() {
@@ -92,7 +92,7 @@ export default function FloatingAiAssistant() {
             showTooltip && !open ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-95 translate-x-2 pointer-events-none'
           }`}
         >
-          <Sparkles size={13} className="text-gold-400 shrink-0" />
+          <Sparkles size={13} className="text-champagne-400 shrink-0" />
           <span className="whitespace-nowrap">Tanya AI Assistant, gratis!</span>
           <button
             onClick={dismissTooltip}
@@ -111,7 +111,7 @@ export default function FloatingAiAssistant() {
             showTooltip && !open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
           }`}
         >
-          <Sparkles size={11} className="text-gold-400 shrink-0" />
+          <Sparkles size={11} className="text-champagne-400 shrink-0" />
           <span className="whitespace-nowrap">Tanya AI Assistant</span>
           <button onClick={dismissTooltip} className="text-neutral-400 shrink-0">
             <X size={11} />
@@ -121,12 +121,12 @@ export default function FloatingAiAssistant() {
         <div className="relative">
           {/* Ring pulsa untuk menarik perhatian saat tooltip tampil */}
           {showTooltip && !open && (
-            <span className="absolute inset-0 rounded-full bg-gold-500 animate-ping opacity-40" />
+            <span className="absolute inset-0 rounded-full bg-navy-500 animate-ping opacity-40" />
           )}
           <button
             onClick={handleToggle}
             aria-label="Buka AI Assistant"
-            className="relative w-14 h-14 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 text-white shadow-lg shadow-gold-700/30 flex items-center justify-center hover:scale-105 active:scale-95 transition-transform"
+            className="relative w-14 h-14 rounded-full bg-gradient-to-br from-navy-500 to-navy-700 text-white shadow-lg shadow-navy-700/30 flex items-center justify-center hover:scale-105 active:scale-95 transition-transform"
           >
             {open ? <X size={22} /> : <Bot size={22} />}
           </button>
@@ -152,14 +152,14 @@ export default function FloatingAiAssistant() {
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 border-b border-neutral-200 bg-gold-50">
+          <div className="flex items-center justify-between px-4 py-3 border-b border-neutral-200 bg-navy-50">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-gold-600 text-white flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 rounded-full bg-navy-600 text-white flex items-center justify-center shrink-0">
                 <Bot size={16} />
               </div>
               <div>
                 <p className="text-sm font-semibold text-neutral-800 leading-tight">AI Assistant</p>
-                <p className="text-[11px] text-green-600 leading-tight">Online</p>
+                <p className="text-[11px] text-teal-600 leading-tight">Online</p>
               </div>
             </div>
             <div className="flex items-center gap-1">
@@ -188,14 +188,14 @@ export default function FloatingAiAssistant() {
                 className={`flex gap-2 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}
               >
                 <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 ${
-                  msg.role === 'assistant' ? 'bg-gold-100 text-gold-700' : 'bg-neutral-200 text-neutral-600'
+                  msg.role === 'assistant' ? 'bg-navy-100 text-navy-700' : 'bg-neutral-200 text-neutral-600'
                 }`}>
                   <Bot size={12} />
                 </div>
                 <div className={`max-w-[78%] rounded-2xl px-3 py-2 text-xs leading-relaxed ${
                   msg.role === 'assistant'
                     ? 'bg-neutral-100 text-neutral-700 rounded-tl-sm'
-                    : 'bg-gold-600 text-white rounded-tr-sm'
+                    : 'bg-navy-600 text-white rounded-tr-sm'
                 }`}>
                   {msg.text}
                 </div>
@@ -203,7 +203,7 @@ export default function FloatingAiAssistant() {
             ))}
             {typing && (
               <div className="flex gap-2">
-                <div className="w-6 h-6 rounded-full bg-gold-100 flex items-center justify-center text-gold-700">
+                <div className="w-6 h-6 rounded-full bg-navy-100 flex items-center justify-center text-navy-700">
                   <Bot size={12} />
                 </div>
                 <div className="bg-neutral-100 rounded-2xl rounded-tl-sm px-3 py-2">
@@ -225,7 +225,7 @@ export default function FloatingAiAssistant() {
                 <button
                   key={s}
                   onClick={() => handleSuggestion(s)}
-                  className="shrink-0 px-2.5 py-1 rounded-full bg-gold-50 text-gold-700 text-[11px] font-medium border border-gold-200 hover:bg-gold-100 transition-colors"
+                  className="shrink-0 px-2.5 py-1 rounded-full bg-navy-50 text-navy-700 text-[11px] font-medium border border-navy-200 hover:bg-navy-100 transition-colors"
                 >
                   {s}
                 </button>
@@ -248,7 +248,7 @@ export default function FloatingAiAssistant() {
                 onClick={handleSend}
                 disabled={!input.trim()}
                 className={`w-7 h-7 rounded-full flex items-center justify-center transition-colors shrink-0 ${
-                  input.trim() ? 'bg-gold-600 text-white hover:bg-gold-700' : 'bg-neutral-200 text-neutral-400'
+                  input.trim() ? 'bg-navy-600 text-white hover:bg-navy-700' : 'bg-neutral-200 text-neutral-400'
                 }`}
               >
                 <Send size={13} />

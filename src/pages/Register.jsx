@@ -72,7 +72,7 @@ export default function Register() {
     setIsSubmitting(true)
     try {
       await register(name.trim(), email.trim(), password)
-      toast('Pendaftaran berhasil! Selamat datang di PROPIN.', 'success')
+      toast('Pendaftaran berhasil! Selamat datang di ASETARA.', 'success')
       navigate('/dashboard', { replace: true })
     } catch (err) {
       toast(err.message || 'Gagal mendaftar', 'error')
@@ -104,7 +104,7 @@ export default function Register() {
                   onChange={(e) => { setName(e.target.value); setErrors((p) => ({ ...p, name: '' })) }}
                   placeholder="Nama lengkap Anda"
                   className={`w-full h-11 pl-10 pr-3 rounded-xl border text-sm transition-colors outline-none
-                    ${errors.name ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-gold-600 focus:ring-2 focus:ring-gold-100'}`}
+                    ${errors.name ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-navy-600 focus:ring-2 focus:ring-navy-100'}`}
                 />
               </div>
               {errors.name && <p className="text-xs text-red-600 mt-1">{errors.name}</p>}
@@ -120,7 +120,7 @@ export default function Register() {
                   onChange={(e) => { setEmail(e.target.value); setErrors((p) => ({ ...p, email: '' })) }}
                   placeholder="nama@email.com"
                   className={`w-full h-11 pl-10 pr-3 rounded-xl border text-sm transition-colors outline-none
-                    ${errors.email ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-gold-600 focus:ring-2 focus:ring-gold-100'}`}
+                    ${errors.email ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-navy-600 focus:ring-2 focus:ring-navy-100'}`}
                 />
               </div>
               {errors.email && <p className="text-xs text-red-600 mt-1">{errors.email}</p>}
@@ -136,7 +136,7 @@ export default function Register() {
                   onChange={(e) => { setPassword(e.target.value); setErrors((p) => ({ ...p, password: '' })) }}
                   placeholder="Minimal 6 karakter"
                   className={`w-full h-11 pl-10 pr-10 rounded-xl border text-sm transition-colors outline-none
-                    ${errors.password ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-gold-600 focus:ring-2 focus:ring-gold-100'}`}
+                    ${errors.password ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-navy-600 focus:ring-2 focus:ring-navy-100'}`}
                 />
                 <button
                   type="button"
@@ -159,7 +159,7 @@ export default function Register() {
                   onChange={(e) => { setConfirmPassword(e.target.value); setErrors((p) => ({ ...p, confirmPassword: '' })) }}
                   placeholder="Ulangi kata sandi"
                   className={`w-full h-11 pl-10 pr-3 rounded-xl border text-sm transition-colors outline-none
-                    ${errors.confirmPassword ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-gold-600 focus:ring-2 focus:ring-gold-100'}`}
+                    ${errors.confirmPassword ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-navy-600 focus:ring-2 focus:ring-navy-100'}`}
                 />
               </div>
               {errors.confirmPassword && <p className="text-xs text-red-600 mt-1">{errors.confirmPassword}</p>}
@@ -171,14 +171,14 @@ export default function Register() {
                 id="tnc"
                 checked={agreeTnc}
                 onChange={(e) => { setAgreeTnc(e.target.checked); setErrors((p) => ({ ...p, agreeTnc: '' })) }}
-                className="mt-0.5 w-[18px] h-[18px] rounded border-neutral-300 text-gold-600 focus:ring-gold-500 accent-gold-600 cursor-pointer"
+                className="mt-0.5 w-[18px] h-[18px] rounded border-neutral-300 text-navy-600 focus:ring-navy-500 accent-navy-600 cursor-pointer"
               />
               <label htmlFor="tnc" className="text-xs text-neutral-600 leading-relaxed cursor-pointer">
                 Saya menyetujui{' '}
-                <span className="text-gold-700 font-medium">Syarat & Ketentuan</span>{' '}
+                <span className="text-navy-700 font-medium">Syarat & Ketentuan</span>{' '}
                 dan{' '}
-                <span className="text-gold-700 font-medium">Kebijakan Privasi</span>{' '}
-                PROPIN
+                <span className="text-navy-700 font-medium">Kebijakan Privasi</span>{' '}
+                ASETARA
               </label>
             </div>
             {errors.agreeTnc && <p className="text-xs text-red-600 -mt-2">{errors.agreeTnc}</p>}
@@ -203,7 +203,7 @@ export default function Register() {
           <div className="mt-6 text-center">
             <p className="text-sm text-neutral-500">
               Sudah punya akun?{' '}
-              <Link to="/login" className="text-gold-700 font-medium hover:underline">
+              <Link to="/login" className="text-navy-700 font-medium hover:underline">
                 Masuk
               </Link>
             </p>

@@ -12,7 +12,7 @@ const SETTINGS_SECTIONS = [
     icon: Globe,
     title: 'Pengaturan Umum',
     items: [
-      { key: 'platformName', label: 'Nama Platform', value: 'PROPIN', type: 'text' },
+      { key: 'platformName', label: 'Nama Platform', value: 'ASETARA', type: 'text' },
       { key: 'maintenance', label: 'Mode Maintenance', value: false, type: 'toggle' },
       { key: 'registration', label: 'Buka Pendaftaran', value: true, type: 'toggle' },
     ],
@@ -78,7 +78,7 @@ export default function AdminPengaturan() {
       {/* Admin Profile */}
       <Card variant="default" className="mb-6">
         <div className="flex items-center gap-4">
-          <div className="w-14 h-14 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 font-bold text-xl">
+          <div className="w-14 h-14 rounded-full bg-navy-100 flex items-center justify-center text-navy-700 font-bold text-xl">
             {user?.name?.charAt(0) || 'A'}
           </div>
           <div>
@@ -94,7 +94,7 @@ export default function AdminPengaturan() {
         {SETTINGS_SECTIONS.map((section) => (
           <Card key={section.id} variant="default">
             <div className="flex items-center gap-2 mb-4">
-              <section.icon size={18} className="text-gold-600" />
+              <section.icon size={18} className="text-navy-600" />
               <h2 className="text-sm font-bold text-neutral-700">{section.title}</h2>
             </div>
             <div className="space-y-4">
@@ -104,7 +104,7 @@ export default function AdminPengaturan() {
                   {item.type === 'toggle' ? (
                     <button
                       onClick={() => handleChange(item.key, !settings[item.key])}
-                      className={`w-11 h-6 rounded-full transition-colors ${settings[item.key] ? 'bg-gold-600' : 'bg-neutral-300'}`}
+                      className={`w-11 h-6 rounded-full transition-colors ${settings[item.key] ? 'bg-navy-600' : 'bg-neutral-300'}`}
                     >
                       <div className={`w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${settings[item.key] ? 'translate-x-5' : 'translate-x-0.5'}`} />
                     </button>
@@ -113,7 +113,7 @@ export default function AdminPengaturan() {
                       type="text"
                       value={settings[item.key]}
                       onChange={(e) => handleChange(item.key, e.target.value)}
-                      className="w-32 h-9 px-3 rounded-lg border border-neutral-200 text-sm text-right outline-none focus:border-gold-600"
+                      className="w-32 h-9 px-3 rounded-lg border border-neutral-200 text-sm text-right outline-none focus:border-navy-600"
                     />
                   )}
                 </div>

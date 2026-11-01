@@ -8,8 +8,8 @@ export default function NotFound() {
   return (
     <div className="min-h-screen bg-neutral-50 flex items-center justify-center px-4">
       <div className="text-center max-w-md">
-        <div className="w-24 h-24 rounded-full bg-gold-50 flex items-center justify-center mx-auto mb-6">
-          <span className="text-4xl font-bold text-gold-600">404</span>
+        <div className="w-24 h-24 rounded-full bg-navy-50 flex items-center justify-center mx-auto mb-6">
+          <span className="text-4xl font-bold text-navy-600">404</span>
         </div>
         <h1 className="text-xl font-bold text-neutral-800 mb-2">Halaman Tidak Ditemukan</h1>
         <p className="text-sm text-neutral-500 mb-6">

@@ -1,10 +1,10 @@
 import { Check } from 'lucide-react'
 
 const BADGE_STYLES = {
-  success: 'bg-green-50 text-green-700',
-  warning: 'bg-gold-100 text-gold-800',
+  success: 'bg-teal-50 text-teal-700',
+  warning: 'bg-navy-100 text-navy-800',
   neutral: 'bg-neutral-100 text-neutral-600',
-  gold: 'bg-gold-50 text-gold-700',
+  brand: 'bg-navy-50 text-navy-700',
 }
 
 export default function Badge({

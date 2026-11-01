@@ -28,6 +28,12 @@ import Dampak from './pages/Dampak'
 import Laporan from './pages/Laporan'
 import Akun from './pages/Akun'
 
+// Fitur baru ASETARA
+import Literasi from './pages/Literasi'
+import Perencanaan from './pages/Perencanaan'
+import PerbandinganInvestasi from './pages/PerbandinganInvestasi'
+import AksesKeamanan from './pages/AksesKeamanan'
+
 // Admin pages
 import AdminDashboard from './pages/admin/AdminDashboard'
 import AdminProperti from './pages/admin/AdminProperti'
@@ -71,6 +77,10 @@ function AppRoutes() {
           <Route path="/dampak" element={<ProtectedRoute><Dampak /></ProtectedRoute>} />
           <Route path="/laporan" element={<ProtectedRoute><Laporan /></ProtectedRoute>} />
           <Route path="/akun" element={<ProtectedRoute><Akun /></ProtectedRoute>} />
+          <Route path="/literasi" element={<ProtectedRoute><Literasi /></ProtectedRoute>} />
+          <Route path="/perencanaan" element={<ProtectedRoute><Perencanaan /></ProtectedRoute>} />
+          <Route path="/perbandingan" element={<ProtectedRoute><PerbandinganInvestasi /></ProtectedRoute>} />
+          <Route path="/akses-keamanan" element={<ProtectedRoute><AksesKeamanan /></ProtectedRoute>} />
         </Route>
 
         <Route element={<AdminRoute><AdminLayout /></AdminRoute>}>

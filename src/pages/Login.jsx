@@ -98,7 +98,7 @@ export default function Login() {
                   onChange={(e) => { setEmail(e.target.value); setErrors((p) => ({ ...p, email: '' })) }}
                   placeholder="nama@email.com"
                   className={`w-full h-11 pl-10 pr-3 rounded-xl border text-sm transition-colors outline-none
-                    ${errors.email ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-gold-600 focus:ring-2 focus:ring-gold-100'}`}
+                    ${errors.email ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-navy-600 focus:ring-2 focus:ring-navy-100'}`}
                 />
               </div>
               {errors.email && <p className="text-xs text-red-600 mt-1">{errors.email}</p>}
@@ -114,7 +114,7 @@ export default function Login() {
                   onChange={(e) => { setPassword(e.target.value); setErrors((p) => ({ ...p, password: '' })) }}
                   placeholder="••••••••"
                   className={`w-full h-11 pl-10 pr-10 rounded-xl border text-sm transition-colors outline-none
-                    ${errors.password ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-gold-600 focus:ring-2 focus:ring-gold-100'}`}
+                    ${errors.password ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100' : 'border-neutral-200 focus:border-navy-600 focus:ring-2 focus:ring-navy-100'}`}
                 />
                 <button
                   type="button"
@@ -147,7 +147,7 @@ export default function Login() {
           <div className="mt-6 text-center">
             <p className="text-sm text-neutral-500">
               Belum punya akun?{' '}
-              <Link to="/register" className="text-gold-700 font-medium hover:underline">
+              <Link to="/register" className="text-navy-700 font-medium hover:underline">
                 Daftar
               </Link>
             </p>
@@ -158,14 +158,14 @@ export default function Login() {
             <div className="flex gap-2 justify-center">
               <button
                 type="button"
-                onClick={() => { setEmail('sinta@propin.id'); setPassword('password123'); setErrors({}) }}
-                className="text-xs px-3 py-1.5 rounded-lg bg-gold-50 text-gold-700 border border-gold-200 hover:bg-gold-100 transition-colors"
+                onClick={() => { setEmail('sinta@asetara.id'); setPassword('password123'); setErrors({}) }}
+                className="text-xs px-3 py-1.5 rounded-lg bg-navy-50 text-navy-700 border border-navy-200 hover:bg-navy-100 transition-colors"
               >
                 User Demo
               </button>
               <button
                 type="button"
-                onClick={() => { setEmail('admin@propin.id'); setPassword('password123'); setErrors({}) }}
+                onClick={() => { setEmail('admin@asetara.id'); setPassword('password123'); setErrors({}) }}
                 className="text-xs px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-600 border border-neutral-200 hover:bg-neutral-200 transition-colors"
               >
                 Admin Demo

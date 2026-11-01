@@ -9,12 +9,12 @@ const STATUS_FILTERS = ['Semua', 'Executed', 'Pending', 'Failed']
 const TYPE_FILTERS = ['Semua', 'Beli Token', 'Jual Token', 'Distribusi Sewa', 'Top Up', 'Withdraw', 'Zakat']
 
 const TX_TYPE_ICONS = {
-  'Beli Token': { icon: ArrowDownLeft, color: 'text-green-600', bg: 'bg-green-50' },
-  'Jual Token': { icon: ArrowUpRight, color: 'text-gold-700', bg: 'bg-gold-50' },
+  'Beli Token': { icon: ArrowDownLeft, color: 'text-teal-600', bg: 'bg-teal-50' },
+  'Jual Token': { icon: ArrowUpRight, color: 'text-navy-700', bg: 'bg-navy-50' },
   'Distribusi Sewa': { icon: ArrowDownLeft, color: 'text-blue-600', bg: 'bg-blue-50' },
-  'Top Up': { icon: ArrowDownLeft, color: 'text-green-600', bg: 'bg-green-50' },
+  'Top Up': { icon: ArrowDownLeft, color: 'text-teal-600', bg: 'bg-teal-50' },
   'Withdraw': { icon: ArrowUpRight, color: 'text-red-500', bg: 'bg-red-50' },
-  'Zakat': { icon: ArrowUpRight, color: 'text-gold-700', bg: 'bg-gold-50' },
+  'Zakat': { icon: ArrowUpRight, color: 'text-navy-700', bg: 'bg-navy-50' },
 }
 
 function getTxStyle(type) {
@@ -56,7 +56,7 @@ export default function AdminTransaksi() {
           <p className="text-xs text-neutral-500">Total Transaksi</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-green-600">{formatRupiah(totalVolume)}</p>
+          <p className="text-xl font-bold text-teal-600">{formatRupiah(totalVolume)}</p>
           <p className="text-xs text-neutral-500">Total Volume</p>
         </Card>
         <Card variant="default" className="text-center py-4">
@@ -66,7 +66,7 @@ export default function AdminTransaksi() {
           <p className="text-xs text-neutral-500">Executed</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-gold-600">
+          <p className="text-xl font-bold text-navy-600">
             {allTransactions.filter((t) => t.status === 'Pending').length}
           </p>
           <p className="text-xs text-neutral-500">Pending</p>

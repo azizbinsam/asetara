@@ -28,14 +28,14 @@ export default function Laporan() {
     // Simulate download
     const link = document.createElement('a')
     link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(
-      `LAPORAN ${type.label.toUpperCase()} - PROPIN\n` +
+      `LAPORAN ${type.label.toUpperCase()} - ASETARA\n` +
       `Periode: ${months[selectedMonth - 1]} ${selectedYear}\n` +
       `Total Portfolio: ${formatRupiah(portfolio.totalValue)}\n` +
       `Total Return: ${formatRupiah(portfolio.totalReturn)} (${formatPercent(portfolio.totalReturnPercent)})\n` +
       `Total Properti: ${portfolio.totalProperties}\n` +
       `\n--- Dokumen ini adalah simulasi ---`
     )
-    link.download = `PROPIN-${type.id}-${selectedYear}-${selectedMonth}.txt`
+    link.download = `ASETARA-${type.id}-${selectedYear}-${selectedMonth}.txt`
     link.click()
   }
 
@@ -62,7 +62,7 @@ export default function Laporan() {
               <select
                 value={selectedMonth}
                 onChange={(e) => setSelectedMonth(e.target.value)}
-                className="flex-1 h-10 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="flex-1 h-10 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-navy-600"
               >
                 {months.map((m, i) => (
                   <option key={i + 1} value={i + 1}>{m}</option>
@@ -71,7 +71,7 @@ export default function Laporan() {
               <select
                 value={selectedYear}
                 onChange={(e) => setSelectedYear(e.target.value)}
-                className="h-10 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="h-10 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-navy-600"
               >
                 <option value="2026">2026</option>
                 <option value="2025">2025</option>
@@ -79,7 +79,7 @@ export default function Laporan() {
             </div>
           </Card>
 
-          <Card variant="gold" className="lg:col-span-2">
+          <Card variant="brand" className="lg:col-span-2">
             <p className="text-xs opacity-90">Total Portfolio ({months[selectedMonth - 1]} {selectedYear})</p>
             <p className="text-2xl font-bold mt-1">{formatRupiah(portfolio.totalValue)}</p>
             <div className="flex items-center gap-6 mt-3 text-xs">
@@ -108,7 +108,7 @@ export default function Laporan() {
               variant="flat"
               className="flex items-center gap-3 cursor-pointer hover:bg-neutral-50 transition-colors"
             >
-              <div className="w-10 h-10 rounded-xl bg-gold-50 flex items-center justify-center text-gold-700 shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-navy-50 flex items-center justify-center text-navy-700 shrink-0">
                 <FileText size={18} />
               </div>
               <div className="flex-1 min-w-0">

@@ -41,8 +41,8 @@ export default function AutoZakat() {
             <Card variant="default">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="w-9 h-9 rounded-full bg-gold-50 flex items-center justify-center">
-                    <HandCoins size={16} className="text-gold-600" />
+                  <div className="w-9 h-9 rounded-full bg-navy-50 flex items-center justify-center">
+                    <HandCoins size={16} className="text-navy-600" />
                   </div>
                   <p className="text-sm font-semibold text-neutral-700">Status Zakat</p>
                 </div>
@@ -58,11 +58,11 @@ export default function AutoZakat() {
                     {formatRupiah(currentAmount)} / {formatRupiah(zakat.nisabThreshold)}
                   </span>
                 </div>
-                <ProgressBar value={currentAmount} max={zakat.nisabThreshold} variant="gold" />
+                <ProgressBar value={currentAmount} max={zakat.nisabThreshold} variant="brand" />
               </div>
             </Card>
 
-            <Card variant="gold">
+            <Card variant="brand">
               <p className="text-sm opacity-90">Estimasi Zakat</p>
               <p className="text-2xl md:text-3xl font-bold mt-1">{formatRupiah(estimatedZakat)}</p>
               <p className="text-sm opacity-90 mt-1">{formatPercent(zakat.zakatPercent)} dari total aset zakatable</p>
@@ -94,7 +94,7 @@ export default function AutoZakat() {
           <div className="space-y-4">
             <Card variant="flat">
               <div className="flex items-center gap-2 mb-2">
-                <span className="w-8 h-8 rounded-full bg-green-50 flex items-center justify-center text-green-700 text-xs font-bold shrink-0">
+                <span className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold shrink-0">
                   B
                 </span>
                 <div>
