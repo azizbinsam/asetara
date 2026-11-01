@@ -4,6 +4,7 @@ import { ChevronLeft, Home, Building2, Store, Check, Sparkles, Bookmark, ArrowRi
 import Card from '../components/Card'
 import Badge from '../components/Badge'
 import Button from '../components/Button'
+import NextSteps from '../components/NextSteps'
 import { toast } from '../components/Toast'
 import data from '../data/perbandingan.json'
 import properties from '../data/properties.json'
@@ -281,6 +282,8 @@ export default function PerbandinganInvestasi() {
             </Link>
           </p>
         </div>
+
+        <NextSteps className="mb-4" steps={['perencanaan', 'aksesKeamanan']} />
 
         <div className="flex items-start gap-2 text-xs text-neutral-500 px-1">
           <Info size={14} className="shrink-0 mt-0.5" />

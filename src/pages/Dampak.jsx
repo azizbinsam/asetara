@@ -12,7 +12,7 @@ const IMPACT_STATS = [
 const SDG_ITEMS = [
   { number: '1', title: 'No Poverty', desc: 'Akses investasi untuk semua kalangan' },
   { number: '8', title: 'Decent Work', desc: 'Menciptakan lapangan kerja di sektor properti' },
-  { number: '9', title: 'Industry & Innovation', desc: 'Inovasi teknologi blockchain syariah' },
+  { number: '9', title: 'Industry & Innovation', desc: 'Inovasi teknologi keuangan syariah' },
   { number: '11', title: 'Sustainable Cities', desc: 'Pengembangan properti berkelanjutan' },
 ]
 
@@ -32,7 +32,7 @@ export default function Dampak() {
         <h1 className="hidden lg:block text-xl font-bold text-neutral-800 mb-6">Dampak Sosial</h1>
 
         <p className="text-sm text-neutral-600 mb-6 lg:max-w-2xl">
-          ASETARA berkomitmen menciptakan dampak positif melalui tokenisasi properti syariah yang inklusif dan berkelanjutan.
+          ASETARA berkomitmen menciptakan dampak positif lewat akses finansial yang lebih setara: dari edukasi hingga investasi properti syariah yang inklusif dan berkelanjutan.
         </p>
 
         {/* Stats Grid */}

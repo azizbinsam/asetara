@@ -177,7 +177,7 @@ function HeroSection() {
 
           <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-xl">
             Belajar, merencanakan, membandingkan, lalu berinvestasi properti syariah
-            mulai dari Rp 10.000, dengan kepemilikan transparan berbasis smart contract.
+            mulai dari Rp 10.000, dengan kepemilikan digital yang transparan.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -264,7 +264,7 @@ function FeaturesSection() {
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Mengapa Memilih ASETARA?</h2>
           <p className="text-neutral-500 mt-3 max-w-lg mx-auto">
-            Satu platform untuk belajar, merencanakan, dan berinvestasi properti syariah dengan teknologi blockchain
+            Satu platform untuk belajar, merencanakan, membandingkan, dan berinvestasi properti syariah dengan kepemilikan digital yang transparan
           </p>
         </div>
 

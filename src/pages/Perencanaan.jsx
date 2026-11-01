@@ -5,6 +5,7 @@ import Card from '../components/Card'
 import Badge from '../components/Badge'
 import Button from '../components/Button'
 import ProgressBar from '../components/ProgressBar'
+import NextSteps from '../components/NextSteps'
 import { formatRupiah, formatNumber } from '../utils/format'
 import { GOALS, calculateReadiness } from '../utils/readiness'
 
@@ -296,6 +297,8 @@ export default function Perencanaan() {
                     </p>
                   )}
                 </Card>
+
+                <NextSteps title="Sebelum berinvestasi" steps={['aksesKeamanan']} />
               </>
             )}
 

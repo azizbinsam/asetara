@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 import Card from '../components/Card'
 import Button from '../components/Button'
+import NextSteps from '../components/NextSteps'
 import data from '../data/aksesKeamanan.json'
 
 const { categories, guides, providers, tips, reportChannels, reportPrep, reportUrgent, sources, disclaimer, verifiedAt } = data
@@ -300,6 +301,8 @@ export default function AksesKeamanan() {
             </Card>
           </div>
         )}
+
+        <NextSteps className="mt-6" steps={['literasi', 'perencanaan']} />
 
         {/* Sumber & disclaimer */}
         <div className="mt-6 flex items-start gap-2 text-xs text-neutral-500 px-1">

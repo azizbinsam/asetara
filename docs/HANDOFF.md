@@ -50,7 +50,9 @@ Aturan yang dipelajari dari audit visual:
 | 3 | **Financial Readiness Simulator** (`src/pages/Perencanaan.jsx`, rumus di `src/utils/readiness.js`) | Selesai (menunggu verifikasi di browser) |
 | 4 | **Smart Investment Comparison** (`PerbandinganInvestasi.jsx`, data `perbandingan.json`, logika `utils/comparison.js`) | Selesai (menunggu verifikasi di browser) |
 | 5 | **Financial Access & Safety Hub** (`AksesKeamanan.jsx`, data `aksesKeamanan.json`) | Selesai (menunggu verifikasi di browser) |
-| 6 | Penyambung antar fitur, update AI Assistant, rapikan teks tokenisasi di Landing/Dampak, bersihkan lint & aset tak terpakai | Berikutnya |
+| 6a | Penyambung antar fitur (`NextSteps`) + rapikan teks tokenisasi di Landing/Dampak | Selesai (menunggu verifikasi di browser) |
+| 6b | Update AI Assistant: saran & jawaban mock untuk fitur ASETARA, tab video bertema ASETARA | Berikutnya |
+| 6c | Bersihkan lint (import tak terpakai) & aset tak terpakai | Menyusul |
 
 ### Struktur Tahap 2 (Literasi)
 - Data: `src/data/literasi.json` (kategori, materi, soal). Edit isi materi/soal di sini tanpa menyentuh kode.
@@ -87,6 +89,13 @@ Aturan yang dipelajari dari audit visual:
 - **Sumber diverifikasi 1 November 2026 lewat pencarian web ke situs resmi lembaga**: OJK (Kontak 157, WA 081-157-157-157, konsumen@ojk.go.id, sikapiuangmu.ojk.go.id, iasc.ojk.go.id, sipasti.ojk.go.id), Bank Indonesia (131, bicara@bi.go.id, bicara131.bi.go.id), BPJS Ketenagakerjaan (175, care@bpjsketenagakerjaan.go.id), BPKH (bpkh.go.id), Komdigi (cekrekening.id).
 - Aturan: tidak ada angka statistik (jumlah entitas diblokir, dll.) karena cepat usang; tidak ada klaim "ASETARA terdaftar/diawasi OJK"; nomor telepon BPKH sengaja tidak dimuat karena berbeda-beda antar dokumen. Saat menambah kontak, verifikasi ke situs resmi dan perbarui `verifiedAt`.
 - Logo lembaga tidak dipakai (hanya ikon + nama). Kategori "Asuransi" (mockup desktop) belum ada karena belum ada konten terverifikasi; kategori "Legalitas & Regulasi" (mockup mobile) dipakai.
+
+### Struktur Tahap 6a (Penyambung antar fitur)
+- Komponen `src/components/NextSteps.jsx` + katalog `src/utils/nextSteps.js` (kunci: `literasi`, `perencanaan`, `perbandingan`, `aksesKeamanan`, `marketplace`). Pakai: `<NextSteps steps={['perencanaan', 'aksesKeamanan']} />`; props opsional `title`, `className`. Teks/rute diubah di katalog, bukan di halaman.
+- Dipasang di: akhir `Literasi`, layar hasil `LiterasiKuis`, hasil `Perencanaan` ("Sebelum berinvestasi" → Akses & Keamanan), `PerbandinganInvestasi` (→ Perencanaan, Akses & Keamanan), `AksesKeamanan` (→ Literasi, Perencanaan).
+- Teks tokenisasi: kalimat "smart contract" / "teknologi blockchain" di hero & kartu Keunggulan `LandingPage.jsx` serta deskripsi `Dampak.jsx` diganti ke bahasa ASETARA ("kepemilikan digital yang transparan", "akses finansial yang lebih setara").
+- Keputusan Aziz: **statistik (Rp 45M+, 1.240+ investor, 12 properti), imbal hasil 8–15%, dan klaim Dewan Pengawas Syariah di Landing/Dampak dibiarkan apa adanya.** Testimoni yang menyebut smart contract juga tidak diubah.
+- Catatan line ending: working copy Windows memakai CRLF, repo LF; `git status` bisa menampilkan banyak file "modified" padahal isinya sama. Opsi: tambahkan `.gitattributes` berisi `* text=auto`.
 
 ### Rumus Simulator (diimplementasikan di Tahap 3)
 - Dana disisihkan per bulan = 50% × (penghasilan − pengeluaran)

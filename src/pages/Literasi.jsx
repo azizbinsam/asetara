@@ -5,6 +5,7 @@ import Card from '../components/Card'
 import Badge from '../components/Badge'
 import Button from '../components/Button'
 import ProgressBar from '../components/ProgressBar'
+import NextSteps from '../components/NextSteps'
 import { useLiteracy } from '../context/literacyStore'
 import { CategoryIcon } from '../utils/literasiIcons'
 
@@ -134,6 +135,8 @@ export default function Literasi() {
         </div>
         <Button onClick={() => navigate(`/literasi/${nextForQuiz.id}/kuis`)}>Mulai Kuis</Button>
       </Card>
+
+      <NextSteps className="mt-6" steps={['perencanaan', 'aksesKeamanan']} />
     </div>
   )
 }
