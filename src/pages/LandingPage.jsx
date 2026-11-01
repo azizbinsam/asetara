@@ -233,7 +233,7 @@ function FeaturesSection() {
       icon: Shield,
       title: '100% Syariah Compliant',
       desc: 'Semua properti melalui screening syariah oleh Dewan Pengawas Syariah. Tanpa riba, gharar, dan maysir.',
-      color: 'bg-emerald-50 text-emerald-600',
+      color: 'bg-teal-50 text-teal-600',
     },
     {
       icon: TrendingUp,
@@ -245,13 +245,13 @@ function FeaturesSection() {
       icon: Users,
       title: 'Akses untuk Semua',
       desc: 'Mulai investasi dari Rp 10.000. Tidak ada minimum saldo. Fleksibel top-up kapan saja.',
-      color: 'bg-blue-50 text-blue-600',
+      color: 'bg-navy-50 text-navy-600',
     },
     {
       icon: Building2,
       title: 'Portofolio Diversifikasi',
       desc: 'Pilih dari apartemen, vila, dan hotel syariah di berbagai lokasi strategis Indonesia.',
-      color: 'bg-purple-50 text-purple-600',
+      color: 'bg-champagne-100 text-champagne-700',
     },
   ]
 
@@ -272,7 +272,7 @@ function FeaturesSection() {
           {features.map((f, i) => (
             <div
               key={i}
-              className="group p-6 rounded-2xl border border-neutral-100 hover:border-navy-200 hover:shadow-lg hover:shadow-navy-600/5 transition-all duration-300 bg-white"
+              className="group p-6 rounded-2xl border border-neutral-200 shadow-card bg-white hover:border-navy-200 hover:shadow-lg hover:shadow-navy-600/5 transition-all duration-300 bg-white"
             >
               <div className={`w-12 h-12 rounded-xl ${f.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                 <f.icon size={24} />
@@ -342,7 +342,7 @@ function PropertiesPreview() {
           {properties.map((p, i) => (
             <div
               key={i}
-              className="group bg-white rounded-2xl border border-neutral-100 overflow-hidden hover:shadow-xl hover:shadow-navy-600/5 transition-all duration-300"
+              className="group bg-white rounded-2xl border border-neutral-200 shadow-card overflow-hidden hover:shadow-xl hover:shadow-navy-600/5 transition-all duration-300"
             >
               <div className="relative h-52 overflow-hidden">
                 <img
@@ -374,8 +374,8 @@ function PropertiesPreview() {
                     <p className="text-lg font-bold text-navy-700">{p.price}</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-xs text-neutral-400">Token</p>
-                    <p className="text-sm font-semibold text-neutral-700">/token</p>
+                    <p className="text-xs text-neutral-500">Imbal hasil</p>
+                    <p className="text-sm font-semibold text-teal-700">{p.return}/thn</p>
                   </div>
                 </div>
                 <div className="space-y-2">
@@ -545,7 +545,7 @@ function CTASection() {
 // ============ FOOTER ============
 function Footer() {
   return (
-    <footer className="bg-neutral-900 text-neutral-400 py-12 px-4">
+    <footer className="bg-neutral-900 text-neutral-300 py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div className="md:col-span-2">
@@ -581,7 +581,7 @@ function Footer() {
             <p className="text-xs">© 2026 ASETARA. Hak Cipta Dilindungi.</p>
             <div className="flex items-start gap-2">
               <span className="text-navy-500 text-lg">⚠️</span>
-              <p className="text-xs text-neutral-500 max-w-md">
+              <p className="text-xs text-neutral-300 max-w-md">
                 <strong>Disclaimer:</strong> Platform ini adalah prototype untuk demonstrasi. 
                 Semua transaksi bersifat simulasi. Jangan transfer dana ke rekening apapun.
               </p>

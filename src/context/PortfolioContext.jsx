@@ -53,9 +53,15 @@ export function PortfolioProvider({ children, properties }) {
     const totalReturn = totalValue * (averageReturnPercent / 100)
     const totalTokens = holdings.reduce((sum, h) => sum + h.tokens, 0)
 
-    const performanceHistory = portfolioBase.performanceHistory.map((point, i, arr) =>
-      i === arr.length - 1 ? { ...point, value: totalValue } : point
-    )
+    // Riwayat dummy berskala ~100 juta, sedangkan total nilai asli bisa jauh lebih kecil.
+    // Menimpa hanya titik terakhir membuat grafik anjlok, jadi seluruh titik diskalakan
+    // dengan rasio yang sama: bentuk grafik tetap, dan titik terakhir = total nilai.
+    const lastPoint = portfolioBase.performanceHistory[portfolioBase.performanceHistory.length - 1]
+    const scale = lastPoint && lastPoint.value ? totalValue / lastPoint.value : 1
+    const performanceHistory = portfolioBase.performanceHistory.map((point) => ({
+      ...point,
+      value: Math.round(point.value * scale),
+    }))
 
     return {
       totalValue,

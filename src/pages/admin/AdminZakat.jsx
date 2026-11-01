@@ -111,7 +111,7 @@ export default function AdminZakat() {
       </div>
 
       {/* Table */}
-      <Card variant="flat" padding="sm">
+      <Card padding="sm">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>

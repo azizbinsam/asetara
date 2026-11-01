@@ -37,14 +37,14 @@ export function ToastContainer() {
     success: <CheckCircle2 size={18} className="text-teal-600" />,
     warning: <AlertTriangle size={18} className="text-navy-700" />,
     error: <AlertTriangle size={18} className="text-red-600" />,
-    info: <Info size={18} className="text-blue-600" />,
+    info: <Info size={18} className="text-navy-600" />,
   }
 
   const bgStyles = {
     success: 'bg-teal-50 border-teal-200 text-teal-800',
     warning: 'bg-navy-50 border-navy-200 text-navy-800',
     error: 'bg-red-50 border-red-200 text-red-800',
-    info: 'bg-blue-50 border-blue-200 text-blue-800',
+    info: 'bg-navy-50 border-navy-200 text-navy-800',
   }
 
   return (

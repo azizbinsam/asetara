@@ -105,7 +105,7 @@ export default function Laporan() {
           {REPORT_TYPES.map((type) => (
             <Card
               key={type.id}
-              variant="flat"
+             
               className="flex items-center gap-3 cursor-pointer hover:bg-neutral-50 transition-colors"
             >
               <div className="w-10 h-10 rounded-xl bg-navy-50 flex items-center justify-center text-navy-700 shrink-0">

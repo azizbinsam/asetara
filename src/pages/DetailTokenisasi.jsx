@@ -101,7 +101,7 @@ export default function DetailTokenisasi() {
         <h2 className="text-lg font-bold text-neutral-800 mt-4">{property.name}</h2>
         <p className="text-sm text-neutral-500">{property.location}</p>
 
-        <Card variant="flat" className="mt-4">
+        <Card className="mt-4">
           <div className="grid grid-cols-2 gap-3 text-sm">
             <div>
               <p className="text-neutral-500 text-xs">Total Aset</p>

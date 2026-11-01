@@ -11,7 +11,7 @@ const TYPE_FILTERS = ['Semua', 'Beli Token', 'Jual Token', 'Distribusi Sewa', 'T
 const TX_TYPE_ICONS = {
   'Beli Token': { icon: ArrowDownLeft, color: 'text-teal-600', bg: 'bg-teal-50' },
   'Jual Token': { icon: ArrowUpRight, color: 'text-navy-700', bg: 'bg-navy-50' },
-  'Distribusi Sewa': { icon: ArrowDownLeft, color: 'text-blue-600', bg: 'bg-blue-50' },
+  'Distribusi Sewa': { icon: ArrowDownLeft, color: 'text-navy-600', bg: 'bg-navy-50' },
   'Top Up': { icon: ArrowDownLeft, color: 'text-teal-600', bg: 'bg-teal-50' },
   'Withdraw': { icon: ArrowUpRight, color: 'text-red-500', bg: 'bg-red-50' },
   'Zakat': { icon: ArrowUpRight, color: 'text-navy-700', bg: 'bg-navy-50' },
@@ -60,7 +60,7 @@ export default function AdminTransaksi() {
           <p className="text-xs text-neutral-500">Total Volume</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-blue-600">
+          <p className="text-xl font-bold text-navy-600">
             {allTransactions.filter((t) => t.status === 'Executed').length}
           </p>
           <p className="text-xs text-neutral-500">Executed</p>
@@ -110,7 +110,7 @@ export default function AdminTransaksi() {
       </div>
 
       {/* Table */}
-      <Card variant="flat" padding="sm">
+      <Card padding="sm">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>

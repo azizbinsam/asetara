@@ -92,7 +92,7 @@ export default function AutoZakat() {
 
           {/* Kolom kanan: mitra penyaluran & riwayat */}
           <div className="space-y-4">
-            <Card variant="flat">
+            <Card>
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold shrink-0">
                   B

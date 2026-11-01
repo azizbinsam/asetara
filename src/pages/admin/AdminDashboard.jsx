@@ -64,10 +64,10 @@ export default function AdminDashboard() {
                 <p className="text-xl font-bold text-neutral-800 mt-1">{value}</p>
               </div>
               <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
-                color === 'blue' ? 'bg-blue-50 text-blue-600' :
+                color === 'blue' ? 'bg-navy-50 text-navy-600' :
                 color === 'teal' ? 'bg-teal-50 text-teal-600' :
                 color === 'brand' ? 'bg-navy-50 text-navy-600' :
-                'bg-purple-50 text-purple-600'
+                'bg-champagne-100 text-champagne-700'
               }`}>
                 <Icon size={20} />
               </div>
@@ -127,7 +127,7 @@ export default function AdminDashboard() {
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
                   alert.type === 'warning' ? 'bg-navy-50 text-navy-600' :
                   alert.type === 'success' ? 'bg-teal-50 text-teal-600' :
-                  'bg-blue-50 text-blue-600'
+                  'bg-navy-50 text-navy-600'
                 }`}>
                   <AlertTriangle size={16} />
                 </div>

@@ -87,7 +87,7 @@ export default function PropertyDetail() {
         )}
 
         {/* Funding progress */}
-        <Card variant="flat" className="mt-4">
+        <Card className="mt-4">
           <div className="flex justify-between text-xs mb-2">
             <span className="text-neutral-500">Dana Terkumpul</span>
             <span className="font-semibold text-neutral-700">{property.fundingPercent || 0}%</span>
@@ -96,7 +96,7 @@ export default function PropertyDetail() {
         </Card>
 
         {/* Key stats */}
-        <Card variant="flat" className="mt-4">
+        <Card className="mt-4">
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div>
               <p className="text-neutral-500 text-xs">Total Aset</p>

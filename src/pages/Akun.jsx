@@ -179,7 +179,7 @@ export default function Akun() {
                 <p className="text-xs font-semibold text-neutral-400 uppercase tracking-wide mb-2 px-1">
                   {section.title}
                 </p>
-                <Card variant="flat" padding="sm">
+                <Card padding="sm">
                   <div className="divide-y divide-neutral-100">
                     {section.items.map((item) => (
                       <div

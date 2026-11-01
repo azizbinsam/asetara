@@ -53,7 +53,7 @@ export default function Dampak() {
             <h2 className="text-sm font-bold text-neutral-800 mb-3">Kontribusi SDG</h2>
             <div className="space-y-2">
               {SDG_ITEMS.map(({ number, title, desc }) => (
-                <Card key={number} variant="flat" className="flex items-center gap-3">
+                <Card key={number} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center text-navy-700 font-bold text-sm shrink-0">
                     {number}
                   </div>
