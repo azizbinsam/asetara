@@ -1,0 +1,173 @@
+{
+  "verifiedAt": "2026-11-01",
+  "disclaimer": "Kontak dan tautan diverifikasi dari situs resmi lembaga pada tanggal di atas. Kanal dapat berubah, jadi pastikan lagi di situs resminya. Panduan umum di halaman ini bukan nasihat keuangan atau hukum.",
+  "categories": [
+    { "id": "rekening", "label": "Rekening & Tabungan" },
+    { "id": "investasi", "label": "Investasi" },
+    { "id": "pembiayaan", "label": "Pembiayaan" },
+    { "id": "legalitas", "label": "Legalitas & Regulasi" }
+  ],
+  "guides": [
+    {
+      "id": "buka-rekening",
+      "category": "rekening",
+      "title": "Cara Membuka Rekening Bank",
+      "summary": "Langkah mudah membuka rekening di bank resmi.",
+      "steps": [
+        "Pastikan banknya resmi: cek lewat Kontak OJK 157 atau situs ojk.go.id sebelum memberikan data pribadi.",
+        "Datangi kantor cabang, atau gunakan aplikasi dan situs yang diunduh dari kanal resmi bank itu sendiri.",
+        "Tanyakan dokumen yang diminta. Persyaratan tiap bank dan jenis rekening bisa berbeda.",
+        "Baca ketentuan produk sebelum menyetujui: setoran awal, saldo minimum, dan biaya.",
+        "Jaga kerahasiaan PIN, kata sandi, dan kode OTP. Jangan berikan kepada siapa pun, termasuk yang mengaku petugas bank."
+      ]
+    },
+    {
+      "id": "syarat-biaya-tabungan",
+      "category": "rekening",
+      "title": "Syarat & Biaya Tabungan",
+      "summary": "Daftar pertanyaan sebelum memilih produk tabungan.",
+      "steps": [
+        "Berapa setoran awal dan saldo minimum yang harus dijaga?",
+        "Berapa biaya administrasi bulanan, serta biaya transfer, tarik tunai, dan kartu?",
+        "Untuk tabungan syariah: akad apa yang dipakai dan bagaimana bagi hasilnya dijelaskan?",
+        "Apa yang terjadi bila saldo di bawah minimum atau rekening tidak aktif?",
+        "Minta rincian tertulis. Jika ada keluhan, sampaikan dulu ke banknya; bila belum selesai, tanyakan ke regulator (OJK atau Bank Indonesia)."
+      ]
+    },
+    {
+      "id": "cek-legalitas-investasi",
+      "category": "investasi",
+      "title": "Memeriksa Legalitas Investasi",
+      "summary": "Pastikan penawaran legal dan masuk akal sebelum ikut.",
+      "steps": [
+        "Cek legalitas (izin) entitas dan produknya lewat Kontak OJK 157, WhatsApp 081-157-157-157, atau portal sikapiuangmu.ojk.go.id.",
+        "Cek kewajaran (logika keuntungan): waspadai janji untung tinggi, pasti, dan dalam waktu singkat.",
+        "Entitas yang izinnya masih diurus tetapi sudah menghimpun dana masyarakat tergolong ilegal menurut OJK.",
+        "Jangan mudah percaya penawaran yang datang lewat pesan pribadi atau media sosial.",
+        "Jika ragu, tanyakan dulu ke OJK sebelum menyetor uang."
+      ]
+    },
+    {
+      "id": "akses-pembiayaan",
+      "category": "pembiayaan",
+      "title": "Mengakses Pembiayaan",
+      "summary": "Jenis pembiayaan, syarat, dan hal yang perlu dicek.",
+      "steps": [
+        "Pinjam hanya dari penyelenggara yang berizin dan diawasi OJK. Cek lewat Kontak OJK 157 atau situs ojk.go.id.",
+        "Gunakan aplikasi resmi. Waspadai nama atau logo yang menyerupai pinjaman online legal.",
+        "Hitung total kewajiban: pokok, bunga atau margin, biaya lain, dan jatuh tempo, lalu bandingkan dengan penghasilan bulananmu.",
+        "Pinjam sesuai kebutuhan dan kemampuan bayar, bukan sebesar yang ditawarkan.",
+        "Bila ada masalah dengan penyelenggara, sampaikan pengaduan ke OJK lewat Kontak 157."
+      ]
+    },
+    {
+      "id": "kenali-regulator",
+      "category": "legalitas",
+      "title": "Siapa Mengawasi Apa?",
+      "summary": "Mengenal OJK, Bank Indonesia, BPJS Ketenagakerjaan, dan BPKH.",
+      "steps": [
+        "OJK: pengawas sektor jasa keuangan. Mulai dari OJK untuk cek legalitas penyelenggara jasa keuangan.",
+        "Bank Indonesia: mengatur dan mengawasi penyelenggara tertentu di bawahnya, daftar berizinnya ada di situs bi.go.id.",
+        "BPJS Ketenagakerjaan: penyelenggara jaminan sosial ketenagakerjaan. Informasi resmi hanya lewat situs dan kanal resminya.",
+        "BPKH: badan yang mengelola keuangan haji berdasarkan UU Nomor 34 Tahun 2014.",
+        "Sesuatu yang mengaku berizin tetapi tidak bisa kamu temukan di kanal resmi lembaga terkait perlu dicurigai."
+      ]
+    }
+  ],
+  "providers": [
+    {
+      "id": "ojk",
+      "name": "Otoritas Jasa Keuangan (OJK)",
+      "role": "Cek legalitas penyelenggara jasa keuangan, konsultasi, dan pengaduan konsumen.",
+      "contacts": [
+        { "kind": "phone", "label": "Kontak OJK 157", "href": "tel:157" },
+        { "kind": "whatsapp", "label": "WhatsApp 081-157-157-157", "href": "https://wa.me/6281157157157" },
+        { "kind": "email", "label": "konsumen@ojk.go.id", "href": "mailto:konsumen@ojk.go.id" },
+        { "kind": "web", "label": "ojk.go.id", "href": "https://www.ojk.go.id" },
+        { "kind": "web", "label": "Sikapi Uangmu", "href": "https://sikapiuangmu.ojk.go.id" }
+      ]
+    },
+    {
+      "id": "bi",
+      "name": "Bank Indonesia (BI)",
+      "role": "Pengaduan konsumen untuk penyelenggara di bawah pengaturan BI; daftar penyelenggara berizin ada di situs BI.",
+      "contacts": [
+        { "kind": "phone", "label": "BI Bicara 131", "href": "tel:131" },
+        { "kind": "email", "label": "bicara@bi.go.id", "href": "mailto:bicara@bi.go.id" },
+        { "kind": "web", "label": "bicara131.bi.go.id", "href": "https://bicara131.bi.go.id" },
+        { "kind": "web", "label": "Daftar penyelenggara berizin", "href": "https://www.bi.go.id/id/Pelindungan-Konsumen/Adukan-Kendala" }
+      ]
+    },
+    {
+      "id": "bpjstk",
+      "name": "BPJS Ketenagakerjaan",
+      "role": "Jaminan sosial ketenagakerjaan. Verifikasi informasi apa pun lewat kanal resminya.",
+      "contacts": [
+        { "kind": "phone", "label": "Contact Center 175", "href": "tel:175" },
+        { "kind": "email", "label": "care@bpjsketenagakerjaan.go.id", "href": "mailto:care@bpjsketenagakerjaan.go.id" },
+        { "kind": "web", "label": "bpjsketenagakerjaan.go.id", "href": "https://www.bpjsketenagakerjaan.go.id" }
+      ]
+    },
+    {
+      "id": "bpkh",
+      "name": "Badan Pengelola Keuangan Haji (BPKH)",
+      "role": "Badan yang mengelola keuangan haji (UU Nomor 34 Tahun 2014).",
+      "contacts": [
+        { "kind": "web", "label": "bpkh.go.id", "href": "https://www.bpkh.go.id" }
+      ]
+    }
+  ],
+  "tips": [
+    { "title": "Waspadai untung tinggi, pasti, dan cepat", "text": "Janji keuntungan besar yang pasti dalam waktu singkat adalah tanda bahaya utama menurut OJK." },
+    { "title": "Cek legalitas dan kewajaran", "text": "Pastikan entitas dan produknya berizin, dan keuntungan yang dijanjikan masuk akal." },
+    { "title": "Jangan mudah percaya penawaran lewat pesan", "text": "Tawaran investasi atau pinjaman yang datang lewat chat, SMS, atau media sosial perlu dicek dulu ke OJK." },
+    { "title": "Izin yang \"sedang diurus\" belum berarti legal", "text": "Entitas yang izinnya belum terbit tetapi sudah beroperasi menghimpun dana tergolong ilegal." },
+    { "title": "Gunakan aplikasi dan situs resmi", "text": "Penipu sering memakai nama, logo, atau alamat situs yang menyerupai lembaga resmi. Buka situs lewat alamat yang kamu ketik sendiri." },
+    { "title": "Rahasiakan PIN, kata sandi, dan OTP", "text": "Jangan berikan kepada siapa pun, termasuk pihak yang mengaku petugas bank atau lembaga resmi." }
+  ],
+  "reportUrgent": "Segera lapor begitu kamu sadar menjadi korban. Semakin cepat laporan diterima, semakin besar peluang dana diselamatkan. Hubungi juga bank atau penyedia dompet digital yang kamu gunakan.",
+  "reportChannels": [
+    {
+      "id": "iasc",
+      "name": "Indonesia Anti-Scam Centre (IASC)",
+      "desc": "Pelaporan penipuan transaksi keuangan, mendukung upaya pemblokiran rekening pelaku. Pelaporan hanya lewat situs resmi ini; waspadai situs yang mengatasnamakan IASC.",
+      "href": "https://iasc.ojk.go.id",
+      "label": "iasc.ojk.go.id"
+    },
+    {
+      "id": "sipasti",
+      "name": "Satgas PASTI (OJK)",
+      "desc": "Pelaporan daring investasi atau pinjaman online ilegal.",
+      "href": "https://sipasti.ojk.go.id",
+      "label": "sipasti.ojk.go.id"
+    },
+    {
+      "id": "cekrekening",
+      "name": "CekRekening.id (Komdigi)",
+      "desc": "Cek apakah sebuah rekening pernah dilaporkan terkait penipuan sebelum transfer, dan laporkan rekening yang mencurigakan.",
+      "href": "https://cekrekening.id",
+      "label": "cekrekening.id"
+    },
+    {
+      "id": "ojk157",
+      "name": "Kontak OJK 157",
+      "desc": "Konsultasi dan pengaduan lewat telepon, WhatsApp, atau email.",
+      "href": "tel:157",
+      "label": "Telepon 157"
+    }
+  ],
+  "reportPrep": [
+    "Identitas diri sebagai pelapor",
+    "Kronologi kejadian",
+    "Nomor rekening pelaku",
+    "Nilai kerugian",
+    "Bukti transaksi dan tangkapan layar percakapan"
+  ],
+  "sources": [
+    { "label": "OJK (siaran pers & kanal konsumen)", "href": "https://www.ojk.go.id" },
+    { "label": "Bank Indonesia (pelindungan konsumen)", "href": "https://www.bi.go.id/id/layanan/pengaduan-konsumen" },
+    { "label": "BPJS Ketenagakerjaan (halaman kontak)", "href": "https://bpjsketenagakerjaan.go.id/kontak.html" },
+    { "label": "BPKH", "href": "https://www.bpkh.go.id" },
+    { "label": "Komdigi (CekRekening.id)", "href": "https://cekrekening.id" }
+  ]
+}

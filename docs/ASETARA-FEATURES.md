@@ -217,7 +217,7 @@ Tombol: `Hitung Kesiapan` / `Hitung Simulasi`.
 - [x] Halaman Literasi Keuangan (list materi, filter kategori, detail materi, kuis; sertifikat ditunda)
 - [x] Halaman Financial Readiness Simulator (form, kalkulasi, kartu hasil, rekomendasi)
 - [x] Halaman Smart Investment Comparison (tab jenis investasi, kartu produk, tabel perbandingan)
-- [ ] Halaman Financial Access & Safety Hub (pencarian, panduan, cek legalitas, waspada penipuan)
+- [x] Halaman Financial Access & Safety Hub (pencarian, panduan, cek legalitas, waspada penipuan)
 - [ ] Update navigasi (bottom tab mobile dan sidebar desktop)
 - [ ] Terapkan design tokens warna ASETARA
 - [ ] Layout responsif mobile dan desktop

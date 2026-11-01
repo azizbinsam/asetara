@@ -49,8 +49,8 @@ Aturan yang dipelajari dari audit visual:
 | 2 | **Literasi Keuangan** (7 materi, 28 soal kuis, progres tersimpan, rekomendasi) | Selesai |
 | 3 | **Financial Readiness Simulator** (`src/pages/Perencanaan.jsx`, rumus di `src/utils/readiness.js`) | Selesai (menunggu verifikasi di browser) |
 | 4 | **Smart Investment Comparison** (`PerbandinganInvestasi.jsx`, data `perbandingan.json`, logika `utils/comparison.js`) | Selesai (menunggu verifikasi di browser) |
-| 5 | Financial Access & Safety Hub (`AksesKeamanan.jsx`, placeholder) | Berikutnya |
-| 6 | Penyambung antar fitur, update AI Assistant, rapikan teks tokenisasi di Landing/Dampak, bersihkan lint & aset tak terpakai | Menunggu |
+| 5 | **Financial Access & Safety Hub** (`AksesKeamanan.jsx`, data `aksesKeamanan.json`) | Selesai (menunggu verifikasi di browser) |
+| 6 | Penyambung antar fitur, update AI Assistant, rapikan teks tokenisasi di Landing/Dampak, bersihkan lint & aset tak terpakai | Berikutnya |
 
 ### Struktur Tahap 2 (Literasi)
 - Data: `src/data/literasi.json` (kategori, materi, soal). Edit isi materi/soal di sini tanpa menyentuh kode.
@@ -80,6 +80,13 @@ Aturan yang dipelajari dari audit visual:
 - Halaman: tab (hanya Properti Syariah aktif; Reksa Dana dan Sukuk "Segera hadir") → kartu produk → tabel Detail Perbandingan → pilih prioritas → Rekomendasi → Simpan Pilihan / Lanjut ke Marketplace. State di `localStorage` kunci `asetara_perbandingan`.
 - Kotak penghubung token mengambil nominal dari `minInvestment` terkecil di `properties.json` (kini Rp10.000).
 - Kolom "Ilustrasi hasil per tahun" = modal awal × rentang potensi hasil. Biaya tambahan ditampilkan terpisah, tidak dikurangkan dari hasil (data belum menjelaskan apakah sekali bayar atau tahunan).
+
+### Struktur Tahap 5 (Akses & Keamanan)
+- Data: `src/data/aksesKeamanan.json` (kategori, 5 panduan, 4 lembaga resmi, tips, kanal lapor, sumber, `verifiedAt`). Semua konten tinggal diedit di JSON.
+- Halaman: pencarian topik, dua kartu aksi (Cek Legalitas / Waspada Penipuan), 4 tab (Panduan Layanan, Legalitas Penyedia, Edukasi & Tips, Lapor Penipuan). Panduan memakai `<details>` bawaan browser.
+- **Sumber diverifikasi 1 November 2026 lewat pencarian web ke situs resmi lembaga**: OJK (Kontak 157, WA 081-157-157-157, konsumen@ojk.go.id, sikapiuangmu.ojk.go.id, iasc.ojk.go.id, sipasti.ojk.go.id), Bank Indonesia (131, bicara@bi.go.id, bicara131.bi.go.id), BPJS Ketenagakerjaan (175, care@bpjsketenagakerjaan.go.id), BPKH (bpkh.go.id), Komdigi (cekrekening.id).
+- Aturan: tidak ada angka statistik (jumlah entitas diblokir, dll.) karena cepat usang; tidak ada klaim "ASETARA terdaftar/diawasi OJK"; nomor telepon BPKH sengaja tidak dimuat karena berbeda-beda antar dokumen. Saat menambah kontak, verifikasi ke situs resmi dan perbarui `verifiedAt`.
+- Logo lembaga tidak dipakai (hanya ikon + nama). Kategori "Asuransi" (mockup desktop) belum ada karena belum ada konten terverifikasi; kategori "Legalitas & Regulasi" (mockup mobile) dipakai.
 
 ### Rumus Simulator (diimplementasikan di Tahap 3)
 - Dana disisihkan per bulan = 50% × (penghasilan − pengeluaran)
