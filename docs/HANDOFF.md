@@ -47,8 +47,8 @@ Aturan yang dipelajari dari audit visual:
 | 1 | Rebrand PROPIN → ASETARA, token warna, logo, navigasi, 4 halaman placeholder | Selesai |
 | 1b | Perapian: kartu menyatu, kontras teks, warna liar, grafik portofolio | Selesai |
 | 2 | **Literasi Keuangan** (7 materi, 28 soal kuis, progres tersimpan, rekomendasi) | Selesai |
-| 3 | Financial Readiness Simulator (`src/pages/Perencanaan.jsx`, saat ini placeholder) | Berikutnya |
-| 4 | Smart Investment Comparison (`PerbandinganInvestasi.jsx`, placeholder) | Menunggu |
+| 3 | **Financial Readiness Simulator** (`src/pages/Perencanaan.jsx`, rumus di `src/utils/readiness.js`) | Selesai (menunggu verifikasi di browser) |
+| 4 | Smart Investment Comparison (`PerbandinganInvestasi.jsx`, placeholder) | Berikutnya |
 | 5 | Financial Access & Safety Hub (`AksesKeamanan.jsx`, placeholder) | Menunggu |
 | 6 | Penyambung antar fitur, update AI Assistant, rapikan teks tokenisasi di Landing/Dampak, bersihkan lint & aset tak terpakai | Menunggu |
 
@@ -67,7 +67,14 @@ Aturan yang dipelajari dari audit visual:
 6. Klaim yang belum tentu benar (mis. "terdaftar & diawasi OJK", "pertama di Indonesia") **dihapus** dari teks. Info regulasi/OJK di Tahap 5 harus bersumber resmi dan diverifikasi, bukan dikarang. Semua angka hasil investasi diberi disclaimer "ilustrasi, bukan nasihat keuangan".
 7. Sertifikat belajar di Literasi **ditunda** (hanya insight + rekomendasi), agar tidak bingung dengan Sertifikat Kepemilikan NFT.
 
-### Usulan rumus Simulator (Tahap 3, belum final)
+### Struktur Tahap 3 (Simulator)
+- Rumus & konstanta (50%, 20%, 6 bulan, 70%, ambang 60/40) ada di `src/utils/readiness.js`; ubah di sana tanpa menyentuh halaman.
+- Halaman: `Perencanaan.jsx` (form Data Keuangan → lingkaran skor, dana disisihkan, rincian 3 faktor, rekomendasi). Input terakhir disimpan di `localStorage` kunci `asetara_perencanaan`.
+- Status tiga tingkat: **Siap** (≥60), **Hampir siap** (40–59), **Perlu persiapan** (<40). Tingkat 40–59 adalah tambahan; mohon dikonfirmasi.
+- Rekomendasi "Siap" menaut ke `/perbandingan` dan `/marketplace`; lainnya ke `/literasi`.
+- Target keuangan saat ini hanya memengaruhi label dan info dana darurat ideal, belum memengaruhi skor.
+
+### Rumus Simulator (diimplementasikan di Tahap 3)
 - Dana disisihkan per bulan = 50% × (penghasilan − pengeluaran)
 - Skor kesiapan = 40% × min(rasio tabungan ÷ 20%, 1) + 40% × min(dana tersedia ÷ (6 × pengeluaran), 1) + 20% × (pengeluaran ≤ 70% penghasilan ? 1 : 0)
 - Status "Siap" jika skor ≥ 60%. Rasio tabungan = (penghasilan − pengeluaran) ÷ penghasilan.
