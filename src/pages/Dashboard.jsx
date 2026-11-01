@@ -4,6 +4,7 @@ import {
   BookOpen, PiggyBank, Scale, ShieldCheck, Award, Leaf, Bot, User,
 } from 'lucide-react'
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from 'recharts'
+import { useLiteracy } from '../context/literacyStore'
 import Card from '../components/Card'
 import Badge from '../components/Badge'
 import Logo from '../components/Logo'
@@ -35,6 +36,7 @@ const PILLARS = [
 ]
 
 function PillarsSection() {
+  const { progress } = useLiteracy()
   return (
     <section className="mb-5 lg:mb-6">
       <p className="text-sm font-semibold text-neutral-700 mb-3">Mulai dari sini</p>
@@ -49,7 +51,9 @@ function PillarsSection() {
               <Icon size={20} className="text-champagne-700" />
             </div>
             <p className="text-sm font-bold text-neutral-800">{title}</p>
-            <p className="text-xs text-neutral-500 mt-0.5">{desc}</p>
+            <p className="text-xs text-neutral-500 mt-0.5">
+              {title === 'Pahami' && progress.done > 0 ? `${progress.done}/${progress.total} materi selesai` : desc}
+            </p>
           </Link>
         ))}
       </div>

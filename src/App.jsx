@@ -30,6 +30,8 @@ import Akun from './pages/Akun'
 
 // Fitur baru ASETARA
 import Literasi from './pages/Literasi'
+import LiterasiDetail from './pages/LiterasiDetail'
+import LiterasiKuis from './pages/LiterasiKuis'
 import Perencanaan from './pages/Perencanaan'
 import PerbandinganInvestasi from './pages/PerbandinganInvestasi'
 import AksesKeamanan from './pages/AksesKeamanan'
@@ -78,6 +80,8 @@ function AppRoutes() {
           <Route path="/laporan" element={<ProtectedRoute><Laporan /></ProtectedRoute>} />
           <Route path="/akun" element={<ProtectedRoute><Akun /></ProtectedRoute>} />
           <Route path="/literasi" element={<ProtectedRoute><Literasi /></ProtectedRoute>} />
+          <Route path="/literasi/:materiId" element={<ProtectedRoute><LiterasiDetail /></ProtectedRoute>} />
+          <Route path="/literasi/:materiId/kuis" element={<ProtectedRoute><LiterasiKuis /></ProtectedRoute>} />
           <Route path="/perencanaan" element={<ProtectedRoute><Perencanaan /></ProtectedRoute>} />
           <Route path="/perbandingan" element={<ProtectedRoute><PerbandinganInvestasi /></ProtectedRoute>} />
           <Route path="/akses-keamanan" element={<ProtectedRoute><AksesKeamanan /></ProtectedRoute>} />

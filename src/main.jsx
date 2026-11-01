@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { AuthProvider } from './context/AuthContext'
 import { PropertiesProvider } from './context/PropertiesContext'
+import { LiteracyProvider } from './context/LiteracyContext'
 import App from './App.jsx'
 import './index.css'
 
@@ -9,7 +10,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
       <PropertiesProvider>
-        <App />
+        <LiteracyProvider>
+          <App />
+        </LiteracyProvider>
       </PropertiesProvider>
     </AuthProvider>
   </StrictMode>,

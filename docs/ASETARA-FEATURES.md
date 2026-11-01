@@ -214,7 +214,7 @@ Tombol: `Hitung Kesiapan` / `Hitung Simulasi`.
 
 ## 5. Catatan Implementasi (Checklist)
 
-- [ ] Halaman Literasi Keuangan (list materi, filter kategori, detail materi, kuis, sertifikat)
+- [x] Halaman Literasi Keuangan (list materi, filter kategori, detail materi, kuis; sertifikat ditunda)
 - [ ] Halaman Financial Readiness Simulator (form, kalkulasi, kartu hasil, rekomendasi)
 - [ ] Halaman Smart Investment Comparison (tab jenis investasi, kartu produk, tabel perbandingan)
 - [ ] Halaman Financial Access & Safety Hub (pencarian, panduan, cek legalitas, waspada penipuan)

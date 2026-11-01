@@ -16,7 +16,7 @@ const NAV_GROUPS = [
   {
     title: 'Belajar & Rencana',
     items: [
-      { to: '/literasi', icon: BookOpen, label: 'Literasi Keuangan' },
+      { to: '/literasi', icon: BookOpen, label: 'Literasi Keuangan', matchPrefixes: ['/literasi'] },
       { to: '/perencanaan', icon: PiggyBank, label: 'Perencanaan Finansial' },
       { to: '/perbandingan', icon: Scale, label: 'Simulasi Investasi' },
       { to: '/akses-keamanan', icon: ShieldCheck, label: 'Akses & Keamanan' },

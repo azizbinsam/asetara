@@ -1,0 +1,690 @@
+{
+  "categories": [
+    {
+      "id": "dasar",
+      "label": "Keuangan Dasar"
+    },
+    {
+      "id": "menabung",
+      "label": "Menabung"
+    },
+    {
+      "id": "investasi",
+      "label": "Investasi"
+    },
+    {
+      "id": "syariah",
+      "label": "Syariah"
+    },
+    {
+      "id": "risiko",
+      "label": "Risiko"
+    },
+    {
+      "id": "keamanan",
+      "label": "Keamanan Digital"
+    }
+  ],
+  "materials": [
+    {
+      "id": "cara-mengatur-keuangan",
+      "title": "Cara Mengatur Keuangan",
+      "category": "dasar",
+      "duration": 8,
+      "popular": true,
+      "summary": "Kelola pemasukan dan pengeluaran dengan bijak.",
+      "sections": [
+        {
+          "heading": "Mulai dari mencatat",
+          "paragraphs": [
+            "Kamu tidak bisa mengatur sesuatu yang tidak kamu ketahui. Langkah pertama adalah mencatat semua pemasukan dan pengeluaran selama satu bulan penuh, sekecil apa pun. Kamu bisa memakai buku catatan, spreadsheet, atau aplikasi pencatat keuangan.",
+            "Setelah sebulan, kamu akan melihat ke mana uangmu benar-benar pergi. Biasanya ada pengeluaran kecil yang berulang dan tidak disadari, seperti jajan harian atau langganan yang jarang dipakai."
+          ]
+        },
+        {
+          "heading": "Bedakan kebutuhan, keinginan, dan tabungan",
+          "paragraphs": [
+            "Kebutuhan adalah hal yang harus dipenuhi untuk hidup layak, seperti makan, tempat tinggal, transportasi kerja, dan tagihan. Keinginan membuat hidup lebih nyaman tetapi bisa ditunda. Tabungan dan investasi adalah uang yang kamu sisihkan untuk masa depan.",
+            "Sebagai titik awal, kamu bisa memakai aturan 50/30/20:"
+          ],
+          "bullets": [
+            "50% untuk kebutuhan",
+            "30% untuk keinginan",
+            "20% untuk tabungan, investasi, dan pelunasan utang"
+          ],
+          "after": "Angka ini hanya patokan. Jika biaya hidup di kotamu tinggi, kamu bisa menyesuaikan, misalnya 60/20/20. Yang penting ada porsi tetap untuk masa depan."
+        },
+        {
+          "heading": "Bayar dirimu sendiri lebih dulu",
+          "paragraphs": [
+            "Banyak orang menabung dari sisa uang di akhir bulan, dan sering kali tidak ada sisa. Balik caranya: begitu penghasilan masuk, langsung sisihkan porsi tabungan, baru sisanya dibelanjakan. Jika memungkinkan, atur transfer otomatis di tanggal gajian."
+          ]
+        },
+        {
+          "heading": "Evaluasi setiap bulan",
+          "paragraphs": [
+            "Luangkan sekitar 15 menit di akhir bulan untuk membandingkan rencana dengan kenyataan. Pos mana yang melebihi rencana? Apa yang bisa dikurangi bulan depan? Kebiasaan kecil yang konsisten lebih berdampak daripada rencana besar yang tidak dijalankan."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Catat dulu sebelum mengatur: tanpa data, anggaran hanya tebakan.",
+        "Pisahkan kebutuhan, keinginan, dan tabungan. Aturan 50/30/20 bisa jadi titik awal.",
+        "Sisihkan tabungan di awal bulan, bukan dari sisa.",
+        "Evaluasi rutin setiap bulan lalu sesuaikan."
+      ],
+      "quiz": [
+        {
+          "question": "Apa langkah pertama yang paling tepat untuk mengatur keuangan?",
+          "options": [
+            "Langsung membeli produk investasi",
+            "Mencatat semua pemasukan dan pengeluaran",
+            "Menghentikan semua pengeluaran keinginan",
+            "Meminjam uang untuk modal usaha"
+          ],
+          "answer": 1,
+          "explanation": "Tanpa data pemasukan dan pengeluaran, kamu tidak tahu kondisi sebenarnya. Mencatat adalah dasar dari semua langkah berikutnya."
+        },
+        {
+          "question": "Pada aturan 50/30/20, bagian 20% dipakai untuk apa?",
+          "options": [
+            "Kebutuhan pokok",
+            "Hiburan dan keinginan",
+            "Tabungan, investasi, dan pelunasan utang",
+            "Biaya tak terduga"
+          ],
+          "answer": 2,
+          "explanation": "Bagian 20% dialokasikan untuk masa depan: tabungan, investasi, dan pelunasan utang."
+        },
+        {
+          "question": "Apa arti \"bayar dirimu sendiri lebih dulu\"?",
+          "options": [
+            "Membeli hadiah untuk diri sendiri setiap gajian",
+            "Menyisihkan tabungan begitu penghasilan masuk, sebelum dibelanjakan",
+            "Membayar semua utang dulu sebelum menabung",
+            "Menabung hanya jika ada sisa di akhir bulan"
+          ],
+          "answer": 1,
+          "explanation": "Tabungan disisihkan lebih dulu sehingga tidak bergantung pada sisa uang di akhir bulan."
+        },
+        {
+          "question": "Penghasilan Rp5.000.000 dan pengeluaran Rp3.000.000 per bulan. Berapa persen penghasilan yang bisa disisihkan?",
+          "options": [
+            "20%",
+            "30%",
+            "40%",
+            "60%"
+          ],
+          "answer": 2,
+          "explanation": "Selisihnya Rp2.000.000. Rp2.000.000 dibagi Rp5.000.000 sama dengan 40%."
+        }
+      ]
+    },
+    {
+      "id": "menabung-masa-depan",
+      "title": "Menabung untuk Masa Depan",
+      "category": "menabung",
+      "duration": 6,
+      "popular": true,
+      "summary": "Mulai dari nominal kecil, dampaknya besar.",
+      "sections": [
+        {
+          "heading": "Tentukan tujuan yang jelas",
+          "paragraphs": [
+            "Menabung tanpa tujuan mudah berhenti di tengah jalan. Tulis tujuanmu lengkap dengan nominal dan batas waktu, misalnya \"dana pendidikan Rp30.000.000 dalam 3 tahun\".",
+            "Rumus sederhananya: nominal target dibagi jumlah bulan sama dengan tabungan per bulan. Untuk contoh di atas, Rp30.000.000 dibagi 36 bulan kira-kira Rp833.000 per bulan."
+          ]
+        },
+        {
+          "heading": "Mulai kecil, yang penting konsisten",
+          "paragraphs": [
+            "Rp50.000 per hari terlihat kecil, tetapi dalam 30 hari menjadi Rp1.500.000, dan dalam setahun sekitar Rp18.250.000. Kebiasaan yang konsisten mengalahkan nominal besar yang hanya sesekali."
+          ]
+        },
+        {
+          "heading": "Otomatiskan dan pisahkan",
+          "paragraphs": [
+            "Atur transfer otomatis ke rekening tabungan terpisah di tanggal gajian. Rekening terpisah membuat uang tabungan tidak tercampur dengan uang belanja sehari-hari, sehingga lebih sulit terpakai tanpa sadar."
+          ]
+        },
+        {
+          "heading": "Waspadai inflasi",
+          "paragraphs": [
+            "Inflasi membuat harga barang naik dari waktu ke waktu, sehingga uang yang sama membeli lebih sedikit di masa depan. Untuk tujuan jangka panjang, kamu bisa mempertimbangkan menempatkan sebagian dana di instrumen yang berpotensi tumbuh, sesuai kemampuanmu menanggung risiko. Topik ini dibahas di materi investasi."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Tujuan menabung harus punya nominal dan batas waktu.",
+        "Nominal kecil yang konsisten lebih kuat daripada nominal besar yang sesekali.",
+        "Otomatiskan transfer dan pisahkan rekening tabungan.",
+        "Inflasi menggerus daya beli, jadi pikirkan juga pertumbuhan dana jangka panjang."
+      ],
+      "quiz": [
+        {
+          "question": "Tujuan menabung yang efektif sebaiknya...",
+          "options": [
+            "Hanya berupa niat \"ingin kaya\"",
+            "Punya nominal dan batas waktu yang jelas",
+            "Dirahasiakan dan tidak dihitung",
+            "Berubah-ubah setiap bulan"
+          ],
+          "answer": 1,
+          "explanation": "Nominal dan batas waktu memungkinkan kamu menghitung berapa yang perlu disisihkan tiap bulan."
+        },
+        {
+          "question": "Target Rp12.000.000 dalam 12 bulan. Berapa yang perlu ditabung per bulan?",
+          "options": [
+            "Rp500.000",
+            "Rp1.000.000",
+            "Rp1.200.000",
+            "Rp2.000.000"
+          ],
+          "answer": 1,
+          "explanation": "Rp12.000.000 dibagi 12 bulan sama dengan Rp1.000.000 per bulan."
+        },
+        {
+          "question": "Mengapa transfer tabungan otomatis membantu?",
+          "options": [
+            "Karena bunganya otomatis lebih besar",
+            "Karena tabungan terjadi tanpa bergantung pada niat atau ingatan",
+            "Karena tidak perlu rekening bank",
+            "Karena bebas dari semua biaya"
+          ],
+          "answer": 1,
+          "explanation": "Otomatisasi membuat menabung menjadi kebiasaan yang berjalan sendiri, sehingga lebih konsisten."
+        },
+        {
+          "question": "Apa dampak inflasi terhadap uang yang hanya disimpan?",
+          "options": [
+            "Nilainya otomatis naik",
+            "Daya belinya cenderung menurun seiring waktu",
+            "Tidak ada pengaruh sama sekali",
+            "Jumlah uang di rekening langsung berkurang"
+          ],
+          "answer": 1,
+          "explanation": "Inflasi menaikkan harga barang, sehingga uang yang sama membeli lebih sedikit di masa depan."
+        }
+      ]
+    },
+    {
+      "id": "dana-darurat",
+      "title": "Dana Darurat: Bantalan Pertamamu",
+      "category": "menabung",
+      "duration": 6,
+      "popular": false,
+      "summary": "Siapkan pengaman sebelum mulai berinvestasi.",
+      "sections": [
+        {
+          "heading": "Apa itu dana darurat?",
+          "paragraphs": [
+            "Dana darurat adalah uang yang disiapkan khusus untuk kejadian tak terduga, seperti kehilangan penghasilan, biaya berobat mendadak, atau perbaikan darurat. Dana ini bukan untuk liburan, belanja diskon, atau modal investasi."
+          ]
+        },
+        {
+          "heading": "Berapa besarnya?",
+          "paragraphs": [
+            "Sebagai panduan umum, siapkan 3 sampai 6 kali pengeluaran bulanan jika kamu masih lajang, dan 6 sampai 12 kali jika sudah berkeluarga atau berpenghasilan tidak tetap.",
+            "Contoh: pengeluaran Rp5.000.000 per bulan dengan target 6 bulan berarti dana darurat Rp30.000.000."
+          ]
+        },
+        {
+          "heading": "Simpan di mana?",
+          "paragraphs": [
+            "Pilih tempat yang aman dan mudah dicairkan kapan saja, misalnya rekening tabungan terpisah. Hindari menyimpannya di instrumen yang nilainya naik-turun tajam atau sulit dicairkan, karena dana ini harus tersedia tepat saat dibutuhkan."
+          ]
+        },
+        {
+          "heading": "Cara membangunnya",
+          "bullets": [
+            "Hitung target dari pengeluaran bulananmu.",
+            "Sisihkan nominal tetap tiap bulan, sekecil apa pun.",
+            "Gunakan bonus atau pendapatan tambahan untuk mempercepat.",
+            "Setelah terpakai, isi kembali sampai target tercapai."
+          ],
+          "after": "Mengapa lebih dulu dari investasi? Tanpa dana darurat, kejadian tak terduga bisa memaksamu menjual investasi pada waktu yang kurang tepat, atau berutang."
+        }
+      ],
+      "keyPoints": [
+        "Dana darurat untuk kejadian tak terduga, bukan untuk keinginan.",
+        "Target umum: 3 sampai 12 kali pengeluaran bulanan, sesuai kondisimu.",
+        "Simpan di tempat yang aman dan mudah dicairkan.",
+        "Siapkan dana darurat sebelum berinvestasi."
+      ],
+      "quiz": [
+        {
+          "question": "Dana darurat paling tepat dipakai untuk...",
+          "options": [
+            "Liburan akhir tahun",
+            "Kehilangan penghasilan atau biaya mendadak",
+            "Membeli gawai terbaru saat diskon",
+            "Modal membeli saham"
+          ],
+          "answer": 1,
+          "explanation": "Dana darurat dikhususkan untuk kejadian tak terduga yang tidak bisa ditunda."
+        },
+        {
+          "question": "Pengeluaran Rp4.000.000 per bulan dengan target 6 bulan. Berapa dana daruratnya?",
+          "options": [
+            "Rp12.000.000",
+            "Rp20.000.000",
+            "Rp24.000.000",
+            "Rp48.000.000"
+          ],
+          "answer": 2,
+          "explanation": "Rp4.000.000 dikali 6 bulan sama dengan Rp24.000.000."
+        },
+        {
+          "question": "Di mana sebaiknya dana darurat disimpan?",
+          "options": [
+            "Di tempat yang aman dan mudah dicairkan",
+            "Di instrumen yang nilainya naik-turun tajam",
+            "Di aset yang sulit dijual",
+            "Dipinjamkan ke teman"
+          ],
+          "answer": 0,
+          "explanation": "Dana darurat harus tersedia saat dibutuhkan, jadi keamanan dan kemudahan pencairan lebih penting daripada imbal hasil."
+        },
+        {
+          "question": "Mengapa dana darurat sebaiknya disiapkan sebelum berinvestasi?",
+          "options": [
+            "Agar tidak terpaksa menjual investasi di waktu yang kurang tepat atau berutang saat darurat",
+            "Agar investasi pasti untung",
+            "Karena diwajibkan peraturan",
+            "Agar tidak perlu menabung lagi"
+          ],
+          "answer": 0,
+          "explanation": "Dana darurat melindungi investasimu dari keharusan dicairkan pada saat yang tidak menguntungkan."
+        }
+      ]
+    },
+    {
+      "id": "dasar-investasi",
+      "title": "Mengenal Dasar Investasi",
+      "category": "investasi",
+      "duration": 9,
+      "popular": false,
+      "summary": "Pahami cara kerja investasi sebelum memulai.",
+      "sections": [
+        {
+          "heading": "Menabung vs berinvestasi",
+          "paragraphs": [
+            "Menabung bertujuan menyimpan uang dengan aman dan mudah diambil. Investasi bertujuan menumbuhkan nilai uang dalam jangka waktu tertentu, dengan konsekuensi nilainya bisa naik maupun turun."
+          ]
+        },
+        {
+          "heading": "Hubungan risiko dan imbal hasil",
+          "paragraphs": [
+            "Secara umum, semakin tinggi potensi imbal hasil, semakin tinggi pula risikonya. Jika ada tawaran imbal hasil sangat tinggi yang dijanjikan pasti, itu tanda bahaya, bukan peluang."
+          ]
+        },
+        {
+          "heading": "Mengenal instrumen umum",
+          "bullets": [
+            "Deposito dan tabungan berjangka: risiko rendah, imbal hasil relatif kecil.",
+            "Obligasi dan sukuk: surat utang atau pembiayaan dengan pembayaran berkala, umumnya berisiko menengah.",
+            "Reksa dana: dana banyak investor dikelola manajer investasi; risikonya mengikuti jenisnya, dari pasar uang sampai saham.",
+            "Saham: kepemilikan sebagian perusahaan; potensinya tinggi, nilainya berfluktuasi.",
+            "Emas dan properti: aset riil; properti butuh modal besar dan tidak mudah dicairkan."
+          ],
+          "after": "Tingkat risiko di atas bersifat umum. Kondisi tiap produk bisa berbeda, jadi selalu baca informasinya sebelum membeli."
+        },
+        {
+          "heading": "Prinsip dasar berinvestasi",
+          "bullets": [
+            "Diversifikasi: jangan menaruh semua dana di satu tempat.",
+            "Waktu: tujuan jangka panjang lebih mampu menanggung fluktuasi.",
+            "Gunakan uang dingin: jangan memakai dana darurat atau uang pinjaman.",
+            "Pahami sebelum membeli: jika kamu tidak bisa menjelaskan bagaimana produk itu menghasilkan uang, tunda dulu."
+          ],
+          "after": "Materi ini bersifat edukasi umum dan bukan nasihat keuangan. Keputusan investasi sebaiknya disesuaikan dengan kondisi dan tujuanmu."
+        }
+      ],
+      "keyPoints": [
+        "Investasi bisa naik dan turun, tidak seperti tabungan.",
+        "Imbal hasil tinggi biasanya datang bersama risiko tinggi.",
+        "Sebar dana (diversifikasi) dan pakai uang dingin.",
+        "Waspada pada janji untung pasti."
+      ],
+      "quiz": [
+        {
+          "question": "Apa pernyataan yang tepat tentang hubungan risiko dan imbal hasil?",
+          "options": [
+            "Imbal hasil tinggi biasanya disertai risiko lebih tinggi",
+            "Imbal hasil tinggi selalu tanpa risiko",
+            "Risiko dan imbal hasil tidak berkaitan",
+            "Risiko rendah selalu berimbal hasil tertinggi"
+          ],
+          "answer": 0,
+          "explanation": "Potensi imbal hasil yang tinggi umumnya diimbangi risiko yang lebih tinggi."
+        },
+        {
+          "question": "Apa yang dimaksud diversifikasi?",
+          "options": [
+            "Menaruh semua dana di satu aset terbaik",
+            "Menyebar dana ke beberapa jenis aset",
+            "Menjual semua aset saat harga turun",
+            "Membeli aset dengan utang"
+          ],
+          "answer": 1,
+          "explanation": "Diversifikasi menyebar risiko sehingga satu aset yang turun tidak menghancurkan seluruh portofolio."
+        },
+        {
+          "question": "Dana mana yang paling tepat dipakai untuk berinvestasi?",
+          "options": [
+            "Dana darurat",
+            "Uang pinjaman",
+            "Uang dingin yang tidak dibutuhkan dalam waktu dekat",
+            "Uang sewa kos bulan depan"
+          ],
+          "answer": 2,
+          "explanation": "Uang dingin tidak akan memaksamu mencairkan investasi saat nilainya sedang turun."
+        },
+        {
+          "question": "Seseorang menawarkan investasi \"untung pasti 10% per bulan tanpa risiko\". Sikap terbaik?",
+          "options": [
+            "Langsung ikut agar tidak ketinggalan",
+            "Waspada, karena janji untung tinggi yang pasti adalah tanda bahaya",
+            "Mengajak teman sebanyak mungkin",
+            "Menyetor seluruh tabungan"
+          ],
+          "answer": 1,
+          "explanation": "Imbal hasil tinggi yang dijanjikan pasti dan tanpa risiko adalah ciri umum penipuan."
+        }
+      ]
+    },
+    {
+      "id": "investasi-syariah-pemula",
+      "title": "Investasi Syariah untuk Pemula",
+      "category": "syariah",
+      "duration": 10,
+      "popular": true,
+      "summary": "Pilihan investasi yang halal dan berkah.",
+      "sections": [
+        {
+          "heading": "Prinsip dasar keuangan syariah",
+          "paragraphs": [
+            "Investasi syariah berjalan dengan prinsip yang sesuai syariat Islam. Tiga hal utama yang dihindari adalah:"
+          ],
+          "bullets": [
+            "Riba: tambahan atau bunga yang dipersyaratkan atas pinjaman atau utang.",
+            "Gharar: ketidakjelasan yang berlebihan dalam akad, misalnya objek atau harga yang tidak pasti.",
+            "Maysir: spekulasi atau unsur judi, yaitu untung-rugi yang bergantung pada untung-untungan."
+          ],
+          "after": "Selain itu, kegiatan usaha yang dibiayai juga harus halal."
+        },
+        {
+          "heading": "Akad: dasar kesepakatan",
+          "paragraphs": [
+            "Setiap transaksi syariah memiliki akad yang menjelaskan hak dan kewajiban kedua pihak. Beberapa akad yang sering ditemui:"
+          ],
+          "bullets": [
+            "Jual beli (misalnya murabahah): penjual menyebutkan harga pokok dan margin keuntungan yang disepakati.",
+            "Bagi hasil (mudharabah, musyarakah): pemilik dana dan pengelola berbagi keuntungan sesuai nisbah yang disepakati.",
+            "Sewa (ijarah): imbalan atas pemanfaatan suatu aset, misalnya properti yang disewakan."
+          ]
+        },
+        {
+          "heading": "Contoh produk investasi syariah",
+          "bullets": [
+            "Sukuk: surat berharga syariah yang berbasis aset atau proyek tertentu.",
+            "Reksa dana syariah: portofolio dikelola sesuai prinsip syariah.",
+            "Saham syariah: saham perusahaan yang masuk daftar efek syariah.",
+            "Properti syariah: kepemilikan atau pembiayaan properti dengan akad yang sesuai syariah."
+          ],
+          "after": "Di Indonesia, fatwa terkait ekonomi syariah dikeluarkan oleh Dewan Syariah Nasional MUI (DSN-MUI), sedangkan produk keuangannya diawasi otoritas seperti OJK."
+        },
+        {
+          "heading": "Syariah bukan berarti bebas risiko",
+          "paragraphs": [
+            "Produk syariah tetap memiliki risiko, seperti nilai yang naik-turun atau hasil yang tidak sesuai harapan. Prinsip syariah mengatur caranya, bukan menjamin hasilnya. Pelajari akad dan risiko produk sebelum membeli.",
+            "Hasil investasi juga bisa menjadi objek zakat bila memenuhi syarat nisab dan haul. Konsultasikan ketentuannya dengan lembaga amil zakat atau ulama."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Hindari riba, gharar, dan maysir, serta pastikan usahanya halal.",
+        "Akad menentukan hak dan kewajiban kedua pihak.",
+        "Produk syariah tetap punya risiko; pelajari akad dan risikonya.",
+        "Hasil investasi bisa terkena kewajiban zakat bila memenuhi syarat."
+      ],
+      "quiz": [
+        {
+          "question": "Apa yang dimaksud riba dalam keuangan syariah?",
+          "options": [
+            "Bagi hasil dari usaha",
+            "Tambahan atau bunga yang dipersyaratkan atas pinjaman",
+            "Biaya sewa aset",
+            "Sedekah"
+          ],
+          "answer": 1,
+          "explanation": "Riba adalah tambahan yang dipersyaratkan atas pinjaman atau utang, dan dihindari dalam keuangan syariah."
+        },
+        {
+          "question": "Unsur yang menyerupai judi atau spekulasi disebut...",
+          "options": [
+            "Gharar",
+            "Ijarah",
+            "Maysir",
+            "Sukuk"
+          ],
+          "answer": 2,
+          "explanation": "Maysir adalah spekulasi atau unsur judi. Gharar adalah ketidakjelasan berlebihan, ijarah adalah sewa, dan sukuk adalah surat berharga syariah."
+        },
+        {
+          "question": "Lembaga yang mengeluarkan fatwa terkait ekonomi syariah di Indonesia adalah...",
+          "options": [
+            "DSN-MUI",
+            "Kementerian Perdagangan",
+            "Direktorat Jenderal Pajak",
+            "Bursa Efek Indonesia"
+          ],
+          "answer": 0,
+          "explanation": "Fatwa ekonomi syariah di Indonesia dikeluarkan oleh Dewan Syariah Nasional MUI (DSN-MUI)."
+        },
+        {
+          "question": "Pernyataan yang benar tentang investasi syariah adalah...",
+          "options": [
+            "Pasti bebas dari risiko",
+            "Tetap memiliki risiko; prinsip syariah mengatur caranya, bukan menjamin hasilnya",
+            "Hanya boleh untuk orang kaya",
+            "Tidak memerlukan akad"
+          ],
+          "answer": 1,
+          "explanation": "Investasi syariah tetap berisiko dan selalu didasarkan pada akad yang jelas."
+        }
+      ]
+    },
+    {
+      "id": "risiko-keuangan",
+      "title": "Risiko Keuangan",
+      "category": "risiko",
+      "duration": 7,
+      "popular": false,
+      "summary": "Kenali risiko, siapkan strategi.",
+      "sections": [
+        {
+          "heading": "Mengenal jenis risiko",
+          "bullets": [
+            "Risiko pasar: nilai investasi naik-turun mengikuti kondisi pasar.",
+            "Risiko inflasi: kenaikan harga menggerus daya beli uangmu.",
+            "Risiko likuiditas: aset sulit atau lama dicairkan saat dibutuhkan.",
+            "Risiko gagal bayar: pihak yang berutang tidak membayar sesuai janji.",
+            "Risiko penipuan: investasi atau pinjaman ilegal yang menjanjikan hasil tidak wajar.",
+            "Risiko pribadi: kehilangan penghasilan, sakit, atau musibah."
+          ]
+        },
+        {
+          "heading": "Kenali profil risikomu",
+          "paragraphs": [
+            "Profil risiko menggambarkan seberapa besar fluktuasi yang sanggup kamu terima tanpa panik."
+          ],
+          "bullets": [
+            "Konservatif: mengutamakan keamanan modal, siap dengan imbal hasil kecil.",
+            "Moderat: bersedia menerima naik-turun sedang demi imbal hasil yang lebih baik.",
+            "Agresif: siap menanggung fluktuasi besar demi potensi imbal hasil tinggi."
+          ],
+          "after": "Profilmu dipengaruhi usia, penghasilan, tanggungan, dan tujuan. Pilih produk yang sesuai profil, bukan yang sedang ramai dibicarakan."
+        },
+        {
+          "heading": "Cara mengelola risiko",
+          "bullets": [
+            "Siapkan dana darurat lebih dulu.",
+            "Miliki proteksi yang sesuai, seperti asuransi kesehatan.",
+            "Diversifikasi dana ke beberapa jenis aset.",
+            "Hindari utang konsumtif, terutama yang berbunga tinggi.",
+            "Pelajari produk dan cek legalitas penyedianya."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Risiko ada banyak jenisnya, bukan hanya nilai investasi yang turun.",
+        "Kenali profil risikomu: konservatif, moderat, atau agresif.",
+        "Dana darurat, proteksi, dan diversifikasi adalah tameng utama.",
+        "Risiko tidak bisa dihilangkan, tetapi bisa dikelola."
+      ],
+      "quiz": [
+        {
+          "question": "Risiko likuiditas berarti...",
+          "options": [
+            "Nilai aset pasti turun",
+            "Aset sulit atau lama dicairkan menjadi uang tunai",
+            "Harga barang naik",
+            "Penyedia layanan bangkrut"
+          ],
+          "answer": 1,
+          "explanation": "Risiko likuiditas adalah kesulitan mencairkan aset menjadi uang tunai saat dibutuhkan."
+        },
+        {
+          "question": "Seseorang yang mengutamakan keamanan modal dan siap menerima imbal hasil kecil memiliki profil...",
+          "options": [
+            "Agresif",
+            "Moderat",
+            "Konservatif",
+            "Spekulatif"
+          ],
+          "answer": 2,
+          "explanation": "Profil konservatif mengutamakan keamanan modal dibanding imbal hasil."
+        },
+        {
+          "question": "Manakah langkah mengelola risiko yang tepat?",
+          "options": [
+            "Menaruh semua dana pada satu aset yang sedang ramai",
+            "Membeli produk hanya karena ikut-ikutan",
+            "Menyiapkan dana darurat dan menyebar dana ke beberapa aset",
+            "Berutang untuk berinvestasi"
+          ],
+          "answer": 2,
+          "explanation": "Dana darurat dan diversifikasi adalah dua cara dasar untuk mengelola risiko."
+        },
+        {
+          "question": "Tawaran investasi dengan hasil tinggi dan \"tanpa risiko\" sebaiknya...",
+          "options": [
+            "Diterima segera",
+            "Dicurigai dan dicek legalitasnya",
+            "Direkomendasikan ke keluarga",
+            "Diikuti dengan seluruh tabungan"
+          ],
+          "answer": 1,
+          "explanation": "Hasil tinggi tanpa risiko tidak wajar. Cek legalitas penyedia sebelum mengambil keputusan."
+        }
+      ]
+    },
+    {
+      "id": "keamanan-transaksi-digital",
+      "title": "Keamanan Transaksi Digital",
+      "category": "keamanan",
+      "duration": 10,
+      "popular": true,
+      "summary": "Lindungi uang dan datamu saat bertransaksi online.",
+      "sections": [
+        {
+          "heading": "Rahasiakan data pentingmu",
+          "paragraphs": [
+            "PIN, password, dan kode OTP bersifat pribadi. Pihak bank, dompet digital, atau platform resmi tidak akan meminta kode OTP atau PIN-mu, baik lewat telepon, pesan, maupun media sosial. Jika ada yang memintanya, anggap itu penipuan."
+          ]
+        },
+        {
+          "heading": "Kenali modus penipuan",
+          "bullets": [
+            "Phishing: pesan atau tautan palsu yang menyerupai bank atau layanan resmi untuk mencuri datamu.",
+            "Rekayasa sosial: pelaku berpura-pura sebagai petugas atau kerabat dan menekanmu agar bertindak cepat.",
+            "Hadiah atau undian palsu yang meminta biaya atau data lebih dulu.",
+            "Aplikasi tidak resmi, misalnya file APK dari pesan, yang memasang program pencuri data.",
+            "Investasi atau pinjaman online ilegal yang menjanjikan hasil tidak wajar."
+          ]
+        },
+        {
+          "heading": "Kebiasaan aman bertransaksi",
+          "bullets": [
+            "Aktifkan verifikasi dua langkah (2FA).",
+            "Unduh aplikasi hanya dari toko aplikasi resmi.",
+            "Periksa alamat situs sebelum login; ketik sendiri atau gunakan aplikasi resmi.",
+            "Hindari transaksi keuangan lewat Wi-Fi publik.",
+            "Gunakan password berbeda dan sulit ditebak untuk tiap layanan.",
+            "Rutin cek mutasi rekening dan aktifkan notifikasi transaksi."
+          ]
+        },
+        {
+          "heading": "Cek legalitas dan langkah jika jadi korban",
+          "paragraphs": [
+            "Sebelum memakai layanan keuangan, pastikan penyedianya terdaftar atau berizin di otoritas resmi seperti OJK melalui situs resminya.",
+            "Jika terlanjur menjadi korban: segera hubungi penyedia layanan atau bank untuk memblokir akses, ganti password, simpan bukti (tangkapan layar, nomor rekening, riwayat percakapan), lalu laporkan melalui kanal resmi otoritas atau kepolisian."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "OTP, PIN, dan password tidak boleh dibagikan kepada siapa pun.",
+        "Waspadai phishing, rekayasa sosial, dan aplikasi tidak resmi.",
+        "Aktifkan 2FA dan gunakan password berbeda di tiap layanan.",
+        "Cek legalitas penyedia di situs resmi otoritas sebelum bertransaksi."
+      ],
+      "quiz": [
+        {
+          "question": "Siapa yang boleh mengetahui kode OTP-mu?",
+          "options": [
+            "Petugas bank yang menelepon",
+            "Teman dekat",
+            "Tidak seorang pun, karena kode OTP bersifat rahasia",
+            "Siapa pun yang mengaku dari layanan resmi"
+          ],
+          "answer": 2,
+          "explanation": "Pihak resmi tidak pernah meminta OTP. Siapa pun yang memintanya patut dicurigai sebagai penipu."
+        },
+        {
+          "question": "Pesan berisi tautan yang meniru situs bank untuk mencuri data disebut...",
+          "options": [
+            "Phishing",
+            "Diversifikasi",
+            "Inflasi",
+            "Likuiditas"
+          ],
+          "answer": 0,
+          "explanation": "Phishing adalah upaya mencuri data dengan menyamar sebagai pihak resmi."
+        },
+        {
+          "question": "Kebiasaan mana yang membantu menjaga keamanan akun?",
+          "options": [
+            "Memakai password yang sama di semua layanan",
+            "Mengaktifkan verifikasi dua langkah",
+            "Mengunduh APK dari pesan",
+            "Membagikan PIN ke keluarga lewat chat"
+          ],
+          "answer": 1,
+          "explanation": "Verifikasi dua langkah menambah lapisan pengaman walau password bocor."
+        },
+        {
+          "question": "Jika terlanjur menjadi korban penipuan digital, langkah awal yang tepat adalah...",
+          "options": [
+            "Menunggu beberapa minggu",
+            "Menghubungi penyedia atau bank untuk memblokir akses, mengganti password, dan menyimpan bukti",
+            "Menghapus semua bukti percakapan",
+            "Mengirim uang tambahan agar masalah selesai"
+          ],
+          "answer": 1,
+          "explanation": "Bertindak cepat dan menyimpan bukti memperbesar peluang kerugian bisa ditangani."
+        }
+      ]
+    }
+  ]
+}
