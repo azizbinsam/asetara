@@ -9,9 +9,9 @@ import Badge from '../components/Badge'
 import { formatRupiah, formatPercent, formatNumber } from '../utils/format'
 
 const CATEGORY_GRADIENT = {
-  apartemen: 'from-gold-300 to-gold-600',
-  vila: 'from-green-300 to-green-700',
-  hotel: 'from-gold-400 to-green-700',
+  apartemen: 'from-champagne-300 to-navy-600',
+  vila: 'from-teal-300 to-teal-700',
+  hotel: 'from-champagne-400 to-teal-700',
 }
 
 export default function DetailTokenisasi() {
@@ -80,7 +80,7 @@ export default function DetailTokenisasi() {
       <div className="p-4 lg:p-0 max-w-2xl">
         <button
           onClick={() => navigate(-1)}
-          className="hidden lg:flex items-center gap-1 text-sm text-neutral-500 hover:text-gold-600 mb-4"
+          className="hidden lg:flex items-center gap-1 text-sm text-neutral-500 hover:text-navy-600 mb-4"
         >
           <ChevronLeft size={16} /> Kembali
         </button>
@@ -117,14 +117,14 @@ export default function DetailTokenisasi() {
             </div>
             <div>
               <p className="text-neutral-500 text-xs">Imbal Hasil (Proyeksi)</p>
-              <p className="font-semibold text-green-700">{formatPercent(property.projectedReturnPercent)} / tahun</p>
+              <p className="font-semibold text-teal-700">{formatPercent(property.projectedReturnPercent)} / tahun</p>
             </div>
           </div>
         </Card>
 
         <Card variant="default" className="mt-4 text-center">
           <p className="text-xs text-neutral-500">Anda membeli</p>
-          <p className="text-2xl font-bold text-gold-700 mt-1">{formatNumber(tokenAmount)} Token</p>
+          <p className="text-2xl font-bold text-navy-700 mt-1">{formatNumber(tokenAmount)} Token</p>
           <p className="text-xs text-neutral-500 mt-1">
             ({ownershipPercent > 0 ? ownershipPercent.toFixed(3).replace('.', ',') : '0'}% kepemilikan)
           </p>
@@ -132,7 +132,7 @@ export default function DetailTokenisasi() {
 
         <div className="mt-4">
           <label className="text-sm font-medium text-neutral-700">Nominal Pembelian</label>
-          <div className="mt-1.5 flex items-center border border-neutral-200 rounded-btn px-3 py-2.5 bg-neutral-0 focus-within:border-gold-500">
+          <div className="mt-1.5 flex items-center border border-neutral-200 rounded-btn px-3 py-2.5 bg-neutral-0 focus-within:border-navy-500">
             <span className="text-neutral-500 text-sm mr-1">Rp</span>
             <input
               type="text"

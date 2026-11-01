@@ -4,9 +4,9 @@ import Badge from './Badge'
 import { formatRupiah, formatPercent } from '../utils/format'
 
 const CATEGORY_GRADIENT = {
-  apartemen: 'from-gold-300 to-gold-600',
-  vila: 'from-green-300 to-green-700',
-  hotel: 'from-gold-400 to-green-700',
+  apartemen: 'from-champagne-300 to-navy-600',
+  vila: 'from-teal-300 to-teal-700',
+  hotel: 'from-champagne-400 to-teal-700',
 }
 
 export default function PropertyCard({ property }) {
@@ -23,7 +23,7 @@ export default function PropertyCard({ property }) {
               loading="lazy"
             />
           ) : (
-            <div className={`w-full h-full bg-gradient-to-br ${CATEGORY_GRADIENT[property.category] || 'from-gold-300 to-gold-600'}`} />
+            <div className={`w-full h-full bg-gradient-to-br ${CATEGORY_GRADIENT[property.category] || 'from-champagne-300 to-navy-600'}`} />
           )}
           <div className="absolute top-3 left-3">
             <Badge variant="success" withCheck className="!bg-white/90 backdrop-blur">
@@ -31,7 +31,7 @@ export default function PropertyCard({ property }) {
             </Badge>
           </div>
           <div className="absolute top-3 right-3">
-            <span className="px-2.5 py-1 rounded-full bg-gold-500 text-white text-[10px] font-semibold">
+            <span className="px-2.5 py-1 rounded-full bg-navy-500 text-white text-[10px] font-semibold">
               {formatPercent(property.projectedReturnPercent)}/thn
             </span>
           </div>
@@ -41,7 +41,7 @@ export default function PropertyCard({ property }) {
         <div className="p-4">
           <div className="flex items-start justify-between gap-2">
             <div>
-              <h3 className="text-sm font-bold text-neutral-800 group-hover:text-gold-700 transition-colors">
+              <h3 className="text-sm font-bold text-neutral-800 group-hover:text-navy-700 transition-colors">
                 {property.name}
               </h3>
               <div className="flex items-center gap-1 mt-1">
@@ -57,7 +57,7 @@ export default function PropertyCard({ property }) {
           <div className="grid grid-cols-2 gap-3 mt-3">
             <div>
               <p className="text-[10px] text-neutral-400">Harga/Token</p>
-              <p className="text-sm font-bold text-gold-700">{formatRupiah(property.pricePerToken)}</p>
+              <p className="text-sm font-bold text-navy-700">{formatRupiah(property.pricePerToken)}</p>
             </div>
             <div className="text-right">
               <p className="text-[10px] text-neutral-400">Min. Investasi</p>
@@ -73,7 +73,7 @@ export default function PropertyCard({ property }) {
             </div>
             <div className="h-1.5 bg-neutral-100 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-gold-500 to-gold-600 rounded-full transition-all"
+                className="h-full bg-gradient-to-r from-navy-500 to-navy-600 rounded-full transition-all"
                 style={{ width: `${property.fundingPercent || 0}%` }}
               />
             </div>

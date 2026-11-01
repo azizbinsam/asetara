@@ -76,11 +76,11 @@ export default function AdminProperti() {
           <p className="text-xs text-neutral-500">Total</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-green-600">{activeProperties.length}</p>
+          <p className="text-xl font-bold text-teal-600">{activeProperties.length}</p>
           <p className="text-xs text-neutral-500">Aktif</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-gold-600">{properties.length - activeProperties.length}</p>
+          <p className="text-xl font-bold text-navy-600">{properties.length - activeProperties.length}</p>
           <p className="text-xs text-neutral-500">Nonaktif</p>
         </Card>
       </div>
@@ -111,7 +111,7 @@ export default function AdminProperti() {
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 required
-                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-navy-600"
               />
             </div>
             <div>
@@ -121,7 +121,7 @@ export default function AdminProperti() {
                 value={form.location}
                 onChange={(e) => setForm({ ...form, location: e.target.value })}
                 required
-                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-navy-600"
               />
             </div>
             <div>
@@ -129,7 +129,7 @@ export default function AdminProperti() {
               <select
                 value={form.category}
                 onChange={(e) => setForm({ ...form, category: e.target.value })}
-                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-navy-600"
               >
                 {CATEGORY_OPTIONS.map((opt) => (
                   <option key={opt.value} value={opt.value}>{opt.label}</option>
@@ -143,7 +143,7 @@ export default function AdminProperti() {
                 value={form.totalAsset}
                 onChange={(e) => setForm({ ...form, totalAsset: Number(e.target.value) })}
                 required
-                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-navy-600"
               />
             </div>
             <div>
@@ -153,7 +153,7 @@ export default function AdminProperti() {
                 value={form.pricePerToken}
                 onChange={(e) => setForm({ ...form, pricePerToken: Number(e.target.value) })}
                 required
-                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-navy-600"
               />
             </div>
             <div>
@@ -163,7 +163,7 @@ export default function AdminProperti() {
                 value={form.minInvestment}
                 onChange={(e) => setForm({ ...form, minInvestment: Number(e.target.value) })}
                 required
-                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-navy-600"
               />
             </div>
             <div>
@@ -174,7 +174,7 @@ export default function AdminProperti() {
                 value={form.projectedReturnPercent}
                 onChange={(e) => setForm({ ...form, projectedReturnPercent: Number(e.target.value) })}
                 required
-                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-gold-600"
+                className="w-full h-10 px-3 rounded-lg border border-neutral-200 text-sm outline-none focus:border-navy-600"
               />
             </div>
             <div className="flex items-end gap-2">
@@ -211,12 +211,12 @@ export default function AdminProperti() {
                     <p className="text-xs text-neutral-500">{p.location}</p>
                   </td>
                   <td className="py-3 px-3">
-                    <span className="text-xs px-2 py-1 rounded-full bg-gold-50 text-gold-700 capitalize">
+                    <span className="text-xs px-2 py-1 rounded-full bg-navy-50 text-navy-700 capitalize">
                       {p.category}
                     </span>
                   </td>
                   <td className="py-3 px-3 text-right font-medium">{formatRupiah(p.pricePerToken)}</td>
-                  <td className="py-3 px-3 text-right text-green-600">{formatPercent(p.projectedReturnPercent)}</td>
+                  <td className="py-3 px-3 text-right text-teal-600">{formatPercent(p.projectedReturnPercent)}</td>
                   <td className="py-3 px-3 text-center">
                     <Badge variant={p.status === 'Aktif' ? 'success' : 'neutral'}>
                       {p.status || 'Aktif'}

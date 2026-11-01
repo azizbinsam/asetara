@@ -25,24 +25,24 @@ export function ToastContainer() {
     const handler = (e) => {
       addToast({ id: Date.now() + Math.random(), message: e.detail.message, type: e.detail.type || 'warning' })
     }
-    window.addEventListener('propin-toast', handler)
+    window.addEventListener('asetara-toast', handler)
     
     return () => {
       toastListeners = toastListeners.filter((fn) => fn !== addToast)
-      window.removeEventListener('propin-toast', handler)
+      window.removeEventListener('asetara-toast', handler)
     }
   }, [addToast])
 
   const icons = {
-    success: <CheckCircle2 size={18} className="text-green-600" />,
-    warning: <AlertTriangle size={18} className="text-gold-700" />,
+    success: <CheckCircle2 size={18} className="text-teal-600" />,
+    warning: <AlertTriangle size={18} className="text-navy-700" />,
     error: <AlertTriangle size={18} className="text-red-600" />,
     info: <Info size={18} className="text-blue-600" />,
   }
 
   const bgStyles = {
-    success: 'bg-green-50 border-green-200 text-green-800',
-    warning: 'bg-gold-50 border-gold-200 text-gold-800',
+    success: 'bg-teal-50 border-teal-200 text-teal-800',
+    warning: 'bg-navy-50 border-navy-200 text-navy-800',
     error: 'bg-red-50 border-red-200 text-red-800',
     info: 'bg-blue-50 border-blue-200 text-blue-800',
   }

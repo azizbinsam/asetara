@@ -42,8 +42,8 @@ const RECENT_ALERTS = [
 
 const METRIC_CARDS = [
   { icon: Users, label: 'Total Investor', value: PLATFORM_METRICS.totalInvestors, change: '+15%', color: 'blue' },
-  { icon: Building2, label: 'Properti Aktif', value: PLATFORM_METRICS.activeProperties, change: '+2', color: 'green' },
-  { icon: ArrowLeftRight, label: 'Transaksi', value: PLATFORM_METRICS.totalTransactions, change: '+8%', color: 'gold' },
+  { icon: Building2, label: 'Properti Aktif', value: PLATFORM_METRICS.activeProperties, change: '+2', color: 'teal' },
+  { icon: ArrowLeftRight, label: 'Transaksi', value: PLATFORM_METRICS.totalTransactions, change: '+8%', color: 'brand' },
   { icon: HandCoins, label: 'Zakat Terkumpul', value: formatRupiah(PLATFORM_METRICS.zakatCollected), change: '+22%', color: 'purple' },
 ]
 
@@ -65,14 +65,14 @@ export default function AdminDashboard() {
               </div>
               <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                 color === 'blue' ? 'bg-blue-50 text-blue-600' :
-                color === 'green' ? 'bg-green-50 text-green-600' :
-                color === 'gold' ? 'bg-gold-50 text-gold-600' :
+                color === 'teal' ? 'bg-teal-50 text-teal-600' :
+                color === 'brand' ? 'bg-navy-50 text-navy-600' :
                 'bg-purple-50 text-purple-600'
               }`}>
                 <Icon size={20} />
               </div>
             </div>
-            <p className="text-xs text-green-600 font-medium mt-2">{change} dari bulan lalu</p>
+            <p className="text-xs text-teal-600 font-medium mt-2">{change} dari bulan lalu</p>
           </Card>
         ))}
       </div>
@@ -89,11 +89,11 @@ export default function AdminDashboard() {
               <XAxis dataKey="month" tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={(v) => `Rp ${v/1000000000}M`} />
               <Tooltip formatter={(v) => [formatRupiah(v), 'Volume']} contentStyle={{ borderRadius: 12, fontSize: 12 }} />
-              <Area type="monotone" dataKey="value" stroke="#B08A2E" fill="url(#adminGold)" />
+              <Area type="monotone" dataKey="value" stroke="#477C7C" fill="url(#adminTeal)" />
               <defs>
-                <linearGradient id="adminGold" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#B08A2E" stopOpacity={0.2} />
-                  <stop offset="100%" stopColor="#B08A2E" stopOpacity={0} />
+                <linearGradient id="adminTeal" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#477C7C" stopOpacity={0.2} />
+                  <stop offset="100%" stopColor="#477C7C" stopOpacity={0} />
                 </linearGradient>
               </defs>
             </AreaChart>
@@ -110,8 +110,8 @@ export default function AdminDashboard() {
               <XAxis dataKey="month" tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
               <Tooltip contentStyle={{ borderRadius: 12, fontSize: 12 }} />
-              <Bar dataKey="new" fill="#B08A2E" radius={[4, 4, 0, 0]} name="Baru" />
-              <Bar dataKey="active" fill="#1F8A55" radius={[4, 4, 0, 0]} name="Aktif" />
+              <Bar dataKey="new" fill="#477C7C" radius={[4, 4, 0, 0]} name="Baru" />
+              <Bar dataKey="active" fill="#C6A66A" radius={[4, 4, 0, 0]} name="Aktif" />
             </BarChart>
           </ResponsiveContainer>
         </Card>
@@ -125,8 +125,8 @@ export default function AdminDashboard() {
             {RECENT_ALERTS.map((alert) => (
               <div key={alert.id} className="flex items-start gap-3 p-3 rounded-xl bg-neutral-50">
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
-                  alert.type === 'warning' ? 'bg-gold-50 text-gold-600' :
-                  alert.type === 'success' ? 'bg-green-50 text-green-600' :
+                  alert.type === 'warning' ? 'bg-navy-50 text-navy-600' :
+                  alert.type === 'success' ? 'bg-teal-50 text-teal-600' :
                   'bg-blue-50 text-blue-600'
                 }`}>
                   <AlertTriangle size={16} />
@@ -140,7 +140,7 @@ export default function AdminDashboard() {
           </div>
         </Card>
 
-        <Card variant="gold">
+        <Card variant="brand">
           <p className="text-xs opacity-90">Total Volume Platform</p>
           <p className="text-2xl font-bold mt-1">{totalVolumeFormatted}</p>
           <div className="mt-4 space-y-2">

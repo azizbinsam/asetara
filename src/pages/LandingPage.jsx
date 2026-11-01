@@ -18,7 +18,7 @@ function KalkulatorSection() {
     <section className="py-20 px-4 bg-neutral-50">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-gold-100 text-gold-700 text-xs font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-navy-100 text-navy-700 text-xs font-semibold mb-4">
             SIMULASI
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Kalkulator Investasi</h2>
@@ -32,7 +32,7 @@ function KalkulatorSection() {
               <div>
                 <div className="flex justify-between mb-2">
                   <label className="text-sm font-medium text-neutral-700">Nominal Investasi</label>
-                  <span className="text-sm font-bold text-gold-700">Rp {nominal.toLocaleString('id-ID')}</span>
+                  <span className="text-sm font-bold text-navy-700">Rp {nominal.toLocaleString('id-ID')}</span>
                 </div>
                 <input
                   type="range"
@@ -41,7 +41,7 @@ function KalkulatorSection() {
                   step={100000}
                   value={nominal}
                   onChange={(e) => setNominal(Number(e.target.value))}
-                  className="w-full h-2 bg-neutral-200 rounded-full appearance-none cursor-pointer accent-gold-600"
+                  className="w-full h-2 bg-neutral-200 rounded-full appearance-none cursor-pointer accent-navy-600"
                 />
                 <div className="flex justify-between text-xs text-neutral-400 mt-1">
                   <span>Rp 100rb</span>
@@ -52,7 +52,7 @@ function KalkulatorSection() {
               <div>
                 <div className="flex justify-between mb-2">
                   <label className="text-sm font-medium text-neutral-700">Imbal Hasil Proyeksi</label>
-                  <span className="text-sm font-bold text-gold-700">{returnRate}% /thn</span>
+                  <span className="text-sm font-bold text-navy-700">{returnRate}% /thn</span>
                 </div>
                 <input
                   type="range"
@@ -61,7 +61,7 @@ function KalkulatorSection() {
                   step={0.5}
                   value={returnRate}
                   onChange={(e) => setReturnRate(Number(e.target.value))}
-                  className="w-full h-2 bg-neutral-200 rounded-full appearance-none cursor-pointer accent-gold-600"
+                  className="w-full h-2 bg-neutral-200 rounded-full appearance-none cursor-pointer accent-navy-600"
                 />
                 <div className="flex justify-between text-xs text-neutral-400 mt-1">
                   <span>1%</span>
@@ -78,7 +78,7 @@ function KalkulatorSection() {
                       onClick={() => setYears(y)}
                       className={`py-2.5 rounded-xl text-sm font-medium transition-all ${
                         years === y
-                          ? 'bg-gold-600 text-white shadow-lg shadow-gold-600/25'
+                          ? 'bg-navy-600 text-white shadow-lg shadow-navy-600/25'
                           : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
                       }`}
                     >
@@ -91,7 +91,7 @@ function KalkulatorSection() {
           </div>
 
           {/* Result Panel */}
-          <div className="bg-gradient-to-br from-gold-500 via-gold-600 to-gold-800 rounded-2xl p-8 text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-navy-500 via-navy-600 to-navy-800 rounded-2xl p-8 text-white relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
             
@@ -166,24 +166,24 @@ function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 mb-6">
-            <Shield size={14} className="text-gold-400" />
-            <span className="text-sm text-white/90">Platform Syariah Berbasis Blockchain</span>
+            <Shield size={14} className="text-champagne-400" />
+            <span className="text-sm text-white/90">Edukasi • Perencanaan • Investasi • Perlindungan</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Satu Token,{' '}
-            <span className="text-gold-400">Satu Kepemilikan</span>
+            Akses Finansial{' '}
+            <span className="text-champagne-400">Lebih Setara</span>
           </h1>
 
           <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-xl">
-            Investasi properti syariah mulai dari Rp 10.000. Terdaftar & diawasi OJK. 
-            Kepemilikan transparan berbasis smart contract.
+            Belajar, merencanakan, membandingkan, lalu berinvestasi properti syariah
+            mulai dari Rp 10.000, dengan kepemilikan transparan berbasis smart contract.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link
               to="/register"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-600 text-white rounded-xl font-semibold hover:bg-gold-700 transition-all shadow-lg shadow-gold-600/25 hover:shadow-xl hover:shadow-gold-600/30"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-champagne-500 text-navy-800 rounded-xl font-semibold hover:bg-champagne-400 transition-all shadow-lg shadow-black/20"
             >
               Mulai Investasi
               <ArrowRight size={18} />
@@ -217,7 +217,7 @@ function HeroSection() {
             <button
               key={i}
               onClick={() => setCurrentSlide(i)}
-              className={`h-1.5 rounded-full transition-all ${i === currentSlide ? 'w-8 bg-gold-400' : 'w-2 bg-white/40'}`}
+              className={`h-1.5 rounded-full transition-all ${i === currentSlide ? 'w-8 bg-champagne-400' : 'w-2 bg-white/40'}`}
             />
           ))}
         </div>
@@ -239,7 +239,7 @@ function FeaturesSection() {
       icon: TrendingUp,
       title: 'Return Kompetitif',
       desc: 'Imbal hasil proyeksi 8-15% per tahun dari distribusi sewa properti. Historis track record terbuka.',
-      color: 'bg-gold-50 text-gold-600',
+      color: 'bg-navy-50 text-navy-600',
     },
     {
       icon: Users,
@@ -259,12 +259,12 @@ function FeaturesSection() {
     <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-gold-100 text-gold-700 text-xs font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-navy-100 text-navy-700 text-xs font-semibold mb-4">
             KEUNGGULAN
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Mengapa Memilih PROPIN?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Mengapa Memilih ASETARA?</h2>
           <p className="text-neutral-500 mt-3 max-w-lg mx-auto">
-            Platform tokenisasi properti syariah pertama di Indonesia dengan teknologi blockchain
+            Satu platform untuk belajar, merencanakan, dan berinvestasi properti syariah dengan teknologi blockchain
           </p>
         </div>
 
@@ -272,7 +272,7 @@ function FeaturesSection() {
           {features.map((f, i) => (
             <div
               key={i}
-              className="group p-6 rounded-2xl border border-neutral-100 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-600/5 transition-all duration-300 bg-white"
+              className="group p-6 rounded-2xl border border-neutral-100 hover:border-navy-200 hover:shadow-lg hover:shadow-navy-600/5 transition-all duration-300 bg-white"
             >
               <div className={`w-12 h-12 rounded-xl ${f.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                 <f.icon size={24} />
@@ -324,7 +324,7 @@ function PropertiesPreview() {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-gold-100 text-gold-700 text-xs font-semibold mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-navy-100 text-navy-700 text-xs font-semibold mb-4">
               PROPERTI PILIHAN
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Properti Tersedia</h2>
@@ -332,7 +332,7 @@ function PropertiesPreview() {
           </div>
           <Link
             to="/login"
-            className="hidden md:inline-flex items-center gap-2 text-gold-700 font-semibold hover:text-gold-800 transition-colors"
+            className="hidden md:inline-flex items-center gap-2 text-navy-700 font-semibold hover:text-navy-800 transition-colors"
           >
             Lihat Semua <ArrowRight size={16} />
           </Link>
@@ -342,7 +342,7 @@ function PropertiesPreview() {
           {properties.map((p, i) => (
             <div
               key={i}
-              className="group bg-white rounded-2xl border border-neutral-100 overflow-hidden hover:shadow-xl hover:shadow-gold-600/5 transition-all duration-300"
+              className="group bg-white rounded-2xl border border-neutral-100 overflow-hidden hover:shadow-xl hover:shadow-navy-600/5 transition-all duration-300"
             >
               <div className="relative h-52 overflow-hidden">
                 <img
@@ -356,7 +356,7 @@ function PropertiesPreview() {
                   </span>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="px-3 py-1 rounded-full bg-gold-500 text-white text-xs font-semibold">
+                  <span className="px-3 py-1 rounded-full bg-navy-500 text-white text-xs font-semibold">
                     {p.return}/thn
                   </span>
                 </div>
@@ -371,7 +371,7 @@ function PropertiesPreview() {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <p className="text-xs text-neutral-400">Mulai dari</p>
-                    <p className="text-lg font-bold text-gold-700">{p.price}</p>
+                    <p className="text-lg font-bold text-navy-700">{p.price}</p>
                   </div>
                   <div className="text-right">
                     <p className="text-xs text-neutral-400">Token</p>
@@ -385,7 +385,7 @@ function PropertiesPreview() {
                   </div>
                   <div className="h-2 bg-neutral-100 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-gold-500 to-gold-600 rounded-full transition-all"
+                      className="h-full bg-gradient-to-r from-navy-500 to-navy-600 rounded-full transition-all"
                       style={{ width: `${p.funded}%` }}
                     />
                   </div>
@@ -398,7 +398,7 @@ function PropertiesPreview() {
         <div className="mt-8 text-center md:hidden">
           <Link
             to="/login"
-            className="inline-flex items-center gap-2 text-gold-700 font-semibold"
+            className="inline-flex items-center gap-2 text-navy-700 font-semibold"
           >
             Lihat Semua Properti <ArrowRight size={16} />
           </Link>
@@ -421,7 +421,7 @@ function HowItWorks() {
     <section className="py-20 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-gold-100 text-gold-700 text-xs font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-navy-100 text-navy-700 text-xs font-semibold mb-4">
             CARA KERJA
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Mulai Investasi dalam 4 Langkah</h2>
@@ -433,7 +433,7 @@ function HowItWorks() {
               {i < steps.length - 1 && (
                 <div className="hidden md:block absolute top-8 left-[60%] w-[80%] h-0.5 bg-neutral-100" />
               )}
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-gold-600/20">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-navy-500 to-navy-700 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-navy-600/20">
                 <span className="text-xl font-bold text-white">{step.num}</span>
               </div>
               <h3 className="text-lg font-bold text-neutral-800 mb-2">{step.title}</h3>
@@ -473,7 +473,7 @@ function Testimonials() {
     <section className="py-20 px-4 bg-neutral-50">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-gold-100 text-gold-700 text-xs font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-navy-100 text-navy-700 text-xs font-semibold mb-4">
             TESTIMONI
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Apa Kata Investor?</h2>
@@ -484,12 +484,12 @@ function Testimonials() {
             <div key={i} className="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} size={16} className="text-gold-400 fill-gold-400" />
+                  <Star key={star} size={16} className="text-champagne-400 fill-champagne-400" />
                 ))}
               </div>
               <p className="text-sm text-neutral-600 leading-relaxed mb-6">"{t.text}"</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 font-bold text-sm">
+                <div className="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center text-navy-700 font-bold text-sm">
                   {t.avatar}
                 </div>
                 <div>
@@ -509,7 +509,7 @@ function Testimonials() {
 function CTASection() {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gold-600 to-gold-800" />
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-600 to-navy-800" />
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full translate-x-1/3 translate-y-1/3" />
@@ -520,12 +520,12 @@ function CTASection() {
           Siap Mulai Investasi Syariah?
         </h2>
         <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-          Bergabung dengan 1.240+ investor yang sudah mempercayakan investasi properti mereka di PROPIN.
+          Bergabung dengan 1.240+ investor yang sudah mempercayakan investasi properti mereka di ASETARA.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/register"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gold-700 rounded-xl font-semibold hover:bg-neutral-50 transition-all shadow-lg"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-navy-700 rounded-xl font-semibold hover:bg-neutral-50 transition-all shadow-lg"
           >
             Daftar Gratis
             <ArrowRight size={18} />
@@ -550,37 +550,37 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <a href="/"><Logo size={180} /></a>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-gold-900 text-gold-300 border border-gold-700">Prototype</span>
+              <a href="/" className="inline-block bg-white rounded-xl px-3 py-2"><Logo size={150} variant="horizontal" /></a>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-navy-900 text-champagne-300 border border-navy-700">Prototype</span>
             </div>
             <p className="text-sm leading-relaxed max-w-sm">
-              Platform tokenisasi properti syariah berbasis blockchain. 
-              Membuka akses investasi properti untuk semua kalangan dengan prinsip syariah.
+              Platform akses finansial: edukasi, perencanaan, perbandingan investasi, dan perlindungan.
+              Membuka akses investasi properti syariah untuk semua kalangan.
             </p>
           </div>
           <div>
             <h4 className="text-white font-semibold mb-4">Platform</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/login" className="hover:text-gold-400 transition-colors">Marketplace</Link></li>
-              <li><Link to="/login" className="hover:text-gold-400 transition-colors">Dompet</Link></li>
-              <li><Link to="/login" className="hover:text-gold-400 transition-colors">Laporan</Link></li>
+              <li><Link to="/login" className="hover:text-champagne-400 transition-colors">Marketplace</Link></li>
+              <li><Link to="/login" className="hover:text-champagne-400 transition-colors">Dompet</Link></li>
+              <li><Link to="/login" className="hover:text-champagne-400 transition-colors">Laporan</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-white font-semibold mb-4">Perusahaan</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-gold-400 transition-colors">Tentang Kami</a></li>
-              <li><a href="#" className="hover:text-gold-400 transition-colors">Syarat & Ketentuan</a></li>
-              <li><a href="#" className="hover:text-gold-400 transition-colors">Kebijakan Privasi</a></li>
+              <li><a href="#" className="hover:text-champagne-400 transition-colors">Tentang Kami</a></li>
+              <li><a href="#" className="hover:text-champagne-400 transition-colors">Syarat & Ketentuan</a></li>
+              <li><a href="#" className="hover:text-champagne-400 transition-colors">Kebijakan Privasi</a></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-neutral-800 pt-6">
           <div className="flex flex-col md:flex-row justify-between gap-4">
-            <p className="text-xs">© 2026 PROPIN. Hak Cipta Dilindungi.</p>
+            <p className="text-xs">© 2026 ASETARA. Hak Cipta Dilindungi.</p>
             <div className="flex items-start gap-2">
-              <span className="text-gold-500 text-lg">⚠️</span>
+              <span className="text-navy-500 text-lg">⚠️</span>
               <p className="text-xs text-neutral-500 max-w-md">
                 <strong>Disclaimer:</strong> Platform ini adalah prototype untuk demonstrasi. 
                 Semua transaksi bersifat simulasi. Jangan transfer dana ke rekening apapun.
@@ -602,21 +602,21 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
-              <Logo size={140} />
+              <Logo size={150} variant="horizontal" />
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#fitur" className="text-sm text-neutral-600 hover:text-gold-700 transition-colors">Fitur</a>
-              <a href="#properti" className="text-sm text-neutral-600 hover:text-gold-700 transition-colors">Properti</a>
-              <a href="#kalkulator" className="text-sm text-neutral-600 hover:text-gold-700 transition-colors">Kalkulator</a>
-              <a href="#cara-kerja" className="text-sm text-neutral-600 hover:text-gold-700 transition-colors">Cara Kerja</a>
+              <a href="#fitur" className="text-sm text-neutral-600 hover:text-navy-700 transition-colors">Fitur</a>
+              <a href="#properti" className="text-sm text-neutral-600 hover:text-navy-700 transition-colors">Properti</a>
+              <a href="#kalkulator" className="text-sm text-neutral-600 hover:text-navy-700 transition-colors">Kalkulator</a>
+              <a href="#cara-kerja" className="text-sm text-neutral-600 hover:text-navy-700 transition-colors">Cara Kerja</a>
             </div>
             <div className="flex items-center gap-3">
-              <Link to="/login" className="text-sm font-medium text-neutral-600 hover:text-gold-700 transition-colors">
+              <Link to="/login" className="text-sm font-medium text-neutral-600 hover:text-navy-700 transition-colors">
                 Masuk
               </Link>
               <Link
                 to="/register"
-                className="px-4 py-2 bg-gold-600 text-white text-sm font-medium rounded-lg hover:bg-gold-700 transition-colors"
+                className="px-4 py-2 bg-navy-600 text-white text-sm font-medium rounded-lg hover:bg-navy-700 transition-colors"
               >
                 Daftar
               </Link>

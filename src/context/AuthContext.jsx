@@ -4,7 +4,7 @@ const DUMMY_USERS = [
   {
     id: 'u-1',
     name: 'Sinta Dewi',
-    email: 'sinta@propin.id',
+    email: 'sinta@asetara.id',
     role: 'user',
     avatar: null,
     phone: '+62 812-3456-7890',
@@ -13,8 +13,8 @@ const DUMMY_USERS = [
   },
   {
     id: 'u-admin',
-    name: 'Admin PROPIN',
-    email: 'admin@propin.id',
+    name: 'Admin ASETARA',
+    email: 'admin@asetara.id',
     role: 'admin',
     avatar: null,
     phone: '+62 811-0000-0000',
@@ -31,7 +31,7 @@ export function AuthProvider({ children }) {
 
   // Restore session from localStorage on mount
   useEffect(() => {
-    const stored = localStorage.getItem('propin_auth')
+    const stored = localStorage.getItem('asetara_auth')
     if (stored) {
       try {
         const parsed = JSON.parse(stored)
@@ -40,7 +40,7 @@ export function AuthProvider({ children }) {
           setUser(parsed)
         }
       } catch {
-        localStorage.removeItem('propin_auth')
+        localStorage.removeItem('asetara_auth')
       }
     }
     setIsLoading(false)
@@ -63,13 +63,13 @@ export function AuthProvider({ children }) {
             joinedAt: new Date().toISOString(),
           }
           setUser(newUser)
-          localStorage.setItem('propin_auth', JSON.stringify(newUser))
+          localStorage.setItem('asetara_auth', JSON.stringify(newUser))
           resolve({ user: newUser, isNew: true })
           return
         }
         // Any password is accepted for dummy auth
         setUser(found)
-        localStorage.setItem('propin_auth', JSON.stringify(found))
+        localStorage.setItem('asetara_auth', JSON.stringify(found))
         resolve({ user: found, isNew: false })
       }, 800) // Simulate network delay ~800ms per PRD 6.1
     })
@@ -94,7 +94,7 @@ export function AuthProvider({ children }) {
           joinedAt: new Date().toISOString(),
         }
         setUser(newUser)
-        localStorage.setItem('propin_auth', JSON.stringify(newUser))
+        localStorage.setItem('asetara_auth', JSON.stringify(newUser))
         resolve({ user: newUser })
       }, 800)
     })
@@ -102,14 +102,14 @@ export function AuthProvider({ children }) {
 
   function logout() {
     setUser(null)
-    localStorage.removeItem('propin_auth')
+    localStorage.removeItem('asetara_auth')
   }
 
   function updateProfile(updates) {
     setUser((prev) => {
       if (!prev) return null
       const updated = { ...prev, ...updates }
-      localStorage.setItem('propin_auth', JSON.stringify(updated))
+      localStorage.setItem('asetara_auth', JSON.stringify(updated))
       return updated
     })
   }

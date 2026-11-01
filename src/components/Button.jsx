@@ -1,12 +1,12 @@
 const VARIANT_STYLES = {
   primary:
-    'bg-gold-600 text-white hover:bg-gold-700 shadow-goldGlow disabled:bg-neutral-200 disabled:text-neutral-400 disabled:shadow-none',
+    'bg-navy-600 text-white hover:bg-navy-700 shadow-navyGlow disabled:bg-neutral-200 disabled:text-neutral-400 disabled:shadow-none',
   secondary:
-    'bg-green-600 text-white hover:bg-green-700 disabled:bg-neutral-200 disabled:text-neutral-400',
+    'bg-teal-600 text-white hover:bg-teal-700 disabled:bg-neutral-200 disabled:text-neutral-400',
   outline:
-    'bg-transparent border-[1.5px] border-gold-600 text-gold-700 hover:bg-gold-50 disabled:border-neutral-200 disabled:text-neutral-400',
+    'bg-transparent border-[1.5px] border-navy-600 text-navy-700 hover:bg-navy-50 disabled:border-neutral-200 disabled:text-neutral-400',
   ghost:
-    'bg-transparent text-neutral-600 hover:text-gold-600 disabled:text-neutral-400',
+    'bg-transparent text-neutral-600 hover:text-navy-600 disabled:text-neutral-400',
 }
 
 const SIZE_STYLES = {

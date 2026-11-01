@@ -8,9 +8,9 @@ import ProgressBar from '../components/ProgressBar'
 import { formatRupiah, formatPercent, formatNumber } from '../utils/format'
 
 const CATEGORY_GRADIENT = {
-  apartemen: 'from-gold-300 to-gold-600',
-  vila: 'from-green-300 to-green-700',
-  hotel: 'from-gold-400 to-green-700',
+  apartemen: 'from-champagne-300 to-navy-600',
+  vila: 'from-teal-300 to-teal-700',
+  hotel: 'from-champagne-400 to-teal-700',
 }
 
 export default function PropertyDetail() {
@@ -43,7 +43,7 @@ export default function PropertyDetail() {
       <div className="p-4 lg:p-0 max-w-2xl">
         <button
           onClick={() => navigate(-1)}
-          className="hidden lg:flex items-center gap-1 text-sm text-neutral-500 hover:text-gold-600 mb-4"
+          className="hidden lg:flex items-center gap-1 text-sm text-neutral-500 hover:text-navy-600 mb-4"
         >
           <ChevronLeft size={16} /> Kembali ke Marketplace
         </button>
@@ -53,7 +53,7 @@ export default function PropertyDetail() {
           {property.image ? (
             <img src={property.image} alt={property.name} className="w-full h-full object-cover" />
           ) : (
-            <div className={`w-full h-full bg-gradient-to-br ${CATEGORY_GRADIENT[property.category] || 'from-gold-300 to-gold-600'}`} />
+            <div className={`w-full h-full bg-gradient-to-br ${CATEGORY_GRADIENT[property.category] || 'from-champagne-300 to-navy-600'}`} />
           )}
           <div className="absolute top-3 left-3">
             <Badge variant="success" withCheck className="!bg-white/90 backdrop-blur">
@@ -61,7 +61,7 @@ export default function PropertyDetail() {
             </Badge>
           </div>
           <div className="absolute top-3 right-3">
-            <span className="px-2.5 py-1 rounded-full bg-gold-500 text-white text-[11px] font-semibold flex items-center gap-1">
+            <span className="px-2.5 py-1 rounded-full bg-navy-500 text-white text-[11px] font-semibold flex items-center gap-1">
               <TrendingUp size={12} /> {formatPercent(property.projectedReturnPercent)}/thn
             </span>
           </div>
@@ -116,7 +116,7 @@ export default function PropertyDetail() {
             </div>
             <div className="col-span-2">
               <p className="text-neutral-500 text-xs">Estimasi Imbal Hasil (ERY)</p>
-              <p className="font-semibold text-green-700">{formatPercent(property.projectedReturnPercent)} / tahun</p>
+              <p className="font-semibold text-teal-700">{formatPercent(property.projectedReturnPercent)} / tahun</p>
             </div>
           </div>
         </Card>

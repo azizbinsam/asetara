@@ -1,29 +1,32 @@
-# PROPIN — Prototype
+# ASETARA — Akses Finansial Lebih Setara
 
-Platform Tokenisasi Properti Syariah Berbasis Blockchain & AI — prototype frontend (React + Vite + Tailwind v3), tanpa backend nyata. Seluruh data bersifat dummy/mock.
+Platform edukasi, perencanaan, investasi, dan perlindungan keuangan. Prototype frontend (React + Vite + Tailwind v3), tanpa backend nyata. Seluruh data bersifat dummy/mock.
+
+Basis kode berasal dari prototype PROPIN (tokenisasi properti syariah), yang fitur-fiturnya tetap dipertahankan di dalam ASETARA.
 
 ## Dokumentasi
-- [`PRD.md`](./PRD.md) — Product Requirements Document
-- [`design.md`](./design.md) — Design System (Gold primary, Green secondary)
+- [`docs/ASETARA-FEATURES.md`](./docs/ASETARA-FEATURES.md) — 4 fitur baru ASETARA (Literasi, Simulator, Perbandingan, Akses & Keamanan)
+- [`PRD.md`](./PRD.md) — PRD awal PROPIN (fitur lama)
+- [`design.md`](./design.md) — Design system PROPIN (warna lama gold/hijau, sudah digantikan palette ASETARA di `tailwind.config.js`)
 
 ## Menjalankan Local
 
-\`\`\`bash
+```bash
 npm install
 npm run dev
-\`\`\`
+```
 
 Buka http://localhost:5173
 
 ## Build Production
 
-\`\`\`bash
+```bash
 npm run build
 npm run preview
-\`\`\`
+```
 
 ## Deployment
-Auto-deploy ke Vercel dari branch \`main\`.
+Auto-deploy ke Vercel dari branch `main`.
 
 ## Tech Stack
-React 18 · Vite · Tailwind CSS v3 · React Router · Recharts · lucide-react
+React 19 · Vite · Tailwind CSS v3 · React Router 7 · Recharts · lucide-react

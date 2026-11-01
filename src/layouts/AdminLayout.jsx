@@ -77,8 +77,8 @@ export default function AdminLayout() {
         <div className="px-5 py-5 border-b border-neutral-200 flex items-center justify-between">
           <div>
             <div className="flex items-center gap-2">
-              <Logo size={28} />
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-gold-100 text-gold-800 font-medium">
+              <Logo size={32} variant="icon" />
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-navy-100 text-navy-800 font-medium">
                 Admin
               </span>
             </div>
@@ -102,11 +102,11 @@ export default function AdminLayout() {
                 to={item.to}
                 className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${
                   isActive
-                    ? 'bg-gold-50 text-gold-700 border-l-[3px] border-gold-600'
+                    ? 'bg-navy-50 text-navy-700 border-l-[3px] border-navy-600'
                     : 'text-neutral-600 hover:bg-neutral-50 hover:text-neutral-800 border-l-[3px] border-transparent'
                 }`}
               >
-                <span className={isActive ? 'text-gold-600' : 'text-neutral-400'}>
+                <span className={isActive ? 'text-navy-600' : 'text-neutral-400'}>
                   {ICONS[item.icon]}
                 </span>
                 <span className="truncate">{item.label}</span>
@@ -116,7 +116,7 @@ export default function AdminLayout() {
         </nav>
         <div className="p-3 border-t border-neutral-200">
           <div className="flex items-center gap-3 px-3 py-2 rounded-xl">
-            <div className="w-9 h-9 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 font-bold text-sm">
+            <div className="w-9 h-9 rounded-full bg-navy-100 flex items-center justify-center text-navy-700 font-bold text-sm">
               {user?.name?.charAt(0) || 'A'}
             </div>
             <div className="min-w-0">
@@ -143,7 +143,7 @@ export default function AdminLayout() {
           </div>
           <div className="flex items-center gap-3 shrink-0">
             <a href="/dashboard"
-              className="text-xs px-2.5 py-1.5 lg:px-3 rounded-lg bg-gold-50 text-gold-700 border border-gold-200 hover:bg-gold-100 transition-colors whitespace-nowrap">
+              className="text-xs px-2.5 py-1.5 lg:px-3 rounded-lg bg-navy-50 text-navy-700 border border-navy-200 hover:bg-navy-100 transition-colors whitespace-nowrap">
               <span className="hidden sm:inline">Lihat Tampilan User</span>
               <span className="sm:hidden">Tampilan User</span>
             </a>

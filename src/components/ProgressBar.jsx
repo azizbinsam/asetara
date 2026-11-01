@@ -1,15 +1,15 @@
 export default function ProgressBar({
   value = 0,
   max = 100,
-  variant = 'green',
+  variant = 'teal',
   showLabel = false,
   className = '',
 }) {
   const percentage = Math.min(100, Math.max(0, (value / max) * 100))
 
   const fillStyles = {
-    green: 'bg-green-600',
-    gold: 'bg-gold-600',
+    teal: 'bg-teal-600',
+    brand: 'bg-navy-600',
   }
 
   return (

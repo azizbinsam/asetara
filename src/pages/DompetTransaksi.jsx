@@ -19,11 +19,11 @@ const PERIODES = [
 ]
 
 const TX_ICONS = {
-  'Beli Token': { icon: ArrowDownLeft, bg: 'bg-green-50', color: 'text-green-600' },
-  'Distribusi Sewa': { icon: ArrowDownLeft, bg: 'bg-green-50', color: 'text-green-600' },
-  'Top Up': { icon: ArrowDownLeft, bg: 'bg-green-50', color: 'text-green-600' },
-  'Zakat': { icon: ArrowUpRight, bg: 'bg-gold-50', color: 'text-gold-700' },
-  'Withdraw': { icon: ArrowUpRight, bg: 'bg-gold-50', color: 'text-gold-700' },
+  'Beli Token': { icon: ArrowDownLeft, bg: 'bg-teal-50', color: 'text-teal-600' },
+  'Distribusi Sewa': { icon: ArrowDownLeft, bg: 'bg-teal-50', color: 'text-teal-600' },
+  'Top Up': { icon: ArrowDownLeft, bg: 'bg-teal-50', color: 'text-teal-600' },
+  'Zakat': { icon: ArrowUpRight, bg: 'bg-navy-50', color: 'text-navy-700' },
+  'Withdraw': { icon: ArrowUpRight, bg: 'bg-navy-50', color: 'text-navy-700' },
 }
 
 function getTxIcon(type) {
@@ -95,7 +95,7 @@ export default function DompetTransaksi() {
 
         {/* Ringkasan Saldo */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
-          <Card variant="gold" className="lg:col-span-2">
+          <Card variant="brand" className="lg:col-span-2">
             <p className="text-xs opacity-90">Total Asset</p>
             <p className="text-xl font-bold mt-1">{formatRupiah(portfolio.totalValue)}</p>
             <p className="text-xs opacity-75 mt-1">~${formatNumber(portfolio.totalValue / 16000)}</p>
@@ -114,7 +114,7 @@ export default function DompetTransaksi() {
             <p className="text-xs text-neutral-400 mt-1">Terakhir diperbarui: Hari ini</p>
             <button
               onClick={handleTopUp}
-              className="mt-3 text-xs px-3 py-1.5 rounded-lg bg-gold-50 text-gold-700 border border-gold-200 hover:bg-gold-100 transition-colors"
+              className="mt-3 text-xs px-3 py-1.5 rounded-lg bg-navy-50 text-navy-700 border border-navy-200 hover:bg-navy-100 transition-colors"
             >
               <span className="flex items-center gap-1">
                 <Plus size={12} /> Top Up
@@ -131,15 +131,15 @@ export default function DompetTransaksi() {
           </div>
           <div className="bg-neutral-0 rounded-xl border border-neutral-200 p-3">
             <p className="text-[10px] text-neutral-500">Yield Berjalan</p>
-            <p className="text-sm font-bold text-green-600">{formatNumber(portfolio.averageReturnPercent)}%</p>
+            <p className="text-sm font-bold text-teal-600">{formatNumber(portfolio.averageReturnPercent)}%</p>
           </div>
           <div className="bg-neutral-0 rounded-xl border border-neutral-200 p-3">
             <p className="text-[10px] text-neutral-500">Masuk Bulan Ini</p>
-            <p className="text-sm font-bold text-green-600">+{formatRupiah(portfolio.totalReturn / 12)}</p>
+            <p className="text-sm font-bold text-teal-600">+{formatRupiah(portfolio.totalReturn / 12)}</p>
           </div>
           <div className="bg-neutral-0 rounded-xl border border-neutral-200 p-3">
             <p className="text-[10px] text-neutral-500">Zakat Dipotong</p>
-            <p className="text-sm font-bold text-gold-700">{formatRupiah(portfolio.totalValue * 0.025 / 12)}</p>
+            <p className="text-sm font-bold text-navy-700">{formatRupiah(portfolio.totalValue * 0.025 / 12)}</p>
           </div>
         </div>
 
@@ -157,7 +157,7 @@ export default function DompetTransaksi() {
                       onClick={() => setPeriode(key)}
                       className={`px-2.5 py-1 rounded-full text-[10px] font-medium transition-colors ${
                         periode === key
-                          ? 'bg-gold-600 text-white'
+                          ? 'bg-navy-600 text-white'
                           : 'bg-neutral-100 text-neutral-500 hover:bg-neutral-200'
                       }`}
                     >
@@ -168,22 +168,22 @@ export default function DompetTransaksi() {
               </div>
               <ResponsiveContainer width="100%" height={240}>
                 <AreaChart data={saldoData[periode]} margin={{ top: 5, right: 5, left: 0, bottom: 0 }}>
-                  <XAxis dataKey="label" tick={{ fontSize: 10, fill: '#9C9587' }} axisLine={false} tickLine={false} />
+                  <XAxis dataKey="label" tick={{ fontSize: 10, fill: '#939CA2' }} axisLine={false} tickLine={false} />
                   <Tooltip
                     formatter={(value) => [formatRupiah(value), 'Saldo']}
-                    contentStyle={{ borderRadius: 12, borderColor: '#E4E0D6', fontSize: 12 }}
+                    contentStyle={{ borderRadius: 12, borderColor: '#E0DCD0', fontSize: 12 }}
                   />
                   <Area
                     type="monotone"
                     dataKey="value"
-                    stroke="#B08A2E"
+                    stroke="#477C7C"
                     strokeWidth={2}
-                    fill="url(#goldGradient)"
+                    fill="url(#tealGradient)"
                   />
                   <defs>
-                    <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#B08A2E" stopOpacity={0.2} />
-                      <stop offset="100%" stopColor="#B08A2E" stopOpacity={0} />
+                    <linearGradient id="tealGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#477C7C" stopOpacity={0.2} />
+                      <stop offset="100%" stopColor="#477C7C" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                 </AreaChart>
@@ -194,7 +194,7 @@ export default function DompetTransaksi() {
             <div>
               <div className="flex items-center justify-between mb-3">
                 <p className="text-sm font-semibold text-neutral-700">Token Saya</p>
-                <button onClick={() => navigate('/sertifikat')} className="text-xs text-gold-700 font-medium hover:underline">
+                <button onClick={() => navigate('/sertifikat')} className="text-xs text-navy-700 font-medium hover:underline">
                   Lihat Semua
                 </button>
               </div>
@@ -216,7 +216,7 @@ export default function DompetTransaksi() {
                           <div>
                             <p className="text-sm font-semibold text-neutral-800">{holding.propertyName}</p>
                             <p className="text-xs text-neutral-500">{property.location}</p>
-                            <p className="text-xs text-green-600 mt-1">{formatNumber(holding.tokens)} token</p>
+                            <p className="text-xs text-teal-600 mt-1">{formatNumber(holding.tokens)} token</p>
                           </div>
                           <div className="text-right">
                             <p className="text-sm font-bold text-neutral-800">{formatRupiah(holding.tokens * property.pricePerToken)}</p>
@@ -225,7 +225,7 @@ export default function DompetTransaksi() {
                         </div>
                         <button
                           onClick={() => navigate(`/sertifikat/${holding.propertyId}`)}
-                          className="mt-3 w-full text-xs font-medium text-gold-700 border border-gold-200 bg-gold-50 rounded-lg py-2 hover:bg-gold-100 transition-colors"
+                          className="mt-3 w-full text-xs font-medium text-navy-700 border border-navy-200 bg-navy-50 rounded-lg py-2 hover:bg-navy-100 transition-colors"
                         >
                           Lihat Sertifikat NFT
                         </button>
@@ -247,7 +247,7 @@ export default function DompetTransaksi() {
                     key={key}
                     className={`px-2.5 py-1 rounded-full text-[10px] font-medium transition-colors ${
                       key === '1M'
-                        ? 'bg-gold-600 text-white'
+                        ? 'bg-navy-600 text-white'
                         : 'bg-neutral-100 text-neutral-500 hover:bg-neutral-200'
                     }`}
                   >
@@ -276,7 +276,7 @@ export default function DompetTransaksi() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium text-neutral-800 truncate">{tx.type || 'Beli Token'}</p>
-                        <p className="text-xs text-neutral-500 truncate">{tx.propertyName || 'PROPIN'}</p>
+                        <p className="text-xs text-neutral-500 truncate">{tx.propertyName || 'ASETARA'}</p>
                       </div>
                       <div className="text-right shrink-0">
                         <p className="text-sm font-bold text-neutral-800">{formatRupiah(tx.nominal)}</p>

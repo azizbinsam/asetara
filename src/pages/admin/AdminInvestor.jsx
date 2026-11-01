@@ -6,7 +6,7 @@ import Button from '../../components/Button'
 
 // Mock investor data
 const MOCK_INVESTORS = [
-  { id: 'inv-1', name: 'Sinta Dewi', email: 'sinta@propin.id', phone: '+62 812-3456-7890', kycStatus: 'Terverifikasi', totalInvested: 12500000, joinDate: '2026-01-15', properties: 3 },
+  { id: 'inv-1', name: 'Sinta Dewi', email: 'sinta@asetara.id', phone: '+62 812-3456-7890', kycStatus: 'Terverifikasi', totalInvested: 12500000, joinDate: '2026-01-15', properties: 3 },
   { id: 'inv-2', name: 'Ahmad Fauzi', email: 'ahmad@email.com', phone: '+62 813-9876-5432', kycStatus: 'Terverifikasi', totalInvested: 45000000, joinDate: '2026-02-20', properties: 5 },
   { id: 'inv-3', name: 'Dewi Kusuma', email: 'dewi@email.com', phone: '+62 811-2345-6789', kycStatus: 'Menunggu', totalInvested: 0, joinDate: '2026-07-18', properties: 0 },
   { id: 'inv-4', name: 'Budi Santoso', email: 'budi@email.com', phone: '+62 814-5678-9012', kycStatus: 'Terverifikasi', totalInvested: 82000000, joinDate: '2025-11-10', properties: 8 },
@@ -58,11 +58,11 @@ export default function AdminInvestor() {
           <p className="text-xs text-neutral-500">Total</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-green-600">{stats.verified}</p>
+          <p className="text-xl font-bold text-teal-600">{stats.verified}</p>
           <p className="text-xs text-neutral-500">Terverifikasi</p>
         </Card>
         <Card variant="default" className="text-center py-4">
-          <p className="text-xl font-bold text-gold-600">{stats.pending}</p>
+          <p className="text-xl font-bold text-navy-600">{stats.pending}</p>
           <p className="text-xs text-neutral-500">Menunggu</p>
         </Card>
         <Card variant="default" className="text-center py-4">
@@ -89,7 +89,7 @@ export default function AdminInvestor() {
               key={f}
               onClick={() => setKycFilter(f)}
               className={`px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
-                kycFilter === f ? 'bg-gold-600 text-white' : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
+                kycFilter === f ? 'bg-navy-600 text-white' : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
               }`}
             >
               {f}
@@ -117,7 +117,7 @@ export default function AdminInvestor() {
                 <tr key={inv.id} className="hover:bg-neutral-50">
                   <td className="py-3 px-3">
                     <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 font-bold text-xs">
+                      <div className="w-8 h-8 rounded-full bg-navy-100 flex items-center justify-center text-navy-700 font-bold text-xs">
                         {inv.name.charAt(0)}
                       </div>
                       <div>
@@ -151,7 +151,7 @@ export default function AdminInvestor() {
                         <>
                           <button
                             onClick={() => handleVerify(inv.id)}
-                            className="p-1.5 rounded-lg hover:bg-green-50 text-green-600"
+                            className="p-1.5 rounded-lg hover:bg-teal-50 text-teal-600"
                             title="Verifikasi"
                           >
                             <CheckCircle2 size={14} />

@@ -40,9 +40,9 @@ export default function SertifikatList() {
                 <Link
                   key={holding.propertyId}
                   to={`/sertifikat/${holding.propertyId}`}
-                  className="flex items-center gap-4 bg-neutral-0 border border-gold-200 rounded-card p-4 hover:shadow-card transition-shadow"
+                  className="flex items-center gap-4 bg-neutral-0 border border-navy-200 rounded-card p-4 hover:shadow-card transition-shadow"
                 >
-                  <div className="w-12 h-12 rounded-full bg-gold-gradient flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-navy-gradient flex items-center justify-center shrink-0">
                     <Award size={20} className="text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -61,7 +61,7 @@ export default function SertifikatList() {
 
         <div className="flex items-center gap-2 mt-5 text-xs text-neutral-400">
           <ShieldCheck size={14} />
-          <span>Setiap sertifikat tercatat & dapat diverifikasi di blockchain PROPIN.</span>
+          <span>Setiap sertifikat tercatat & dapat diverifikasi di blockchain ASETARA.</span>
         </div>
       </div>
     </div>

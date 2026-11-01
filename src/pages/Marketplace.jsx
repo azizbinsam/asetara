@@ -50,7 +50,7 @@ export default function Marketplace() {
               onClick={() => setFilter(value)}
               className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
                 filter === value
-                  ? 'bg-gold-600 text-white'
+                  ? 'bg-navy-600 text-white'
                   : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
               }`}
             >
@@ -64,7 +64,7 @@ export default function Marketplace() {
             <p className="text-neutral-500 text-sm">Tidak ada properti untuk filter ini</p>
             <button
               onClick={() => { setFilter('semua'); setSearch('') }}
-              className="mt-3 text-gold-700 text-sm font-medium hover:underline"
+              className="mt-3 text-navy-700 text-sm font-medium hover:underline"
             >
               Reset Filter
             </button>

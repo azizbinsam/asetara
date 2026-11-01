@@ -21,7 +21,7 @@ function findTransaction(txId, contextTransactions) {
 
   // 2. Fallback to localStorage
   try {
-    const stored = JSON.parse(localStorage.getItem('propin_portfolio') || '{}')
+    const stored = JSON.parse(localStorage.getItem('asetara_portfolio') || '{}')
     const fromStorage = stored.transactions?.find((t) => t.id === txId)
     if (fromStorage) return fromStorage
   } catch {
@@ -86,7 +86,7 @@ export default function DetailTransaksi() {
       <div className="p-4 lg:p-0 max-w-xl">
         <button
           onClick={() => navigate(-1)}
-          className="hidden lg:flex items-center gap-1 text-sm text-neutral-500 hover:text-gold-600 mb-4"
+          className="hidden lg:flex items-center gap-1 text-sm text-neutral-500 hover:text-navy-600 mb-4"
         >
           <ChevronLeft size={16} /> Kembali
         </button>
@@ -98,7 +98,7 @@ export default function DetailTransaksi() {
               <div key={step.key} className="relative">
                 <div
                   className={`absolute -left-[41px] w-6 h-6 rounded-full flex items-center justify-center transition-colors duration-300 ${
-                    isDone ? 'bg-green-600' : 'bg-neutral-200'
+                    isDone ? 'bg-teal-600' : 'bg-neutral-200'
                   }`}
                 >
                   {isDone ? <CheckCircle2 size={14} className="text-white" /> : <Circle size={10} className="text-neutral-400" />}

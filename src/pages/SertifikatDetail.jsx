@@ -18,8 +18,8 @@ function VerifyModal({ onClose }) {
         <button onClick={onClose} className="absolute top-4 right-4 text-neutral-400 hover:text-neutral-600">
           <X size={18} />
         </button>
-        <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-3">
-          <ShieldCheck size={22} className="text-green-600" />
+        <div className="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center mx-auto mb-3">
+          <ShieldCheck size={22} className="text-teal-600" />
         </div>
         <h3 className="font-bold text-neutral-800">Sertifikat Terverifikasi</h3>
         <p className="text-sm text-neutral-500 mt-2">
@@ -59,7 +59,7 @@ export default function SertifikatDetail() {
     : new Date('2026-05-12T09:30:00.000Z')
   const ownershipPercent = (holding.tokens / holding.totalPropertyTokens) * 100
   const tokenId = generateTokenId(propertyId)
-  const qrValue = `https://propin.app/verify/${tokenId}`
+  const qrValue = `https://asetara.app/verify/${tokenId}`
 
   return (
     <div className="pb-8">
@@ -73,25 +73,25 @@ export default function SertifikatDetail() {
       <div className="p-4 lg:p-0 max-w-md">
         <button
           onClick={() => navigate(-1)}
-          className="hidden lg:flex items-center gap-1 text-sm text-neutral-500 hover:text-gold-600 mb-4"
+          className="hidden lg:flex items-center gap-1 text-sm text-neutral-500 hover:text-navy-600 mb-4"
         >
           <ChevronLeft size={16} /> Kembali
         </button>
 
         {/* Certificate card */}
-        <div className="relative rounded-card border-2 border-gold-300 p-1">
-          <div className="rounded-[12px] border border-gold-600 bg-neutral-0 p-6 text-center relative overflow-hidden">
-            <span className="pointer-events-none select-none absolute inset-0 flex items-center justify-center font-serif text-6xl font-bold text-gold-50 opacity-70">
-              PROPIN
+        <div className="relative rounded-card border-2 border-navy-300 p-1">
+          <div className="rounded-[12px] border border-navy-600 bg-neutral-0 p-6 text-center relative overflow-hidden">
+            <span className="pointer-events-none select-none absolute inset-0 flex items-center justify-center font-sans text-6xl font-bold text-navy-50 opacity-70">
+              ASETARA
             </span>
 
             <div className="relative">
-              <p className="font-serif text-lg font-bold text-gold-700">PROPIN</p>
+              <p className="font-sans text-lg font-bold text-navy-700">ASETARA</p>
               <p className="text-[11px] tracking-widest text-neutral-400 uppercase mt-0.5">
                 Sertifikat Kepemilikan Digital
               </p>
 
-              <div className="my-4 border-t border-dashed border-gold-200" />
+              <div className="my-4 border-t border-dashed border-navy-200" />
 
               <p className="text-xs text-neutral-500">Token ID</p>
               <p className="text-sm font-mono font-bold text-neutral-800">{tokenId}</p>
@@ -122,8 +122,8 @@ export default function SertifikatDetail() {
               </div>
 
               <div className="flex justify-center mt-5">
-                <div className="bg-gold-50 border border-gold-200 rounded-btn p-3">
-                  <QRCodeSVG value={qrValue} size={110} fgColor="#6B531A" bgColor="transparent" />
+                <div className="bg-navy-50 border border-navy-200 rounded-btn p-3">
+                  <QRCodeSVG value={qrValue} size={110} fgColor="#172733" bgColor="transparent" />
                 </div>
               </div>
 

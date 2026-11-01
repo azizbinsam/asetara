@@ -16,7 +16,7 @@ const VIDEO_LIBRARY = [
 export default function AiAssistant() {
   const navigate = useNavigate()
   const [messages, setMessages] = useState([
-    { id: 1, role: 'assistant', text: 'Halo! Saya AI Assistant PROPIN. Ada yang bisa saya bantu tentang investasi properti syariah?' },
+    { id: 1, role: 'assistant', text: 'Halo! Saya AI Assistant ASETARA. Ada yang bisa saya bantu tentang investasi properti syariah?' },
   ])
   const [input, setInput] = useState('')
   const [activeTab, setActiveTab] = useState('chat')
@@ -71,7 +71,7 @@ export default function AiAssistant() {
           <button
             onClick={() => setActiveTab('chat')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              activeTab === 'chat' ? 'bg-gold-600 text-white' : 'bg-neutral-100 text-neutral-600'
+              activeTab === 'chat' ? 'bg-navy-600 text-white' : 'bg-neutral-100 text-neutral-600'
             }`}
           >
             Chat
@@ -79,7 +79,7 @@ export default function AiAssistant() {
           <button
             onClick={() => setActiveTab('video')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              activeTab === 'video' ? 'bg-gold-600 text-white' : 'bg-neutral-100 text-neutral-600'
+              activeTab === 'video' ? 'bg-navy-600 text-white' : 'bg-neutral-100 text-neutral-600'
             }`}
           >
             Video Edukasi
@@ -98,14 +98,14 @@ export default function AiAssistant() {
                     className={`flex gap-2.5 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}
                   >
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
-                      msg.role === 'assistant' ? 'bg-gold-100 text-gold-700' : 'bg-neutral-200 text-neutral-600'
+                      msg.role === 'assistant' ? 'bg-navy-100 text-navy-700' : 'bg-neutral-200 text-neutral-600'
                     }`}>
                       {msg.role === 'assistant' ? <Bot size={16} /> : <User size={16} />}
                     </div>
                     <div className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm ${
                       msg.role === 'assistant'
                         ? 'bg-neutral-100 text-neutral-700 rounded-tl-sm'
-                        : 'bg-gold-600 text-white rounded-tr-sm'
+                        : 'bg-navy-600 text-white rounded-tr-sm'
                     }`}>
                       {msg.text}
                     </div>
@@ -113,7 +113,7 @@ export default function AiAssistant() {
                 ))}
                 {typing && (
                   <div className="flex gap-2.5">
-                    <div className="w-8 h-8 rounded-full bg-gold-100 flex items-center justify-center text-gold-700">
+                    <div className="w-8 h-8 rounded-full bg-navy-100 flex items-center justify-center text-navy-700">
                       <Bot size={16} />
                     </div>
                     <div className="bg-neutral-100 rounded-2xl rounded-tl-sm px-4 py-2.5">
@@ -135,7 +135,7 @@ export default function AiAssistant() {
                     <button
                       key={s}
                       onClick={() => handleSuggestion(s)}
-                      className="shrink-0 px-3 py-1.5 rounded-full bg-gold-50 text-gold-700 text-xs font-medium border border-gold-200 hover:bg-gold-100 transition-colors"
+                      className="shrink-0 px-3 py-1.5 rounded-full bg-navy-50 text-navy-700 text-xs font-medium border border-navy-200 hover:bg-navy-100 transition-colors"
                     >
                       {s}
                     </button>
@@ -157,7 +157,7 @@ export default function AiAssistant() {
                   onClick={handleSend}
                   disabled={!input.trim()}
                   className={`w-9 h-9 rounded-full flex items-center justify-center transition-colors ${
-                    input.trim() ? 'bg-gold-600 text-white hover:bg-gold-700' : 'bg-neutral-100 text-neutral-400'
+                    input.trim() ? 'bg-navy-600 text-white hover:bg-navy-700' : 'bg-neutral-100 text-neutral-400'
                   }`}
                 >
                   <Send size={16} />
@@ -177,13 +177,13 @@ export default function AiAssistant() {
                   className="flex items-center gap-3 cursor-pointer hover:shadow-md transition-shadow"
                   onClick={() => handleVideoClick(video)}
                 >
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-gold-300 to-gold-600 flex items-center justify-center shrink-0">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-champagne-300 to-navy-600 flex items-center justify-center shrink-0">
                     <Play size={20} className="text-white ml-1" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-semibold text-neutral-800 truncate">{video.title}</p>
                     <div className="flex items-center gap-2 mt-1">
-                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-gold-50 text-gold-700 font-medium">
+                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-navy-50 text-navy-700 font-medium">
                         {video.category}
                       </span>
                       <span className="text-xs text-neutral-400">{video.duration}</span>

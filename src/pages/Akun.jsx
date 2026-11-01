@@ -102,7 +102,7 @@ export default function Akun() {
             <div className="flex items-center gap-4 mb-6">
               <button
                 onClick={handlePhotoClick}
-                className="relative w-20 h-20 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 text-2xl font-bold overflow-hidden group"
+                className="relative w-20 h-20 rounded-full bg-navy-100 flex items-center justify-center text-navy-700 text-2xl font-bold overflow-hidden group"
               >
                 {user?.avatar ? (
                   <img src={user.avatar} alt="" className="w-full h-full object-cover" />
@@ -138,7 +138,7 @@ export default function Akun() {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full h-11 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-gold-600 focus:ring-2 focus:ring-gold-100"
+                    className="w-full h-11 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-navy-600 focus:ring-2 focus:ring-navy-100"
                   />
                 </div>
                 <div>
@@ -147,7 +147,7 @@ export default function Akun() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full h-11 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-gold-600 focus:ring-2 focus:ring-gold-100"
+                    className="w-full h-11 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-navy-600 focus:ring-2 focus:ring-navy-100"
                   />
                 </div>
                 <div>
@@ -157,7 +157,7 @@ export default function Akun() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="+62 "
-                    className="w-full h-11 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-gold-600 focus:ring-2 focus:ring-gold-100"
+                    className="w-full h-11 px-3 rounded-xl border border-neutral-200 text-sm outline-none focus:border-navy-600 focus:ring-2 focus:ring-navy-100"
                   />
                 </div>
               </div>
@@ -198,7 +198,7 @@ export default function Akun() {
                         {item.toggle ? (
                           <button
                             onClick={(e) => { e.stopPropagation(); setDarkMode(!darkMode) }}
-                            className={`w-11 h-6 rounded-full transition-colors ${darkMode ? 'bg-gold-600' : 'bg-neutral-300'}`}
+                            className={`w-11 h-6 rounded-full transition-colors ${darkMode ? 'bg-navy-600' : 'bg-neutral-300'}`}
                           >
                             <div className={`w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${darkMode ? 'translate-x-5' : 'translate-x-0.5'}`} />
                           </button>
