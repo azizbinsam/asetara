@@ -1,12 +1,6 @@
 import { useEffect, useState, useCallback } from 'react'
 import { X, CheckCircle2, AlertTriangle, Info } from 'lucide-react'
-
-let toastListeners = []
-
-export function toast(message, type = 'success') {
-  const id = Date.now() + Math.random()
-  toastListeners.forEach((fn) => fn({ id, message, type }))
-}
+import { subscribeToast } from './toastStore'
 
 export function ToastContainer() {
   const [toasts, setToasts] = useState([])
@@ -19,7 +13,7 @@ export function ToastContainer() {
   }, [])
 
   useEffect(() => {
-    toastListeners.push(addToast)
+    const unsubscribe = subscribeToast(addToast)
     
     // Listen for custom events from AdminRoute
     const handler = (e) => {
@@ -28,7 +22,7 @@ export function ToastContainer() {
     window.addEventListener('asetara-toast', handler)
     
     return () => {
-      toastListeners = toastListeners.filter((fn) => fn !== addToast)
+      unsubscribe()
       window.removeEventListener('asetara-toast', handler)
     }
   }, [addToast])

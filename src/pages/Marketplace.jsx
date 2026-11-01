@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Search } from 'lucide-react'
-import { useProperties } from '../context/PropertiesContext'
+import { useProperties } from '../context/propertiesStore'
 import PropertyCard from '../components/PropertyCard'
 
 const FILTERS = [

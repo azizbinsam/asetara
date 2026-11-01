@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, TrendingUp } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import Badge from './Badge'
 import { formatRupiah, formatPercent } from '../utils/format'
 

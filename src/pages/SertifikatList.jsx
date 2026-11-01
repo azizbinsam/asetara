@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ChevronLeft, ChevronRight, ShieldCheck, Award } from 'lucide-react'
 import Card from '../components/Card'
 import Badge from '../components/Badge'
-import { usePortfolio } from '../context/PortfolioContext'
+import { usePortfolio } from '../context/portfolioStore'
 import { formatNumber, formatPercent } from '../utils/format'
 
 import properties from '../data/properties.json'

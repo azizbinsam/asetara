@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { ChevronLeft, MapPin, TrendingUp, Building2 } from 'lucide-react'
-import { useProperties } from '../context/PropertiesContext'
+import { useProperties } from '../context/propertiesStore'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import Badge from '../components/Badge'

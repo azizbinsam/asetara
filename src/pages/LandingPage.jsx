@@ -134,17 +134,18 @@ function KalkulatorSection() {
 }
 
 // ============ HERO SECTION ============
+const HERO_SLIDES = [
+  { image: '/images/hero-villa.jpg', title: 'Vila Eksklusif', location: 'Bali & Lombok' },
+  { image: '/images/hero-apartment.jpg', title: 'Apartemen Modern', location: 'Jakarta & Surabaya' },
+  { image: '/images/hero-hotel.jpg', title: 'Hotel Syariah', location: 'Yogyakarta & Bandung' },
+]
+
 function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const slides = [
-    { image: '/images/hero-villa.jpg', title: 'Vila Eksklusif', location: 'Bali & Lombok' },
-    { image: '/images/hero-apartment.jpg', title: 'Apartemen Modern', location: 'Jakarta & Surabaya' },
-    { image: '/images/hero-hotel.jpg', title: 'Hotel Syariah', location: 'Yogyakarta & Bandung' },
-  ]
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length)
+      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length)
     }, 5000)
     return () => clearInterval(timer)
   }, [])
@@ -152,7 +153,7 @@ function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Images */}
-      {slides.map((slide, i) => (
+      {HERO_SLIDES.map((slide, i) => (
         <div
           key={i}
           className={`absolute inset-0 transition-opacity duration-1000 ${i === currentSlide ? 'opacity-100' : 'opacity-0'}`}
@@ -213,7 +214,7 @@ function HeroSection() {
 
         {/* Slide Indicators */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
-          {slides.map((_, i) => (
+          {HERO_SLIDES.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrentSlide(i)}

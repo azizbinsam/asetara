@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { Eye, EyeOff, Mail, Lock, User } from 'lucide-react'
-import { useAuth } from '../context/AuthContext'
-import { toast } from '../components/Toast'
+import { useAuth } from '../context/authStore'
+import { toast } from '../components/toastStore'
 import Button from '../components/Button'
 import Logo from '../components/Logo'
 
@@ -71,7 +71,7 @@ export default function Register() {
     if (!validate()) return
     setIsSubmitting(true)
     try {
-      await register(name.trim(), email.trim(), password)
+      await register(name.trim(), email.trim())
       toast('Pendaftaran berhasil! Selamat datang di ASETARA.', 'success')
       navigate('/dashboard', { replace: true })
     } catch (err) {

@@ -97,7 +97,7 @@ export default function FloatingAiAssistant() {
           }`}
         >
           <Sparkles size={13} className="text-champagne-400 shrink-0" />
-          <span className="whitespace-nowrap">Tanya AI Assistant, gratis!</span>
+          <span className="whitespace-nowrap">Tanya AI Assistant</span>
           <button
             onClick={dismissTooltip}
             className="ml-1 text-neutral-400 hover:text-white transition-colors shrink-0"

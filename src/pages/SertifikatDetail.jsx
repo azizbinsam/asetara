@@ -6,7 +6,7 @@ import Badge from '../components/Badge'
 import Button from '../components/Button'
 import { generateTokenId } from '../utils/blockchain'
 import { formatNumber, formatPercent } from '../utils/format'
-import { usePortfolio } from '../context/PortfolioContext'
+import { usePortfolio } from '../context/portfolioStore'
 
 import user from '../data/user.json'
 import properties from '../data/properties.json'

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { ChevronLeft, Download, FileText, Calendar } from 'lucide-react'
 import Card from '../components/Card'
 import Button from '../components/Button'
-import { usePortfolio } from '../context/PortfolioContext'
+import { usePortfolio } from '../context/portfolioStore'
 import { formatRupiah, formatPercent } from '../utils/format'
 
 const REPORT_TYPES = [

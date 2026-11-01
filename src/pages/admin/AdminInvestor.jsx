@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Search, CheckCircle2, XCircle, Mail, Phone, Calendar } from 'lucide-react'
 import Card from '../../components/Card'
 import Badge from '../../components/Badge'
-import Button from '../../components/Button'
 
 // Mock investor data
 const MOCK_INVESTORS = [

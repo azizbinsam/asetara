@@ -1,10 +1,9 @@
-import { createContext, useContext, useMemo, useState, useEffect } from 'react'
+import { useMemo, useState, useEffect } from 'react'
+import { PortfolioContext } from './portfolioStore'
 import initialTransactions from '../data/transactions.json'
 import initialHoldings from '../data/holdings.json'
 import portfolioBase from '../data/portfolio.json'
 import { generateTxHash } from '../utils/blockchain'
-
-const PortfolioContext = createContext(null)
 
 const STORAGE_KEY = 'asetara_portfolio'
 
@@ -126,10 +125,4 @@ export function PortfolioProvider({ children, properties }) {
       {children}
     </PortfolioContext.Provider>
   )
-}
-
-export function usePortfolio() {
-  const ctx = useContext(PortfolioContext)
-  if (!ctx) throw new Error('usePortfolio must be used within PortfolioProvider')
-  return ctx
 }

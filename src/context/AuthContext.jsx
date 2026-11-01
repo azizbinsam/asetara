@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, useEffect } from 'react'
+import { useState } from 'react'
+import { AuthContext } from './authStore'
 
 const DUMMY_USERS = [
   {
@@ -23,31 +24,26 @@ const DUMMY_USERS = [
   },
 ]
 
-const AuthContext = createContext(null)
+// Pulihkan sesi dari localStorage saat pertama render (tanpa efek, jadi tidak ada kedipan "loading")
+function readStoredUser() {
+  const stored = localStorage.getItem('asetara_auth')
+  if (!stored) return null
+  try {
+    const parsed = JSON.parse(stored)
+    // Validasi bentuk dasar
+    if (parsed && parsed.email && parsed.role) return parsed
+  } catch {
+    localStorage.removeItem('asetara_auth')
+  }
+  return null
+}
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null)
-  const [isLoading, setIsLoading] = useState(true)
+  const [user, setUser] = useState(readStoredUser)
 
-  // Restore session from localStorage on mount
-  useEffect(() => {
-    const stored = localStorage.getItem('asetara_auth')
-    if (stored) {
-      try {
-        const parsed = JSON.parse(stored)
-        // Validate basic shape
-        if (parsed && parsed.email && parsed.role) {
-          setUser(parsed)
-        }
-      } catch {
-        localStorage.removeItem('asetara_auth')
-      }
-    }
-    setIsLoading(false)
-  }, [])
-
-  function login(email, password) {
-    return new Promise((resolve, reject) => {
+  // Auth dummy: kata sandi sudah divalidasi di form dan tidak dicek lagi di sini
+  function login(email) {
+    return new Promise((resolve) => {
       setTimeout(() => {
         const found = DUMMY_USERS.find((u) => u.email.toLowerCase() === email.toLowerCase())
         if (!found) {
@@ -67,7 +63,6 @@ export function AuthProvider({ children }) {
           resolve({ user: newUser, isNew: true })
           return
         }
-        // Any password is accepted for dummy auth
         setUser(found)
         localStorage.setItem('asetara_auth', JSON.stringify(found))
         resolve({ user: found, isNew: false })
@@ -75,7 +70,7 @@ export function AuthProvider({ children }) {
     })
   }
 
-  function register(name, email, password) {
+  function register(name, email) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         const existing = DUMMY_USERS.find((u) => u.email.toLowerCase() === email.toLowerCase())
@@ -118,7 +113,7 @@ export function AuthProvider({ children }) {
     user,
     isAuthenticated: Boolean(user),
     isAdmin: user?.role === 'admin',
-    isLoading,
+    isLoading: false, // sesi dibaca sinkron di readStoredUser, tidak ada tahap loading
     login,
     register,
     logout,
@@ -130,10 +125,4 @@ export function AuthProvider({ children }) {
       {children}
     </AuthContext.Provider>
   )
-}
-
-export function useAuth() {
-  const ctx = useContext(AuthContext)
-  if (!ctx) throw new Error('useAuth must be used within AuthProvider')
-  return ctx
 }

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { useProperties } from './context/PropertiesContext'
+import { useProperties } from './context/propertiesStore'
 import { PortfolioProvider } from './context/PortfolioContext'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { AdminRoute } from './components/AdminRoute'

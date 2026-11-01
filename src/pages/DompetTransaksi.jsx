@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ArrowDownLeft, ArrowUpRight, ChevronLeft, Plus, Download, Upload } from 'lucide-react'
+import { ArrowDownLeft, ArrowUpRight, ChevronLeft, Plus, Download } from 'lucide-react'
 import { AreaChart, Area, XAxis, Tooltip, ResponsiveContainer } from 'recharts'
 import Card from '../components/Card'
-import Badge from '../components/Badge'
 import Button from '../components/Button'
-import { usePortfolio } from '../context/PortfolioContext'
-import { useProperties } from '../context/PropertiesContext'
-import { useAuth } from '../context/AuthContext'
-import { toast } from '../components/Toast'
+import { usePortfolio } from '../context/portfolioStore'
+import { useProperties } from '../context/propertiesStore'
+import { toast } from '../components/toastStore'
 import { formatRupiah, formatNumber, formatPercent } from '../utils/format'
 
 const PERIODES = [
@@ -32,7 +30,6 @@ function getTxIcon(type) {
 
 export default function DompetTransaksi() {
   const navigate = useNavigate()
-  const { user } = useAuth()
   const { portfolio, holdings, transactions } = usePortfolio()
   const { activeProperties } = useProperties()
   const [periode, setPeriode] = useState('1M')

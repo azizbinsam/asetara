@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Link, Navigate, useNavigate, useLocation } from 'react-router-dom'
 import { Eye, EyeOff, Mail, Lock } from 'lucide-react'
-import { useAuth } from '../context/AuthContext'
-import { toast } from '../components/Toast'
+import { useAuth } from '../context/authStore'
+import { toast } from '../components/toastStore'
 import Button from '../components/Button'
 import Logo from '../components/Logo'
 
@@ -59,7 +59,7 @@ export default function Login() {
     if (!validate()) return
     setIsSubmitting(true)
     try {
-      const result = await login(email.trim(), password)
+      const result = await login(email.trim())
       toast(`Selamat datang, ${result.user.name}!`, 'success')
       const from = location.state?.from
       if (from && !from.startsWith('/admin')) {

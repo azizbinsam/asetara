@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation, Outlet } from 'react-router-dom'
-import { useAuth } from '../context/AuthContext'
+import { useAuth } from '../context/authStore'
 import Logo from '../components/Logo'
 
 const ADMIN_NAV = [
@@ -44,12 +44,10 @@ const CloseIcon = (
 export default function AdminLayout() {
   const { user } = useAuth()
   const location = useLocation()
-  const [sidebarOpen, setSidebarOpen] = useState(false)
-
-  // Auto-close drawer on every route change (mobile)
-  useEffect(() => {
-    setSidebarOpen(false)
-  }, [location.pathname])
+  // Drawer terbuka hanya untuk halaman tempat ia dibuka, jadi otomatis menutup saat pindah rute (mobile)
+  const [openedAt, setOpenedAt] = useState(null)
+  const sidebarOpen = openedAt === location.pathname
+  const setSidebarOpen = (open) => setOpenedAt(open ? location.pathname : null)
 
   // Prevent background scroll while drawer is open on mobile
   useEffect(() => {

@@ -1,9 +1,9 @@
 import { useMemo } from 'react'
-import { TrendingUp, Users, Building2, ArrowLeftRight, HandCoins, AlertTriangle } from 'lucide-react'
+import { Users, Building2, ArrowLeftRight, HandCoins, AlertTriangle } from 'lucide-react'
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts'
 import Card from '../../components/Card'
 import Badge from '../../components/Badge'
-import { formatRupiah, formatNumber } from '../../utils/format'
+import { formatRupiah } from '../../utils/format'
 
 // Mock admin data
 const PLATFORM_METRICS = {

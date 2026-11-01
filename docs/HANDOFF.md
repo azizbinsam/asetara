@@ -17,7 +17,7 @@ npm install
 npm run dev      # http://localhost:5173
 npm run build
 ```
-Lint (`npx eslint .`) masih punya ~23 temuan lama (import tak terpakai, `Date.now()`/`Math.random()` di `AiAssistant.jsx`). Jangan menambah temuan baru.
+Lint (`npx eslint .`): Tahap 6c membersihkan temuan yang bisa dideteksi tanpa menjalankan eslint (import/variabel tak terpakai, export non-komponen di file `.jsx`, `setState` di dalam `useEffect`, `Date.now()`/`Math.random()` di `AiAssistant`). Jalankan `npx eslint .` dan perbaiki sisa temuan jika masih ada. Jangan menambah temuan baru.
 
 ## 3. Design system (WAJIB diikuti)
 Token ada di `tailwind.config.js`. Jangan pakai warna bawaan Tailwind (blue/purple/emerald) kecuali merah untuk error.
@@ -52,7 +52,7 @@ Aturan yang dipelajari dari audit visual:
 | 5 | **Financial Access & Safety Hub** (`AksesKeamanan.jsx`, data `aksesKeamanan.json`) | Selesai (menunggu verifikasi di browser) |
 | 6a | Penyambung antar fitur (`NextSteps`) + rapikan teks tokenisasi di Landing/Dampak | Selesai (menunggu verifikasi di browser) |
 | 6b | Update AI Assistant: saran & jawaban mock untuk fitur ASETARA, tab video bertema ASETARA | Selesai (menunggu verifikasi di browser) |
-| 6c | Bersihkan lint (import tak terpakai) & aset tak terpakai | Berikutnya |
+| 6c | Bersihkan lint (import tak terpakai, fast refresh, set-state-in-effect) & hapus file/aset tak terpakai | Selesai (menunggu verifikasi `npm run build` + `npx eslint .`) |
 
 ### Struktur Tahap 2 (Literasi)
 - Data: `src/data/literasi.json` (kategori, materi, soal). Edit isi materi/soal di sini tanpa menyentuh kode.
@@ -106,6 +106,16 @@ Aturan yang dipelajari dari audit visual:
 - `Date.now()`/`Math.random()` dihapus dari `AiAssistant.jsx` dan `FloatingAiAssistant.jsx` (id pesan pakai `useRef` counter, jeda ketik deterministik).
 - Tooltip "Tanya AI Assistant, gratis!" pada tombol melayang belum diubah.
 
+### Struktur Tahap 6c (Pembersihan)
+- Import/variabel tak terpakai dihapus (PropertyCard, DompetTransaksi, AdminDashboard, AdminProperti, AdminInvestor, AdminZakat).
+- Pemisahan store (lihat bagian 8): `authStore.js`, `propertiesStore.js`, `portfolioStore.js`, `toastStore.js`; ±30 file konsumen diubah path impornya.
+- `AuthContext`: sesi dibaca sinkron lewat `useState(readStoredUser)` (bukan `useEffect` + `setUser`), sehingga `isLoading` selalu `false` (properti dipertahankan agar `ProtectedRoute`/`AdminRoute` tidak berubah).
+- `AdminLayout`: drawer menutup otomatis saat pindah rute lewat state `openedAt` (pathname saat dibuka), bukan `useEffect`.
+- Dihapus karena tidak pernah diimpor/dirutekan: `pages/Investasi.jsx`, `pages/TransaksiList.jsx`, `pages/Wallet.jsx`, `components/PlaceholderPage.jsx`, `src/assets/hero.png`, `src/assets/vite.svg`, `public/icons.svg`.
+- Tooltip tombol AI melayang: ", gratis!" dihapus (klaim tak terverifikasi).
+- Hasil nyata setelah push 6c: `npm run build` lolos; `npx eslint` awalnya 3 error (`password`/`reject` tak terpakai di `AuthContext`) + 1 warning (`exhaustive-deps` di `HeroSection`). Diperbaiki: `login(email)`/`register(name, email)` tanpa parameter password (validasi password tetap di form), dan `HERO_SLIDES` dipindah ke level modul.
+- Belum dicek (butuh eslint sungguhan): aturan `react-hooks` lain (`static-components`, `refs`, `immutability`). `PortfolioProvider` masih memanggil `loadFromStorage()` setiap render (bukan temuan lint, bisa dioptimalkan nanti).
+
 ### Rumus Simulator (diimplementasikan di Tahap 3)
 - Dana disisihkan per bulan = 50% × (penghasilan − pengeluaran)
 - Skor kesiapan = 40% × min(rasio tabungan ÷ 20%, 1) + 40% × min(dana tersedia ÷ (6 × pengeluaran), 1) + 20% × (pengeluaran ≤ 70% penghasilan ? 1 : 0)
@@ -126,5 +136,5 @@ Aturan yang dipelajari dari audit visual:
 - `tailwind.config.js`: skala `neutral` didefinisikan lengkap (0–900); jangan mengandalkan kelas netral yang tidak didefinisikan.
 - Hindari `Date.now()`/`Math.random()` saat render (aturan lint `react-hooks/purity`); panggil di event handler.
 - Hindari membuat komponen saat render (mis. `const Icon = fn()`); gunakan komponen kecil seperti `CategoryIcon` di `src/utils/literasiIcons.jsx`.
-- Context + hook dipisah file (`literacyStore.js`) agar fast refresh tidak error.
+- Context + hook dipisah dari Provider agar fast refresh tidak error: `context/literacyStore.js`, `authStore.js`, `propertiesStore.js`, `portfolioStore.js`; fungsi `toast()` ada di `components/toastStore.js`. Impor hook/`toast` dari file *Store*, impor Provider/`ToastContainer` dari file komponennya. File `.jsx` hanya boleh mengekspor komponen.
 - Gambar properti hero ada di `public/images/`; sebagian kartu properti memakai URL luar.

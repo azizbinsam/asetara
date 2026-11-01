@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ChevronLeft, Send, Bot, User, Play, BookOpen, ArrowRight } from 'lucide-react'
-import { toast } from '../components/Toast'
+import { toast } from '../components/toastStore'
 import Card from '../components/Card'
 import { getMockResponse, getTypingDelay, GREETING, SUGGESTIONS } from '../utils/aiResponses'
 

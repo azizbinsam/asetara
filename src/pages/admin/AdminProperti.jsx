@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Plus, Search, Edit2, Trash2, Eye, EyeOff } from 'lucide-react'
-import { useProperties } from '../../context/PropertiesContext'
+import { useProperties } from '../../context/propertiesStore'
 import Card from '../../components/Card'
 import Button from '../../components/Button'
 import Badge from '../../components/Badge'
-import { formatRupiah, formatPercent, formatNumber } from '../../utils/format'
+import { formatRupiah, formatPercent } from '../../utils/format'
 
 const CATEGORY_OPTIONS = [
   { value: 'apartemen', label: 'Apartemen' },

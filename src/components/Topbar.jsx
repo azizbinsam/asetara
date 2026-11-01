@@ -1,7 +1,7 @@
 import { Search, Bell, LogOut, Shield } from 'lucide-react'
-import { useAuth } from '../context/AuthContext'
+import { useAuth } from '../context/authStore'
 import { useNavigate } from 'react-router-dom'
-import { toast } from '../components/Toast'
+import { toast } from '../components/toastStore'
 
 export default function Topbar() {
   const { user, isAdmin, logout } = useAuth()

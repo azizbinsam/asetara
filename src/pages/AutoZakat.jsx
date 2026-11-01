@@ -5,7 +5,7 @@ import Card from '../components/Card'
 import Badge from '../components/Badge'
 import Button from '../components/Button'
 import ProgressBar from '../components/ProgressBar'
-import { usePortfolio } from '../context/PortfolioContext'
+import { usePortfolio } from '../context/portfolioStore'
 import { formatRupiah, formatPercent } from '../utils/format'
 
 import zakat from '../data/zakat.json'
