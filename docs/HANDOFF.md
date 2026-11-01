@@ -48,8 +48,8 @@ Aturan yang dipelajari dari audit visual:
 | 1b | Perapian: kartu menyatu, kontras teks, warna liar, grafik portofolio | Selesai |
 | 2 | **Literasi Keuangan** (7 materi, 28 soal kuis, progres tersimpan, rekomendasi) | Selesai |
 | 3 | **Financial Readiness Simulator** (`src/pages/Perencanaan.jsx`, rumus di `src/utils/readiness.js`) | Selesai (menunggu verifikasi di browser) |
-| 4 | Smart Investment Comparison (`PerbandinganInvestasi.jsx`, placeholder) | Berikutnya |
-| 5 | Financial Access & Safety Hub (`AksesKeamanan.jsx`, placeholder) | Menunggu |
+| 4 | **Smart Investment Comparison** (`PerbandinganInvestasi.jsx`, data `perbandingan.json`, logika `utils/comparison.js`) | Selesai (menunggu verifikasi di browser) |
+| 5 | Financial Access & Safety Hub (`AksesKeamanan.jsx`, placeholder) | Berikutnya |
 | 6 | Penyambung antar fitur, update AI Assistant, rapikan teks tokenisasi di Landing/Dampak, bersihkan lint & aset tak terpakai | Menunggu |
 
 ### Struktur Tahap 2 (Literasi)
@@ -73,6 +73,13 @@ Aturan yang dipelajari dari audit visual:
 - Status tiga tingkat: **Siap** (≥60), **Hampir siap** (40–59), **Perlu persiapan** (<40). Tingkat 40–59 adalah tambahan; mohon dikonfirmasi.
 - Rekomendasi "Siap" menaut ke `/perbandingan` dan `/marketplace`; lainnya ke `/literasi`.
 - Target keuangan saat ini hanya memengaruhi label dan info dana darurat ideal, belum memengaruhi skor.
+
+### Struktur Tahap 4 (Perbandingan Investasi)
+- Data: `src/data/perbandingan.json` (tab, 3 produk dari mockup desktop: Rumah Syariah/Apartemen/Ruko). Terpisah dari `properties.json`; rentang biaya dan hasil disimpan sebagai `min`/`max`.
+- Logika: `src/utils/comparison.js` (maks. 3 / min. 2 produk, 3 prioritas: risiko terendah, hasil tertinggi, modal terkecil, dengan pemecah seri). Mudah ditambah produk di JSON tanpa mengubah kode.
+- Halaman: tab (hanya Properti Syariah aktif; Reksa Dana dan Sukuk "Segera hadir") → kartu produk → tabel Detail Perbandingan → pilih prioritas → Rekomendasi → Simpan Pilihan / Lanjut ke Marketplace. State di `localStorage` kunci `asetara_perbandingan`.
+- Kotak penghubung token mengambil nominal dari `minInvestment` terkecil di `properties.json` (kini Rp10.000).
+- Kolom "Ilustrasi hasil per tahun" = modal awal × rentang potensi hasil. Biaya tambahan ditampilkan terpisah, tidak dikurangkan dari hasil (data belum menjelaskan apakah sekali bayar atau tahunan).
 
 ### Rumus Simulator (diimplementasikan di Tahap 3)
 - Dana disisihkan per bulan = 50% × (penghasilan − pengeluaran)

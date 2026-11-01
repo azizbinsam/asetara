@@ -1,0 +1,50 @@
+{
+  "note": "Data ilustrasi dari mockup (versi desktop). Bukan data pasar dan bukan penawaran.",
+  "tabs": [
+    { "id": "properti", "label": "Properti Syariah", "active": true },
+    { "id": "reksadana", "label": "Reksa Dana", "active": false },
+    { "id": "sukuk", "label": "Sukuk", "active": false }
+  ],
+  "riskLabels": { "rendah": "Rendah", "sedang": "Sedang", "tinggi": "Tinggi" },
+  "products": [
+    {
+      "id": "rumah-syariah",
+      "name": "Rumah Syariah",
+      "type": "rumah",
+      "location": "Serang, Banten",
+      "minCapital": 300000000,
+      "feeMin": 1,
+      "feeMax": 2,
+      "returnMin": 7,
+      "returnMax": 10,
+      "risk": "rendah",
+      "years": 10
+    },
+    {
+      "id": "apartemen",
+      "name": "Apartemen",
+      "type": "apartemen",
+      "location": "Tangerang Selatan",
+      "minCapital": 450000000,
+      "feeMin": 2,
+      "feeMax": 3,
+      "returnMin": 8,
+      "returnMax": 12,
+      "risk": "sedang",
+      "years": 12
+    },
+    {
+      "id": "ruko",
+      "name": "Ruko",
+      "type": "ruko",
+      "location": "Bekasi",
+      "minCapital": 700000000,
+      "feeMin": 2,
+      "feeMax": 4,
+      "returnMin": 10,
+      "returnMax": 11,
+      "risk": "sedang",
+      "years": 15
+    }
+  ]
+}
