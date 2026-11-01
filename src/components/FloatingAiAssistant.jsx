@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
-import { Bot, X, Send, Maximize2, Sparkles } from 'lucide-react'
-import { getMockResponse, SUGGESTIONS } from '../utils/aiResponses'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Bot, X, Send, Maximize2, Sparkles, ArrowRight } from 'lucide-react'
+import { getMockResponse, getTypingDelay, GREETING, SUGGESTIONS } from '../utils/aiResponses'
 
 const INITIAL_MESSAGE = {
   id: 1,
   role: 'assistant',
-  text: 'Halo! Saya AI Assistant ASETARA. Ada yang bisa saya bantu tentang investasi properti syariah?',
+  text: GREETING,
 }
 
 export default function FloatingAiAssistant() {
@@ -19,6 +19,7 @@ export default function FloatingAiAssistant() {
   const [showTooltip, setShowTooltip] = useState(false)
   const [tooltipDismissed, setTooltipDismissed] = useState(false)
   const bottomRef = useRef(null)
+  const nextId = useRef(2) // id pesan; 1 dipakai sapaan awal
 
   useEffect(() => {
     if (open) bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -42,16 +43,19 @@ export default function FloatingAiAssistant() {
   function sendMessage(text) {
     const trimmed = text.trim()
     if (!trimmed) return
-    const userMsg = { id: Date.now(), role: 'user', text: trimmed }
+    const userMsg = { id: nextId.current++, role: 'user', text: trimmed }
     setMessages((prev) => [...prev, userMsg])
     setInput('')
     setTyping(true)
 
+    const response = getMockResponse(trimmed)
     setTimeout(() => {
-      const response = getMockResponse(trimmed)
-      setMessages((prev) => [...prev, { id: Date.now() + 1, role: 'assistant', text: response }])
+      setMessages((prev) => [
+        ...prev,
+        { id: nextId.current++, role: 'assistant', text: response.text, link: response.link },
+      ])
       setTyping(false)
-    }, 700 + Math.random() * 500)
+    }, getTypingDelay(response))
   }
 
   function handleSend() {
@@ -198,6 +202,15 @@ export default function FloatingAiAssistant() {
                     : 'bg-navy-600 text-white rounded-tr-sm'
                 }`}>
                   {msg.text}
+                  {msg.link && (
+                    <Link
+                      to={msg.link.to}
+                      onClick={() => setOpen(false)}
+                      className="mt-2 flex items-center gap-1 font-semibold text-navy-700 hover:underline"
+                    >
+                      {msg.link.label} <ArrowRight size={12} />
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}

@@ -51,8 +51,8 @@ Aturan yang dipelajari dari audit visual:
 | 4 | **Smart Investment Comparison** (`PerbandinganInvestasi.jsx`, data `perbandingan.json`, logika `utils/comparison.js`) | Selesai (menunggu verifikasi di browser) |
 | 5 | **Financial Access & Safety Hub** (`AksesKeamanan.jsx`, data `aksesKeamanan.json`) | Selesai (menunggu verifikasi di browser) |
 | 6a | Penyambung antar fitur (`NextSteps`) + rapikan teks tokenisasi di Landing/Dampak | Selesai (menunggu verifikasi di browser) |
-| 6b | Update AI Assistant: saran & jawaban mock untuk fitur ASETARA, tab video bertema ASETARA | Berikutnya |
-| 6c | Bersihkan lint (import tak terpakai) & aset tak terpakai | Menyusul |
+| 6b | Update AI Assistant: saran & jawaban mock untuk fitur ASETARA, tab video bertema ASETARA | Selesai (menunggu verifikasi di browser) |
+| 6c | Bersihkan lint (import tak terpakai) & aset tak terpakai | Berikutnya |
 
 ### Struktur Tahap 2 (Literasi)
 - Data: `src/data/literasi.json` (kategori, materi, soal). Edit isi materi/soal di sini tanpa menyentuh kode.
@@ -96,6 +96,15 @@ Aturan yang dipelajari dari audit visual:
 - Teks tokenisasi: kalimat "smart contract" / "teknologi blockchain" di hero & kartu Keunggulan `LandingPage.jsx` serta deskripsi `Dampak.jsx` diganti ke bahasa ASETARA ("kepemilikan digital yang transparan", "akses finansial yang lebih setara").
 - Keputusan Aziz: **statistik (Rp 45M+, 1.240+ investor, 12 properti), imbal hasil 8–15%, dan klaim Dewan Pengawas Syariah di Landing/Dampak dibiarkan apa adanya.** Testimoni yang menyebut smart contract juga tidak diubah.
 - Catatan line ending: working copy Windows memakai CRLF, repo LF; `git status` bisa menampilkan banyak file "modified" padahal isinya sama. Opsi: tambahkan `.gitattributes` berisi `* text=auto`.
+
+### Struktur Tahap 6b (AI Assistant)
+- Semua jawaban ada di `src/utils/aiResponses.js`: daftar `INTENTS` (urutan = prioritas, topik spesifik di atas), tiap topik punya `keywords`, `text`, dan `link` opsional `{ to, label }`. Tambah topik cukup dengan menambah satu objek. `getMockResponse(input)` kini mengembalikan **objek `{ text, link }`** (dulu string). Juga ada `GREETING`, `SUGGESTIONS`, dan `getTypingDelay`.
+- Topik: penipuan, legalitas, dana darurat, skor kesiapan, Reksa Dana/Sukuk ("Segera hadir"), perbandingan, risiko, literasi, smart contract, zakat, cara beli token, token, sapaan, default. Angka di jawaban mengikuti `utils/readiness.js` (50/20/6 bulan/70%/ambang 60 dan 40); jika konstanta di sana diubah, perbarui teks jawaban kesiapan/dana darurat.
+- Jawaban menampilkan tombol tautan ke halaman fitur. Di popup melayang (`FloatingAiAssistant`) tautan juga menutup popup.
+- Perbaikan bug lama: kata kunci `token` dulu mengalahkan `beli` sehingga "cara membeli token?" dijawab definisi token; kini `beli` dicek lebih dulu. Klik kartu video dulu tidak berfungsi (`Card` tidak meneruskan `onClick`); kini dibungkus `<button>`.
+- Tab Video Edukasi: 6 judul bertema ASETARA (mengikuti materi Literasi). Videonya masih contoh, jadi klik hanya memunculkan toast "segera hadir".
+- `Date.now()`/`Math.random()` dihapus dari `AiAssistant.jsx` dan `FloatingAiAssistant.jsx` (id pesan pakai `useRef` counter, jeda ketik deterministik).
+- Tooltip "Tanya AI Assistant, gratis!" pada tombol melayang belum diubah.
 
 ### Rumus Simulator (diimplementasikan di Tahap 3)
 - Dana disisihkan per bulan = 50% × (penghasilan − pengeluaran)
