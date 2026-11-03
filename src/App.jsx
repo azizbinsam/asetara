@@ -36,6 +36,7 @@ import Perencanaan from './pages/Perencanaan'
 import PerbandinganInvestasi from './pages/PerbandinganInvestasi'
 import AksesKeamanan from './pages/AksesKeamanan'
 import InvestasiSyariah from './pages/InvestasiSyariah'
+import ProyekDetail from './pages/investasiSyariah/ProyekDetail'
 
 // Admin pages
 import AdminDashboard from './pages/admin/AdminDashboard'
@@ -86,6 +87,7 @@ function AppRoutes() {
           <Route path="/perencanaan" element={<ProtectedRoute><Perencanaan /></ProtectedRoute>} />
           <Route path="/perbandingan" element={<ProtectedRoute><PerbandinganInvestasi /></ProtectedRoute>} />
           <Route path="/investasi-syariah" element={<ProtectedRoute><InvestasiSyariah /></ProtectedRoute>} />
+          <Route path="/investasi-syariah/proyek/:projectId" element={<ProtectedRoute><ProyekDetail /></ProtectedRoute>} />
           <Route path="/akses-keamanan" element={<ProtectedRoute><AksesKeamanan /></ProtectedRoute>} />
         </Route>
 

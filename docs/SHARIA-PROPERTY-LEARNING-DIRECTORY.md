@@ -36,12 +36,12 @@ Pahami → Rencanakan → Bandingkan → **Pelajari properti syariah + cek direk
 |---|---|---|
 | 7a | Hub `/investasi-syariah` (hero, tab, banner), navigasi baru | Selesai (menunggu verifikasi di browser) |
 | 7b | Tab Materi Edukasi: materi + kuis properti syariah (`MateriTab.jsx`, data `literasi.json`), video dummy | Selesai (menunggu verifikasi di browser) |
-| 7c | Tab Direktori Proyek: data, kartu, filter, halaman detail 11 informasi (`DirektoriTab.jsx`) | Berikutnya |
-| 7d | Soft gate, penyambung antar fitur, AI Assistant, penyesuaian klaim Landing, HANDOFF | Menunggu |
+| 7c | Tab Direktori Proyek: data, kartu, filter, halaman detail 11 informasi (`DirektoriTab.jsx`, `ProyekDetail.jsx`) | Selesai (menunggu verifikasi di browser) |
+| 7d | Soft gate, penyambung antar fitur, AI Assistant, penyesuaian klaim Landing, HANDOFF | Berikutnya |
 
 ## Struktur kode (Tahap 7a)
 - `src/pages/InvestasiSyariah.jsx` — hub. Tab disimpan di URL (`?tab=materi|direktori`).
-- `src/pages/investasiSyariah/MateriTab.jsx` — selesai di 7b. `DirektoriTab.jsx` — masih placeholder "Segera hadir"; diganti pada 7c.
+- `src/pages/investasiSyariah/MateriTab.jsx` — selesai di 7b. `DirektoriTab.jsx` — placeholder pada 7a, diisi di 7c.
 - Gambar hero memakai `/images/hero-apartment.jpg`. Foto mockup (rumah+koin, dokumen, timbangan, gedung) belum ada; taruh file di `public/images/` bila tersedia.
 
 ## Struktur kode (Tahap 7b)
@@ -51,3 +51,12 @@ Pahami → Rencanakan → Bandingkan → **Pelajari properti syariah + cek direk
 - **Gambar:** hanya foto stok yang sudah ada di `public/images/` (`hero-apartment/villa/hotel.jpg`) dipakai sebagai thumbnail; tidak ada gambar baru. Video `umum` memakai gradien.
 - **Navigasi kembali:** `utils/literasiPaths.js` (`getLiterasiHome`) mengarahkan tombol kembali materi Properti Syariah ke `/investasi-syariah?tab=materi`, materi lain ke `/literasi`.
 - AI Assistant: tab Video Edukasi kini membuka modal dummy yang sama (toast "segera hadir" dihapus); jawaban "materi literasi" memakai jumlah materi dari data. Intent AI khusus properti syariah menyusul di 7d.
+## Struktur kode (Tahap 7c)
+- **Data:** `src/data/direktoriProyek.json` — 10 proyek ilustrasi, tiap proyek punya `informasi` berisi 11 butir (`legalitas`, `lokasiStatus`, `hakKepemilikan`, `akad`, `modalBiaya`, `pembagianHasil`, `risiko`, `jangkaWaktu`, `likuiditas`, `mekanismeKeluar`, `jalurPengaduan`). Tiap butir: `status` (`lengkap` | `perlu`), `ringkas`, `rincian` (pasangan [label, nilai]), dan `catatan` (hanya bila `perlu`: apa yang belum ada). Daftar 11 butir + labelnya ada di `INFO_ITEMS` (`src/utils/direktori.js`).
+- **Isi data:** 6 proyek **fraksional/token** (`propertyId` = id di `properties.json`, semua 11/11 lengkap) dan 4 proyek **kepemilikan langsung**: Perumahan Amanah Rangkasbitung (Murabahah, 11/11), Apartemen Studio Bekasi Barat (Murabahah, 11/11), Ruko Niaga Amanah Serang (Ijarah Muntahiya Bittamlik, 10/11), Rumah Indent Cikarang Syariah (Istishna', 8/11). Dua yang terakhir sengaja belum lengkap untuk memperlihatkan status "Perlu dilengkapi". Nama penyedia, angka, dan tanggal pemeriksaan semuanya rekaan.
+- **Penggabungan:** `buildProjects(properties)` di `src/utils/direktori.js`. Proyek token mengambil nama, lokasi, kategori, foto, deskripsi, dan angka modal/estimasi imbal hasil dari `properties.json` (via `useProperties().activeProperties`), jadi angkanya selalu sama dengan Marketplace; baris otomatis disisipkan ke butir Lokasi/Status, Modal dan biaya, dan Pembagian hasil. Properti yang dinonaktifkan/dihapus admin otomatis hilang dari direktori. Properti baru dari admin **tidak** muncul sampai punya entri di `direktoriProyek.json`.
+- **"Terverifikasi"** = `lengkap === 11`. Proyek dengan butir kurang tetap ditampilkan dengan badge "Perlu dilengkapi" (warna champagne, bukan merah).
+- **Tab Direktori (`DirektoriTab.jsx`):** pencarian (nama/lokasi/penyedia/akad), filter jenis (Kepemilikan langsung / Fraksional), filter kategori (dibangun dari data), centang "Hanya yang 11 informasinya lengkap", penghitung hasil, keadaan kosong + reset. Kartu: `components/ProyekCard.jsx`. Badge status: `components/KelengkapanBadge.jsx`.
+- **Halaman detail:** route `/investasi-syariah/proyek/:projectId` (`pages/investasiSyariah/ProyekDetail.jsx`). Berisi ringkasan, progres kelengkapan + navigasi cepat ke 11 butir, kotak catatan (bukan fatwa/jaminan/rekomendasi), peringatan telaah penasihat hukum & ahli syariah (`FRACTIONAL_WARNING`) khusus proyek fraksional, 11 kartu informasi, dan langkah berikutnya (materi "Membaca Informasi Proyek", Akses & Keamanan, tautan ke `/marketplace/:id` untuk proyek token). Tombol kembali ke `/investasi-syariah?tab=direktori`. Tab Investasi di mobile dan menu Sidebar otomatis aktif karena prefix `/investasi-syariah`.
+- **Gambar:** proyek token memakai foto dari `properties.json`; proyek langsung memakai gradien per kategori (tidak ada gambar baru).
+- **Catatan jujur untuk 7d:** butir Likuiditas/Mekanisme keluar proyek token menyebut penjualan ke sesama pemegang token lewat platform, tetapi fitur jual-kembali token belum ada di prototype; teks tersebut harus tetap berlabel ilustrasi dan disesuaikan bila fiturnya dibuat.

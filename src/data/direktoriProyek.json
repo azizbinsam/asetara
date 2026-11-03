@@ -1,0 +1,2580 @@
+{
+  "projects": [
+    {
+      "id": "apartemen-bsd",
+      "jenis": "fraksional",
+      "propertyId": "apartemen-bsd",
+      "penyedia": "PT Griya Amanah Properti",
+      "akad": "Musyarakah · Ijarah",
+      "pemeriksaan": "2026-10-12",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia proyek adalah PT Griya Amanah Properti. Aset dimiliki perusahaan khusus (SPV) PT Aset Bersama BSD yang terpisah dari perusahaan penyedia.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Griya Amanah Properti"
+            ],
+            [
+              "Pemilik aset (SPV)",
+              "PT Aset Bersama BSD"
+            ],
+            [
+              "Pengelola aset",
+              "PT Kelola Hunian Nusantara"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, susunan pengurus, perjanjian pengelolaan"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Beroperasi; unit disewakan kepada penyewa korporat.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Kawasan BSD City, Tangerang Selatan, Banten"
+            ],
+            [
+              "Jenis dan skala",
+              "Apartemen sewa, 120 unit"
+            ],
+            [
+              "Status proyek",
+              "Beroperasi; unit disewakan kepada penyewa korporat"
+            ],
+            [
+              "Bukti hak atas aset",
+              "Sertifikat hak milik satuan rumah susun (SHMSRS) atas nama SPV"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Investor memegang token yang mewakili bagian kepemilikan bersama atas aset melalui PT Aset Bersama BSD. Hak hukum atas token ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Bentuk hak",
+              "Bagian kepemilikan bersama atas SPV, sebanding dengan jumlah token"
+            ],
+            [
+              "Pencatatan kepemilikan",
+              "Daftar pemegang token di platform dan sertifikat digital (menu Sertifikat)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Oleh PT Kelola Hunian Nusantara berdasarkan perjanjian pengelolaan"
+            ],
+            [
+              "Hak informasi",
+              "Laporan keuangan dan kondisi aset secara triwulanan"
+            ],
+            [
+              "Hak suara",
+              "Persetujuan pemegang token untuk perpanjangan masa proyek, penjualan aset, atau pergantian pengelola"
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Hak hukum, pencatatan kepemilikan, dan pengelolaan aset perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai akad berikut. ASETARA tidak menilai kesesuaian syariah; telaah ahli syariah tetap diperlukan.",
+          "rincian": [
+            [
+              "Investor dan penyedia",
+              "Musyarakah (kemitraan modal atas aset)"
+            ],
+            [
+              "SPV dan penyewa",
+              "Ijarah (sewa unit)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Wakalah bil Istitsmar (pengelola bertindak sebagai wakil investor)"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Investor membayar harga token ditambah biaya yang tertera di bawah. Pajak mengikuti ketentuan yang berlaku dan belum termasuk.",
+          "rincian": [
+            [
+              "Biaya pembelian token",
+              "0,5% dari nilai pembelian token"
+            ],
+            [
+              "Biaya operasional dan pengelolaan",
+              "Dibayar dari pendapatan sewa sebelum hasil dibagi"
+            ],
+            [
+              "Biaya keluar (penjualan token)",
+              "0,5% dari nilai penjualan token"
+            ],
+            [
+              "Pajak",
+              "Sesuai ketentuan perpajakan yang berlaku; belum termasuk"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Pendapatan sewa unit dikurangi biaya operasional dan pemeliharaan. Hasil dibagi sesuai jumlah token. Angka imbal hasil hanya estimasi dan tidak dijamin.",
+          "rincian": [
+            [
+              "Sumber hasil",
+              "Pendapatan sewa unit dikurangi biaya operasional dan pemeliharaan."
+            ],
+            [
+              "Nisbah (hasil bersih)",
+              "Pemegang token 90% : pengelola 10% dari hasil sewa bersih"
+            ],
+            [
+              "Frekuensi pembagian",
+              "Triwulanan"
+            ],
+            [
+              "Jika terjadi kerugian",
+              "Kerugian usaha ditanggung pemegang token sebanding porsi modal. Kerugian karena kelalaian pengelola menjadi tanggung jawab pengelola."
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Mekanisme pembagian hasil perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Nilai token bisa turun dan hasil bisa lebih rendah dari estimasi, atau tidak ada sama sekali.",
+          "rincian": [
+            [
+              "Risiko penyewa/okupansi",
+              "Penyewa korporat bisa tidak memperpanjang kontrak atau terlambat membayar"
+            ],
+            [
+              "Risiko pasar",
+              "Harga dan tarif sewa apartemen bisa turun"
+            ],
+            [
+              "Risiko pengelola",
+              "Kinerja pengelola memengaruhi tingkat hunian dan biaya"
+            ],
+            [
+              "Risiko likuiditas",
+              "Token tidak bisa dicairkan kapan saja; penjualan bergantung pada adanya pembeli"
+            ],
+            [
+              "Risiko hukum dan regulasi",
+              "Aturan tentang kepemilikan fraksional bisa berubah dan memengaruhi hak investor"
+            ],
+            [
+              "Risiko platform",
+              "Gangguan sistem atau kesalahan pencatatan kepemilikan"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Masa proyek 10 tahun sejak penghimpunan dana selesai.",
+          "rincian": [
+            [
+              "Masa proyek",
+              "10 tahun sejak penghimpunan dana selesai"
+            ],
+            [
+              "Periode pembagian hasil",
+              "Triwulanan"
+            ],
+            [
+              "Laporan kepada pemegang token",
+              "Triwulanan"
+            ],
+            [
+              "Setelah masa proyek",
+              "Aset dijual atau masa proyek diperpanjang atas persetujuan pemegang token"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Token bukan instrumen yang bisa dicairkan kapan saja. Penjualan bergantung pada adanya pembeli.",
+          "rincian": [
+            [
+              "Masa tahan awal",
+              "6 bulan sejak pembelian"
+            ],
+            [
+              "Jalur penjualan",
+              "Ke sesama pemegang token lewat platform, sesuai ketentuan dokumen proyek"
+            ],
+            [
+              "Harga jual",
+              "Mengikuti permintaan; tidak dijamin sama dengan harga beli"
+            ],
+            [
+              "Waktu pencairan",
+              "Tidak pasti; bisa lebih lama dari yang diharapkan"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Ada dua jalur keluar: menjual token ke pemegang lain, atau menunggu akhir masa proyek. Mekanisme ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Jalur 1: jual token",
+              "Pemegang token menawarkan token ke sesama pemegang lewat platform"
+            ],
+            [
+              "Jalur 2: akhir masa proyek",
+              "Aset dijual atau diperpanjang; hasil penjualan dibagi sesuai jumlah token setelah biaya"
+            ],
+            [
+              "Biaya keluar",
+              "0,5% dari nilai penjualan token"
+            ],
+            [
+              "Pencatatan setelah pengalihan",
+              "Daftar pemegang token dan sertifikat diperbarui oleh platform"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: platform, penyedia, lalu lembaga yang berwenang.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Kanal pengaduan platform ASETARA"
+            ],
+            [
+              "Langkah 2",
+              "Layanan konsumen PT Griya Amanah Properti; kontaknya tercantum di dokumen proyek"
+            ],
+            [
+              "Langkah 3",
+              "Kontak OJK 157 atau WhatsApp 081-157-157-157 untuk konsultasi dan pengaduan konsumen sektor jasa keuangan"
+            ],
+            [
+              "Catatan",
+              "Kewenangan lembaga bergantung pada bentuk dan izin penyelenggara; tanyakan dulu sebelum berinvestasi"
+            ],
+            [
+              "Target respons",
+              "5 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "rumah-rangkasbitung",
+      "jenis": "langsung",
+      "propertyId": null,
+      "nama": "Perumahan Amanah Rangkasbitung",
+      "penyedia": "PT Amanah Hunian Lebak",
+      "lokasi": "Rangkasbitung, Lebak, Banten",
+      "kategori": "rumah",
+      "gambar": null,
+      "akad": "Murabahah",
+      "ringkasan": "Rumah tapak tipe 36/72 dengan jual beli Murabahah langsung dari pengembang. Harga, margin, dan cicilan disepakati di awal dan tidak berubah selama tenor.",
+      "modalAwal": {
+        "label": "Uang muka mulai",
+        "nilai": 57750000
+      },
+      "pemeriksaan": "2026-10-08",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia adalah pengembang berbadan hukum PT dengan dokumen perusahaan dan perizinan lokasi yang lengkap.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Amanah Hunian Lebak (pengembang)"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, izin lokasi, persetujuan bangunan gedung (PBG) lingkungan"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Tahap 1 sudah siap huni, tahap 2 masih dibangun.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Rangkasbitung, Lebak, Banten"
+            ],
+            [
+              "Skala",
+              "120 kavling dalam dua tahap"
+            ],
+            [
+              "Tipe unit",
+              "36/72 (luas bangunan/luas tanah, m²)"
+            ],
+            [
+              "Status proyek",
+              "Tahap 1 (40 unit) siap huni; tahap 2 dalam pembangunan"
+            ],
+            [
+              "Bukti hak atas tanah",
+              "Sertifikat induk SHGB atas nama pengembang, dipecah per unit"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Pembeli menjadi pemilik penuh unit setelah akta jual beli dan balik nama.",
+          "rincian": [
+            [
+              "Perjanjian awal",
+              "Perjanjian pengikatan jual beli (PPJB) saat akad"
+            ],
+            [
+              "Akta jual beli (AJB)",
+              "Di hadapan PPAT; waktunya sesuai perjanjian"
+            ],
+            [
+              "Sertifikat",
+              "Dibalik nama atas nama pembeli"
+            ],
+            [
+              "Selama cicilan berjalan",
+              "Unit tidak boleh dialihkan tanpa persetujuan penyedia, sesuai PPJB"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai jual beli Murabahah. ASETARA tidak menilai kesesuaian syariah.",
+          "rincian": [
+            [
+              "Jenis akad",
+              "Murabahah (jual beli dengan margin yang diketahui pembeli)"
+            ],
+            [
+              "Harga dan margin",
+              "Harga pokok dan margin dicantumkan di perjanjian dan tidak berubah"
+            ],
+            [
+              "Cicilan",
+              "Tetap selama tenor"
+            ],
+            [
+              "Denda keterlambatan",
+              "Penyedia menyatakan denda diperlakukan sebagai dana sosial, bukan pendapatan penyedia"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Harga jual sudah termasuk margin penyedia. Pembeli menanggung biaya administrasi dan biaya pengurusan hak.",
+          "rincian": [
+            [
+              "Harga pokok",
+              "Rp330.000.000"
+            ],
+            [
+              "Margin penyedia",
+              "Rp55.000.000"
+            ],
+            [
+              "Harga jual",
+              "Rp385.000.000"
+            ],
+            [
+              "Uang muka (15%)",
+              "Rp57.750.000"
+            ],
+            [
+              "Sisa dicicil",
+              "Rp327.250.000"
+            ],
+            [
+              "Cicilan (tenor 10 tahun)",
+              "±Rp2.727.083 per bulan"
+            ],
+            [
+              "Biaya administrasi",
+              "1% dari harga jual (Rp3.850.000)"
+            ],
+            [
+              "Biaya pengurusan hak",
+              "BPHTB dan biaya PPAT/notaris, besaran sesuai ketentuan; ditanggung pembeli"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Tidak ada pembagian hasil dari penyedia karena ini jual beli, bukan bagi hasil.",
+          "rincian": [
+            [
+              "Pembagian hasil",
+              "Tidak ada"
+            ],
+            [
+              "Jika unit disewakan",
+              "Hasil sewa menjadi hak pemilik; besarnya tidak dijamin"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Cicilan tetap harus dibayar walau penghasilan atau nilai rumah berubah.",
+          "rincian": [
+            [
+              "Risiko keterlambatan",
+              "Pembangunan tahap 2 bisa mundur dari jadwal"
+            ],
+            [
+              "Risiko nilai pasar",
+              "Harga rumah di sekitar lokasi bisa tidak naik atau turun"
+            ],
+            [
+              "Risiko cicilan",
+              "Tunggakan dapat berujung pada pengakhiran perjanjian sesuai ketentuan"
+            ],
+            [
+              "Risiko legalitas",
+              "Pemecahan sertifikat per unit bisa memakan waktu lebih lama dari perkiraan"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Cicilan berjalan 10 tahun.",
+          "rincian": [
+            [
+              "Tenor cicilan",
+              "10 tahun (120 bulan)"
+            ],
+            [
+              "Serah terima",
+              "Tahap 1: siap; tahap 2: target 12 bulan sejak PPJB (target, bisa bergeser)"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Rumah tidak bisa dijual cepat dan harga jual tidak dijamin.",
+          "rincian": [
+            [
+              "Pasar",
+              "Jual-beli rumah di pasar properti umum"
+            ],
+            [
+              "Waktu terjual",
+              "Bisa berbulan-bulan"
+            ],
+            [
+              "Harga jual",
+              "Mengikuti pasar; tidak dijamin sama dengan harga beli"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Pembeli dapat melunasi lebih cepat atau mengalihkan unit dengan persetujuan penyedia.",
+          "rincian": [
+            [
+              "Pelunasan dipercepat",
+              "Dapat dilakukan; potongan sesuai kebijakan penyedia di perjanjian"
+            ],
+            [
+              "Dijual ke pihak lain",
+              "Dengan persetujuan penyedia selama cicilan berjalan"
+            ],
+            [
+              "Biaya pengalihan",
+              "Dicantumkan di perjanjian"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: penyedia, lalu lembaga mediasi.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Layanan konsumen PT Amanah Hunian Lebak; kontaknya tercantum di dokumen penawaran"
+            ],
+            [
+              "Langkah 2",
+              "Mediasi lewat dinas perumahan pemerintah daerah atau badan penyelesaian sengketa konsumen setempat"
+            ],
+            [
+              "Catatan",
+              "Pengembang properti bukan penyelenggara jasa keuangan. Kontak OJK 157 relevan bila pembiayaan melibatkan lembaga keuangan berizin."
+            ],
+            [
+              "Target respons",
+              "7 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hotel-jogja",
+      "jenis": "fraksional",
+      "propertyId": "hotel-jogja",
+      "penyedia": "PT Malioboro Hospitaliti Syariah",
+      "akad": "Musyarakah · Mudharabah",
+      "pemeriksaan": "2026-10-15",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia proyek adalah PT Malioboro Hospitaliti Syariah. Aset dimiliki perusahaan khusus (SPV) PT Aset Malioboro Bersama yang terpisah dari perusahaan penyedia.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Malioboro Hospitaliti Syariah"
+            ],
+            [
+              "Pemilik aset (SPV)",
+              "PT Aset Malioboro Bersama"
+            ],
+            [
+              "Pengelola aset",
+              "PT Hospitaliti Amanah Jogja"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, susunan pengurus, perjanjian pengelolaan"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Beroperasi; penghimpunan token hampir penuh.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Kawasan Malioboro, Yogyakarta"
+            ],
+            [
+              "Jenis dan skala",
+              "Hotel 96 kamar"
+            ],
+            [
+              "Status proyek",
+              "Beroperasi; penghimpunan token hampir penuh"
+            ],
+            [
+              "Bukti hak atas aset",
+              "Sertifikat hak guna bangunan (SHGB) atas nama SPV"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Investor memegang token yang mewakili bagian kepemilikan bersama atas aset melalui PT Aset Malioboro Bersama. Hak hukum atas token ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Bentuk hak",
+              "Bagian kepemilikan bersama atas SPV, sebanding dengan jumlah token"
+            ],
+            [
+              "Pencatatan kepemilikan",
+              "Daftar pemegang token di platform dan sertifikat digital (menu Sertifikat)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Oleh PT Hospitaliti Amanah Jogja berdasarkan perjanjian pengelolaan"
+            ],
+            [
+              "Hak informasi",
+              "Laporan keuangan dan kondisi aset secara triwulanan"
+            ],
+            [
+              "Hak suara",
+              "Persetujuan pemegang token untuk perpanjangan masa proyek, penjualan aset, atau pergantian pengelola"
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Hak hukum, pencatatan kepemilikan, dan pengelolaan aset perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai akad berikut. ASETARA tidak menilai kesesuaian syariah; telaah ahli syariah tetap diperlukan.",
+          "rincian": [
+            [
+              "Investor dan penyedia",
+              "Musyarakah (kemitraan modal atas aset)"
+            ],
+            [
+              "SPV dan pengelola hotel",
+              "Mudharabah (pengelola menjalankan usaha perhotelan)"
+            ],
+            [
+              "Pengelolaan usaha",
+              "Operasional hotel mengikuti pedoman perhotelan syariah yang ditetapkan penyedia"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Investor membayar harga token ditambah biaya yang tertera di bawah. Pajak mengikuti ketentuan yang berlaku dan belum termasuk.",
+          "rincian": [
+            [
+              "Biaya pembelian token",
+              "0,5% dari nilai pembelian token"
+            ],
+            [
+              "Biaya operasional dan pengelolaan",
+              "Dibayar dari pendapatan hotel sebelum hasil dibagi"
+            ],
+            [
+              "Biaya keluar (penjualan token)",
+              "0,5% dari nilai penjualan token"
+            ],
+            [
+              "Pajak",
+              "Sesuai ketentuan perpajakan yang berlaku; belum termasuk"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Pendapatan kamar dan layanan hotel dikurangi biaya operasional dan pemeliharaan. Hasil dibagi sesuai jumlah token. Angka imbal hasil hanya estimasi dan tidak dijamin.",
+          "rincian": [
+            [
+              "Sumber hasil",
+              "Pendapatan kamar dan layanan hotel dikurangi biaya operasional dan pemeliharaan."
+            ],
+            [
+              "Nisbah (hasil bersih)",
+              "Pemegang token 85% : pengelola 15% dari hasil usaha bersih"
+            ],
+            [
+              "Frekuensi pembagian",
+              "Triwulanan"
+            ],
+            [
+              "Jika terjadi kerugian",
+              "Kerugian usaha ditanggung pemegang token sebanding porsi modal. Kerugian karena kelalaian pengelola menjadi tanggung jawab pengelola."
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Mekanisme pembagian hasil perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Nilai token bisa turun dan hasil bisa lebih rendah dari estimasi, atau tidak ada sama sekali.",
+          "rincian": [
+            [
+              "Risiko penyewa/okupansi",
+              "Tingkat hunian bergantung arus wisatawan dan acara di kota"
+            ],
+            [
+              "Risiko pasar",
+              "Persaingan hotel di kawasan yang sama cukup ketat"
+            ],
+            [
+              "Risiko pengelola",
+              "Biaya operasional hotel bisa naik lebih cepat dari tarif kamar"
+            ],
+            [
+              "Risiko likuiditas",
+              "Token tidak bisa dicairkan kapan saja; penjualan bergantung pada adanya pembeli"
+            ],
+            [
+              "Risiko hukum dan regulasi",
+              "Aturan tentang kepemilikan fraksional bisa berubah dan memengaruhi hak investor"
+            ],
+            [
+              "Risiko platform",
+              "Gangguan sistem atau kesalahan pencatatan kepemilikan"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Masa proyek 10 tahun sejak penghimpunan dana selesai.",
+          "rincian": [
+            [
+              "Masa proyek",
+              "10 tahun sejak penghimpunan dana selesai"
+            ],
+            [
+              "Periode pembagian hasil",
+              "Triwulanan"
+            ],
+            [
+              "Laporan kepada pemegang token",
+              "Triwulanan"
+            ],
+            [
+              "Setelah masa proyek",
+              "Aset dijual atau masa proyek diperpanjang atas persetujuan pemegang token"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Token bukan instrumen yang bisa dicairkan kapan saja. Penjualan bergantung pada adanya pembeli.",
+          "rincian": [
+            [
+              "Masa tahan awal",
+              "6 bulan sejak pembelian"
+            ],
+            [
+              "Jalur penjualan",
+              "Ke sesama pemegang token lewat platform, sesuai ketentuan dokumen proyek"
+            ],
+            [
+              "Harga jual",
+              "Mengikuti permintaan; tidak dijamin sama dengan harga beli"
+            ],
+            [
+              "Waktu pencairan",
+              "Tidak pasti; bisa lebih lama dari yang diharapkan"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Ada dua jalur keluar: menjual token ke pemegang lain, atau menunggu akhir masa proyek. Mekanisme ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Jalur 1: jual token",
+              "Pemegang token menawarkan token ke sesama pemegang lewat platform"
+            ],
+            [
+              "Jalur 2: akhir masa proyek",
+              "Aset dijual atau diperpanjang; hasil penjualan dibagi sesuai jumlah token setelah biaya"
+            ],
+            [
+              "Biaya keluar",
+              "0,5% dari nilai penjualan token"
+            ],
+            [
+              "Pencatatan setelah pengalihan",
+              "Daftar pemegang token dan sertifikat diperbarui oleh platform"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: platform, penyedia, lalu lembaga yang berwenang.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Kanal pengaduan platform ASETARA"
+            ],
+            [
+              "Langkah 2",
+              "Layanan konsumen PT Malioboro Hospitaliti Syariah; kontaknya tercantum di dokumen proyek"
+            ],
+            [
+              "Langkah 3",
+              "Kontak OJK 157 atau WhatsApp 081-157-157-157 untuk konsultasi dan pengaduan konsumen sektor jasa keuangan"
+            ],
+            [
+              "Catatan",
+              "Kewenangan lembaga bergantung pada bentuk dan izin penyelenggara; tanyakan dulu sebelum berinvestasi"
+            ],
+            [
+              "Target respons",
+              "5 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "vila-tanjung",
+      "jenis": "fraksional",
+      "propertyId": "vila-tanjung",
+      "penyedia": "PT Lesung Wisata Halal",
+      "akad": "Musyarakah · Mudharabah",
+      "pemeriksaan": "2026-10-09",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia proyek adalah PT Lesung Wisata Halal. Aset dimiliki perusahaan khusus (SPV) PT Aset Lesung Bersama yang terpisah dari perusahaan penyedia.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Lesung Wisata Halal"
+            ],
+            [
+              "Pemilik aset (SPV)",
+              "PT Aset Lesung Bersama"
+            ],
+            [
+              "Pengelola aset",
+              "PT Rehat Pantai Kelola"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, susunan pengurus, perjanjian pengelolaan"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Beroperasi sebagai penginapan wisata musiman.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Tanjung Lesung, Pandeglang, Banten"
+            ],
+            [
+              "Jenis dan skala",
+              "Vila tepi pantai, 18 kamar"
+            ],
+            [
+              "Status proyek",
+              "Beroperasi sebagai penginapan wisata musiman"
+            ],
+            [
+              "Bukti hak atas aset",
+              "Sertifikat hak guna bangunan (SHGB) atas nama SPV; masa berlakunya perlu dicek penasihat hukum"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Investor memegang token yang mewakili bagian kepemilikan bersama atas aset melalui PT Aset Lesung Bersama. Hak hukum atas token ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Bentuk hak",
+              "Bagian kepemilikan bersama atas SPV, sebanding dengan jumlah token"
+            ],
+            [
+              "Pencatatan kepemilikan",
+              "Daftar pemegang token di platform dan sertifikat digital (menu Sertifikat)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Oleh PT Rehat Pantai Kelola berdasarkan perjanjian pengelolaan"
+            ],
+            [
+              "Hak informasi",
+              "Laporan keuangan dan kondisi aset secara semesteran"
+            ],
+            [
+              "Hak suara",
+              "Persetujuan pemegang token untuk perpanjangan masa proyek, penjualan aset, atau pergantian pengelola"
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Hak hukum, pencatatan kepemilikan, dan pengelolaan aset perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai akad berikut. ASETARA tidak menilai kesesuaian syariah; telaah ahli syariah tetap diperlukan.",
+          "rincian": [
+            [
+              "Investor dan penyedia",
+              "Musyarakah (kemitraan modal atas aset)"
+            ],
+            [
+              "SPV dan pengelola",
+              "Mudharabah (SPV sebagai pemilik modal, pengelola menjalankan usaha penginapan)"
+            ],
+            [
+              "Pengelolaan usaha",
+              "Pengelola menjalankan operasional; kerugian bukan karena kelalaian ditanggung pemilik modal"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Investor membayar harga token ditambah biaya yang tertera di bawah. Pajak mengikuti ketentuan yang berlaku dan belum termasuk.",
+          "rincian": [
+            [
+              "Biaya pembelian token",
+              "0,75% dari nilai pembelian token"
+            ],
+            [
+              "Biaya operasional dan pengelolaan",
+              "Dibayar dari pendapatan usaha sebelum hasil dibagi"
+            ],
+            [
+              "Biaya keluar (penjualan token)",
+              "1% dari nilai penjualan token"
+            ],
+            [
+              "Pajak",
+              "Sesuai ketentuan perpajakan yang berlaku; belum termasuk"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Pendapatan penginapan dikurangi biaya operasional dan pemeliharaan. Hasil dibagi sesuai jumlah token. Angka imbal hasil hanya estimasi dan tidak dijamin.",
+          "rincian": [
+            [
+              "Sumber hasil",
+              "Pendapatan penginapan dikurangi biaya operasional dan pemeliharaan."
+            ],
+            [
+              "Nisbah (hasil bersih)",
+              "Pemegang token 80% : pengelola 20% dari hasil usaha bersih"
+            ],
+            [
+              "Frekuensi pembagian",
+              "Semesteran (pendapatan musiman)"
+            ],
+            [
+              "Jika terjadi kerugian",
+              "Kerugian usaha ditanggung pemegang token sebanding porsi modal. Kerugian karena kelalaian pengelola menjadi tanggung jawab pengelola."
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Mekanisme pembagian hasil perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Nilai token bisa turun dan hasil bisa lebih rendah dari estimasi, atau tidak ada sama sekali.",
+          "rincian": [
+            [
+              "Risiko penyewa/okupansi",
+              "Pendapatan sangat bergantung musim liburan; saat sepi hasil bisa turun tajam"
+            ],
+            [
+              "Risiko pasar",
+              "Minat wisata ke kawasan pantai bisa berubah"
+            ],
+            [
+              "Risiko pengelola",
+              "Mutu layanan dan pemasaran pengelola memengaruhi tingkat hunian"
+            ],
+            [
+              "Risiko likuiditas",
+              "Token tidak bisa dicairkan kapan saja; penjualan bergantung pada adanya pembeli"
+            ],
+            [
+              "Risiko hukum dan regulasi",
+              "Aturan tentang kepemilikan fraksional bisa berubah dan memengaruhi hak investor"
+            ],
+            [
+              "Risiko platform",
+              "Gangguan sistem atau kesalahan pencatatan kepemilikan"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Masa proyek 12 tahun sejak penghimpunan dana selesai.",
+          "rincian": [
+            [
+              "Masa proyek",
+              "12 tahun sejak penghimpunan dana selesai"
+            ],
+            [
+              "Periode pembagian hasil",
+              "Semesteran (pendapatan musiman)"
+            ],
+            [
+              "Laporan kepada pemegang token",
+              "Semesteran"
+            ],
+            [
+              "Setelah masa proyek",
+              "Aset dijual atau masa proyek diperpanjang atas persetujuan pemegang token"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Token bukan instrumen yang bisa dicairkan kapan saja. Penjualan bergantung pada adanya pembeli.",
+          "rincian": [
+            [
+              "Masa tahan awal",
+              "12 bulan sejak pembelian"
+            ],
+            [
+              "Jalur penjualan",
+              "Ke sesama pemegang token lewat platform, sesuai ketentuan dokumen proyek"
+            ],
+            [
+              "Harga jual",
+              "Mengikuti permintaan; tidak dijamin sama dengan harga beli"
+            ],
+            [
+              "Waktu pencairan",
+              "Tidak pasti; bisa lebih lama dari yang diharapkan"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Ada dua jalur keluar: menjual token ke pemegang lain, atau menunggu akhir masa proyek. Mekanisme ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Jalur 1: jual token",
+              "Pemegang token menawarkan token ke sesama pemegang lewat platform"
+            ],
+            [
+              "Jalur 2: akhir masa proyek",
+              "Aset dijual atau diperpanjang; hasil penjualan dibagi sesuai jumlah token setelah biaya"
+            ],
+            [
+              "Biaya keluar",
+              "1% dari nilai penjualan token"
+            ],
+            [
+              "Pencatatan setelah pengalihan",
+              "Daftar pemegang token dan sertifikat diperbarui oleh platform"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: platform, penyedia, lalu lembaga yang berwenang.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Kanal pengaduan platform ASETARA"
+            ],
+            [
+              "Langkah 2",
+              "Layanan konsumen PT Lesung Wisata Halal; kontaknya tercantum di dokumen proyek"
+            ],
+            [
+              "Langkah 3",
+              "Kontak OJK 157 atau WhatsApp 081-157-157-157 untuk konsultasi dan pengaduan konsumen sektor jasa keuangan"
+            ],
+            [
+              "Catatan",
+              "Kewenangan lembaga bergantung pada bentuk dan izin penyelenggara; tanyakan dulu sebelum berinvestasi"
+            ],
+            [
+              "Target respons",
+              "5 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "apartemen-bekasi",
+      "jenis": "langsung",
+      "propertyId": null,
+      "nama": "Apartemen Studio Bekasi Barat",
+      "penyedia": "PT Hunian Urban Amanah",
+      "lokasi": "Bekasi Barat, Kota Bekasi, Jawa Barat",
+      "kategori": "apartemen",
+      "gambar": null,
+      "akad": "Murabahah",
+      "ringkasan": "Unit studio 27 m² dengan jual beli Murabahah langsung dari pengembang. Harga, margin, dan cicilan disepakati di awal.",
+      "modalAwal": {
+        "label": "Uang muka mulai",
+        "nilai": 90000000
+      },
+      "pemeriksaan": "2026-10-11",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia berbadan hukum PT dengan dokumen perusahaan dan perizinan bangunan yang lengkap.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Hunian Urban Amanah (pengembang)"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, izin lokasi, PBG, sertifikat laik fungsi menara A"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Menara A selesai dan sudah serah terima, menara B masih pra-penjualan.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Bekasi Barat, Kota Bekasi, Jawa Barat"
+            ],
+            [
+              "Skala",
+              "2 menara, 640 unit"
+            ],
+            [
+              "Status proyek",
+              "Menara A selesai dan serah terima; menara B pra-penjualan"
+            ],
+            [
+              "Bukti hak",
+              "Sertifikat induk SHGB; tiap unit akan terbit sertifikat hak milik satuan rumah susun (SHMSRS)"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Pembeli menjadi pemilik unit setelah AJB dan penerbitan SHMSRS atas namanya.",
+          "rincian": [
+            [
+              "Perjanjian awal",
+              "PPJB saat akad"
+            ],
+            [
+              "AJB",
+              "Di hadapan PPAT, sesuai jadwal di perjanjian"
+            ],
+            [
+              "Sertifikat",
+              "SHMSRS atas nama pembeli"
+            ],
+            [
+              "Hak atas bagian bersama",
+              "Dinyatakan dalam sertifikat sebagai nilai perbandingan proporsional"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai jual beli Murabahah. ASETARA tidak menilai kesesuaian syariah.",
+          "rincian": [
+            [
+              "Jenis akad",
+              "Murabahah (jual beli dengan margin yang diketahui pembeli)"
+            ],
+            [
+              "Harga dan margin",
+              "Dicantumkan di perjanjian dan tidak berubah"
+            ],
+            [
+              "Cicilan",
+              "Tetap selama tenor"
+            ],
+            [
+              "Denda keterlambatan",
+              "Penyedia menyatakan denda diperlakukan sebagai dana sosial"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Harga jual sudah termasuk margin. Setelah serah terima, pemilik membayar iuran bulanan pengelolaan gedung.",
+          "rincian": [
+            [
+              "Harga pokok",
+              "Rp380.000.000"
+            ],
+            [
+              "Margin penyedia",
+              "Rp70.000.000"
+            ],
+            [
+              "Harga jual",
+              "Rp450.000.000"
+            ],
+            [
+              "Uang muka (20%)",
+              "Rp90.000.000"
+            ],
+            [
+              "Sisa dicicil",
+              "Rp360.000.000"
+            ],
+            [
+              "Cicilan (tenor 15 tahun)",
+              "Rp2.000.000 per bulan"
+            ],
+            [
+              "Iuran pengelolaan lingkungan (IPL)",
+              "Bulanan, besaran ditetapkan pengelola gedung"
+            ],
+            [
+              "Dana cadangan perawatan (sinking fund)",
+              "Dibayar sekali di awal, besaran tercantum di perjanjian"
+            ],
+            [
+              "Biaya pengurusan hak",
+              "BPHTB dan biaya PPAT/notaris, ditanggung pembeli"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Tidak ada pembagian hasil dari penyedia karena ini jual beli, bukan bagi hasil.",
+          "rincian": [
+            [
+              "Pembagian hasil",
+              "Tidak ada"
+            ],
+            [
+              "Jika unit disewakan",
+              "Hasil sewa menjadi hak pemilik; besarnya tidak dijamin"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Cicilan tetap harus dibayar walau unit kosong atau nilainya turun.",
+          "rincian": [
+            [
+              "Risiko keterlambatan",
+              "Pembangunan menara B bisa mundur"
+            ],
+            [
+              "Risiko nilai pasar",
+              "Pasokan apartemen yang besar di sekitar lokasi bisa menekan harga"
+            ],
+            [
+              "Risiko biaya bulanan",
+              "IPL bisa naik dari waktu ke waktu"
+            ],
+            [
+              "Risiko hunian kosong",
+              "Unit yang tidak ditempati atau disewakan tetap dikenai IPL dan cicilan"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Cicilan berjalan 15 tahun.",
+          "rincian": [
+            [
+              "Tenor cicilan",
+              "15 tahun (180 bulan)"
+            ],
+            [
+              "Serah terima menara B",
+              "Target 18 bulan sejak PPJB (target, bisa bergeser)"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Unit apartemen tidak bisa dijual cepat dan harga jual tidak dijamin.",
+          "rincian": [
+            [
+              "Pasar",
+              "Jual-beli apartemen di pasar properti umum"
+            ],
+            [
+              "Waktu terjual",
+              "Bisa berbulan-bulan"
+            ],
+            [
+              "Harga jual",
+              "Mengikuti pasar; tidak dijamin sama dengan harga beli"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Pembeli dapat melunasi lebih cepat atau mengalihkan unit dengan persetujuan penyedia.",
+          "rincian": [
+            [
+              "Pelunasan dipercepat",
+              "Dapat dilakukan; potongan sesuai kebijakan penyedia di perjanjian"
+            ],
+            [
+              "Dijual ke pihak lain",
+              "Dengan persetujuan penyedia selama cicilan berjalan"
+            ],
+            [
+              "Biaya pengalihan",
+              "Dicantumkan di perjanjian"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: penyedia, lalu lembaga mediasi.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Layanan konsumen PT Hunian Urban Amanah; kontaknya tercantum di dokumen penawaran"
+            ],
+            [
+              "Langkah 2",
+              "Mediasi lewat dinas perumahan pemerintah daerah atau badan penyelesaian sengketa konsumen setempat"
+            ],
+            [
+              "Catatan",
+              "Pengembang properti bukan penyelenggara jasa keuangan. Kontak OJK 157 relevan bila pembiayaan melibatkan lembaga keuangan berizin."
+            ],
+            [
+              "Target respons",
+              "7 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "apartemen-kemang",
+      "jenis": "fraksional",
+      "propertyId": "apartemen-kemang",
+      "penyedia": "PT Kemang Hunian Amanah",
+      "akad": "Musyarakah · Ijarah",
+      "pemeriksaan": "2026-10-20",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia proyek adalah PT Kemang Hunian Amanah. Aset dimiliki perusahaan khusus (SPV) PT Aset Kemang Bersama yang terpisah dari perusahaan penyedia.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Kemang Hunian Amanah"
+            ],
+            [
+              "Pemilik aset (SPV)",
+              "PT Aset Kemang Bersama"
+            ],
+            [
+              "Pengelola aset",
+              "PT Pengelola Hunian Kemang"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, susunan pengurus, perjanjian pengelolaan"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Beroperasi; penghimpunan token masih berjalan.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Kemang, Jakarta Selatan"
+            ],
+            [
+              "Jenis dan skala",
+              "Apartemen sewa, 84 unit"
+            ],
+            [
+              "Status proyek",
+              "Beroperasi; penghimpunan token masih berjalan"
+            ],
+            [
+              "Bukti hak atas aset",
+              "Sertifikat hak milik satuan rumah susun (SHMSRS) atas nama SPV"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Investor memegang token yang mewakili bagian kepemilikan bersama atas aset melalui PT Aset Kemang Bersama. Hak hukum atas token ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Bentuk hak",
+              "Bagian kepemilikan bersama atas SPV, sebanding dengan jumlah token"
+            ],
+            [
+              "Pencatatan kepemilikan",
+              "Daftar pemegang token di platform dan sertifikat digital (menu Sertifikat)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Oleh PT Pengelola Hunian Kemang berdasarkan perjanjian pengelolaan"
+            ],
+            [
+              "Hak informasi",
+              "Laporan keuangan dan kondisi aset secara triwulanan"
+            ],
+            [
+              "Hak suara",
+              "Persetujuan pemegang token untuk perpanjangan masa proyek, penjualan aset, atau pergantian pengelola"
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Hak hukum, pencatatan kepemilikan, dan pengelolaan aset perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai akad berikut. ASETARA tidak menilai kesesuaian syariah; telaah ahli syariah tetap diperlukan.",
+          "rincian": [
+            [
+              "Investor dan penyedia",
+              "Musyarakah (kemitraan modal atas aset)"
+            ],
+            [
+              "SPV dan penyewa",
+              "Ijarah (sewa unit)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Wakalah bil Istitsmar (pengelola bertindak sebagai wakil investor)"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Investor membayar harga token ditambah biaya yang tertera di bawah. Pajak mengikuti ketentuan yang berlaku dan belum termasuk.",
+          "rincian": [
+            [
+              "Biaya pembelian token",
+              "0,5% dari nilai pembelian token"
+            ],
+            [
+              "Biaya operasional dan pengelolaan",
+              "Dibayar dari pendapatan sewa sebelum hasil dibagi"
+            ],
+            [
+              "Biaya keluar (penjualan token)",
+              "0,75% dari nilai penjualan token"
+            ],
+            [
+              "Pajak",
+              "Sesuai ketentuan perpajakan yang berlaku; belum termasuk"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Pendapatan sewa unit dikurangi biaya operasional dan pemeliharaan. Hasil dibagi sesuai jumlah token. Angka imbal hasil hanya estimasi dan tidak dijamin.",
+          "rincian": [
+            [
+              "Sumber hasil",
+              "Pendapatan sewa unit dikurangi biaya operasional dan pemeliharaan."
+            ],
+            [
+              "Nisbah (hasil bersih)",
+              "Pemegang token 88% : pengelola 12% dari hasil sewa bersih"
+            ],
+            [
+              "Frekuensi pembagian",
+              "Triwulanan"
+            ],
+            [
+              "Jika terjadi kerugian",
+              "Kerugian usaha ditanggung pemegang token sebanding porsi modal. Kerugian karena kelalaian pengelola menjadi tanggung jawab pengelola."
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Mekanisme pembagian hasil perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Nilai token bisa turun dan hasil bisa lebih rendah dari estimasi, atau tidak ada sama sekali.",
+          "rincian": [
+            [
+              "Risiko penyewa/okupansi",
+              "Penyewa ekspatriat dan profesional muda bisa berpindah sewaktu-waktu"
+            ],
+            [
+              "Risiko pasar",
+              "Pasokan apartemen baru di sekitar bisa menekan tarif sewa"
+            ],
+            [
+              "Risiko pengelola",
+              "Kinerja pengelola memengaruhi tingkat hunian dan biaya"
+            ],
+            [
+              "Risiko likuiditas",
+              "Token tidak bisa dicairkan kapan saja; penjualan bergantung pada adanya pembeli"
+            ],
+            [
+              "Risiko hukum dan regulasi",
+              "Aturan tentang kepemilikan fraksional bisa berubah dan memengaruhi hak investor"
+            ],
+            [
+              "Risiko platform",
+              "Gangguan sistem atau kesalahan pencatatan kepemilikan"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Masa proyek 8 tahun sejak penghimpunan dana selesai.",
+          "rincian": [
+            [
+              "Masa proyek",
+              "8 tahun sejak penghimpunan dana selesai"
+            ],
+            [
+              "Periode pembagian hasil",
+              "Triwulanan"
+            ],
+            [
+              "Laporan kepada pemegang token",
+              "Triwulanan"
+            ],
+            [
+              "Setelah masa proyek",
+              "Aset dijual atau masa proyek diperpanjang atas persetujuan pemegang token"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Token bukan instrumen yang bisa dicairkan kapan saja. Penjualan bergantung pada adanya pembeli.",
+          "rincian": [
+            [
+              "Masa tahan awal",
+              "6 bulan sejak pembelian"
+            ],
+            [
+              "Jalur penjualan",
+              "Ke sesama pemegang token lewat platform, sesuai ketentuan dokumen proyek"
+            ],
+            [
+              "Harga jual",
+              "Mengikuti permintaan; tidak dijamin sama dengan harga beli"
+            ],
+            [
+              "Waktu pencairan",
+              "Tidak pasti; bisa lebih lama dari yang diharapkan"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Ada dua jalur keluar: menjual token ke pemegang lain, atau menunggu akhir masa proyek. Mekanisme ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Jalur 1: jual token",
+              "Pemegang token menawarkan token ke sesama pemegang lewat platform"
+            ],
+            [
+              "Jalur 2: akhir masa proyek",
+              "Aset dijual atau diperpanjang; hasil penjualan dibagi sesuai jumlah token setelah biaya"
+            ],
+            [
+              "Biaya keluar",
+              "0,75% dari nilai penjualan token"
+            ],
+            [
+              "Pencatatan setelah pengalihan",
+              "Daftar pemegang token dan sertifikat diperbarui oleh platform"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: platform, penyedia, lalu lembaga yang berwenang.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Kanal pengaduan platform ASETARA"
+            ],
+            [
+              "Langkah 2",
+              "Layanan konsumen PT Kemang Hunian Amanah; kontaknya tercantum di dokumen proyek"
+            ],
+            [
+              "Langkah 3",
+              "Kontak OJK 157 atau WhatsApp 081-157-157-157 untuk konsultasi dan pengaduan konsumen sektor jasa keuangan"
+            ],
+            [
+              "Catatan",
+              "Kewenangan lembaga bergantung pada bentuk dan izin penyelenggara; tanyakan dulu sebelum berinvestasi"
+            ],
+            [
+              "Target respons",
+              "5 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "ruko-serang",
+      "jenis": "langsung",
+      "propertyId": null,
+      "nama": "Ruko Niaga Amanah Serang",
+      "penyedia": "PT Niaga Amanah Serang",
+      "lokasi": "Serang, Banten",
+      "kategori": "ruko",
+      "gambar": null,
+      "akad": "Ijarah Muntahiya Bittamlik",
+      "ringkasan": "Ruko dua lantai dengan sewa-beli: unit disewa dengan cicilan, lalu kepemilikan dialihkan di akhir masa sewa sesuai perjanjian.",
+      "modalAwal": {
+        "label": "Uang muka mulai",
+        "nilai": 90000000
+      },
+      "pemeriksaan": "2026-10-16",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia berbadan hukum PT dengan dokumen perusahaan dan perizinan lokasi yang lengkap.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Niaga Amanah Serang (pengembang)"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, izin lokasi, PBG"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Dalam pembangunan, progres 80% menurut penyedia.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Serang, Banten"
+            ],
+            [
+              "Jenis dan skala",
+              "Ruko dua lantai, 24 unit"
+            ],
+            [
+              "Status proyek",
+              "Dalam pembangunan, progres 80% menurut penyedia; target serah terima 6 bulan lagi"
+            ],
+            [
+              "Bukti hak atas tanah",
+              "Sertifikat induk SHGB atas nama pengembang"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Selama masa sewa unit milik penyedia; kepemilikan berpindah di akhir masa sewa.",
+          "rincian": [
+            [
+              "Selama masa sewa",
+              "Unit milik penyedia; pembeli berstatus penyewa"
+            ],
+            [
+              "Di akhir masa sewa",
+              "Kepemilikan dialihkan lewat jual beli atau hibah sesuai perjanjian, lalu AJB dan balik nama"
+            ],
+            [
+              "Jika cicilan sewa tidak dibayar",
+              "Perjanjian dapat diakhiri sesuai ketentuan; perlakuan atas dana yang sudah dibayar tertulis di perjanjian"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai sewa dengan opsi kepemilikan (Ijarah Muntahiya Bittamlik). ASETARA tidak menilai kesesuaian syariah.",
+          "rincian": [
+            [
+              "Jenis akad",
+              "Ijarah Muntahiya Bittamlik (sewa yang berakhir dengan kepemilikan)"
+            ],
+            [
+              "Pengalihan kepemilikan",
+              "Dinyatakan dalam perjanjian terpisah dari akad sewa"
+            ],
+            [
+              "Sewa",
+              "Besaran dan jadwal tercantum di perjanjian"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Selain uang muka, penyewa membayar sewa-cicil bulanan dan biaya yang tertera di bawah.",
+          "rincian": [
+            [
+              "Harga unit",
+              "Rp900.000.000"
+            ],
+            [
+              "Uang muka (10%)",
+              "Rp90.000.000"
+            ],
+            [
+              "Sewa-cicil (10 tahun)",
+              "Rp9.600.000 per bulan (ilustrasi)"
+            ],
+            [
+              "Biaya administrasi",
+              "1% dari harga unit"
+            ],
+            [
+              "Asuransi bangunan",
+              "Premi ditanggung penyewa"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Tidak ada pembagian hasil dari penyedia karena ini sewa-beli, bukan bagi hasil.",
+          "rincian": [
+            [
+              "Pembagian hasil",
+              "Tidak ada"
+            ],
+            [
+              "Hasil usaha di ruko",
+              "Menjadi hak penyewa-pemilik; besarnya tidak dijamin"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Sewa-cicil tetap harus dibayar walau usaha di ruko belum berjalan baik.",
+          "rincian": [
+            [
+              "Risiko keterlambatan",
+              "Pembangunan bisa mundur dari target"
+            ],
+            [
+              "Risiko usaha",
+              "Pendapatan dari usaha di ruko tidak dijamin"
+            ],
+            [
+              "Risiko kehilangan hak",
+              "Tunggakan dapat mengakhiri perjanjian sebelum kepemilikan berpindah"
+            ],
+            [
+              "Risiko nilai pasar",
+              "Harga ruko di sekitar lokasi bisa turun"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Masa sewa-beli 10 tahun.",
+          "rincian": [
+            [
+              "Masa sewa-beli",
+              "10 tahun (120 bulan)"
+            ],
+            [
+              "Serah terima unit",
+              "Target 6 bulan lagi (target, bisa bergeser)"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "perlu",
+          "ringkas": "Hak sewa-beli tidak mudah dijual cepat. Penyedia belum menyampaikan data harga pasar dan waktu terjual di kawasan ini.",
+          "rincian": [
+            [
+              "Pasar",
+              "Likuiditas ruko bergantung pada lokasi dan kondisi usaha sekitar"
+            ],
+            [
+              "Harga dan waktu jual",
+              "Belum ada data dari penyedia"
+            ]
+          ],
+          "catatan": "Belum ada data harga pasar sekitar dan waktu jual rata-rata, serta penjelasan apakah hak sewa-beli dapat dialihkan sebelum masa sewa berakhir."
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Hak sewa-beli dapat dialihkan ke pihak lain dengan persetujuan penyedia.",
+          "rincian": [
+            [
+              "Pengalihan hak sewa-beli",
+              "Dengan persetujuan tertulis penyedia"
+            ],
+            [
+              "Biaya pengalihan",
+              "2% dari sisa kewajiban (ilustrasi)"
+            ],
+            [
+              "Pelunasan dipercepat",
+              "Dapat dilakukan sesuai kebijakan penyedia di perjanjian"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: penyedia, lalu lembaga mediasi.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Layanan konsumen PT Niaga Amanah Serang; kontaknya tercantum di dokumen penawaran"
+            ],
+            [
+              "Langkah 2",
+              "Mediasi lewat dinas perumahan pemerintah daerah atau badan penyelesaian sengketa konsumen setempat"
+            ],
+            [
+              "Catatan",
+              "Pengembang properti bukan penyelenggara jasa keuangan. Kontak OJK 157 relevan bila pembiayaan melibatkan lembaga keuangan berizin."
+            ],
+            [
+              "Target respons",
+              "7 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "vila-puncak",
+      "jenis": "fraksional",
+      "propertyId": "vila-puncak",
+      "penyedia": "PT Puncak Rehat Lestari",
+      "akad": "Musyarakah · Ijarah",
+      "pemeriksaan": "2026-10-18",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia proyek adalah PT Puncak Rehat Lestari. Aset dimiliki perusahaan khusus (SPV) PT Aset Puncak Bersama yang terpisah dari perusahaan penyedia.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Puncak Rehat Lestari"
+            ],
+            [
+              "Pemilik aset (SPV)",
+              "PT Aset Puncak Bersama"
+            ],
+            [
+              "Pengelola aset",
+              "PT Rehat Akhir Pekan Kelola"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, susunan pengurus, perjanjian pengelolaan"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Beroperasi; penghimpunan token masih berjalan.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Kawasan Puncak, Bogor, Jawa Barat"
+            ],
+            [
+              "Jenis dan skala",
+              "Vila keluarga, 12 unit"
+            ],
+            [
+              "Status proyek",
+              "Beroperasi; penghimpunan token masih berjalan"
+            ],
+            [
+              "Bukti hak atas aset",
+              "Sertifikat hak guna bangunan (SHGB) atas nama SPV"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Investor memegang token yang mewakili bagian kepemilikan bersama atas aset melalui PT Aset Puncak Bersama. Hak hukum atas token ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Bentuk hak",
+              "Bagian kepemilikan bersama atas SPV, sebanding dengan jumlah token"
+            ],
+            [
+              "Pencatatan kepemilikan",
+              "Daftar pemegang token di platform dan sertifikat digital (menu Sertifikat)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Oleh PT Rehat Akhir Pekan Kelola berdasarkan perjanjian pengelolaan"
+            ],
+            [
+              "Hak informasi",
+              "Laporan keuangan dan kondisi aset secara semesteran"
+            ],
+            [
+              "Hak suara",
+              "Persetujuan pemegang token untuk perpanjangan masa proyek, penjualan aset, atau pergantian pengelola"
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Hak hukum, pencatatan kepemilikan, dan pengelolaan aset perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai akad berikut. ASETARA tidak menilai kesesuaian syariah; telaah ahli syariah tetap diperlukan.",
+          "rincian": [
+            [
+              "Investor dan penyedia",
+              "Musyarakah (kemitraan modal atas aset)"
+            ],
+            [
+              "SPV dan penyewa",
+              "Ijarah (sewa vila jangka pendek)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Wakalah bil Istitsmar (pengelola bertindak sebagai wakil investor)"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Investor membayar harga token ditambah biaya yang tertera di bawah. Pajak mengikuti ketentuan yang berlaku dan belum termasuk.",
+          "rincian": [
+            [
+              "Biaya pembelian token",
+              "0,75% dari nilai pembelian token"
+            ],
+            [
+              "Biaya operasional dan pengelolaan",
+              "Dibayar dari pendapatan sewa sebelum hasil dibagi"
+            ],
+            [
+              "Biaya keluar (penjualan token)",
+              "1% dari nilai penjualan token"
+            ],
+            [
+              "Pajak",
+              "Sesuai ketentuan perpajakan yang berlaku; belum termasuk"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Pendapatan sewa vila dikurangi biaya operasional dan pemeliharaan. Hasil dibagi sesuai jumlah token. Angka imbal hasil hanya estimasi dan tidak dijamin.",
+          "rincian": [
+            [
+              "Sumber hasil",
+              "Pendapatan sewa vila dikurangi biaya operasional dan pemeliharaan."
+            ],
+            [
+              "Nisbah (hasil bersih)",
+              "Pemegang token 80% : pengelola 20% dari hasil sewa bersih"
+            ],
+            [
+              "Frekuensi pembagian",
+              "Semesteran (pendapatan musiman)"
+            ],
+            [
+              "Jika terjadi kerugian",
+              "Kerugian usaha ditanggung pemegang token sebanding porsi modal. Kerugian karena kelalaian pengelola menjadi tanggung jawab pengelola."
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Mekanisme pembagian hasil perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Nilai token bisa turun dan hasil bisa lebih rendah dari estimasi, atau tidak ada sama sekali.",
+          "rincian": [
+            [
+              "Risiko penyewa/okupansi",
+              "Permintaan memuncak saat libur panjang dan akhir tahun; di luar itu bisa sepi"
+            ],
+            [
+              "Risiko pasar",
+              "Kemacetan atau pembatasan akses ke kawasan bisa menurunkan kunjungan"
+            ],
+            [
+              "Risiko pengelola",
+              "Pemeliharaan vila di kawasan lembap membutuhkan biaya rutin"
+            ],
+            [
+              "Risiko likuiditas",
+              "Token tidak bisa dicairkan kapan saja; penjualan bergantung pada adanya pembeli"
+            ],
+            [
+              "Risiko hukum dan regulasi",
+              "Aturan tentang kepemilikan fraksional bisa berubah dan memengaruhi hak investor"
+            ],
+            [
+              "Risiko platform",
+              "Gangguan sistem atau kesalahan pencatatan kepemilikan"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Masa proyek 10 tahun sejak penghimpunan dana selesai.",
+          "rincian": [
+            [
+              "Masa proyek",
+              "10 tahun sejak penghimpunan dana selesai"
+            ],
+            [
+              "Periode pembagian hasil",
+              "Semesteran (pendapatan musiman)"
+            ],
+            [
+              "Laporan kepada pemegang token",
+              "Semesteran"
+            ],
+            [
+              "Setelah masa proyek",
+              "Aset dijual atau masa proyek diperpanjang atas persetujuan pemegang token"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Token bukan instrumen yang bisa dicairkan kapan saja. Penjualan bergantung pada adanya pembeli.",
+          "rincian": [
+            [
+              "Masa tahan awal",
+              "12 bulan sejak pembelian"
+            ],
+            [
+              "Jalur penjualan",
+              "Ke sesama pemegang token lewat platform, sesuai ketentuan dokumen proyek"
+            ],
+            [
+              "Harga jual",
+              "Mengikuti permintaan; tidak dijamin sama dengan harga beli"
+            ],
+            [
+              "Waktu pencairan",
+              "Tidak pasti; bisa lebih lama dari yang diharapkan"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Ada dua jalur keluar: menjual token ke pemegang lain, atau menunggu akhir masa proyek. Mekanisme ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Jalur 1: jual token",
+              "Pemegang token menawarkan token ke sesama pemegang lewat platform"
+            ],
+            [
+              "Jalur 2: akhir masa proyek",
+              "Aset dijual atau diperpanjang; hasil penjualan dibagi sesuai jumlah token setelah biaya"
+            ],
+            [
+              "Biaya keluar",
+              "1% dari nilai penjualan token"
+            ],
+            [
+              "Pencatatan setelah pengalihan",
+              "Daftar pemegang token dan sertifikat diperbarui oleh platform"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: platform, penyedia, lalu lembaga yang berwenang.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Kanal pengaduan platform ASETARA"
+            ],
+            [
+              "Langkah 2",
+              "Layanan konsumen PT Puncak Rehat Lestari; kontaknya tercantum di dokumen proyek"
+            ],
+            [
+              "Langkah 3",
+              "Kontak OJK 157 atau WhatsApp 081-157-157-157 untuk konsultasi dan pengaduan konsumen sektor jasa keuangan"
+            ],
+            [
+              "Catatan",
+              "Kewenangan lembaga bergantung pada bentuk dan izin penyelenggara; tanyakan dulu sebelum berinvestasi"
+            ],
+            [
+              "Target respons",
+              "5 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hotel-bandung",
+      "jenis": "fraksional",
+      "propertyId": "hotel-bandung",
+      "penyedia": "PT Dago Hospitaliti Amanah",
+      "akad": "Musyarakah · Mudharabah",
+      "pemeriksaan": "2026-10-22",
+      "informasi": {
+        "legalitas": {
+          "status": "lengkap",
+          "ringkas": "Penyedia proyek adalah PT Dago Hospitaliti Amanah. Aset dimiliki perusahaan khusus (SPV) PT Aset Dago Bersama yang terpisah dari perusahaan penyedia.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Dago Hospitaliti Amanah"
+            ],
+            [
+              "Pemilik aset (SPV)",
+              "PT Aset Dago Bersama"
+            ],
+            [
+              "Pengelola aset",
+              "PT Hospitaliti Amanah Bandung"
+            ],
+            [
+              "Dokumen yang diperiksa kelengkapannya",
+              "Akta pendirian dan perubahan, NIB, NPWP, susunan pengurus, perjanjian pengelolaan"
+            ]
+          ]
+        },
+        "lokasiStatus": {
+          "status": "lengkap",
+          "ringkas": "Beroperasi; penghimpunan token masih berjalan.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Kawasan Dago, Bandung, Jawa Barat"
+            ],
+            [
+              "Jenis dan skala",
+              "Hotel butik 64 kamar"
+            ],
+            [
+              "Status proyek",
+              "Beroperasi; penghimpunan token masih berjalan"
+            ],
+            [
+              "Bukti hak atas aset",
+              "Sertifikat hak guna bangunan (SHGB) atas nama SPV"
+            ]
+          ]
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Investor memegang token yang mewakili bagian kepemilikan bersama atas aset melalui PT Aset Dago Bersama. Hak hukum atas token ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Bentuk hak",
+              "Bagian kepemilikan bersama atas SPV, sebanding dengan jumlah token"
+            ],
+            [
+              "Pencatatan kepemilikan",
+              "Daftar pemegang token di platform dan sertifikat digital (menu Sertifikat)"
+            ],
+            [
+              "Pengelolaan aset",
+              "Oleh PT Hospitaliti Amanah Bandung berdasarkan perjanjian pengelolaan"
+            ],
+            [
+              "Hak informasi",
+              "Laporan keuangan dan kondisi aset secara triwulanan"
+            ],
+            [
+              "Hak suara",
+              "Persetujuan pemegang token untuk perpanjangan masa proyek, penjualan aset, atau pergantian pengelola"
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Hak hukum, pencatatan kepemilikan, dan pengelolaan aset perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai akad berikut. ASETARA tidak menilai kesesuaian syariah; telaah ahli syariah tetap diperlukan.",
+          "rincian": [
+            [
+              "Investor dan penyedia",
+              "Musyarakah (kemitraan modal atas aset)"
+            ],
+            [
+              "SPV dan pengelola hotel",
+              "Mudharabah (pengelola menjalankan usaha perhotelan)"
+            ],
+            [
+              "Pengelolaan usaha",
+              "Operasional hotel mengikuti pedoman perhotelan syariah yang ditetapkan penyedia"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Investor membayar harga token ditambah biaya yang tertera di bawah. Pajak mengikuti ketentuan yang berlaku dan belum termasuk.",
+          "rincian": [
+            [
+              "Biaya pembelian token",
+              "0,5% dari nilai pembelian token"
+            ],
+            [
+              "Biaya operasional dan pengelolaan",
+              "Dibayar dari pendapatan hotel sebelum hasil dibagi"
+            ],
+            [
+              "Biaya keluar (penjualan token)",
+              "0,5% dari nilai penjualan token"
+            ],
+            [
+              "Pajak",
+              "Sesuai ketentuan perpajakan yang berlaku; belum termasuk"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Pendapatan kamar dan layanan hotel dikurangi biaya operasional dan pemeliharaan. Hasil dibagi sesuai jumlah token. Angka imbal hasil hanya estimasi dan tidak dijamin.",
+          "rincian": [
+            [
+              "Sumber hasil",
+              "Pendapatan kamar dan layanan hotel dikurangi biaya operasional dan pemeliharaan."
+            ],
+            [
+              "Nisbah (hasil bersih)",
+              "Pemegang token 85% : pengelola 15% dari hasil usaha bersih"
+            ],
+            [
+              "Frekuensi pembagian",
+              "Triwulanan"
+            ],
+            [
+              "Jika terjadi kerugian",
+              "Kerugian usaha ditanggung pemegang token sebanding porsi modal. Kerugian karena kelalaian pengelola menjadi tanggung jawab pengelola."
+            ],
+            [
+              "Telaah yang diperlukan",
+              "Mekanisme pembagian hasil perlu ditelaah penasihat hukum dan ahli syariah"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Nilai token bisa turun dan hasil bisa lebih rendah dari estimasi, atau tidak ada sama sekali.",
+          "rincian": [
+            [
+              "Risiko penyewa/okupansi",
+              "Segmen keluarga dan rombongan kajian bisa menurun saat musim sepi"
+            ],
+            [
+              "Risiko pasar",
+              "Persaingan hotel butik di kawasan wisata kota cukup ketat"
+            ],
+            [
+              "Risiko pengelola",
+              "Biaya operasional hotel bisa naik lebih cepat dari tarif kamar"
+            ],
+            [
+              "Risiko likuiditas",
+              "Token tidak bisa dicairkan kapan saja; penjualan bergantung pada adanya pembeli"
+            ],
+            [
+              "Risiko hukum dan regulasi",
+              "Aturan tentang kepemilikan fraksional bisa berubah dan memengaruhi hak investor"
+            ],
+            [
+              "Risiko platform",
+              "Gangguan sistem atau kesalahan pencatatan kepemilikan"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Masa proyek 10 tahun sejak penghimpunan dana selesai.",
+          "rincian": [
+            [
+              "Masa proyek",
+              "10 tahun sejak penghimpunan dana selesai"
+            ],
+            [
+              "Periode pembagian hasil",
+              "Triwulanan"
+            ],
+            [
+              "Laporan kepada pemegang token",
+              "Triwulanan"
+            ],
+            [
+              "Setelah masa proyek",
+              "Aset dijual atau masa proyek diperpanjang atas persetujuan pemegang token"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Token bukan instrumen yang bisa dicairkan kapan saja. Penjualan bergantung pada adanya pembeli.",
+          "rincian": [
+            [
+              "Masa tahan awal",
+              "6 bulan sejak pembelian"
+            ],
+            [
+              "Jalur penjualan",
+              "Ke sesama pemegang token lewat platform, sesuai ketentuan dokumen proyek"
+            ],
+            [
+              "Harga jual",
+              "Mengikuti permintaan; tidak dijamin sama dengan harga beli"
+            ],
+            [
+              "Waktu pencairan",
+              "Tidak pasti; bisa lebih lama dari yang diharapkan"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "lengkap",
+          "ringkas": "Ada dua jalur keluar: menjual token ke pemegang lain, atau menunggu akhir masa proyek. Mekanisme ini perlu ditelaah penasihat hukum dan ahli syariah.",
+          "rincian": [
+            [
+              "Jalur 1: jual token",
+              "Pemegang token menawarkan token ke sesama pemegang lewat platform"
+            ],
+            [
+              "Jalur 2: akhir masa proyek",
+              "Aset dijual atau diperpanjang; hasil penjualan dibagi sesuai jumlah token setelah biaya"
+            ],
+            [
+              "Biaya keluar",
+              "0,5% dari nilai penjualan token"
+            ],
+            [
+              "Pencatatan setelah pengalihan",
+              "Daftar pemegang token dan sertifikat diperbarui oleh platform"
+            ]
+          ]
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: platform, penyedia, lalu lembaga yang berwenang.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Kanal pengaduan platform ASETARA"
+            ],
+            [
+              "Langkah 2",
+              "Layanan konsumen PT Dago Hospitaliti Amanah; kontaknya tercantum di dokumen proyek"
+            ],
+            [
+              "Langkah 3",
+              "Kontak OJK 157 atau WhatsApp 081-157-157-157 untuk konsultasi dan pengaduan konsumen sektor jasa keuangan"
+            ],
+            [
+              "Catatan",
+              "Kewenangan lembaga bergantung pada bentuk dan izin penyelenggara; tanyakan dulu sebelum berinvestasi"
+            ],
+            [
+              "Target respons",
+              "5 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "rumah-cikarang",
+      "jenis": "langsung",
+      "propertyId": null,
+      "nama": "Rumah Indent Cikarang Syariah",
+      "penyedia": "PT Bangun Amanah Cikarang",
+      "lokasi": "Cikarang, Bekasi, Jawa Barat",
+      "kategori": "rumah",
+      "gambar": null,
+      "akad": "Istishna'",
+      "ringkasan": "Rumah pesan-bangun (indent) dengan akad Istishna'. Harga dan spesifikasi disepakati di awal, pembayaran bertahap sesuai progres pembangunan.",
+      "modalAwal": {
+        "label": "Booking mulai",
+        "nilai": 10000000
+      },
+      "pemeriksaan": "2026-10-24",
+      "informasi": {
+        "legalitas": {
+          "status": "perlu",
+          "ringkas": "Penyedia berbadan hukum PT. Dokumen perusahaan sudah ada, tetapi persetujuan bangunan dan sertifikat induk belum diunggah.",
+          "rincian": [
+            [
+              "Penyedia",
+              "PT Bangun Amanah Cikarang (pengembang)"
+            ],
+            [
+              "Dokumen yang sudah ada",
+              "Akta pendirian dan perubahan, NIB, NPWP"
+            ],
+            [
+              "Dokumen yang belum ada",
+              "PBG dan sertifikat induk lokasi"
+            ]
+          ],
+          "catatan": "PBG dan sertifikat induk lokasi belum diunggah. Minta salinannya sebelum membayar apa pun."
+        },
+        "lokasiStatus": {
+          "status": "perlu",
+          "ringkas": "Lokasi dan tipe unit sudah dijelaskan. Progres pembangunan dan jadwal serah terima belum tertulis.",
+          "rincian": [
+            [
+              "Lokasi",
+              "Cikarang, Bekasi, Jawa Barat"
+            ],
+            [
+              "Skala",
+              "60 unit, tipe 45/84 (luas bangunan/luas tanah, m²)"
+            ],
+            [
+              "Status proyek",
+              "Pra-pembangunan (indent)"
+            ]
+          ],
+          "catatan": "Belum ada jadwal pembangunan dan tanggal serah terima secara tertulis."
+        },
+        "hakKepemilikan": {
+          "status": "lengkap",
+          "ringkas": "Pembeli menjadi pemilik setelah unit selesai dibangun, diserahterimakan, dan balik nama.",
+          "rincian": [
+            [
+              "Perjanjian awal",
+              "Perjanjian pemesanan dan PPJB"
+            ],
+            [
+              "AJB dan balik nama",
+              "Setelah unit selesai dan pembayaran sesuai perjanjian"
+            ],
+            [
+              "Selama pembangunan",
+              "Pembeli belum memegang sertifikat atas unit"
+            ]
+          ]
+        },
+        "akad": {
+          "status": "lengkap",
+          "ringkas": "Penyedia menyatakan memakai akad pesan-bangun Istishna'. ASETARA tidak menilai kesesuaian syariah.",
+          "rincian": [
+            [
+              "Jenis akad",
+              "Istishna' (pemesanan pembuatan barang dengan spesifikasi yang disepakati)"
+            ],
+            [
+              "Harga dan spesifikasi",
+              "Dicantumkan di perjanjian dan tidak berubah sepihak"
+            ],
+            [
+              "Pembayaran",
+              "Bertahap (termin) sesuai progres pembangunan"
+            ]
+          ]
+        },
+        "modalBiaya": {
+          "status": "lengkap",
+          "ringkas": "Pembayaran dilakukan bertahap dalam lima termin. Pembeli juga menanggung biaya pengurusan hak.",
+          "rincian": [
+            [
+              "Harga pokok",
+              "Rp430.000.000"
+            ],
+            [
+              "Margin penyedia",
+              "Rp70.000.000"
+            ],
+            [
+              "Harga jual",
+              "Rp500.000.000"
+            ],
+            [
+              "Booking",
+              "Rp10.000.000"
+            ],
+            [
+              "Jumlah termin",
+              "5 termin sesuai progres pembangunan"
+            ],
+            [
+              "Biaya pengurusan hak",
+              "BPHTB dan biaya PPAT/notaris, besaran sesuai ketentuan; ditanggung pembeli"
+            ]
+          ]
+        },
+        "pembagianHasil": {
+          "status": "lengkap",
+          "ringkas": "Tidak ada pembagian hasil dari penyedia karena ini jual beli pesanan, bukan bagi hasil.",
+          "rincian": [
+            [
+              "Pembagian hasil",
+              "Tidak ada"
+            ]
+          ]
+        },
+        "risiko": {
+          "status": "lengkap",
+          "ringkas": "Uang sudah dibayar sebelum rumah berdiri, sehingga risiko keterlambatan dan gagal bangun perlu dipahami.",
+          "rincian": [
+            [
+              "Risiko keterlambatan",
+              "Pembangunan bisa mundur dari jadwal"
+            ],
+            [
+              "Risiko gagal bangun",
+              "Proyek bisa berhenti jika dana atau izin bermasalah"
+            ],
+            [
+              "Risiko spesifikasi",
+              "Hasil bangunan bisa berbeda dari yang dijanjikan"
+            ],
+            [
+              "Risiko nilai pasar",
+              "Harga rumah di sekitar lokasi bisa tidak naik"
+            ]
+          ]
+        },
+        "jangkaWaktu": {
+          "status": "lengkap",
+          "ringkas": "Pembayaran lima termin mengikuti progres pembangunan.",
+          "rincian": [
+            [
+              "Masa pembayaran",
+              "Sesuai jadwal 5 termin di perjanjian"
+            ],
+            [
+              "Serah terima",
+              "Belum tertulis"
+            ]
+          ]
+        },
+        "likuiditas": {
+          "status": "lengkap",
+          "ringkas": "Rumah indent tidak bisa dijual cepat, dan sebelum selesai dibangun hak pesanan sulit dialihkan.",
+          "rincian": [
+            [
+              "Pasar",
+              "Pasar rumah umum; sebelum unit berdiri pembeli lain sulit ditemukan"
+            ],
+            [
+              "Harga jual",
+              "Tidak dijamin sama dengan harga beli"
+            ]
+          ]
+        },
+        "mekanismeKeluar": {
+          "status": "perlu",
+          "ringkas": "Pengalihan pesanan disebut mungkin, tetapi aturan pembatalan dan pengembalian dana belum tertulis.",
+          "rincian": [
+            [
+              "Pengalihan pesanan",
+              "Dengan persetujuan penyedia"
+            ],
+            [
+              "Pembatalan oleh pembeli",
+              "Belum tertulis"
+            ],
+            [
+              "Pengembalian dana",
+              "Belum tertulis"
+            ]
+          ],
+          "catatan": "Belum ada ketentuan tertulis tentang pembatalan, besaran potongan, dan jangka waktu pengembalian dana."
+        },
+        "jalurPengaduan": {
+          "status": "lengkap",
+          "ringkas": "Pengaduan disampaikan bertahap: penyedia, lalu lembaga mediasi.",
+          "rincian": [
+            [
+              "Langkah 1",
+              "Layanan konsumen PT Bangun Amanah Cikarang; kontaknya tercantum di dokumen penawaran"
+            ],
+            [
+              "Langkah 2",
+              "Mediasi lewat dinas perumahan pemerintah daerah atau badan penyelesaian sengketa konsumen setempat"
+            ],
+            [
+              "Catatan",
+              "Pengembang properti bukan penyelenggara jasa keuangan. Kontak OJK 157 relevan bila pembiayaan melibatkan lembaga keuangan berizin."
+            ],
+            [
+              "Target respons",
+              "7 hari kerja (target ilustrasi)"
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

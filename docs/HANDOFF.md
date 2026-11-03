@@ -39,7 +39,7 @@ Aturan yang dipelajari dari audit visual:
 ## 4. Navigasi
 - Desktop: `src/components/Sidebar.jsx` (grup: Beranda · Belajar & Rencana · Investasi · Lainnya).
 - Mobile: `src/components/BottomNav.jsx` — 5 tab: Beranda · Edukasi · **Investasi** · Portofolio · Akun (tab Investasi juga aktif di `/marketplace` dan `/tokenisasi/*`). Fitur lain dibuka lewat kartu "Mulai dari sini" dan menu cepat di `Dashboard.jsx`.
-- Route fitur baru: `/literasi`, `/literasi/:materiId`, `/literasi/:materiId/kuis`, `/perencanaan`, `/perbandingan` (menu: "Perbandingan Produk"), `/akses-keamanan`, `/investasi-syariah`.
+- Route fitur baru: `/literasi`, `/literasi/:materiId`, `/literasi/:materiId/kuis`, `/perencanaan`, `/perbandingan` (menu: "Perbandingan Produk"), `/akses-keamanan`, `/investasi-syariah` (tab Materi/Direktori), `/investasi-syariah/proyek/:projectId` (detail 11 informasi).
 
 ## 5. Status Tahap
 | Tahap | Isi | Status |
@@ -53,7 +53,7 @@ Aturan yang dipelajari dari audit visual:
 | 6a | Penyambung antar fitur (`NextSteps`) + rapikan teks tokenisasi di Landing/Dampak | Selesai (menunggu verifikasi di browser) |
 | 6b | Update AI Assistant: saran & jawaban mock untuk fitur ASETARA, tab video bertema ASETARA | Selesai (menunggu verifikasi di browser) |
 | 6c | Bersihkan lint (import tak terpakai, fast refresh, set-state-in-effect) & hapus file/aset tak terpakai | Selesai (menunggu verifikasi `npm run build` + `npx eslint .`) |
-| 7a–7d | **Sharia Property Investment Learning & Directory** — rincian lengkap di `docs/SHARIA-PROPERTY-LEARNING-DIRECTORY.md` | 7a–7b selesai (menunggu verifikasi), 7c–7d menunggu |
+| 7a–7d | **Sharia Property Investment Learning & Directory** — rincian lengkap di `docs/SHARIA-PROPERTY-LEARNING-DIRECTORY.md` | 7a–7c selesai (menunggu verifikasi), 7d berikutnya |
 
 ### Struktur Tahap 2 (Literasi)
 - Data: `src/data/literasi.json` (kategori, materi, soal). Edit isi materi/soal di sini tanpa menyentuh kode.
