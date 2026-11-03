@@ -172,8 +172,8 @@ function HeroSection() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Akses Finansial{' '}
-            <span className="text-champagne-400">Lebih Setara</span>
+            Inkluasi Keuangan untuk Semua{' '}
+            <span className="text-champagne-400">Akses Lebih Setara</span>
           </h1>
 
           <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-xl">
