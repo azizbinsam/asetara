@@ -6,6 +6,7 @@ Basis kode berasal dari prototype PROPIN (tokenisasi properti syariah), yang fit
 
 ## Dokumentasi
 - [`docs/ASETARA-FEATURES.md`](./docs/ASETARA-FEATURES.md) — 4 fitur baru ASETARA (Literasi, Simulator, Perbandingan, Akses & Keamanan)
+- [`docs/SHARIA-PROPERTY-LEARNING-DIRECTORY.md`](./docs/SHARIA-PROPERTY-LEARNING-DIRECTORY.md) — fitur Investasi Properti Syariah (materi + direktori proyek)
 - [`PRD.md`](./PRD.md) — PRD awal PROPIN (fitur lama)
 - [`design.md`](./design.md) — Design system PROPIN (warna lama gold/hijau, sudah digantikan palette ASETARA di `tailwind.config.js`)
 

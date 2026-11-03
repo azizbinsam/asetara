@@ -1,13 +1,13 @@
 import { NavLink, useLocation } from 'react-router-dom'
-import { Home, BookOpen, Store, Wallet, User } from 'lucide-react'
+import { Home, BookOpen, Building2, Wallet, User } from 'lucide-react'
 
-// 5 tab: Beranda · Edukasi · Marketplace · Portofolio · Akun
+// 5 tab: Beranda · Edukasi · Investasi · Portofolio · Akun
 // Fitur lain (Simulator, Perbandingan, Akses & Keamanan, Zakat, dll.)
 // dibuka lewat kartu di halaman Beranda.
 const NAV_ITEMS = [
   { to: '/dashboard', icon: Home, label: 'Beranda' },
   { to: '/literasi', icon: BookOpen, label: 'Edukasi' },
-  { to: '/marketplace', icon: Store, label: 'Marketplace', matchPrefixes: ['/marketplace', '/tokenisasi'] },
+  { to: '/investasi-syariah', icon: Building2, label: 'Investasi', matchPrefixes: ['/investasi-syariah', '/marketplace', '/tokenisasi'] },
   { to: '/dompet', icon: Wallet, label: 'Portofolio', matchPrefixes: ['/dompet', '/transaksi', '/sertifikat'] },
   { to: '/akun', icon: User, label: 'Akun' },
 ]

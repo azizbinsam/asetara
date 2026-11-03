@@ -35,6 +35,7 @@ import LiterasiKuis from './pages/LiterasiKuis'
 import Perencanaan from './pages/Perencanaan'
 import PerbandinganInvestasi from './pages/PerbandinganInvestasi'
 import AksesKeamanan from './pages/AksesKeamanan'
+import InvestasiSyariah from './pages/InvestasiSyariah'
 
 // Admin pages
 import AdminDashboard from './pages/admin/AdminDashboard'
@@ -84,6 +85,7 @@ function AppRoutes() {
           <Route path="/literasi/:materiId/kuis" element={<ProtectedRoute><LiterasiKuis /></ProtectedRoute>} />
           <Route path="/perencanaan" element={<ProtectedRoute><Perencanaan /></ProtectedRoute>} />
           <Route path="/perbandingan" element={<ProtectedRoute><PerbandinganInvestasi /></ProtectedRoute>} />
+          <Route path="/investasi-syariah" element={<ProtectedRoute><InvestasiSyariah /></ProtectedRoute>} />
           <Route path="/akses-keamanan" element={<ProtectedRoute><AksesKeamanan /></ProtectedRoute>} />
         </Route>
 

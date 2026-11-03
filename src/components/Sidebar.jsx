@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import {
   LayoutDashboard, Store, Wallet, HandCoins, Settings,
-  Bot, Leaf, FileBarChart, BookOpen, PiggyBank, Scale, ShieldCheck,
+  Bot, Leaf, FileBarChart, BookOpen, PiggyBank, Scale, ShieldCheck, Building2,
 } from 'lucide-react'
 import Logo from './Logo'
 
@@ -18,13 +18,14 @@ const NAV_GROUPS = [
     items: [
       { to: '/literasi', icon: BookOpen, label: 'Literasi Keuangan', matchPrefixes: ['/literasi'] },
       { to: '/perencanaan', icon: PiggyBank, label: 'Perencanaan Finansial' },
-      { to: '/perbandingan', icon: Scale, label: 'Simulasi Investasi' },
+      { to: '/perbandingan', icon: Scale, label: 'Perbandingan Produk' },
       { to: '/akses-keamanan', icon: ShieldCheck, label: 'Akses & Keamanan' },
     ],
   },
   {
     title: 'Investasi',
     items: [
+      { to: '/investasi-syariah', icon: Building2, label: 'Investasi Properti Syariah', matchPrefixes: ['/investasi-syariah'] },
       { to: '/marketplace', icon: Store, label: 'Marketplace Properti', matchPrefixes: ['/marketplace', '/tokenisasi'] },
       { to: '/dompet', icon: Wallet, label: 'Dompet & Transaksi', matchPrefixes: ['/dompet', '/transaksi', '/sertifikat'] },
       { to: '/zakat', icon: HandCoins, label: 'Auto-Zakat' },
@@ -80,7 +81,7 @@ export default function Sidebar() {
                     className={isActive(item) ? 'text-navy-600' : 'text-neutral-400'}
                     strokeWidth={isActive(item) ? 2.5 : 2}
                   />
-                  <span className="truncate">{item.label}</span>
+                  <span className="leading-snug">{item.label}</span>
                 </NavLink>
               ))}
             </div>
