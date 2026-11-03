@@ -1,11 +1,11 @@
 import literasiData from '../data/literasi.json'
 
-// Jawaban mock AI Assistant ASETARA (tanpa backend). Semua angka bersifat ilustrasi.
+// Jawaban mock AI Assistant INKLUSARA (tanpa backend). Semua angka bersifat ilustrasi.
 // Tambah topik baru dengan menambah satu objek di INTENTS; urutan = prioritas
 // (topik yang lebih spesifik harus di atas). `link` opsional: tombol tautan di bawah jawaban.
 
 export const GREETING =
-  'Halo! Saya AI Assistant ASETARA. Saya bisa membantu seputar literasi keuangan, kesiapan finansial, perbandingan investasi, mengenali penipuan, dan properti syariah. Mau mulai dari mana?'
+  'Halo! Saya AI Assistant INKLUSARA. Saya bisa membantu seputar literasi keuangan, kesiapan finansial, perbandingan investasi, mengenali penipuan, dan properti syariah. Mau mulai dari mana?'
 
 export const SUGGESTIONS = [
   'Apakah saya siap berinvestasi?',
@@ -27,7 +27,7 @@ const INTENTS = [
   {
     id: 'akad',
     keywords: ['akad', 'murabahah', 'ijarah', 'istishna', 'musyarakah', 'mudharabah'],
-    text: 'Akad adalah kesepakatan yang menentukan hak dan kewajiban kedua pihak. Contoh yang umum di properti: Murabahah (jual beli, harga pokok dan margin disepakati di awal), Ijarah (sewa atas manfaat properti), Istishna\' (pesan-bangun dengan bayar bertahap), dan Musyarakah (kemitraan modal). Penyedia yang menyebut akad tertentu belum tentu sesuai syariah; ASETARA tidak menilai itu, jadi telaah ahli syariah tetap penting.',
+    text: 'Akad adalah kesepakatan yang menentukan hak dan kewajiban kedua pihak. Contoh yang umum di properti: Murabahah (jual beli, harga pokok dan margin disepakati di awal), Ijarah (sewa atas manfaat properti), Istishna\' (pesan-bangun dengan bayar bertahap), dan Musyarakah (kemitraan modal). Penyedia yang menyebut akad tertentu belum tentu sesuai syariah; INKLUSARA tidak menilai itu, jadi telaah ahli syariah tetap penting.',
     link: { to: '/literasi/akad-properti-syariah', label: 'Baca materi Akad' },
   },
   {
@@ -51,19 +51,19 @@ const INTENTS = [
   {
     id: 'legalitas',
     keywords: ['legal', 'izin', 'ojk', 'resmi', 'terdaftar', 'diawasi', 'lapor'],
-    text: 'Sebelum berinvestasi, pastikan penyedia layanan punya izin dari lembaga yang berwenang dan cek lewat kanal resmi lembaganya, bukan hanya dari klaim penyedia. Izin yang "sedang diurus" belum berarti legal. Perlu diingat, ASETARA saat ini adalah prototype dengan data contoh. Halaman Akses & Keamanan merangkum lembaga resmi, cara mengecek legalitas, dan kanal pengaduan.',
+    text: 'Sebelum berinvestasi, pastikan penyedia layanan punya izin dari lembaga yang berwenang dan cek lewat kanal resmi lembaganya, bukan hanya dari klaim penyedia. Izin yang "sedang diurus" belum berarti legal. Perlu diingat, INKLUSARA saat ini adalah prototype dengan data contoh. Halaman Akses & Keamanan merangkum lembaga resmi, cara mengecek legalitas, dan kanal pengaduan.',
     link: { to: '/akses-keamanan', label: 'Cek Legalitas & Lapor' },
   },
   {
     id: 'properti-syariah',
     keywords: ['properti syariah', 'investasi properti', 'syariah properti'],
-    text: 'Investasi Properti Syariah di ASETARA punya dua bagian: Materi Edukasi (dasar, akad, hak kepemilikan, dan cara membaca informasi proyek) dan Direktori Proyek. Alurnya: pelajari dulu, cek 11 informasi minimum proyek, lalu baru pertimbangkan investasi. Semua data proyek di prototype ini adalah ilustrasi, bukan penawaran investasi.',
+    text: 'Investasi Properti Syariah di INKLUSARA punya dua bagian: Materi Edukasi (dasar, akad, hak kepemilikan, dan cara membaca informasi proyek) dan Direktori Proyek. Alurnya: pelajari dulu, cek 11 informasi minimum proyek, lalu baru pertimbangkan investasi. Semua data proyek di prototype ini adalah ilustrasi, bukan penawaran investasi.',
     link: { to: '/investasi-syariah', label: 'Buka Investasi Properti Syariah' },
   },
   {
     id: 'darurat',
     keywords: ['darurat'],
-    text: 'Dana darurat ideal di simulator ASETARA adalah 6 kali pengeluaran bulanan. Contoh: pengeluaran Rp3 juta per bulan berarti targetnya Rp18 juta. Angka ini ilustrasi, bukan nasihat keuangan; kebutuhan tiap orang bisa berbeda. Kamu bisa membaca materinya atau menghitung kondisimu di Perencanaan.',
+    text: 'Dana darurat ideal di simulator INKLUSARA adalah 6 kali pengeluaran bulanan. Contoh: pengeluaran Rp3 juta per bulan berarti targetnya Rp18 juta. Angka ini ilustrasi, bukan nasihat keuangan; kebutuhan tiap orang bisa berbeda. Kamu bisa membaca materinya atau menghitung kondisimu di Perencanaan.',
     link: { to: '/literasi/dana-darurat', label: 'Baca materi Dana Darurat' },
   },
   {
@@ -81,7 +81,7 @@ const INTENTS = [
   {
     id: 'perbandingan',
     keywords: ['banding', 'apartemen', 'ruko', 'rumah syariah', 'mana yang'],
-    text: 'Di Perbandingan Investasi kamu bisa memilih 2–3 produk properti syariah, lalu melihat perbedaan risiko, modal, dan ilustrasi potensi hasilnya. Pilih prioritasmu (risiko terendah, hasil tertinggi, atau modal terkecil) dan ASETARA akan menyarankan satu produk. Angka yang tampil adalah data ilustrasi, bukan jaminan hasil.',
+    text: 'Di Perbandingan Investasi kamu bisa memilih 2–3 produk properti syariah, lalu melihat perbedaan risiko, modal, dan ilustrasi potensi hasilnya. Pilih prioritasmu (risiko terendah, hasil tertinggi, atau modal terkecil) dan INKLUSARA akan menyarankan satu produk. Angka yang tampil adalah data ilustrasi, bukan jaminan hasil.',
     link: { to: '/perbandingan', label: 'Bandingkan Investasi' },
   },
   {
@@ -99,7 +99,7 @@ const INTENTS = [
   {
     id: 'smart-contract',
     keywords: ['smart contract'],
-    text: 'Smart contract adalah program otomatis di blockchain yang menjalankan aturan transaksi tanpa perantara. Pada fitur token ASETARA, konsep ini dipakai untuk mengatur pembagian hasil dan kepemilikan token. Catatan: di prototype ini semuanya disimulasikan dengan data contoh.',
+    text: 'Smart contract adalah program otomatis di blockchain yang menjalankan aturan transaksi tanpa perantara. Pada fitur token INKLUSARA, konsep ini dipakai untuk mengatur pembagian hasil dan kepemilikan token. Catatan: di prototype ini semuanya disimulasikan dengan data contoh.',
   },
   {
     id: 'zakat',

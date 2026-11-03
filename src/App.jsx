@@ -28,7 +28,7 @@ import Dampak from './pages/Dampak'
 import Laporan from './pages/Laporan'
 import Akun from './pages/Akun'
 
-// Fitur baru ASETARA
+// Fitur baru INKLUSARA
 import Literasi from './pages/Literasi'
 import LiterasiDetail from './pages/LiterasiDetail'
 import LiterasiKuis from './pages/LiterasiKuis'

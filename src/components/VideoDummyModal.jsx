@@ -112,7 +112,7 @@ export default function VideoDummyModal({ video, onClose }) {
         <div className="p-4 md:p-6 pt-3">
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <Badge variant="brand">{video.category}</Badge>
-            <span className="text-xs text-neutral-500">Pemutar simulasi untuk prototype ASETARA</span>
+            <span className="text-xs text-neutral-500">Pemutar simulasi untuk prototype INKLUSARA</span>
           </div>
           <h2 className="text-lg font-bold leading-snug text-neutral-800">{video.title}</h2>
           <p className="mt-1 text-sm text-neutral-600">{video.description}</p>

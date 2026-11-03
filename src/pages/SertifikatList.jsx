@@ -61,7 +61,7 @@ export default function SertifikatList() {
 
         <div className="flex items-center gap-2 mt-5 text-xs text-neutral-400">
           <ShieldCheck size={14} />
-          <span>Setiap sertifikat tercatat & dapat diverifikasi di blockchain ASETARA.</span>
+          <span>Setiap sertifikat tercatat & dapat diverifikasi di blockchain INKLUSARA.</span>
         </div>
       </div>
     </div>

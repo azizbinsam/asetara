@@ -1,42 +1,40 @@
-# ASETARA — Dokumentasi Fitur Baru
+# INKLUSARA — Dokumentasi Fitur Baru
 
-> **Akses Finansial Lebih Setara**
+> **Inklusi Keuangan untuk Semua, Akses Lebih Setara**
 > Edukasi • Perencanaan • Investasi • Perlindungan — *Satu Platform, Banyak Solusi untuk Masa Depanmu*
 
-Dokumen ini merangkum 4 fitur baru ASETARA berdasarkan mockup mobile dan desktop: **Rencanakan · Pahami · Bandingkan · Akses dengan Aman**.
+Dokumen ini merangkum 4 fitur baru INKLUSARA berdasarkan mockup mobile dan desktop: **Rencanakan · Pahami · Bandingkan · Akses dengan Aman**.
 
 ---
 
 ## 1. Brand & Desain
 
 ### 1.1 Logo
-- Wordmark **ASETARA** huruf kapital, tebal, dengan jarak antarhuruf lebar. Pada huruf "A" terdapat ikon bintang/sparkle emas kecil.
-- Ikon: lima balok gedung bertingkat (hijau teal, biru, navy, emas) di atas atap rumah dengan jendela kecil emas. Melambangkan properti dan akses finansial.
-- Tagline: *Akses Finansial Lebih Setara*, diapit garis emas tipis.
+- Wordmark **INKLUSARA** huruf kapital, tebal, dengan jarak antarhuruf lebar. Terdapat ikon bintang/sparkle emas kecil di bawah huruf "U"–"S" dan pada huruf "A" terakhir.
+- Ikon: siluet gedung bertingkat berwarna navy dan emas dengan lengkung emas yang naik ke atas serta bintang/sparkle emas di puncaknya. Melambangkan pertumbuhan, kesempatan, dan akses finansial.
+- Tagline: *Inklusi Keuangan untuk Semua, Akses Lebih Setara*, diapit garis emas tipis.
 
 ### 1.2 Color Palette
 
-> ⚠️ **Perlu konfirmasi:** ada dua versi palette (lihat bagian Pertanyaan di akhir). Dokumen ini sementara memakai **versi lengkap** karena memiliki peran warna yang jelas.
+Tiga warna utama logo INKLUSARA, ditambah warna fungsional pendukung.
 
 | Nama | Hex | Penggunaan |
 |---|---|---|
-| Slate Navy | `#263F50` | Warna utama: navbar, heading, teks penting |
-| Muted Teal | `#477C7C` | Warna sekunder: tombol, progres, ikon aktif |
-| Champagne Gold | `#C6A66A` | Aksen: ikon, highlight, ilustrasi, penanda fitur |
-| Warm Cream | `#F7F4EC` | Latar utama halaman, bersih dan hangat |
+| Navy Blue | `#263D50` | Warna utama: profesional, tepercaya, stabil (navbar, heading, teks penting) |
+| Muted Teal | `#477C7C` | Warna fungsional (bukan warna logo): progres, ikon aktif, status positif |
+| Champagne Gold | `#C9A15F` | Aksen: kesempatan, pertumbuhan, kemakmuran (ikon, highlight, penanda fitur) |
+| Warm Ivory | `#F8F6EF` | Latar utama halaman: bersih, elegan, sederhana |
 | Pure White | `#FFFFFF` | Kartu fitur, form input, panel konten |
 | Soft Sage | `#E4EEEA` | Latar kartu sekunder, status positif, area edukasi |
-
-Versi alternatif (sederhana): Slate Navy `#314351`, Muted Teal `#536d7b`, Gold `#c8a97e`.
 
 ### 1.3 Design Tokens (CSS)
 
 ```css
 :root {
-  --color-navy:   #263F50;
+  --color-navy:   #263D50;
   --color-teal:   #477C7C;
-  --color-gold:   #C6A66A;
-  --color-cream:  #F7F4EC;
+  --color-gold:   #C9A15F;
+  --color-ivory:  #F8F6EF;
   --color-white:  #FFFFFF;
   --color-sage:   #E4EEEA;
 }
@@ -56,7 +54,7 @@ Versi alternatif (sederhana): Slate Navy `#314351`, Muted Teal `#536d7b`, Gold `
 ### Mobile (bottom tab)
 `Beranda` · `Edukasi` · `Portofolio` · `Akun`
 
-Header: tombol kembali, logo ASETARA, ikon notifikasi.
+Header: tombol kembali, logo INKLUSARA, ikon notifikasi.
 
 ### Desktop (sidebar kiri)
 `Beranda` · `Literasi Keuangan` · `Perencanaan Finansial` · `Simulasi Investasi` · `Marketplace Properti` · `Akses & Keamanan` · `AI Asisten` · `Pengaturan`
@@ -141,7 +139,7 @@ Tombol: `Hitung Kesiapan` / `Hitung Simulasi`.
 
 ### 3.3 Smart Investment Comparison — *Perbandingan pilihan investasi*
 
-**Deskripsi:** Membantu pengguna membandingkan produk berdasarkan modal awal, biaya, jangka waktu, risiko, dan potensi hasil. Untuk tahap awal, fokus pada pilihan investasi **properti** yang tersedia di ASETARA.
+**Deskripsi:** Membantu pengguna membandingkan produk berdasarkan modal awal, biaya, jangka waktu, risiko, dan potensi hasil. Untuk tahap awal, fokus pada pilihan investasi **properti** yang tersedia di INKLUSARA.
 
 **Judul halaman:** *Smart Investment Comparison* / *Bandingkan Investasi Properti* — "Pilih investasi yang paling sesuai denganmu."
 
@@ -219,14 +217,14 @@ Tombol: `Hitung Kesiapan` / `Hitung Simulasi`.
 - [x] Halaman Smart Investment Comparison (tab jenis investasi, kartu produk, tabel perbandingan)
 - [x] Halaman Financial Access & Safety Hub (pencarian, panduan, cek legalitas, waspada penipuan)
 - [ ] Update navigasi (bottom tab mobile dan sidebar desktop)
-- [ ] Terapkan design tokens warna ASETARA
+- [ ] Terapkan design tokens warna INKLUSARA
 - [ ] Layout responsif mobile dan desktop
 
 ---
 
 ## 6. Pertanyaan Terbuka
 
-1. Versi color palette mana yang dipakai (sederhana atau lengkap)?
+1. ~~Versi color palette~~ — sudah diputuskan: palet logo INKLUSARA (Navy #263D50, Champagne Gold #C9A15F, Warm Ivory #F8F6EF). Muted Teal dan Soft Sage tetap dipakai sebagai warna fungsional (progres, status positif).
 2. Rumus perhitungan "% Siap" dan "dana yang dapat disisihkan" di simulator.
 3. Perbedaan data antara mockup mobile dan desktop (tab Sukuk vs Saham, biaya, jangka waktu, lokasi properti): mana yang menjadi acuan?
 4. Stack dan struktur repo GitHub yang dipakai.

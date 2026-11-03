@@ -21,7 +21,7 @@ function findTransaction(txId, contextTransactions) {
 
   // 2. Fallback to localStorage
   try {
-    const stored = JSON.parse(localStorage.getItem('asetara_portfolio') || '{}')
+    const stored = JSON.parse(localStorage.getItem('inklusara_portfolio') || '{}')
     const fromStorage = stored.transactions?.find((t) => t.id === txId)
     if (fromStorage) return fromStorage
   } catch {

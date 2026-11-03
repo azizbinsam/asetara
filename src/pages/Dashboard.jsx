@@ -27,7 +27,7 @@ const QUICK_MENU = [
   { icon: User, label: 'Pengaturan', to: '/akun' },
 ]
 
-// 4 pilar ASETARA
+// 4 pilar INKLUSARA
 const PILLARS = [
   { icon: BookOpen, title: 'Pahami', desc: 'Literasi keuangan', to: '/literasi' },
   { icon: PiggyBank, title: 'Rencanakan', desc: 'Cek kesiapan finansial', to: '/perencanaan' },
@@ -136,7 +136,7 @@ function ChartCard({ portfolio }) {
           />
           <Tooltip
             formatter={(value) => [formatRupiah(value), 'Nilai']}
-            contentStyle={{ borderRadius: 12, borderColor: '#E0DCD0', fontSize: 12 }}
+            contentStyle={{ borderRadius: 12, borderColor: '#E2DED2', fontSize: 12 }}
           />
           <Line
             type="monotone"
@@ -178,7 +178,7 @@ function RecentTransactionsCard({ transactions, navigate }) {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-neutral-800 truncate">{tx.type || 'Beli Token'}</p>
-                  <p className="text-xs text-neutral-500 truncate">{tx.propertyName || 'ASETARA'}</p>
+                  <p className="text-xs text-neutral-500 truncate">{tx.propertyName || 'INKLUSARA'}</p>
                 </div>
                 <div className="text-right shrink-0">
                   <p className="text-sm font-bold text-neutral-800">{formatRupiah(tx.nominal)}</p>

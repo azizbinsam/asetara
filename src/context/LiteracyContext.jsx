@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useCallback } from 'react'
 import literasiData from '../data/literasi.json'
 import { LiteracyContext } from './literacyStore'
 
-const STORAGE_KEY = 'asetara_literasi'
+const STORAGE_KEY = 'inklusara_literasi'
 
 // Bentuk data yang disimpan di localStorage:
 // { read: { [materiId]: true }, quiz: { [materiId]: { best, last, total, attempts, lastAt } } }

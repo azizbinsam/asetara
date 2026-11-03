@@ -158,14 +158,14 @@ export default function Login() {
             <div className="flex gap-2 justify-center">
               <button
                 type="button"
-                onClick={() => { setEmail('sinta@asetara.id'); setPassword('password123'); setErrors({}) }}
+                onClick={() => { setEmail('sinta@inklusara.id'); setPassword('password123'); setErrors({}) }}
                 className="text-xs px-3 py-1.5 rounded-lg bg-navy-50 text-navy-700 border border-navy-200 hover:bg-navy-100 transition-colors"
               >
                 User Demo
               </button>
               <button
                 type="button"
-                onClick={() => { setEmail('admin@asetara.id'); setPassword('password123'); setErrors({}) }}
+                onClick={() => { setEmail('admin@inklusara.id'); setPassword('password123'); setErrors({}) }}
                 className="text-xs px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-600 border border-neutral-200 hover:bg-neutral-200 transition-colors"
               >
                 Admin Demo

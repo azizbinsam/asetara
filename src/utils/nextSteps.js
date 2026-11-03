@@ -1,6 +1,6 @@
 import { BookOpen, Building2, PiggyBank, Scale, ShieldCheck, Store } from 'lucide-react'
 
-// Katalog langkah lanjutan antar fitur ASETARA. Ubah teks/rute di sini;
+// Katalog langkah lanjutan antar fitur INKLUSARA. Ubah teks/rute di sini;
 // halaman cukup memanggil <NextSteps steps={['perencanaan', ...]} />.
 export const NEXT_STEPS = {
   literasi: {

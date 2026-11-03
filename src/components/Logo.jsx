@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 /**
- * Logo ASETARA (gambar). File ada di folder `public/`:
+ * Logo INKLUSARA (gambar). File ada di folder `public/`:
  *   - logo.png             : logo penuh (ikon + wordmark + tagline)  -> variant="full"
  *   - logo-horizontal.png  : ikon di kiri + wordmark di kanan        -> variant="horizontal"
  *   - logo-icon.png        : ikon saja                               -> variant="icon"
@@ -25,7 +25,7 @@ export default function Logo({ size = 120, variant = 'full', className = '' }) {
       {!imgError ? (
         <img
           src={FILES[variant] || FILES.full}
-          alt="ASETARA"
+          alt="INKLUSARA"
           width={size}
           className="object-contain"
           style={{ width: size, height: 'auto' }}
@@ -37,7 +37,7 @@ export default function Logo({ size = 120, variant = 'full', className = '' }) {
           className="bg-navy-gradient rounded-lg flex items-center justify-center font-sans font-bold text-white"
           style={{ width: size, height: size }}
         >
-          <span style={{ fontSize: size * 0.45 }}>A</span>
+          <span style={{ fontSize: size * 0.45 }}>I</span>
         </div>
       )}
     </div>

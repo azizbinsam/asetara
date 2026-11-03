@@ -9,7 +9,7 @@ export function AdminRoute({ children }) {
   useEffect(() => {
     if (isAuthenticated && user && user.role !== 'admin') {
       window.dispatchEvent(
-        new CustomEvent('asetara-toast', {
+        new CustomEvent('inklusara-toast', {
           detail: { message: 'Halaman ini khusus Admin', type: 'warning' },
         })
       )

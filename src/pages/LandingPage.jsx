@@ -263,7 +263,7 @@ function FeaturesSection() {
           <span className="inline-block px-4 py-1.5 rounded-full bg-navy-100 text-navy-700 text-xs font-semibold mb-4">
             KEUNGGULAN
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Mengapa Memilih ASETARA?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">Mengapa Memilih INKLUSARA?</h2>
           <p className="text-neutral-500 mt-3 max-w-lg mx-auto">
             Satu platform untuk belajar, merencanakan, membandingkan, dan berinvestasi properti syariah dengan kepemilikan digital yang transparan
           </p>
@@ -521,7 +521,7 @@ function CTASection() {
           Siap Mulai Investasi Syariah?
         </h2>
         <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-          Bergabung dengan 1.240+ investor yang sudah mempercayakan investasi properti mereka di ASETARA.
+          Bergabung dengan 1.240+ investor yang sudah mempercayakan investasi properti mereka di INKLUSARA.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
@@ -579,7 +579,7 @@ function Footer() {
 
         <div className="border-t border-neutral-800 pt-6">
           <div className="flex flex-col md:flex-row justify-between gap-4">
-            <p className="text-xs">© 2026 ASETARA. Hak Cipta Dilindungi.</p>
+            <p className="text-xs">© 2026 INKLUSARA. Hak Cipta Dilindungi.</p>
             <div className="flex items-start gap-2">
               <span className="text-navy-500 text-lg">⚠️</span>
               <p className="text-xs text-neutral-300 max-w-md">

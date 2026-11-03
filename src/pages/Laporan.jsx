@@ -28,14 +28,14 @@ export default function Laporan() {
     // Simulate download
     const link = document.createElement('a')
     link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(
-      `LAPORAN ${type.label.toUpperCase()} - ASETARA\n` +
+      `LAPORAN ${type.label.toUpperCase()} - INKLUSARA\n` +
       `Periode: ${months[selectedMonth - 1]} ${selectedYear}\n` +
       `Total Portfolio: ${formatRupiah(portfolio.totalValue)}\n` +
       `Total Return: ${formatRupiah(portfolio.totalReturn)} (${formatPercent(portfolio.totalReturnPercent)})\n` +
       `Total Properti: ${portfolio.totalProperties}\n` +
       `\n--- Dokumen ini adalah simulasi ---`
     )
-    link.download = `ASETARA-${type.id}-${selectedYear}-${selectedMonth}.txt`
+    link.download = `INKLUSARA-${type.id}-${selectedYear}-${selectedMonth}.txt`
     link.click()
   }
 

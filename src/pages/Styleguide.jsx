@@ -7,7 +7,7 @@ export default function Styleguide() {
   return (
     <div className="min-h-screen bg-neutral-50 p-6 md:p-10 space-y-10">
       <div>
-        <h1 className="font-sans text-3xl font-bold text-navy-700">ASETARA</h1>
+        <h1 className="font-sans text-3xl font-bold text-navy-700">INKLUSARA</h1>
         <p className="text-neutral-600 mt-1">Styleguide — Part 2 Verification</p>
       </div>
 
@@ -115,7 +115,7 @@ export default function Styleguide() {
       {/* Typography */}
       <section>
         <h2 className="text-lg font-semibold text-neutral-800 mb-3">Tipografi</h2>
-        <p className="font-sans text-2xl text-navy-700">ASETARA — Wordmark (Playfair Display)</p>
+        <p className="font-sans text-2xl text-navy-700">INKLUSARA — Wordmark (Playfair Display)</p>
         <p className="text-3xl font-bold text-neutral-800 mt-2">Heading H1 — Inter Bold</p>
         <p className="text-neutral-600 mt-1">Body text — Inter Regular, untuk paragraf & deskripsi.</p>
       </section>

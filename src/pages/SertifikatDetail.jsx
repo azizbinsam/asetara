@@ -59,7 +59,7 @@ export default function SertifikatDetail() {
     : new Date('2026-05-12T09:30:00.000Z')
   const ownershipPercent = (holding.tokens / holding.totalPropertyTokens) * 100
   const tokenId = generateTokenId(propertyId)
-  const qrValue = `https://asetara.app/verify/${tokenId}`
+  const qrValue = `https://inklusara.app/verify/${tokenId}`
 
   return (
     <div className="pb-8">
@@ -82,11 +82,11 @@ export default function SertifikatDetail() {
         <div className="relative rounded-card border-2 border-navy-300 p-1">
           <div className="rounded-[12px] border border-navy-600 bg-neutral-0 p-6 text-center relative overflow-hidden">
             <span className="pointer-events-none select-none absolute inset-0 flex items-center justify-center font-sans text-6xl font-bold text-navy-50 opacity-70">
-              ASETARA
+              INKLUSARA
             </span>
 
             <div className="relative">
-              <p className="font-sans text-lg font-bold text-navy-700">ASETARA</p>
+              <p className="font-sans text-lg font-bold text-navy-700">INKLUSARA</p>
               <p className="text-[11px] tracking-widest text-neutral-400 uppercase mt-0.5">
                 Sertifikat Kepemilikan Digital
               </p>
@@ -123,7 +123,7 @@ export default function SertifikatDetail() {
 
               <div className="flex justify-center mt-5">
                 <div className="bg-navy-50 border border-navy-200 rounded-btn p-3">
-                  <QRCodeSVG value={qrValue} size={110} fgColor="#172733" bgColor="transparent" />
+                  <QRCodeSVG value={qrValue} size={110} fgColor="#182632" bgColor="transparent" />
                 </div>
               </div>
 

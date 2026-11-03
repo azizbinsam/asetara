@@ -111,7 +111,7 @@ export default function AdminDashboard() {
               <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
               <Tooltip contentStyle={{ borderRadius: 12, fontSize: 12 }} />
               <Bar dataKey="new" fill="#477C7C" radius={[4, 4, 0, 0]} name="Baru" />
-              <Bar dataKey="active" fill="#C6A66A" radius={[4, 4, 0, 0]} name="Aktif" />
+              <Bar dataKey="active" fill="#C9A15F" radius={[4, 4, 0, 0]} name="Aktif" />
             </BarChart>
           </ResponsiveContainer>
         </Card>

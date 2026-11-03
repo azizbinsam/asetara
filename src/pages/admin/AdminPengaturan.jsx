@@ -12,7 +12,7 @@ const SETTINGS_SECTIONS = [
     icon: Globe,
     title: 'Pengaturan Umum',
     items: [
-      { key: 'platformName', label: 'Nama Platform', value: 'ASETARA', type: 'text' },
+      { key: 'platformName', label: 'Nama Platform', value: 'INKLUSARA', type: 'text' },
       { key: 'maintenance', label: 'Mode Maintenance', value: false, type: 'toggle' },
       { key: 'registration', label: 'Buka Pendaftaran', value: true, type: 'toggle' },
     ],

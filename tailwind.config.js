@@ -7,18 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Warna utama ASETARA: Slate Navy (navbar, heading, tombol utama)
+        // Warna utama INKLUSARA: Navy Blue (navbar, heading, tombol utama)
         navy: {
-          50: '#EEF2F5',
-          100: '#D6E0E7',
-          200: '#AFC2CF',
-          300: '#7F9BAE',
-          400: '#4F7088',
-          500: '#33556B',
-          600: '#263F50', // brand
-          700: '#1E3342',
-          800: '#172733',
-          900: '#101B23',
+          50: '#F0F1F3',
+          100: '#DCE0E3',
+          200: '#BAC1C7',
+          300: '#929EA8',
+          400: '#677784',
+          500: '#445868',
+          600: '#263D50', // brand
+          700: '#1E3140',
+          800: '#182632',
+          900: '#111B24',
         },
         // Warna sekunder: Muted Teal (progres, ikon aktif, status positif)
         teal: {
@@ -35,31 +35,32 @@ export default {
         },
         // Aksen: Champagne Gold (ikon, highlight, bintang)
         champagne: {
-          50: '#FAF6EC',
-          100: '#F2E9D3',
-          200: '#E8D9B3',
-          300: '#DCC794',
-          400: '#D0B67D',
-          500: '#C6A66A', // brand accent
-          600: '#A98A4F',
-          700: '#876B3A',
-          800: '#654F2B',
-          900: '#43341C',
+          50: '#F9F4EC',
+          100: '#F2E8D7',
+          200: '#E9D9BF',
+          300: '#E0C8A2',
+          400: '#D4B47F',
+          500: '#C9A15F', // Champagne Gold: brand accent
+          600: '#AB8951',
+          700: '#896D41',
+          800: '#645030',
+          900: '#42351F',
         },
-        cream: '#F7F4EC', // latar utama halaman
+        cream: '#F8F6EF', // Warm Ivory: latar utama halaman
+        ivory: '#F8F6EF', // alias cream
         sage: '#E4EEEA',  // latar kartu sekunder / area edukasi
         // Netral: semua tingkat didefinisikan agar tidak jatuh ke abu-abu bawaan Tailwind
         neutral: {
           0: '#FFFFFF',
-          50: '#F7F4EC',
-          100: '#EFEBE1',
-          200: '#E0DCD0',
+          50: '#F8F6EF',
+          100: '#F0EDE3',
+          200: '#E2DED2',
           300: '#C9C7BE',
           400: '#617078',
           500: '#56636D',
           600: '#46535D',
           700: '#35444F',
-          800: '#263F50',
+          800: '#263D50',
           900: '#17242E',
         },
         danger: '#C0392B',
@@ -74,10 +75,10 @@ export default {
       },
       boxShadow: {
         card: '0 2px 8px rgba(23,36,46,0.06)',
-        navyGlow: '0 4px 12px rgba(38,63,80,0.25)',
+        navyGlow: '0 4px 12px rgba(38,61,80,0.25)',
       },
       backgroundImage: {
-        'navy-gradient': 'linear-gradient(135deg, #33556B 0%, #1E3342 100%)',
+        'navy-gradient': 'linear-gradient(135deg, #445868 0%, #1E3140 100%)',
         'teal-gradient': 'linear-gradient(135deg, #477C7C 0%, #274747 100%)',
       },
     },

@@ -20,7 +20,7 @@ import {
   recommendationReason,
 } from '../utils/comparison'
 
-const STORAGE_KEY = 'asetara_perbandingan'
+const STORAGE_KEY = 'inklusara_perbandingan'
 const { tabs, products, riskLabels } = data
 const DEFAULTS = { selected: products.slice(0, MAX_COMPARE).map((p) => p.id), priority: 'risiko', savedId: null }
 
@@ -273,7 +273,7 @@ export default function PerbandinganInvestasi() {
         {/* Penghubung ke token */}
         <div className="rounded-card bg-navy-50 border border-navy-100 p-4 mb-4">
           <p className="text-sm font-semibold text-navy-800">
-            Lewat token ASETARA, mulai dari {formatRupiah(minToken)}
+            Lewat token INKLUSARA, mulai dari {formatRupiah(minToken)}
           </p>
           <p className="text-sm text-neutral-600 mt-0.5">
             Tidak perlu modal ratusan juta untuk mulai mengenal investasi properti syariah.{' '}

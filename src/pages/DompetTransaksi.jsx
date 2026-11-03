@@ -168,7 +168,7 @@ export default function DompetTransaksi() {
                   <XAxis dataKey="label" tick={{ fontSize: 10, fill: '#939CA2' }} axisLine={false} tickLine={false} />
                   <Tooltip
                     formatter={(value) => [formatRupiah(value), 'Saldo']}
-                    contentStyle={{ borderRadius: 12, borderColor: '#E0DCD0', fontSize: 12 }}
+                    contentStyle={{ borderRadius: 12, borderColor: '#E2DED2', fontSize: 12 }}
                   />
                   <Area
                     type="monotone"
@@ -273,7 +273,7 @@ export default function DompetTransaksi() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium text-neutral-800 truncate">{tx.type || 'Beli Token'}</p>
-                        <p className="text-xs text-neutral-500 truncate">{tx.propertyName || 'ASETARA'}</p>
+                        <p className="text-xs text-neutral-500 truncate">{tx.propertyName || 'INKLUSARA'}</p>
                       </div>
                       <div className="text-right shrink-0">
                         <p className="text-sm font-bold text-neutral-800">{formatRupiah(tx.nominal)}</p>

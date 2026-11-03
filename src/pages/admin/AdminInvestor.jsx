@@ -5,7 +5,7 @@ import Badge from '../../components/Badge'
 
 // Mock investor data
 const MOCK_INVESTORS = [
-  { id: 'inv-1', name: 'Sinta Dewi', email: 'sinta@asetara.id', phone: '+62 812-3456-7890', kycStatus: 'Terverifikasi', totalInvested: 12500000, joinDate: '2026-01-15', properties: 3 },
+  { id: 'inv-1', name: 'Sinta Dewi', email: 'sinta@inklusara.id', phone: '+62 812-3456-7890', kycStatus: 'Terverifikasi', totalInvested: 12500000, joinDate: '2026-01-15', properties: 3 },
   { id: 'inv-2', name: 'Ahmad Fauzi', email: 'ahmad@email.com', phone: '+62 813-9876-5432', kycStatus: 'Terverifikasi', totalInvested: 45000000, joinDate: '2026-02-20', properties: 5 },
   { id: 'inv-3', name: 'Dewi Kusuma', email: 'dewi@email.com', phone: '+62 811-2345-6789', kycStatus: 'Menunggu', totalInvested: 0, joinDate: '2026-07-18', properties: 0 },
   { id: 'inv-4', name: 'Budi Santoso', email: 'budi@email.com', phone: '+62 814-5678-9012', kycStatus: 'Terverifikasi', totalInvested: 82000000, joinDate: '2025-11-10', properties: 8 },

@@ -9,7 +9,7 @@ import NextSteps from '../components/NextSteps'
 import { formatRupiah, formatNumber } from '../utils/format'
 import { GOALS, calculateReadiness } from '../utils/readiness'
 
-const STORAGE_KEY = 'asetara_perencanaan'
+const STORAGE_KEY = 'inklusara_perencanaan'
 const EMPTY = { income: '', expense: '', savings: '', goal: 'darurat' }
 
 function loadForm() {
@@ -290,7 +290,7 @@ export default function Perencanaan() {
                   </div>
                   {result.status === 'siap' && (
                     <p className="text-xs text-neutral-500 mt-3">
-                      Lewat token ASETARA, mulai dari Rp10.000.{' '}
+                      Lewat token INKLUSARA, mulai dari Rp10.000.{' '}
                       <Link to="/marketplace" className="text-navy-600 font-semibold underline">
                         Jelajahi
                       </Link>

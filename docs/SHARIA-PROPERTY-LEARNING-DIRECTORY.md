@@ -1,6 +1,6 @@
 # Sharia Property Investment Learning & Directory
 
-Fitur ASETARA ke-5 (tambahan setelah 4 fitur di `ASETARA-FEATURES.md`). Mockup: hero "Investasi Properti Syariah Lebih Mudah, Lebih Terpercaya", dua tab (Materi Edukasi · Direktori Proyek), kartu materi Video/Artikel/Kuis, kartu proyek dengan badge Terverifikasi, banner transparansi.
+Fitur INKLUSARA ke-5 (tambahan setelah 4 fitur di `INKLUSARA-FEATURES.md`). Mockup: hero "Investasi Properti Syariah Lebih Mudah, Lebih Terpercaya", dua tab (Materi Edukasi · Direktori Proyek), kartu materi Video/Artikel/Kuis, kartu proyek dengan badge Terverifikasi, banner transparansi.
 
 ## Deskripsi (dari pemilik proyek)
 Materi investasi properti syariah dan direktori informasi proyek/penyedia yang telah melalui pemeriksaan awal.

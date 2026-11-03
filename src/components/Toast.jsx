@@ -19,11 +19,11 @@ export function ToastContainer() {
     const handler = (e) => {
       addToast({ id: Date.now() + Math.random(), message: e.detail.message, type: e.detail.type || 'warning' })
     }
-    window.addEventListener('asetara-toast', handler)
+    window.addEventListener('inklusara-toast', handler)
     
     return () => {
       unsubscribe()
-      window.removeEventListener('asetara-toast', handler)
+      window.removeEventListener('inklusara-toast', handler)
     }
   }, [addToast])
 

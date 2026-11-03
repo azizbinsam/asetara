@@ -1,7 +1,7 @@
 import { Check, CircleAlert } from 'lucide-react'
 
 // Chip status kelengkapan informasi. Warna "perlu dilengkapi" memakai keluarga champagne
-// (bukan merah) agar tetap selaras dengan palet ASETARA.
+// (bukan merah) agar tetap selaras dengan palet INKLUSARA.
 export default function KelengkapanBadge({ ok, okLabel = 'Lengkap', noLabel = 'Perlu dilengkapi', className = '' }) {
   return (
     <span

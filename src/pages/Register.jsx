@@ -72,7 +72,7 @@ export default function Register() {
     setIsSubmitting(true)
     try {
       await register(name.trim(), email.trim())
-      toast('Pendaftaran berhasil! Selamat datang di ASETARA.', 'success')
+      toast('Pendaftaran berhasil! Selamat datang di INKLUSARA.', 'success')
       navigate('/dashboard', { replace: true })
     } catch (err) {
       toast(err.message || 'Gagal mendaftar', 'error')
@@ -178,7 +178,7 @@ export default function Register() {
                 <span className="text-navy-700 font-medium">Syarat & Ketentuan</span>{' '}
                 dan{' '}
                 <span className="text-navy-700 font-medium">Kebijakan Privasi</span>{' '}
-                ASETARA
+                INKLUSARA
               </label>
             </div>
             {errors.agreeTnc && <p className="text-xs text-red-600 -mt-2">{errors.agreeTnc}</p>}

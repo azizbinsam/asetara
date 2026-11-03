@@ -5,7 +5,7 @@ const DUMMY_USERS = [
   {
     id: 'u-1',
     name: 'Sinta Dewi',
-    email: 'sinta@asetara.id',
+    email: 'sinta@inklusara.id',
     role: 'user',
     avatar: null,
     phone: '+62 812-3456-7890',
@@ -14,8 +14,8 @@ const DUMMY_USERS = [
   },
   {
     id: 'u-admin',
-    name: 'Admin ASETARA',
-    email: 'admin@asetara.id',
+    name: 'Admin INKLUSARA',
+    email: 'admin@inklusara.id',
     role: 'admin',
     avatar: null,
     phone: '+62 811-0000-0000',
@@ -26,14 +26,14 @@ const DUMMY_USERS = [
 
 // Pulihkan sesi dari localStorage saat pertama render (tanpa efek, jadi tidak ada kedipan "loading")
 function readStoredUser() {
-  const stored = localStorage.getItem('asetara_auth')
+  const stored = localStorage.getItem('inklusara_auth')
   if (!stored) return null
   try {
     const parsed = JSON.parse(stored)
     // Validasi bentuk dasar
     if (parsed && parsed.email && parsed.role) return parsed
   } catch {
-    localStorage.removeItem('asetara_auth')
+    localStorage.removeItem('inklusara_auth')
   }
   return null
 }
@@ -59,12 +59,12 @@ export function AuthProvider({ children }) {
             joinedAt: new Date().toISOString(),
           }
           setUser(newUser)
-          localStorage.setItem('asetara_auth', JSON.stringify(newUser))
+          localStorage.setItem('inklusara_auth', JSON.stringify(newUser))
           resolve({ user: newUser, isNew: true })
           return
         }
         setUser(found)
-        localStorage.setItem('asetara_auth', JSON.stringify(found))
+        localStorage.setItem('inklusara_auth', JSON.stringify(found))
         resolve({ user: found, isNew: false })
       }, 800) // Simulate network delay ~800ms per PRD 6.1
     })
@@ -89,7 +89,7 @@ export function AuthProvider({ children }) {
           joinedAt: new Date().toISOString(),
         }
         setUser(newUser)
-        localStorage.setItem('asetara_auth', JSON.stringify(newUser))
+        localStorage.setItem('inklusara_auth', JSON.stringify(newUser))
         resolve({ user: newUser })
       }, 800)
     })
@@ -97,14 +97,14 @@ export function AuthProvider({ children }) {
 
   function logout() {
     setUser(null)
-    localStorage.removeItem('asetara_auth')
+    localStorage.removeItem('inklusara_auth')
   }
 
   function updateProfile(updates) {
     setUser((prev) => {
       if (!prev) return null
       const updated = { ...prev, ...updates }
-      localStorage.setItem('asetara_auth', JSON.stringify(updated))
+      localStorage.setItem('inklusara_auth', JSON.stringify(updated))
       return updated
     })
   }

@@ -45,14 +45,14 @@
     ]
   },
   {
-    "id": "v-mengenal-asetara",
+    "id": "v-mengenal-inklusara",
     "topic": "umum",
-    "title": "Mengenal ASETARA: Akses Finansial Lebih Setara",
+    "title": "Mengenal INKLUSARA: Inklusi Keuangan untuk Semua, Akses Lebih Setara",
     "category": "Dasar",
     "duration": 272,
     "thumbnail": null,
     "materialId": null,
-    "description": "Gambaran singkat fitur ASETARA: belajar, merencanakan, membandingkan, lalu berinvestasi.",
+    "description": "Gambaran singkat fitur INKLUSARA: belajar, merencanakan, membandingkan, lalu berinvestasi.",
     "points": [
       "Alur: Pahami, Rencanakan, Bandingkan, Investasi, Pantau",
       "Semua data di prototype adalah ilustrasi",
@@ -84,7 +84,7 @@
     "materialId": "dana-darurat",
     "description": "Mengapa dana darurat perlu disiapkan sebelum berinvestasi dan berapa targetnya.",
     "points": [
-      "Target di simulator ASETARA: 6 kali pengeluaran bulanan",
+      "Target di simulator INKLUSARA: 6 kali pengeluaran bulanan",
       "Simpan di tempat yang mudah dicairkan",
       "Dana darurat bukan dana investasi"
     ]
@@ -127,7 +127,7 @@
     "duration": 375,
     "thumbnail": null,
     "materialId": null,
-    "description": "Langkah membeli token di Marketplace ASETARA, dari memilih properti sampai konfirmasi.",
+    "description": "Langkah membeli token di Marketplace INKLUSARA, dari memilih properti sampai konfirmasi.",
     "points": [
       "Pilih properti di Marketplace",
       "Masukkan nominal lalu konfirmasi",

@@ -32,7 +32,7 @@ export default function Dampak() {
         <h1 className="hidden lg:block text-xl font-bold text-neutral-800 mb-6">Dampak Sosial</h1>
 
         <p className="text-sm text-neutral-600 mb-6 lg:max-w-2xl">
-          ASETARA berkomitmen menciptakan dampak positif lewat akses finansial yang lebih setara: dari edukasi hingga investasi properti syariah yang inklusif dan berkelanjutan.
+          INKLUSARA berkomitmen menciptakan dampak positif lewat akses finansial yang lebih setara: dari edukasi hingga investasi properti syariah yang inklusif dan berkelanjutan.
         </p>
 
         {/* Stats Grid */}
@@ -71,7 +71,7 @@ export default function Dampak() {
             <h2 className="text-sm font-bold text-neutral-800 mb-3">Cerita Investor</h2>
             <Card variant="brand">
               <p className="text-sm italic text-white-400 leading-relaxed">
-                "Sebelum ASETARA, saya tidak pernah bisa berinvestasi di properti karena modal yang dibutuhkan sangat besar. Sekarang, dengan Rp 250 ribu, saya sudah bisa memiliki bagian dari apartemen di BSD."
+                "Sebelum INKLUSARA, saya tidak pernah bisa berinvestasi di properti karena modal yang dibutuhkan sangat besar. Sekarang, dengan Rp 250 ribu, saya sudah bisa memiliki bagian dari apartemen di BSD."
               </p>
               <div className="flex items-center gap-2 mt-3">
                 <div className="w-8 h-8 rounded-full bg-white/30 flex items-center justify-center text-navy-800 font-bold text-xs">

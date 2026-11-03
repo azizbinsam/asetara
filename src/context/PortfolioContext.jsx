@@ -5,7 +5,7 @@ import initialHoldings from '../data/holdings.json'
 import portfolioBase from '../data/portfolio.json'
 import { generateTxHash } from '../utils/blockchain'
 
-const STORAGE_KEY = 'asetara_portfolio'
+const STORAGE_KEY = 'inklusara_portfolio'
 
 function loadFromStorage() {
   try {
