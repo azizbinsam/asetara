@@ -1,3 +1,5 @@
+import literasiData from '../data/literasi.json'
+
 // Jawaban mock AI Assistant ASETARA (tanpa backend). Semua angka bersifat ilustrasi.
 // Tambah topik baru dengan menambah satu objek di INTENTS; urutan = prioritas
 // (topik yang lebih spesifik harus di atas). `link` opsional: tombol tautan di bawah jawaban.
@@ -59,7 +61,7 @@ const INTENTS = [
   {
     id: 'belajar',
     keywords: ['belajar', 'materi', 'literasi', 'kuis', 'pemula', 'dasar investasi', 'dasar keuangan'],
-    text: 'Literasi Keuangan punya 7 materi singkat, antara lain Cara Mengatur Keuangan, Dana Darurat, Dasar Investasi, Investasi Syariah untuk Pemula, Risiko Keuangan, dan Keamanan Transaksi Digital. Setiap materi dilengkapi kuis beserta pembahasan.',
+    text: `Literasi Keuangan punya ${literasiData.materials.length} materi singkat, antara lain Cara Mengatur Keuangan, Dana Darurat, Dasar Investasi, Investasi Syariah untuk Pemula, Risiko Keuangan, dan Keamanan Transaksi Digital, serta materi Properti Syariah di halaman Investasi Properti Syariah. Setiap materi dilengkapi kuis beserta pembahasan.`,
     link: { to: '/literasi', label: 'Mulai Belajar' },
   },
   {

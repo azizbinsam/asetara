@@ -4,6 +4,7 @@ import { ChevronLeft, CheckCircle2, XCircle, RotateCcw, BookOpen, ArrowRight, Tr
 import Card from '../components/Card'
 import Button from '../components/Button'
 import ProgressBar from '../components/ProgressBar'
+import { getLiterasiHome } from '../utils/literasiPaths'
 import NextSteps from '../components/NextSteps'
 import { useLiteracy } from '../context/literacyStore'
 
@@ -171,7 +172,7 @@ export default function LiterasiKuis() {
 
           <NextSteps steps={['perencanaan', 'aksesKeamanan']} />
 
-          <Button variant="ghost" onClick={() => navigate('/literasi')}>Kembali ke daftar materi</Button>
+          <Button variant="ghost" onClick={() => navigate(getLiterasiHome(material.category).to)}>Kembali ke daftar materi</Button>
         </div>
       </div>
     )

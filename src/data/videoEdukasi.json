@@ -1,0 +1,137 @@
+[
+  {
+    "id": "v-pengantar-properti",
+    "topic": "properti",
+    "title": "Pengantar Investasi Properti Syariah",
+    "category": "Properti Syariah",
+    "duration": 320,
+    "thumbnail": "/images/hero-apartment.jpg",
+    "materialId": "dasar-properti-syariah",
+    "description": "Mengenal cara berinvestasi di properti dan prinsip syariah yang menjadi pedomannya.",
+    "points": [
+      "Tiga model: kepemilikan langsung, patungan, dan fraksional atau token",
+      "Hindari riba, gharar, dan maysir; objek dan akad harus jelas",
+      "Imbal hasil adalah estimasi dan tidak dijamin"
+    ]
+  },
+  {
+    "id": "v-akad-properti",
+    "topic": "properti",
+    "title": "Mengenal Akad Murabahah dan Ijarah",
+    "category": "Properti Syariah",
+    "duration": 405,
+    "thumbnail": "/images/hero-villa.jpg",
+    "materialId": "akad-properti-syariah",
+    "description": "Perbedaan akad jual beli dan sewa pada properti, serta hal yang perlu dicek sebelum menyetujui akad.",
+    "points": [
+      "Murabahah: harga pokok dan margin disepakati di awal",
+      "Ijarah: sewa atas manfaat properti dalam jangka waktu tertentu",
+      "Periksa biaya, denda keterlambatan, dan rujukan fatwa"
+    ]
+  },
+  {
+    "id": "v-baca-proyek",
+    "topic": "properti",
+    "title": "Cara Membaca Informasi Proyek",
+    "category": "Properti Syariah",
+    "duration": 305,
+    "thumbnail": "/images/hero-hotel.jpg",
+    "materialId": "membaca-informasi-proyek",
+    "description": "Memakai 11 informasi minimum untuk menilai kelengkapan informasi sebuah proyek properti syariah.",
+    "points": [
+      "11 informasi minimum, dari legalitas penyedia sampai jalur pengaduan",
+      "Waspadai hasil pasti, biaya tersembunyi, dan jalur keluar yang tidak jelas",
+      "Status Lengkap di direktori hanya berarti informasinya tersedia"
+    ]
+  },
+  {
+    "id": "v-mengenal-asetara",
+    "topic": "umum",
+    "title": "Mengenal ASETARA: Akses Finansial Lebih Setara",
+    "category": "Dasar",
+    "duration": 272,
+    "thumbnail": null,
+    "materialId": null,
+    "description": "Gambaran singkat fitur ASETARA: belajar, merencanakan, membandingkan, lalu berinvestasi.",
+    "points": [
+      "Alur: Pahami, Rencanakan, Bandingkan, Investasi, Pantau",
+      "Semua data di prototype adalah ilustrasi",
+      "Mulai dari Literasi Keuangan bila kamu pemula"
+    ]
+  },
+  {
+    "id": "v-atur-keuangan",
+    "topic": "umum",
+    "title": "Cara Mengatur Keuangan Bulanan",
+    "category": "Keuangan Dasar",
+    "duration": 340,
+    "thumbnail": null,
+    "materialId": "cara-mengatur-keuangan",
+    "description": "Mencatat, memisahkan kebutuhan dan keinginan, lalu menyisihkan tabungan di awal bulan.",
+    "points": [
+      "Catat dulu pemasukan dan pengeluaran",
+      "Aturan 50/30/20 sebagai titik awal",
+      "Evaluasi setiap bulan"
+    ]
+  },
+  {
+    "id": "v-dana-darurat",
+    "topic": "umum",
+    "title": "Dana Darurat: Bantalan Pertamamu",
+    "category": "Menabung",
+    "duration": 245,
+    "thumbnail": null,
+    "materialId": "dana-darurat",
+    "description": "Mengapa dana darurat perlu disiapkan sebelum berinvestasi dan berapa targetnya.",
+    "points": [
+      "Target di simulator ASETARA: 6 kali pengeluaran bulanan",
+      "Simpan di tempat yang mudah dicairkan",
+      "Dana darurat bukan dana investasi"
+    ]
+  },
+  {
+    "id": "v-syariah-pemula",
+    "topic": "umum",
+    "title": "Investasi Syariah untuk Pemula",
+    "category": "Syariah",
+    "duration": 375,
+    "thumbnail": null,
+    "materialId": "investasi-syariah-pemula",
+    "description": "Prinsip dasar investasi syariah dan contoh produknya.",
+    "points": [
+      "Hindari riba, gharar, dan maysir",
+      "Akad menentukan hak dan kewajiban",
+      "Syariah bukan berarti bebas risiko"
+    ]
+  },
+  {
+    "id": "v-waspada-penipuan",
+    "topic": "umum",
+    "title": "Mengenali dan Menghindari Penipuan Keuangan",
+    "category": "Keamanan",
+    "duration": 310,
+    "thumbnail": null,
+    "materialId": "keamanan-transaksi-digital",
+    "description": "Tanda bahaya penipuan investasi dan cara melindungi data serta uangmu.",
+    "points": [
+      "Waspadai untung tinggi, pasti, dan cepat",
+      "Jangan bagikan PIN, kata sandi, atau OTP",
+      "Cek legalitas lewat kanal resmi"
+    ]
+  },
+  {
+    "id": "v-beli-token",
+    "topic": "umum",
+    "title": "Cara Membeli Token Pertama",
+    "category": "Tutorial",
+    "duration": 375,
+    "thumbnail": null,
+    "materialId": null,
+    "description": "Langkah membeli token di Marketplace ASETARA, dari memilih properti sampai konfirmasi.",
+    "points": [
+      "Pilih properti di Marketplace",
+      "Masukkan nominal lalu konfirmasi",
+      "Cek kesiapan finansial dan bandingkan pilihan lebih dulu"
+    ]
+  }
+]

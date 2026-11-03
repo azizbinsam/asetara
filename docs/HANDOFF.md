@@ -46,20 +46,20 @@ Aturan yang dipelajari dari audit visual:
 |---|---|---|
 | 1 | Rebrand PROPIN → ASETARA, token warna, logo, navigasi, 4 halaman placeholder | Selesai |
 | 1b | Perapian: kartu menyatu, kontras teks, warna liar, grafik portofolio | Selesai |
-| 2 | **Literasi Keuangan** (7 materi, 28 soal kuis, progres tersimpan, rekomendasi) | Selesai |
+| 2 | **Literasi Keuangan** (7 materi umum + 4 materi Properti Syariah dari Tahap 7b = 11 materi, 44 soal kuis, progres tersimpan, rekomendasi) | Selesai |
 | 3 | **Financial Readiness Simulator** (`src/pages/Perencanaan.jsx`, rumus di `src/utils/readiness.js`) | Selesai (menunggu verifikasi di browser) |
 | 4 | **Smart Investment Comparison** (`PerbandinganInvestasi.jsx`, data `perbandingan.json`, logika `utils/comparison.js`) | Selesai (menunggu verifikasi di browser) |
 | 5 | **Financial Access & Safety Hub** (`AksesKeamanan.jsx`, data `aksesKeamanan.json`) | Selesai (menunggu verifikasi di browser) |
 | 6a | Penyambung antar fitur (`NextSteps`) + rapikan teks tokenisasi di Landing/Dampak | Selesai (menunggu verifikasi di browser) |
 | 6b | Update AI Assistant: saran & jawaban mock untuk fitur ASETARA, tab video bertema ASETARA | Selesai (menunggu verifikasi di browser) |
 | 6c | Bersihkan lint (import tak terpakai, fast refresh, set-state-in-effect) & hapus file/aset tak terpakai | Selesai (menunggu verifikasi `npm run build` + `npx eslint .`) |
-| 7a–7d | **Sharia Property Investment Learning & Directory** — rincian lengkap di `docs/SHARIA-PROPERTY-LEARNING-DIRECTORY.md` | 7a selesai (menunggu verifikasi), 7b–7d menunggu |
+| 7a–7d | **Sharia Property Investment Learning & Directory** — rincian lengkap di `docs/SHARIA-PROPERTY-LEARNING-DIRECTORY.md` | 7a–7b selesai (menunggu verifikasi), 7c–7d menunggu |
 
 ### Struktur Tahap 2 (Literasi)
 - Data: `src/data/literasi.json` (kategori, materi, soal). Edit isi materi/soal di sini tanpa menyentuh kode.
 - State: `src/context/LiteracyContext.jsx` (Provider) + `src/context/literacyStore.js` (hook `useLiteracy`). Disimpan di `localStorage` kunci `asetara_literasi`.
 - Halaman: `Literasi.jsx` (daftar+filter+cari), `LiterasiDetail.jsx`, `LiterasiKuis.jsx` (soal → hasil → ulasan → rekomendasi).
-- Dashboard: kartu "Pahami" menampilkan `x/7 materi selesai`.
+- Dashboard: kartu "Pahami" menampilkan `x/N materi selesai` (N = jumlah materi di `literasi.json`, kini 11).
 
 ## 6. Keputusan yang sudah disepakati
 1. Fitur lama **tidak dihapus**; fitur ASETARA bersifat tambahan.

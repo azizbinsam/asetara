@@ -27,7 +27,7 @@ Pahami → Rencanakan → Bandingkan → **Pelajari properti syariah + cek direk
 2. Direktori memuat dua jenis proyek dengan label jelas: **Kepemilikan langsung** (mis. akad Murabahah) dan **Fraksional/token**. Proyek token yang sudah ada di `properties.json` ikut masuk dengan 11 informasi lengkap. Proyek fraksional selalu menampilkan peringatan "perlu telaah penasihat hukum dan ahli syariah".
 3. Menu baru **Investasi Properti Syariah** (grup Investasi). Mobile: tab "Marketplace" → **"Investasi"** (aktif juga di `/marketplace` dan `/tokenisasi/*`). Marketplace token tetap ada. Label menu perbandingan: **"Perbandingan Produk"**. Tidak ada halaman "Simulasi Investasi" baru.
 4. Imbal hasil ditulis sebagai **estimasi, tidak dijamin**, disertai mekanisme pembagian hasil.
-5. Materi memakai mesin Literasi (kategori baru "Properti Syariah"): kartu Video, Artikel, Kuis. **Video asli tidak tersedia** → "Segera hadir" atau tautan YouTube dari pemilik proyek. Isi materi akad/fraksional wajib ditinjau ahli syariah dan hukum.
+5. Materi memakai mesin Literasi (kategori baru "Properti Syariah"): kartu Video, Artikel, Kuis. **Video asli tidak tersedia → kartu video dibuat dummy (diputuskan Aziz di 7b, menggantikan "Segera hadir"):** klik membuka pemutar simulasi dengan label "Video contoh". Isi materi akad/fraksional wajib ditinjau ahli syariah dan hukum; sampai itu terjadi, tiap materi menampilkan catatan "belum ditinjau" (field `notice` di `literasi.json`).
 6. **Soft gate**: banner "Pelajari dulu" di Marketplace dan Detail Tokenisasi selama materi dasar belum selesai; bukan kunci keras.
 7. Klaim di Landing "100% Syariah Compliant / screening Dewan Pengawas Syariah" disesuaikan dengan aturan nomor 1 (Tahap 7d).
 
@@ -35,11 +35,19 @@ Pahami → Rencanakan → Bandingkan → **Pelajari properti syariah + cek direk
 | Tahap | Isi | Status |
 |---|---|---|
 | 7a | Hub `/investasi-syariah` (hero, tab, banner), navigasi baru | Selesai (menunggu verifikasi di browser) |
-| 7b | Tab Materi Edukasi: materi + kuis properti syariah (`MateriTab.jsx`, data `literasi.json`) | Berikutnya |
-| 7c | Tab Direktori Proyek: data, kartu, filter, halaman detail 11 informasi (`DirektoriTab.jsx`) | Menunggu |
+| 7b | Tab Materi Edukasi: materi + kuis properti syariah (`MateriTab.jsx`, data `literasi.json`), video dummy | Selesai (menunggu verifikasi di browser) |
+| 7c | Tab Direktori Proyek: data, kartu, filter, halaman detail 11 informasi (`DirektoriTab.jsx`) | Berikutnya |
 | 7d | Soft gate, penyambung antar fitur, AI Assistant, penyesuaian klaim Landing, HANDOFF | Menunggu |
 
 ## Struktur kode (Tahap 7a)
 - `src/pages/InvestasiSyariah.jsx` — hub. Tab disimpan di URL (`?tab=materi|direktori`).
-- `src/pages/investasiSyariah/MateriTab.jsx` dan `DirektoriTab.jsx` — masih placeholder "Segera hadir"; diganti pada 7b/7c.
+- `src/pages/investasiSyariah/MateriTab.jsx` — selesai di 7b. `DirektoriTab.jsx` — masih placeholder "Segera hadir"; diganti pada 7c.
 - Gambar hero memakai `/images/hero-apartment.jpg`. Foto mockup (rumah+koin, dokumen, timbangan, gedung) belum ada; taruh file di `public/images/` bila tersedia.
+
+## Struktur kode (Tahap 7b)
+- **Materi:** kategori baru `properti` ("Properti Syariah") di `src/data/literasi.json` dengan 4 materi (`dasar-properti-syariah`, `akad-properti-syariah`, `hak-kepemilikan-properti`, `membaca-informasi-proyek`), masing-masing 4 soal. Field opsional baru `notice` ditampilkan `LiterasiDetail.jsx` sebagai catatan "belum ditinjau ahli syariah/penasihat hukum". Materi ini juga muncul di `/literasi` (filter kategori) dan ikut progres/rekomendasi Literasi.
+- **Tab Materi (`MateriTab.jsx`):** progres jalur belajar (materi dihitung selesai setelah kuisnya dikerjakan), filter Semua/Video/Artikel/Kuis, kartu Video (modal), Artikel (`/literasi/:id`), Kuis (`/literasi/:id/kuis`).
+- **Video dummy:** data di `src/data/videoEdukasi.json` (`topic`: `properti` dipakai tab Materi, `umum` dipakai tab Video Edukasi AI Assistant; `thumbnail` boleh `null`; `materialId` opsional untuk tombol "Baca materinya"). Komponen `components/VideoDummyModal.jsx` = pemutar simulasi (thumbnail, waktu berjalan, slider, poin utama; Esc/klik latar menutup). Pasang dengan `key={video.id}`. Tidak ada berkas video; label "Video contoh" sengaja ditampilkan. Mengganti ke video sungguhan: tambah field URL di JSON dan ganti layar simulasi dengan `<video>` atau embed.
+- **Gambar:** hanya foto stok yang sudah ada di `public/images/` (`hero-apartment/villa/hotel.jpg`) dipakai sebagai thumbnail; tidak ada gambar baru. Video `umum` memakai gradien.
+- **Navigasi kembali:** `utils/literasiPaths.js` (`getLiterasiHome`) mengarahkan tombol kembali materi Properti Syariah ke `/investasi-syariah?tab=materi`, materi lain ke `/literasi`.
+- AI Assistant: tab Video Edukasi kini membuka modal dummy yang sama (toast "segera hadir" dihapus); jawaban "materi literasi" memakai jumlah materi dari data. Intent AI khusus properti syariah menyusul di 7d.

@@ -23,6 +23,10 @@
     {
       "id": "keamanan",
       "label": "Keamanan Digital"
+    },
+    {
+      "id": "properti",
+      "label": "Properti Syariah"
     }
   ],
   "materials": [
@@ -683,6 +687,406 @@
           ],
           "answer": 1,
           "explanation": "Bertindak cepat dan menyimpan bukti memperbesar peluang kerugian bisa ditangani."
+        }
+      ]
+    },
+    {
+      "id": "dasar-properti-syariah",
+      "title": "Dasar Investasi Properti Syariah",
+      "category": "properti",
+      "duration": 9,
+      "popular": true,
+      "summary": "Kenali cara berinvestasi di properti dan prinsip syariah yang menjadi pedomannya.",
+      "notice": "Materi prototype ini adalah edukasi umum dan belum ditinjau ahli syariah maupun penasihat hukum. Bukan fatwa, bukan nasihat hukum, dan bukan rekomendasi investasi. Tinjauan profesional diperlukan sebelum isinya dipakai sebagai dasar keputusan.",
+      "sections": [
+        {
+          "heading": "Cara berinvestasi di properti",
+          "paragraphs": [
+            "Properti bisa menjadi investasi dengan beberapa cara. Setiap cara memberi hak dan risiko yang berbeda, jadi kenali dulu modelnya sebelum melihat angka imbal hasil."
+          ],
+          "bullets": [
+            "Kepemilikan langsung: kamu atau badan hukum tercatat sebagai pemilik sertifikat, lalu properti disewakan atau dijual kembali.",
+            "Patungan atau kemitraan: beberapa pihak berbagi modal, pengelolaan, dan hasil sesuai perjanjian.",
+            "Fraksional atau token: hak atas properti dibagi menjadi unit kecil sehingga modal awal lebih terjangkau. Hak hukumnya bergantung pada struktur yang dipakai."
+          ],
+          "after": "Setiap model punya konsekuensi hukum yang berbeda. Pahami hak apa yang sebenarnya kamu dapatkan."
+        },
+        {
+          "heading": "Prinsip syariah dalam properti",
+          "paragraphs": [
+            "Prinsip dasarnya sama dengan investasi syariah lain: hindari riba, gharar, dan maysir, serta pastikan objek dan kegiatan usahanya halal. Dalam properti, hal ini tampak pada beberapa hal berikut."
+          ],
+          "bullets": [
+            "Objek jelas: properti ada, lokasinya jelas, dan boleh dimanfaatkan secara sah.",
+            "Akad jelas: harga, jangka waktu, serta hak dan kewajiban kedua pihak disepakati sejak awal.",
+            "Pemanfaatan halal: properti tidak dipakai untuk kegiatan yang dilarang syariat.",
+            "Hasil mengikuti akad: pada akad bagi hasil, hasil dibagi sesuai nisbah yang disepakati dan tidak dijanjikan pasti."
+          ]
+        },
+        {
+          "heading": "Dari mana imbal hasil berasal",
+          "paragraphs": [
+            "Hasil dari properti umumnya datang dari dua sumber: pendapatan sewa dan kenaikan nilai properti saat dijual. Keduanya tidak pasti. Properti bisa kosong tanpa penyewa, harga bisa turun, dan ada biaya seperti pajak, perawatan, dan pengelolaan.",
+            "Karena itu imbal hasil yang ditampilkan di ASETARA selalu berupa estimasi dan tidak dijamin."
+          ]
+        },
+        {
+          "heading": "Label syariah bukan jaminan",
+          "paragraphs": [
+            "Label syariah pada sebuah proyek tidak menjamin keamanan atau keuntungan. Prinsip syariah mengatur cara bertransaksi, bukan menjamin hasilnya. Periksa legalitas penyedia, akad, dan risikonya sebelum memutuskan."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Ada tiga cara umum: kepemilikan langsung, patungan, dan fraksional atau token.",
+        "Prinsip syariah menuntut objek, akad, dan pemanfaatan yang jelas dan halal.",
+        "Imbal hasil properti berasal dari sewa dan kenaikan nilai, dan tidak pasti.",
+        "Label syariah bukan jaminan hasil maupun keamanan."
+      ],
+      "quiz": [
+        {
+          "question": "Pada model fraksional atau token, hal pertama yang perlu dipahami adalah...",
+          "options": [
+            "Seberapa cepat harga token naik",
+            "Hak hukum apa yang sebenarnya kamu dapatkan atas properti",
+            "Berapa banyak orang lain yang ikut membeli",
+            "Seberapa menarik tampilan situs penyedia"
+          ],
+          "answer": 1,
+          "explanation": "Hak yang kamu terima bergantung pada struktur hukumnya. Memahami hak itu lebih penting daripada melihat pergerakan harga."
+        },
+        {
+          "question": "Dua sumber imbal hasil yang umum dari properti adalah...",
+          "options": [
+            "Bunga tetap dan bonus tahunan",
+            "Pendapatan sewa dan kenaikan nilai properti",
+            "Hadiah undian dan diskon",
+            "Gaji dan komisi"
+          ],
+          "answer": 1,
+          "explanation": "Properti umumnya menghasilkan dari sewa dan dari kenaikan nilai saat dijual. Keduanya tidak pasti."
+        },
+        {
+          "question": "Pernyataan yang benar tentang label syariah pada proyek properti adalah...",
+          "options": [
+            "Menjamin keuntungan tetap",
+            "Menjamin proyek bebas risiko",
+            "Mengatur cara bertransaksi, bukan menjamin hasil",
+            "Berarti proyek pasti legal"
+          ],
+          "answer": 2,
+          "explanation": "Prinsip syariah mengatur caranya. Hasil dan legalitas tetap perlu diperiksa terpisah."
+        },
+        {
+          "question": "Manakah yang sesuai dengan prinsip syariah dalam transaksi properti?",
+          "options": [
+            "Harga serta hak dan kewajiban disepakati jelas sejak akad",
+            "Hasil dijanjikan pasti walaupun properti kosong",
+            "Objek boleh belum jelas asalkan murah",
+            "Pemanfaatan properti tidak perlu diperhatikan"
+          ],
+          "answer": 0,
+          "explanation": "Akad yang jelas dan objek yang jelas adalah dasar transaksi syariah. Hasil pada akad bagi hasil tidak dijanjikan pasti."
+        }
+      ]
+    },
+    {
+      "id": "akad-properti-syariah",
+      "title": "Akad dalam Properti Syariah",
+      "category": "properti",
+      "duration": 10,
+      "popular": false,
+      "summary": "Kenali akad yang umum dipakai dalam jual beli, sewa, dan kemitraan properti.",
+      "notice": "Materi prototype ini adalah edukasi umum dan belum ditinjau ahli syariah maupun penasihat hukum. Bukan fatwa, bukan nasihat hukum, dan bukan rekomendasi investasi. Tinjauan profesional diperlukan sebelum isinya dipakai sebagai dasar keputusan.",
+      "sections": [
+        {
+          "heading": "Mengapa akad penting",
+          "paragraphs": [
+            "Akad adalah kesepakatan yang menentukan hak dan kewajiban kedua pihak. Nilai properti besar dan jangka waktunya panjang, jadi akad yang jelas melindungi kedua belah pihak."
+          ]
+        },
+        {
+          "heading": "Akad jual beli",
+          "bullets": [
+            "Murabahah: penjual menyebut harga pokok dan margin keuntungan. Harga disepakati di awal dan tidak berubah selama cicilan, meskipun pembayaran dilakukan bertahap.",
+            "Istishna': pemesanan pembangunan atau pembuatan barang sesuai spesifikasi, misalnya rumah yang belum selesai dibangun. Pembayarannya dapat dilakukan bertahap sesuai kemajuan pekerjaan."
+          ]
+        },
+        {
+          "heading": "Akad sewa dan kemitraan",
+          "bullets": [
+            "Ijarah: sewa atas manfaat suatu properti dalam jangka waktu tertentu dengan imbalan sewa yang disepakati.",
+            "Ijarah muntahiyah bittamlik (IMBT): sewa yang disertai janji atau opsi perpindahan kepemilikan di akhir masa sewa.",
+            "Musyarakah mutanaqisah: kepemilikan bersama di mana bagian satu pihak berkurang bertahap dan bagian pihak lain bertambah, misalnya dalam pembiayaan rumah bersama lembaga keuangan.",
+            "Bagi hasil (mudharabah atau musyarakah): hasil usaha dibagi sesuai nisbah yang disepakati. Hasilnya tidak dijamin, dan kerugian ditanggung sesuai ketentuan akad."
+          ]
+        },
+        {
+          "heading": "Cara membaca akad",
+          "bullets": [
+            "Pastikan jenis akad disebut dengan jelas dan sesuai dengan produknya.",
+            "Periksa harga, biaya tambahan, serta denda atau biaya keterlambatan.",
+            "Pahami apa yang terjadi bila pembayaran terlambat atau proyek tertunda.",
+            "Tanyakan siapa pengawas syariah atau fatwa apa yang menjadi rujukan penyedia."
+          ],
+          "after": "Fatwa DSN-MUI menjadi rujukan utama di Indonesia, tetapi ketentuan rinci dapat berbeda untuk tiap produk. Bila ragu, tanyakan kepada ahli syariah."
+        }
+      ],
+      "keyPoints": [
+        "Akad menentukan hak dan kewajiban kedua pihak sejak awal.",
+        "Murabahah berbasis jual beli dengan margin yang disepakati, ijarah berbasis sewa.",
+        "Pada akad bagi hasil, hasil tidak dijamin dan pembagiannya mengikuti nisbah.",
+        "Periksa jenis akad, biaya, denda, dan rujukan fatwa sebelum menandatangani."
+      ],
+      "quiz": [
+        {
+          "question": "Pada akad murabahah, hal yang disepakati sejak awal adalah...",
+          "options": [
+            "Harga pokok dan margin keuntungan penjual",
+            "Keuntungan yang naik setiap bulan",
+            "Besaran hasil yang dijamin pasti",
+            "Kenaikan harga properti di masa depan"
+          ],
+          "answer": 0,
+          "explanation": "Murabahah adalah jual beli dengan harga pokok dan margin yang disebutkan dan disepakati di awal."
+        },
+        {
+          "question": "Akad ijarah adalah...",
+          "options": [
+            "Jual beli dengan margin",
+            "Sewa atas manfaat properti dalam jangka waktu tertentu",
+            "Pinjaman dengan bunga",
+            "Pemberian hadiah"
+          ],
+          "answer": 1,
+          "explanation": "Ijarah adalah sewa: pemilik menyerahkan manfaat properti dengan imbalan sewa yang disepakati."
+        },
+        {
+          "question": "Pada musyarakah mutanaqisah, apa yang terjadi seiring waktu?",
+          "options": [
+            "Bagian kepemilikan satu pihak berkurang dan pihak lain bertambah secara bertahap",
+            "Harga properti selalu naik",
+            "Kepemilikan tidak pernah berubah",
+            "Sewa dihapuskan"
+          ],
+          "answer": 0,
+          "explanation": "Pada musyarakah mutanaqisah, kepemilikan bersama berpindah bertahap dari satu pihak ke pihak lain."
+        },
+        {
+          "question": "Apa yang sebaiknya dilakukan sebelum menandatangani akad?",
+          "options": [
+            "Mengabaikan biaya tambahan",
+            "Memeriksa jenis akad, harga, biaya, dan ketentuan keterlambatan",
+            "Menandatangani dulu, membaca belakangan",
+            "Hanya melihat brosur"
+          ],
+          "answer": 1,
+          "explanation": "Akad mengikat. Periksa semua ketentuannya, termasuk biaya dan konsekuensi keterlambatan, sebelum menyetujui."
+        }
+      ]
+    },
+    {
+      "id": "hak-kepemilikan-properti",
+      "title": "Hak Kepemilikan & Legalitas Properti",
+      "category": "properti",
+      "duration": 10,
+      "popular": false,
+      "summary": "Pahami bukti kepemilikan dan dokumen penting sebelum berinvestasi di properti.",
+      "notice": "Materi prototype ini adalah edukasi umum dan belum ditinjau ahli syariah maupun penasihat hukum. Bukan fatwa, bukan nasihat hukum, dan bukan rekomendasi investasi. Tinjauan profesional diperlukan sebelum isinya dipakai sebagai dasar keputusan.",
+      "sections": [
+        {
+          "heading": "Bukti hak atas tanah dan bangunan",
+          "paragraphs": [
+            "Di Indonesia, hak atas tanah dibuktikan dengan sertifikat yang diterbitkan oleh kantor pertanahan (BPN/ATR). Jenis haknya berbeda-beda."
+          ],
+          "bullets": [
+            "Sertifikat Hak Milik (SHM): hak atas tanah yang terkuat dan terpenuh, yang dapat dimiliki warga negara Indonesia.",
+            "Hak Guna Bangunan (HGB): hak mendirikan dan memiliki bangunan di atas tanah dengan jangka waktu tertentu dan dapat diperpanjang.",
+            "Apartemen umumnya berstatus Sertifikat Hak Milik atas Satuan Rumah Susun (SHM Sarusun)."
+          ],
+          "after": "Jenis hak memengaruhi jangka waktu kepemilikan, cara pengalihan, dan nilai properti."
+        },
+        {
+          "heading": "Dokumen yang perlu diperiksa",
+          "bullets": [
+            "Sertifikat, termasuk kesesuaian nama pemilik atau penyedia dengan data di kantor pertanahan.",
+            "Izin bangunan: Persetujuan Bangunan Gedung (PBG) yang menggantikan IMB, serta Sertifikat Laik Fungsi (SLF) untuk bangunan yang sudah jadi.",
+            "Akta Jual Beli (AJB) yang dibuat di hadapan PPAT bila terjadi jual beli.",
+            "Status sengketa atau pembebanan, misalnya apakah properti sedang dijaminkan."
+          ],
+          "after": "Aturan dan prosedur dapat berubah. Pastikan ke kantor pertanahan atau sumber resmi sebelum memutuskan."
+        },
+        {
+          "heading": "Bagaimana dengan kepemilikan fraksional atau token",
+          "paragraphs": [
+            "Memiliki token tidak otomatis berarti kamu tercatat sebagai pemilik tanah atau bangunan. Hak yang kamu terima bergantung pada struktur hukumnya, misalnya apakah token mewakili hak atas hasil sewa, bagian dari badan usaha, atau hak lain. Pertanyaan yang layak diajukan:"
+          ],
+          "bullets": [
+            "Siapa yang tercatat sebagai pemilik sertifikat?",
+            "Apa hak hukum pemegang token dan bagaimana pencatatannya?",
+            "Siapa yang mengelola aset dan bagaimana hasilnya dibagi?",
+            "Bagaimana cara keluar bila ingin menjual?"
+          ],
+          "after": "Hak hukum, pencatatan kepemilikan, pengelolaan aset, pembagian hasil, dan mekanisme keluar pada model fraksional perlu ditelaah penasihat hukum dan ahli syariah."
+        },
+        {
+          "heading": "Jika ada yang janggal",
+          "paragraphs": [
+            "Waspada bila penyedia enggan menunjukkan dokumen, mendesak transfer cepat, atau menjanjikan hasil pasti. Buka halaman Akses & Keamanan untuk mengenali tanda-tanda penipuan dan kanal pengaduan resmi."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Hak atas tanah dibuktikan sertifikat; jenis haknya memengaruhi jangka waktu dan pengalihan.",
+        "Periksa sertifikat, izin bangunan (PBG/SLF), AJB, dan status sengketa.",
+        "Token tidak otomatis berarti kamu pemilik sertifikat; hak bergantung pada struktur hukumnya.",
+        "Model fraksional perlu ditelaah penasihat hukum dan ahli syariah."
+      ],
+      "quiz": [
+        {
+          "question": "Sertifikat Hak Milik (SHM) adalah...",
+          "options": [
+            "Izin bangunan sementara",
+            "Bukti hak atas tanah yang terkuat dan terpenuh",
+            "Surat perjanjian sewa",
+            "Kuitansi pembayaran"
+          ],
+          "answer": 1,
+          "explanation": "SHM adalah bukti hak atas tanah yang terkuat dan terpenuh."
+        },
+        {
+          "question": "Dokumen izin bangunan yang menggantikan IMB adalah...",
+          "options": [
+            "PBG (Persetujuan Bangunan Gedung)",
+            "NPWP",
+            "AJB",
+            "SHM"
+          ],
+          "answer": 0,
+          "explanation": "PBG menggantikan IMB. Untuk bangunan yang sudah jadi juga diperlukan Sertifikat Laik Fungsi (SLF)."
+        },
+        {
+          "question": "Pada properti fraksional, memiliki token berarti...",
+          "options": [
+            "Otomatis tercatat sebagai pemilik sertifikat tanah",
+            "Hak yang kamu terima bergantung pada struktur hukumnya",
+            "Selalu bisa dijual kapan saja",
+            "Dijamin untung"
+          ],
+          "answer": 1,
+          "explanation": "Hak pemegang token ditentukan struktur hukumnya, jadi perlu dipahami dan ditelaah dengan penasihat hukum."
+        },
+        {
+          "question": "Mana yang sebaiknya kamu tanyakan kepada penyedia proyek fraksional?",
+          "options": [
+            "Siapa yang tercatat sebagai pemilik sertifikat dan apa hak pemegang token",
+            "Berapa pengikut media sosialnya",
+            "Apa warna brosurnya",
+            "Berapa kali iklan proyek tayang"
+          ],
+          "answer": 0,
+          "explanation": "Pemilik sertifikat dan hak pemegang token adalah dasar untuk menilai perlindungan investor."
+        }
+      ]
+    },
+    {
+      "id": "membaca-informasi-proyek",
+      "title": "Membaca Informasi Proyek Properti Syariah",
+      "category": "properti",
+      "duration": 8,
+      "popular": false,
+      "summary": "Gunakan 11 informasi minimum untuk menilai kelengkapan informasi sebuah proyek.",
+      "notice": "Materi prototype ini adalah edukasi umum dan belum ditinjau ahli syariah maupun penasihat hukum. Bukan fatwa, bukan nasihat hukum, dan bukan rekomendasi investasi. Tinjauan profesional diperlukan sebelum isinya dipakai sebagai dasar keputusan.",
+      "sections": [
+        {
+          "heading": "Mengapa kelengkapan informasi penting",
+          "paragraphs": [
+            "Proyek yang baik bersedia menjelaskan hal-hal dasarnya secara terbuka. Informasi yang tidak lengkap membuat kamu sulit menilai risiko dan membandingkan pilihan."
+          ]
+        },
+        {
+          "heading": "11 informasi minimum",
+          "bullets": [
+            "Legalitas penyedia: apakah badan hukum dan izinnya jelas dan bisa dicek?",
+            "Lokasi dan status proyek: di mana, dan apakah masih rencana, dibangun, atau sudah berjalan?",
+            "Hak atau kepemilikan investor: apa yang kamu miliki secara hukum?",
+            "Akad: akad apa yang dipakai dan apa isinya?",
+            "Modal dan biaya: berapa modal minimum dan biaya apa saja yang ada?",
+            "Pembagian hasil: bagaimana hasil dibagi, kapan, dan apakah dijamin?",
+            "Risiko: risiko apa saja yang disebutkan secara terbuka?",
+            "Jangka waktu: berapa lama dana terikat?",
+            "Likuiditas: seberapa mudah kamu bisa menarik atau menjual kembali?",
+            "Mekanisme pengalihan atau keluar: bagaimana prosedur dan biayanya?",
+            "Jalur pengaduan: ke mana kamu bisa mengadu bila ada masalah?"
+          ]
+        },
+        {
+          "heading": "Tanda yang perlu diwaspadai",
+          "bullets": [
+            "Imbal hasil dijanjikan pasti atau sangat tinggi.",
+            "Biaya tidak dijelaskan atau baru muncul belakangan.",
+            "Tidak ada penjelasan cara keluar atau menjual kembali.",
+            "Jalur pengaduan tidak ada atau sulit dihubungi.",
+            "Penyedia menolak menunjukkan dokumen."
+          ]
+        },
+        {
+          "heading": "Cara memakai Direktori Proyek",
+          "paragraphs": [
+            "Direktori Proyek di ASETARA menampilkan tiap informasi dengan status Lengkap atau Perlu dilengkapi. Status ini adalah pemeriksaan awal kelengkapan informasi. Bukan jaminan hasil, bukan rekomendasi investasi, dan bukan fatwa kepatuhan syariah."
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Ada 11 informasi minimum yang perlu jelas sebelum kamu mempertimbangkan sebuah proyek.",
+        "Informasi tidak lengkap berarti risiko sulit dinilai.",
+        "Waspadai hasil pasti, biaya tersembunyi, dan jalur keluar yang tidak jelas.",
+        "Status Lengkap di direktori hanya berarti informasinya tersedia, bukan jaminan."
+      ],
+      "quiz": [
+        {
+          "question": "Status \"Lengkap\" pada direktori berarti...",
+          "options": [
+            "Proyek dijamin menguntungkan",
+            "Informasi minimum yang diperiksa sudah tersedia",
+            "Proyek sudah difatwakan sesuai syariah",
+            "ASETARA merekomendasikan untuk membeli"
+          ],
+          "answer": 1,
+          "explanation": "Status Lengkap hanya menunjukkan kelengkapan informasi. Bukan jaminan hasil, rekomendasi, atau fatwa."
+        },
+        {
+          "question": "Mana yang termasuk 11 informasi minimum?",
+          "options": [
+            "Jumlah pengikut media sosial",
+            "Warna logo penyedia",
+            "Mekanisme pengalihan atau keluar",
+            "Jumlah brosur yang dicetak"
+          ],
+          "answer": 2,
+          "explanation": "Mekanisme pengalihan atau keluar adalah salah satu dari 11 informasi minimum."
+        },
+        {
+          "question": "Tanda yang perlu diwaspadai adalah...",
+          "options": [
+            "Imbal hasil dijanjikan pasti dan sangat tinggi",
+            "Penyedia menjelaskan biaya dengan rinci",
+            "Penyedia menyediakan jalur pengaduan",
+            "Risiko dijelaskan secara terbuka"
+          ],
+          "answer": 0,
+          "explanation": "Hasil yang dijanjikan pasti dan sangat tinggi adalah tanda bahaya klasik penipuan investasi."
+        },
+        {
+          "question": "Jika informasi \"Likuiditas\" belum dijelaskan, sebaiknya...",
+          "options": [
+            "Diabaikan saja",
+            "Ditanyakan ke penyedia sebelum memutuskan",
+            "Menambah modal supaya cepat keluar",
+            "Dipercaya karena proyeknya berlabel syariah"
+          ],
+          "answer": 1,
+          "explanation": "Tanpa kejelasan likuiditas kamu tidak tahu apakah dana bisa ditarik kembali. Tanyakan sebelum memutuskan."
         }
       ]
     }

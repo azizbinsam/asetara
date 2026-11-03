@@ -1,4 +1,4 @@
-import { Wallet, PiggyBank, TrendingUp, MoonStar, TriangleAlert, ShieldCheck, BookOpen } from 'lucide-react'
+import { Wallet, PiggyBank, TrendingUp, MoonStar, TriangleAlert, ShieldCheck, BookOpen, Building2 } from 'lucide-react'
 
 // Ikon tiap kategori materi. Kunci = id kategori di src/data/literasi.json
 const CATEGORY_ICONS = {
@@ -8,6 +8,7 @@ const CATEGORY_ICONS = {
   syariah: MoonStar,
   risiko: TriangleAlert,
   keamanan: ShieldCheck,
+  properti: Building2,
 }
 
 // Komponen kecil agar halaman cukup menulis <CategoryIcon category="dasar" size={20} />

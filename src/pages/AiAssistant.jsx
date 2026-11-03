@@ -1,19 +1,11 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ChevronLeft, Send, Bot, User, Play, BookOpen, ArrowRight } from 'lucide-react'
-import { toast } from '../components/toastStore'
+import VideoDummyModal from '../components/VideoDummyModal'
+import { formatDuration } from '../utils/format'
+import videos from '../data/videoEdukasi.json'
 import Card from '../components/Card'
 import { getMockResponse, getTypingDelay, GREETING, SUGGESTIONS } from '../utils/aiResponses'
-
-// Konten video masih contoh (belum ada video sungguhan); judul mengikuti materi Literasi ASETARA.
-const VIDEO_LIBRARY = [
-  { id: 1, title: 'Mengenal ASETARA: Akses Finansial Lebih Setara', duration: '4:32', category: 'Dasar' },
-  { id: 2, title: 'Cara Mengatur Keuangan Bulanan', duration: '5:40', category: 'Keuangan Dasar' },
-  { id: 3, title: 'Dana Darurat: Bantalan Pertamamu', duration: '4:05', category: 'Menabung' },
-  { id: 4, title: 'Investasi Syariah untuk Pemula', duration: '6:15', category: 'Syariah' },
-  { id: 5, title: 'Mengenali dan Menghindari Penipuan Keuangan', duration: '5:10', category: 'Keamanan' },
-  { id: 6, title: 'Cara Membeli Token Pertama', duration: '6:15', category: 'Tutorial' },
-]
 
 export default function AiAssistant() {
   const navigate = useNavigate()
@@ -22,6 +14,7 @@ export default function AiAssistant() {
   ])
   const [input, setInput] = useState('')
   const [activeTab, setActiveTab] = useState('chat')
+  const [activeVideo, setActiveVideo] = useState(null)
   const [typing, setTyping] = useState(false)
   const bottomRef = useRef(null)
   const nextId = useRef(2) // id pesan; 1 dipakai sapaan awal
@@ -54,10 +47,6 @@ export default function AiAssistant() {
 
   function handleSuggestion(text) {
     sendMessage(text)
-  }
-
-  function handleVideoClick(video) {
-    toast(`Video "${video.title}" segera hadir`, 'info')
   }
 
   return (
@@ -184,16 +173,20 @@ export default function AiAssistant() {
           <div className={`mt-4 lg:mt-0 lg:block ${activeTab === 'video' ? 'block' : 'hidden'}`}>
             <p className="hidden lg:block text-sm font-semibold text-neutral-700 mb-3">Video Edukasi</p>
             <div className="space-y-3 lg:max-h-[560px] lg:overflow-y-auto lg:pr-1">
-              {VIDEO_LIBRARY.map((video) => (
+              {videos.map((video) => (
                 <button
                   key={video.id}
                   type="button"
-                  onClick={() => handleVideoClick(video)}
+                  onClick={() => setActiveVideo(video)}
                   className="block w-full text-left"
                 >
                   <Card variant="default" className="flex items-center gap-3 hover:shadow-md transition-shadow">
-                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-champagne-300 to-navy-600 flex items-center justify-center shrink-0">
-                      <Play size={20} className="text-white ml-1" />
+                    <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-champagne-300 to-navy-600 flex items-center justify-center shrink-0">
+                      {video.thumbnail && (
+                        <img src={video.thumbnail} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                      )}
+                      {video.thumbnail && <div className="absolute inset-0 bg-navy-800/40" />}
+                      <Play size={20} className="relative text-white ml-1" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-semibold text-neutral-800 truncate">{video.title}</p>
@@ -201,7 +194,7 @@ export default function AiAssistant() {
                         <span className="text-[10px] px-2 py-0.5 rounded-full bg-navy-50 text-navy-700 font-medium">
                           {video.category}
                         </span>
-                        <span className="text-xs text-neutral-500">{video.duration}</span>
+                        <span className="text-xs text-neutral-500">{formatDuration(video.duration)}</span>
                       </div>
                     </div>
                     <BookOpen size={16} className="text-neutral-400 shrink-0" />
@@ -212,6 +205,10 @@ export default function AiAssistant() {
           </div>
         </div>
       </div>
+
+      {activeVideo && (
+        <VideoDummyModal key={activeVideo.id} video={activeVideo} onClose={() => setActiveVideo(null)} />
+      )}
     </div>
   )
 }

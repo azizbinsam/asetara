@@ -1,11 +1,12 @@
 import { useEffect } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ChevronLeft, Clock, Lightbulb, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { ChevronLeft, Clock, Lightbulb, ArrowRight, CheckCircle2, Info } from 'lucide-react'
 import Card from '../components/Card'
 import Badge from '../components/Badge'
 import Button from '../components/Button'
 import { useLiteracy } from '../context/literacyStore'
 import { CategoryIcon } from '../utils/literasiIcons'
+import { getLiterasiHome } from '../utils/literasiPaths'
 
 export default function LiterasiDetail() {
   const { materiId } = useParams()
@@ -31,21 +32,22 @@ export default function LiterasiDetail() {
   }
 
   const categoryLabel = categories.find((c) => c.id === material.category)?.label
+  const home = getLiterasiHome(material.category)
   const result = quizResults[material.id]
   const done = getStatus(material.id) === 'selesai'
 
   return (
     <div className="pb-8">
       <header className="lg:hidden sticky top-0 z-30 bg-neutral-0 border-b border-neutral-200 px-4 py-3 flex items-center gap-3">
-        <button onClick={() => navigate('/literasi')} className="text-neutral-600" aria-label="Kembali">
+        <button onClick={() => navigate(home.to)} className="text-neutral-600" aria-label="Kembali">
           <ChevronLeft size={20} />
         </button>
         <h1 className="font-bold text-neutral-800 truncate">{material.title}</h1>
       </header>
 
       <div className="p-4 lg:p-0 max-w-3xl">
-        <Link to="/literasi" className="hidden lg:inline-flex items-center gap-1 text-sm text-neutral-600 hover:text-navy-700 mb-4">
-          <ChevronLeft size={16} /> Kembali ke Literasi Keuangan
+        <Link to={home.to} className="hidden lg:inline-flex items-center gap-1 text-sm text-neutral-600 hover:text-navy-700 mb-4">
+          <ChevronLeft size={16} /> {home.label}
         </Link>
 
         <div className="flex items-center gap-3 mb-3">
@@ -67,6 +69,13 @@ export default function LiterasiDetail() {
 
         <h1 className="hidden lg:block text-2xl font-bold text-neutral-800">{material.title}</h1>
         <p className="text-neutral-600 mt-1 mb-5">{material.summary}</p>
+
+        {material.notice && (
+          <div className="mb-5 flex items-start gap-2 rounded-xl bg-champagne-50 px-3 py-2.5 text-xs text-neutral-700">
+            <Info size={14} className="mt-0.5 shrink-0 text-champagne-700" />
+            <p>{material.notice}</p>
+          </div>
+        )}
 
         <Card className="space-y-6">
           {material.sections.map((s) => (
