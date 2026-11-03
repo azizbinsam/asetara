@@ -1,4 +1,4 @@
-import { BookOpen, PiggyBank, Scale, ShieldCheck, Store } from 'lucide-react'
+import { BookOpen, Building2, PiggyBank, Scale, ShieldCheck, Store } from 'lucide-react'
 
 // Katalog langkah lanjutan antar fitur ASETARA. Ubah teks/rute di sini;
 // halaman cukup memanggil <NextSteps steps={['perencanaan', ...]} />.
@@ -26,6 +26,12 @@ export const NEXT_STEPS = {
     icon: ShieldCheck,
     title: 'Cek Legalitas & Waspada Penipuan',
     desc: 'Pastikan penyedia layanan resmi dan kenali modus penipuan.',
+  },
+  investasiSyariah: {
+    to: '/investasi-syariah',
+    icon: Building2,
+    title: 'Pelajari Properti Syariah',
+    desc: 'Pahami akad dan hak kepemilikan, lalu cek informasi proyek di direktori.',
   },
   marketplace: {
     to: '/marketplace',

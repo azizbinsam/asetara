@@ -298,7 +298,7 @@ export default function Perencanaan() {
                   )}
                 </Card>
 
-                <NextSteps title="Sebelum berinvestasi" steps={['aksesKeamanan']} />
+                <NextSteps title="Sebelum berinvestasi" steps={['investasiSyariah', 'aksesKeamanan']} />
               </>
             )}
 

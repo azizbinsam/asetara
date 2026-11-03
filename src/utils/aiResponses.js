@@ -12,10 +12,36 @@ export const SUGGESTIONS = [
   'Berapa dana darurat yang ideal?',
   'Bagaimana mengenali investasi bodong?',
   'Bagaimana membandingkan investasi?',
+  'Apa arti proyek Terverifikasi?',
+  'Apa itu akad Murabahah dan Ijarah?',
   'Bagaimana cara membeli token?',
 ]
 
 const INTENTS = [
+  {
+    id: 'direktori',
+    keywords: ['direktori', 'terverifikasi', 'informasi minimum', '11 informasi', 'verified'],
+    text: '"Terverifikasi" di Direktori Proyek berarti 11 informasi minimum proyek sudah tersedia: legalitas penyedia, lokasi dan status, hak investor, akad, modal dan biaya, pembagian hasil, risiko, jangka waktu, likuiditas, mekanisme keluar, dan jalur pengaduan. Ini pemeriksaan awal kelengkapan, bukan fatwa, bukan penilaian kepatuhan syariah, bukan jaminan hasil, dan bukan rekomendasi investasi. Proyek yang informasinya kurang tetap ditampilkan dengan status "Perlu dilengkapi".',
+    link: { to: '/investasi-syariah?tab=direktori', label: 'Buka Direktori Proyek' },
+  },
+  {
+    id: 'akad',
+    keywords: ['akad', 'murabahah', 'ijarah', 'istishna', 'musyarakah', 'mudharabah'],
+    text: 'Akad adalah kesepakatan yang menentukan hak dan kewajiban kedua pihak. Contoh yang umum di properti: Murabahah (jual beli, harga pokok dan margin disepakati di awal), Ijarah (sewa atas manfaat properti), Istishna\' (pesan-bangun dengan bayar bertahap), dan Musyarakah (kemitraan modal). Penyedia yang menyebut akad tertentu belum tentu sesuai syariah; ASETARA tidak menilai itu, jadi telaah ahli syariah tetap penting.',
+    link: { to: '/literasi/akad-properti-syariah', label: 'Baca materi Akad' },
+  },
+  {
+    id: 'fraksional',
+    keywords: ['fraksional', 'kepemilikan bersama', 'patungan'],
+    text: 'Kepemilikan fraksional (token) berarti kamu memegang sebagian kepemilikan bersama atas aset. Hak hukum, pencatatan kepemilikan, pengelolaan aset, pembagian hasil, dan mekanisme keluarnya perlu ditelaah penasihat hukum dan ahli syariah sebelum kamu memutuskan. Token juga tidak bisa dicairkan kapan saja, dan imbal hasil hanya estimasi.',
+    link: { to: '/literasi/hak-kepemilikan-properti', label: 'Baca materi Hak Kepemilikan' },
+  },
+  {
+    id: 'pengaduan',
+    keywords: ['pengaduan', 'keluhan', 'komplain'],
+    text: 'Setiap proyek di Direktori memuat jalur pengaduan bertahap: ke penyedia lebih dulu, lalu lembaga yang berwenang. Untuk layanan keuangan berizin kamu bisa menghubungi Kontak OJK 157, tetapi kewenangan lembaga bergantung pada jenis dan izin penyelenggara, jadi tanyakan dulu sebelum berinvestasi.',
+    link: { to: '/akses-keamanan', label: 'Buka Akses & Keamanan' },
+  },
   {
     id: 'penipuan',
     keywords: ['penipuan', 'tipu', 'scam', 'bodong', 'phishing', 'otp', 'waspada'],
@@ -27,6 +53,12 @@ const INTENTS = [
     keywords: ['legal', 'izin', 'ojk', 'resmi', 'terdaftar', 'diawasi', 'lapor'],
     text: 'Sebelum berinvestasi, pastikan penyedia layanan punya izin dari lembaga yang berwenang dan cek lewat kanal resmi lembaganya, bukan hanya dari klaim penyedia. Izin yang "sedang diurus" belum berarti legal. Perlu diingat, ASETARA saat ini adalah prototype dengan data contoh. Halaman Akses & Keamanan merangkum lembaga resmi, cara mengecek legalitas, dan kanal pengaduan.',
     link: { to: '/akses-keamanan', label: 'Cek Legalitas & Lapor' },
+  },
+  {
+    id: 'properti-syariah',
+    keywords: ['properti syariah', 'investasi properti', 'syariah properti'],
+    text: 'Investasi Properti Syariah di ASETARA punya dua bagian: Materi Edukasi (dasar, akad, hak kepemilikan, dan cara membaca informasi proyek) dan Direktori Proyek. Alurnya: pelajari dulu, cek 11 informasi minimum proyek, lalu baru pertimbangkan investasi. Semua data proyek di prototype ini adalah ilustrasi, bukan penawaran investasi.',
+    link: { to: '/investasi-syariah', label: 'Buka Investasi Properti Syariah' },
   },
   {
     id: 'darurat',
@@ -78,7 +110,7 @@ const INTENTS = [
   {
     id: 'beli',
     keywords: ['beli', 'membeli', 'mulai investasi', 'cara investasi'],
-    text: 'Untuk membeli token: 1) Pilih properti di Marketplace, 2) Klik "Beli Token", 3) Masukkan nominal investasi, 4) Konfirmasi pembelian. Minimum investasi bervariasi per properti. Sebelum membeli, sebaiknya cek kesiapan finansialmu dan bandingkan pilihan yang ada.',
+    text: 'Untuk membeli token: 1) Pilih properti di Marketplace, 2) Klik "Beli Token", 3) Masukkan nominal investasi, 4) Konfirmasi pembelian. Minimum investasi bervariasi per properti. Sebelum membeli, sebaiknya pelajari materi properti syariah, cek 11 informasi minimum proyek di Direktori, lalu cek kesiapan finansialmu dan bandingkan pilihan yang ada.',
     link: { to: '/marketplace', label: 'Jelajahi Marketplace' },
   },
   {
@@ -90,7 +122,7 @@ const INTENTS = [
 ]
 
 const DEFAULT_RESPONSE = {
-  text: 'Terima kasih atas pertanyaannya. Saya bisa membantu seputar: literasi keuangan, kesiapan finansial (dana darurat dan skor), perbandingan investasi, mengenali penipuan dan cek legalitas, serta cara kerja token, zakat, dan marketplace. Coba tanyakan salah satunya.',
+  text: 'Terima kasih atas pertanyaannya. Saya bisa membantu seputar: literasi keuangan, kesiapan finansial (dana darurat dan skor), perbandingan investasi, mengenali penipuan dan cek legalitas, properti syariah (materi, akad, dan direktori proyek), serta cara kerja token, zakat, dan marketplace. Coba tanyakan salah satunya.',
   link: null,
 }
 

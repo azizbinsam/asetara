@@ -5,6 +5,9 @@ import Button from '../components/Button'
 import Card from '../components/Card'
 import Badge from '../components/Badge'
 import ProgressBar from '../components/ProgressBar'
+import PelajariDuluBanner from '../components/PelajariDuluBanner'
+import InfoProyekLink from '../components/InfoProyekLink'
+import { isInformasiLengkap } from '../utils/direktori'
 import { formatRupiah, formatPercent, formatNumber } from '../utils/format'
 
 const CATEGORY_GRADIENT = {
@@ -56,9 +59,11 @@ export default function PropertyDetail() {
             <div className={`w-full h-full bg-gradient-to-br ${CATEGORY_GRADIENT[property.category] || 'from-champagne-300 to-navy-600'}`} />
           )}
           <div className="absolute top-3 left-3">
-            <Badge variant="success" withCheck className="!bg-white/90 backdrop-blur">
-              Verified Syariah
-            </Badge>
+            {isInformasiLengkap(property.id) && (
+              <Badge variant="success" withCheck className="!bg-white/90 backdrop-blur">
+                Informasi Lengkap
+              </Badge>
+            )}
           </div>
           <div className="absolute top-3 right-3">
             <span className="px-2.5 py-1 rounded-full bg-navy-500 text-white text-[11px] font-semibold flex items-center gap-1">
@@ -120,6 +125,9 @@ export default function PropertyDetail() {
             </div>
           </div>
         </Card>
+
+        <InfoProyekLink propertyId={property.id} className="mt-4" />
+        <PelajariDuluBanner className="mt-4" />
 
         <Button
           variant="primary"

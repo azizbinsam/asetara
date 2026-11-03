@@ -283,7 +283,7 @@ export default function PerbandinganInvestasi() {
           </p>
         </div>
 
-        <NextSteps className="mb-4" steps={['perencanaan', 'aksesKeamanan']} />
+        <NextSteps className="mb-4" steps={['perencanaan', 'investasiSyariah', 'aksesKeamanan']} />
 
         <div className="flex items-start gap-2 text-xs text-neutral-500 px-1">
           <Info size={14} className="shrink-0 mt-0.5" />

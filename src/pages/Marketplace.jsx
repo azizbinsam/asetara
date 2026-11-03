@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Search } from 'lucide-react'
 import { useProperties } from '../context/propertiesStore'
 import PropertyCard from '../components/PropertyCard'
+import PelajariDuluBanner from '../components/PelajariDuluBanner'
 
 const FILTERS = [
   { value: 'semua', label: 'Semua' },
@@ -31,6 +32,8 @@ export default function Marketplace() {
 
       <div className="p-4 lg:p-0">
         <h1 className="hidden lg:block text-xl font-bold text-neutral-800 mb-6">Marketplace Properti</h1>
+
+        <PelajariDuluBanner className="mb-4" />
 
         <div className="flex items-center gap-2 bg-neutral-0 border border-neutral-200 rounded-xl px-3 py-2.5 mb-4">
           <Search size={18} className="text-neutral-400" />

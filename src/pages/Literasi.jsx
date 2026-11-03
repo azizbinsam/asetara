@@ -136,7 +136,7 @@ export default function Literasi() {
         <Button onClick={() => navigate(`/literasi/${nextForQuiz.id}/kuis`)}>Mulai Kuis</Button>
       </Card>
 
-      <NextSteps className="mt-6" steps={['perencanaan', 'aksesKeamanan']} />
+      <NextSteps className="mt-6" steps={['perencanaan', 'investasiSyariah', 'aksesKeamanan']} />
     </div>
   )
 }

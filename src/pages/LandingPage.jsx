@@ -232,8 +232,8 @@ function FeaturesSection() {
   const features = [
     {
       icon: Shield,
-      title: '100% Syariah Compliant',
-      desc: 'Semua properti melalui screening syariah oleh Dewan Pengawas Syariah. Tanpa riba, gharar, dan maysir.',
+      title: 'Informasi Proyek Transparan',
+      desc: 'Setiap proyek di direktori diperiksa awal kelengkapan 11 informasi minimum: legalitas, akad, hak investor, biaya, risiko, dan jalur pengaduan. Bukan fatwa dan bukan jaminan hasil.',
       color: 'bg-teal-50 text-teal-600',
     },
     {

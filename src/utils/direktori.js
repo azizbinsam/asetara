@@ -102,3 +102,10 @@ function withAutoRows(key, rincian, property) {
 export function formatTanggal(iso) {
   return new Date(iso).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
 }
+
+// Dipakai badge "Informasi Lengkap" di kartu/detail token: hanya benar bila proyek punya entri direktori
+// dan ke-11 informasinya berstatus lengkap. Properti tanpa entri tidak diberi badge.
+export function isInformasiLengkap(propertyId) {
+  const entry = direktori.projects.find((p) => p.propertyId === propertyId)
+  return !!entry && INFO_ITEMS.every((def) => entry.informasi[def.key]?.status === 'lengkap')
+}

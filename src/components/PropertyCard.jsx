@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { MapPin } from 'lucide-react'
 import Badge from './Badge'
 import { formatRupiah, formatPercent } from '../utils/format'
+import { isInformasiLengkap } from '../utils/direktori'
 
 const CATEGORY_GRADIENT = {
   apartemen: 'from-champagne-300 to-navy-600',
@@ -26,9 +27,11 @@ export default function PropertyCard({ property }) {
             <div className={`w-full h-full bg-gradient-to-br ${CATEGORY_GRADIENT[property.category] || 'from-champagne-300 to-navy-600'}`} />
           )}
           <div className="absolute top-3 left-3">
-            <Badge variant="success" withCheck className="!bg-white/90 backdrop-blur">
-              Verified Syariah
-            </Badge>
+            {isInformasiLengkap(property.id) && (
+              <Badge variant="success" withCheck className="!bg-white/90 backdrop-blur">
+                Informasi Lengkap
+              </Badge>
+            )}
           </div>
           <div className="absolute top-3 right-3">
             <span className="px-2.5 py-1 rounded-full bg-navy-500 text-white text-[10px] font-semibold">

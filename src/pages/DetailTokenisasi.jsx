@@ -6,6 +6,9 @@ import { usePortfolio } from '../context/portfolioStore'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import Badge from '../components/Badge'
+import PelajariDuluBanner from '../components/PelajariDuluBanner'
+import InfoProyekLink from '../components/InfoProyekLink'
+import { isInformasiLengkap } from '../utils/direktori'
 import { formatRupiah, formatPercent, formatNumber } from '../utils/format'
 
 const CATEGORY_GRADIENT = {
@@ -92,9 +95,11 @@ export default function DetailTokenisasi() {
             <div className={`absolute inset-0 bg-gradient-to-br ${CATEGORY_GRADIENT[property.category]}`} />
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-          <Badge variant="success" withCheck className="absolute top-3 right-3 !bg-white/90">
-            Verified Syariah
-          </Badge>
+          {isInformasiLengkap(property.id) && (
+            <Badge variant="success" withCheck className="absolute top-3 right-3 !bg-white/90">
+              Informasi Lengkap
+            </Badge>
+          )}
           <span className="relative text-white font-semibold capitalize">{property.category}</span>
         </div>
 
@@ -121,6 +126,9 @@ export default function DetailTokenisasi() {
             </div>
           </div>
         </Card>
+
+        <InfoProyekLink propertyId={property.id} className="mt-4" />
+        <PelajariDuluBanner className="mt-4" />
 
         <Card variant="default" className="mt-4 text-center">
           <p className="text-xs text-neutral-500">Anda membeli</p>

@@ -53,7 +53,7 @@ Aturan yang dipelajari dari audit visual:
 | 6a | Penyambung antar fitur (`NextSteps`) + rapikan teks tokenisasi di Landing/Dampak | Selesai (menunggu verifikasi di browser) |
 | 6b | Update AI Assistant: saran & jawaban mock untuk fitur ASETARA, tab video bertema ASETARA | Selesai (menunggu verifikasi di browser) |
 | 6c | Bersihkan lint (import tak terpakai, fast refresh, set-state-in-effect) & hapus file/aset tak terpakai | Selesai (menunggu verifikasi `npm run build` + `npx eslint .`) |
-| 7a–7d | **Sharia Property Investment Learning & Directory** — rincian lengkap di `docs/SHARIA-PROPERTY-LEARNING-DIRECTORY.md` | 7a–7c selesai (menunggu verifikasi), 7d berikutnya |
+| 7a–7d | **Sharia Property Investment Learning & Directory** — rincian lengkap di `docs/SHARIA-PROPERTY-LEARNING-DIRECTORY.md` | 7a–7d selesai (menunggu verifikasi di browser) |
 
 ### Struktur Tahap 2 (Literasi)
 - Data: `src/data/literasi.json` (kategori, materi, soal). Edit isi materi/soal di sini tanpa menyentuh kode.
@@ -92,7 +92,7 @@ Aturan yang dipelajari dari audit visual:
 - Logo lembaga tidak dipakai (hanya ikon + nama). Kategori "Asuransi" (mockup desktop) belum ada karena belum ada konten terverifikasi; kategori "Legalitas & Regulasi" (mockup mobile) dipakai.
 
 ### Struktur Tahap 6a (Penyambung antar fitur)
-- Komponen `src/components/NextSteps.jsx` + katalog `src/utils/nextSteps.js` (kunci: `literasi`, `perencanaan`, `perbandingan`, `aksesKeamanan`, `marketplace`). Pakai: `<NextSteps steps={['perencanaan', 'aksesKeamanan']} />`; props opsional `title`, `className`. Teks/rute diubah di katalog, bukan di halaman.
+- Komponen `src/components/NextSteps.jsx` + katalog `src/utils/nextSteps.js` (kunci: `literasi`, `perencanaan`, `perbandingan`, `aksesKeamanan`, `marketplace`, `investasiSyariah`). Pakai: `<NextSteps steps={['perencanaan', 'aksesKeamanan']} />`; props opsional `title`, `className`. Teks/rute diubah di katalog, bukan di halaman.
 - Dipasang di: akhir `Literasi`, layar hasil `LiterasiKuis`, hasil `Perencanaan` ("Sebelum berinvestasi" → Akses & Keamanan), `PerbandinganInvestasi` (→ Perencanaan, Akses & Keamanan), `AksesKeamanan` (→ Literasi, Perencanaan).
 - Teks tokenisasi: kalimat "smart contract" / "teknologi blockchain" di hero & kartu Keunggulan `LandingPage.jsx` serta deskripsi `Dampak.jsx` diganti ke bahasa ASETARA ("kepemilikan digital yang transparan", "akses finansial yang lebih setara").
 - Keputusan Aziz: **statistik (Rp 45M+, 1.240+ investor, 12 properti), imbal hasil 8–15%, dan klaim Dewan Pengawas Syariah di Landing/Dampak dibiarkan apa adanya.** Testimoni yang menyebut smart contract juga tidak diubah.
@@ -100,7 +100,7 @@ Aturan yang dipelajari dari audit visual:
 
 ### Struktur Tahap 6b (AI Assistant)
 - Semua jawaban ada di `src/utils/aiResponses.js`: daftar `INTENTS` (urutan = prioritas, topik spesifik di atas), tiap topik punya `keywords`, `text`, dan `link` opsional `{ to, label }`. Tambah topik cukup dengan menambah satu objek. `getMockResponse(input)` kini mengembalikan **objek `{ text, link }`** (dulu string). Juga ada `GREETING`, `SUGGESTIONS`, dan `getTypingDelay`.
-- Topik: penipuan, legalitas, dana darurat, skor kesiapan, Reksa Dana/Sukuk ("Segera hadir"), perbandingan, risiko, literasi, smart contract, zakat, cara beli token, token, sapaan, default. Angka di jawaban mengikuti `utils/readiness.js` (50/20/6 bulan/70%/ambang 60 dan 40); jika konstanta di sana diubah, perbarui teks jawaban kesiapan/dana darurat.
+- Topik: direktori/terverifikasi, akad, fraksional, pengaduan (7d), penipuan, legalitas, properti syariah (7d), dana darurat, skor kesiapan, Reksa Dana/Sukuk ("Segera hadir"), perbandingan, risiko, literasi, smart contract, zakat, cara beli token, token, sapaan, default. Angka di jawaban mengikuti `utils/readiness.js` (50/20/6 bulan/70%/ambang 60 dan 40); jika konstanta di sana diubah, perbarui teks jawaban kesiapan/dana darurat.
 - Jawaban menampilkan tombol tautan ke halaman fitur. Di popup melayang (`FloatingAiAssistant`) tautan juga menutup popup.
 - Perbaikan bug lama: kata kunci `token` dulu mengalahkan `beli` sehingga "cara membeli token?" dijawab definisi token; kini `beli` dicek lebih dulu. Klik kartu video dulu tidak berfungsi (`Card` tidak meneruskan `onClick`); kini dibungkus `<button>`.
 - Tab Video Edukasi: 6 judul bertema ASETARA (mengikuti materi Literasi). Videonya masih contoh, jadi klik hanya memunculkan toast "segera hadir".
